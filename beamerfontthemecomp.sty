@@ -1,0 +1,40 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMP BEAMERTHEME: FONTTHEME PACKAGE
+% ---
+% $Id:$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{beamerfontthemecomp}
+
+\mode<presentation>
+%-----------------------------------------------------------------------
+% Use Helvetica and Times font, but leave tt font alone
+%-----------------------------------------------------------------------
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\rmdefault}{ptm}
+% \renewcommand{\ttdefault}{pcr}
+
+%-----------------------------------------------------------------------
+% misc fonts
+%-----------------------------------------------------------------------
+\setbeamerfont{ua pagenumbers}{size=\tiny,family=\sffamily}
+\setbeamerfont{frametitle}{series=\bfseries,size=\Large,family=\sffamily}
+\setbeamerfont{framesubtitle}{size=\normalsize,family=\sffamily}
+\setbeamerfont{title}{size=\Large,family=\sffamily}
+\setbeamerfont{author}{size=\large,family=\sffamily}
+\setbeamerfont{institute}{size=\scriptsize,family=\sffamily}
+\setbeamerfont{date}{size=\normalsize,family=\sffamily}
+\setbeamerfont{footline}{size=\tiny,family=\sffamily}
+\setbeamerfont{caption name}{size=\scriptsize}
+\setbeamerfont{caption}{size=\scriptsize}
+
+%-----------------------------------------------------------------------
+% sidebar fonts
+%-----------------------------------------------------------------------
+\setbeamerfont{section in sidebar}{series=\bfseries,shape=\slshape}
+\setbeamerfont{section in sidebar shaded}{series=\mdseries,shape=\upshape}
+\setbeamerfont{subsection in sidebar}{series=\bfseries,shape=\slshape,size=\tiny}
+\setbeamerfont{subsection in sidebar shaded}{series=\mdseries,shape=\upshape}
+\setbeamerfont{subsubsection in sidebar}{series=\bfseries,shape=\slshape}
+\setbeamerfont{subsubsection in sidebar shaded}{series=\mdseries,shape=\upshape}
+
+\mode<all>

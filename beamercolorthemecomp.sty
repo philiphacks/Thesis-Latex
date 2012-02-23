@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMP BEAMERTHEME: COLORTHEME PACKAGE
+% ---
+% $Id:$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{beamercolorthemecomp}
+\mode<presentation>
+
+%-----------------------------------------------------------------------
+% Process options 
+%-----------------------------------------------------------------------
+\ProcessOptionsBeamer
+
+%-----------------------------------------------------------------------
+% Define colors 
+%-----------------------------------------------------------------------
+% * uared:
+%   - PMS = 1955
+%   - RGB = 126,0,47 (max = 256)
+%   - CMYK = 0,100,54,46 (max = 100)
+% * uablue:
+%   - PMS = 302
+%   - RGB = 0,61,100 (max = 256)
+%   - CMYK = 100,30,0,62 (max = 100)
+%\definecolor{uablue}{RGB}{0,20,97}
+%\definecolor{uared} {RGB}{138,0,0}
+\definecolor{uablue}{RGB}{0,62,101}
+\definecolor{uared} {RGB}{125,0,46}
+\definecolor{uaprimary}{named}{uablue}
+\definecolor{uasecondary}{named}{uared}
+
+% --- Structure based colors ---
+\setbeamercolor*{section in sidebar shaded}{fg=uasecondary}
+\setbeamercolor*{section in sidebar}{fg=uasecondary}
+\setbeamercolor*{subsection in sidebar shaded}{fg=uaprimary}
+\setbeamercolor*{subsection in sidebar}{fg=uaprimary}
+\setbeamercolor*{subsubsection in sidebar shaded}{fg=uaprimary}
+\setbeamercolor*{subsubsection in sidebar}{fg=uaprimary}
+\setbeamercolor*{sidebar canvas}{bg=uaprimary!30}
+\setbeamercolor*{background canvas}{bg=}
+\setbeamercolor*{section in toc}{fg=uaprimary}
+\setbeamercolor*{subsection in toc}{fg=uaprimary}
+
+% --- Common definitions ---
+\setbeamercolor*{frametitle}{fg=uaprimary}
+\setbeamercolor*{framesubtitle}{fg=uaprimary}
+\setbeamercolor*{ua pagenumbers}{fg=white,bg=uared}
+\setbeamercolor*{title}{fg=white,bg=uasecondary}
+\setbeamercolor*{affiliation}{fg=uaprimary}
+\setbeamercolor*{footline}{fg=white,bg=uaprimary}
+\setbeamercolor*{normal text}{fg=uaprimary}
+\setbeamercolor*{caption name}{fg=uaprimary}
+%\setbeamercolor*{background canvas}{top=uablue,bottom=white}
+
+% --- Common definitions ---
+\setbeamercolor*{structure}{fg=uasecondary}
+
+% -- Inverted colors for title --
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor*{titlelike}{parent=palette primary}
+
+\mode<all>

@@ -1,0 +1,31 @@
+\select@language {english}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Software Development lifecycle}}{4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The four-level meta-modeling architecture}}{10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Extending the two levels of instantiation}}{11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Strict meta-modeling.}}{11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Multiple classification in the current UML framework.}}{12}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Example class diagram of the Item Description pattern.}}{12}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Domain instance (object diagram).}}{13}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Combination of the class and object diagram.}}{14}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Types as classes.}}{15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Mapping domain levels to modeling levels.}}{17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example modeled using clabjects.}}{18}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Direct mapping between ontological domain levels and modeling levels.}}{19}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Deep characterization with powertypes.}}{20}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Deep characterization with potency.}}{21}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces MetaDepth instantiation schemes: extensible ontological instantiation (left) and strict ontological instantiation (center). Example of strict instantiation (right).}}{22}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces MetaDepth’s linguistic meta-model.}}{23}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Dual classification example.}}{23}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Three model example.}}{24}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces An EOL program that populates a MetaDepth model.}}{24}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Constraints and derived fields in Metadepth.}}{25}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Linguistic extensions and associations in Metadepth.}}{25}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

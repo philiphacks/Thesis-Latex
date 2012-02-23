@@ -1,0 +1,267 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMP BEAMERTHEME: OUTERTHEME PACKAGE
+% ---
+% $Id:$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{ifthen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Package options 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --- Show footer [nofooter] -------------------------------------------
+%  Acceptable values: nofooter, title, authortitle, author
+\def\beamer@ua@footerstyle{nofooter}
+\DeclareOptionBeamer{footerstyle}[nofooter]{%
+   \def\beamer@ua@footerstyle{#1}
+}
+
+%--- show top logo [false] ---------------------------------------------
+\newif\ifbeamer@ua@showtoplogo
+\beamer@ua@showtoplogofalse
+\DeclareOptionBeamer{showtoplogo}{ \beamer@ua@showtoplogotrue }
+
+%--- show navigation bar [false] ---------------------------------------
+\newif\ifbeamer@ua@shownavigationbar
+\beamer@ua@shownavigationbarfalse
+\DeclareOptionBeamer{shownavigationbar}{ \beamer@ua@shownavigationbartrue }
+
+% --- show text logo [false] -------------------------------------------
+\newif\ifbeamer@ua@showtextlogo
+\beamer@ua@showtextlogofalse
+\DeclareOptionBeamer{showtextlogo}{ \beamer@ua@showtextlogotrue }
+
+% --- show top wave [false] --------------------------------------------
+\newif\ifbeamer@ua@showtopwave
+\beamer@ua@showtopwavefalse
+\DeclareOptionBeamer{showtopwave}{ \beamer@ua@showtopwavetrue }
+
+% --- show bottom wave [false] -----------------------------------------
+\newif\ifbeamer@ua@showbottomwave
+\beamer@ua@showbottomwavefalse
+\DeclareOptionBeamer{showbottomwave}{ \beamer@ua@showbottomwavetrue }
+
+% --- show slide border [false] ----------------------------------------
+\DeclareOptionBeamer{showslideborder}{%
+    \defbeamertemplate*{background canvas}{ua}%
+    {%
+        \begin{pgfpicture}{0cm}{0cm}{12.8cm}{9.6cm}%
+            \pgfpathrectangle{\pgfpointxy{0}{0}}{\pgfpointxy{12.8}{9.6}}%
+            \color{black}%
+            \pgfusepath{stroke}%
+        \end{pgfpicture}%
+    }
+}
+
+% --- show background shading [false] ---------------------------------
+\DeclareOptionBeamer{showbackgroundshading}{%
+    %\setbeamertemplate{background canvas}[vertical shading][top=uablue!65!white,bottom=white]
+    \defbeamertemplate*{background canvas}{ua}%
+    {%
+        \hskip-1cm
+        \pgfdeclareverticalshading{beamer@headfade}{2.0\paperwidth}
+        {%
+            color(0cm)=(white);
+            color(\paperheight)=(uablue!70!white)%
+        }
+        %\begin{pgfpicture}{0cm}{0cm}{2.0\paperwidth}{9.6cm}%
+            \pgfuseshading{beamer@headfade}
+        %\end{pgfpicture}%
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% process options 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProcessOptionsBeamer
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% beamer template definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<presentation>
+
+\newdimen\beamer@usablewidth%
+\beamer@usablewidth=\paperwidth%
+\ifbeamer@ua@showsidebar%
+    \advance\beamer@usablewidth by -\beamer@sidebarwidth%
+\fi%
+
+% Define the images we will use
+%\pgfdeclareimage[height=0.8cm]{comptheme-top-logo}{beamer-logo-u}
+\pgfdeclareimage[height=0.8cm]{comptheme-top-logo}{beamer-logo-comp}
+\pgfdeclareimage[width=4cm]{comptheme-ua-text}{beamer-logo-textua}
+
+%-----------------------------------------------------------------------
+% Frame title template
+%-----------------------------------------------------------------------
+\newcommand{\uastreamPosUlogo}{\pgfpoint{0.4cm}{0.9cm}}
+\newcommand{\uastreamPosUATextlogo}{\pgfpointxy{0.4}{0.45}} 
+% these are placeholders, and will be overwritten at run time
+\newcommand{\uastreamPosFrametitle}{}
+\newcommand{\uastreamPosFramesubtitle}{}
+
+
+
+\defbeamertemplate*{frametitle}{ua theme}
+{%
+    \vskip-.5ex%
+    \hbox{%
+        \ifbeamer@ua@showsidebar%
+            \hskip-1.9ex%
+        \else%
+            \hskip-3.8ex%
+        \fi%
+        \begin{pgfpicture}{0cm}{0cm}{12.8cm}{1.1cm}%
+            \ifbeamer@ua@showtopwave%
+                %\pgfpathmoveto{\pgfpoint{9.0cm}{1.0cm}}% original
+                \pgfpathmoveto{\pgfpoint{12.8cm}{1.0cm}}% my value
+                \pgfpathcurveto{\pgfpoint{7.1cm}{0.8cm}}%
+                %{\pgfpoint{3cm}{-0.3cm}}% original of Hans
+                {\pgfpoint{4cm}{-0.3cm}}% my value
+                {\pgfpoint{0cm}{0.1cm}}%
+                \pgfpathlineto{\pgfpoint{0cm}{1.0cm}}%
+                \usebeamercolor[bg]{sidebar canvas}%
+                \pgfusepath{fill,stroke}%
+                \pgfpathrectangle{\pgfpoint{0cm}{0.0cm}}{\pgfpoint{8.0cm}{1.1cm}}%
+            \fi%
+            % top logo
+            \ifbeamer@ua@showtoplogo
+                \pgftext[left,top,at=\uastreamPosUlogo]{%
+                    \pgfuseimage{comptheme-top-logo}
+                }%
+            \fi
+            % Dynamically adjust position of frame title
+            \ifx\insertframesubtitle\@empty%
+                % No subtitle for this frame
+                \renewcommand{\uastreamPosFrametitle}{\pgfpoint{2.0cm}{0.3cm}}%
+                % Show frame title
+                %\pgftext[left,base,at=\uastreamPosFrametitle]{%
+                \pgftext[left,base,at=\pgfpoint{3.6cm}{0.0cm}]{%
+                    \usebeamerfont*{frametitle}
+                    \usebeamercolor[fg]{frametitle}%
+                    \insertframetitle
+                }%
+            \else%
+                % There is a subtitle for this frame
+                \renewcommand{\uastreamPosFrametitle}{\pgfpoint{2.0cm}{0.5cm}}
+                \renewcommand{\uastreamPosFramesubtitle}{\pgfpoint{2.5cm}{0.1cm}}
+                % Show frame title
+                \pgftext[left,base,at=\uastreamPosFrametitle]{%
+                    \usebeamerfont*{frametitle}
+                    \usebeamercolor[fg]{frametitle}%
+                    \insertframetitle
+                }%
+                % Show frame subtitle
+                \pgftext[left,base,at=\uastreamPosFramesubtitle]{%
+                    \usebeamerfont*{framesubtitle}%
+                    \usebeamercolor[fg]{framesubtitle}
+                    \insertframesubtitle
+                }%
+            \fi%
+        \end{pgfpicture}%
+    }%
+}
+
+%-----------------------------------------------------------------------
+% footline template 
+%-----------------------------------------------------------------------
+\defbeamertemplate*{footline}{ua theme}
+{
+    \leavevmode%
+    \vbox{%
+        \begin{pgfpicture}{0cm}{0cm}{12.8cm}{0.8cm}%
+      		% slide dimensions: 12.798 cm  X 9.599 cm
+      		% This image is taken from the PPT template and was used to position
+      		% our elements at the exact same location
+      		%\pgftext[right,bottom,at=\pgfpointxy{12.8}{0}]
+      		%   {\pgfimage[width=12.8cm]{bottom}}
+      		% Draw to wave at the bottom
+      		\ifbeamer@ua@showbottomwave
+        		  \pgfpathmoveto{\pgfpointxy{1}{0}}%
+                  \pgfpathcurveto{\pgfpointxy{5.7}{0.15}}%
+            	       {\pgfpointxy{9}{1.0}}{\pgfpointxy{12.8}{0.75}}%
+                  \pgfpathlineto{\pgfpointxy{12.8}{0}}%
+                  \usebeamercolor[bg]{footline}%
+                  \pgfusepath{fill,stroke}%
+      		\fi
+      		% 'Universiteit Antwerpen' text logo
+      		\ifbeamer@ua@showtextlogo
+         		 % UA text logo is put on the left
+                 %\pgftext[left,bottom,at=\pgfpointxy{0.85}{0.45}]%
+                 \pgftext[left,bottom,at=\uastreamPosUATextlogo]%
+                        {\pgfuseimage{comptheme-ua-text}}%
+      		\fi%
+      		% Page number
+      		\pgftext[right,bottom,at=\pgfpointxy{12.3}{0.3}]{%
+			\ifbeamer@ua@showbottomwave
+        		\usebeamercolor*[fg]{ua pagenumbers}
+			\else
+        		\usebeamercolor*[bg]{ua pagenumbers}
+			\fi
+        	\usebeamerfont*{ua pagenumbers}%
+        	\insertframenumber{}~/~\inserttotalframenumber
+       }%
+       \end{pgfpicture}%
+       \vskip0pt%
+       % author/title in footer, if requested by user.
+       % We will just create a dark rectangle below
+       \ifthenelse{\not\equal{\beamer@ua@footerstyle}{nofooter}}%
+       {%
+            \begin{pgfpicture}{0cm}{0cm}{12.8cm}{0.4cm}%
+                \usebeamercolor[bg]{footline}%  
+                \pgfpathrectangle{\pgfpointxy{0}{0}}{\pgfpointxy{12.8}{0.4}}%
+                \pgfusepath{fill,stroke}%
+                \pgftext[left,bottom,at=\pgfpointxy{0.2}{0.15}]{%
+                    \usebeamercolor*[fg]{footline}\usebeamerfont*{footline}%
+                    \ifthenelse{\equal{\beamer@ua@footerstyle}{author}}%
+                        {\insertshortauthor}{}%
+                    \ifthenelse{\equal{\beamer@ua@footerstyle}{authortitle}}%
+                        {\insertshortauthor~~--~~\insertshorttitle}{}%
+                    \ifthenelse{\equal{\beamer@ua@footerstyle}{title}}%
+                        {\insertshorttitle \ \ \ \ \ \ \insertsection}{}%
+                }%
+                \pgftext[right,bottom,at=\pgfpointxy{12.8}{0.1}]{%
+                    \setbeamercolor*{structure}{fg=white}
+                    \insertsubsectionnavigationhorizontal{8cm}{\hskip0pt plus1filll}{}
+                     \setbeamercolor*{structure}{fg=uasecondary}
+                }%            
+            \end{pgfpicture}%
+        }{}%
+    }%
+    \vskip0pt%
+}
+
+%-----------------------------------------------------------------------
+% navigationbar template
+%-----------------------------------------------------------------------
+\ifbeamer@ua@shownavigationbar%
+    \defbeamertemplate*{navigation symbols}{ua}%
+    {%
+        \hbox{%
+            %\hbox{\insertslidenavigationsymbol}
+            \hbox{\insertframenavigationsymbol}
+            \hbox{\insertsubsectionnavigationsymbol}
+            \hbox{\insertsectionnavigationsymbol}
+            %\hbox{\insertdocnavigationsymbol}
+            %\hbox{\insertbackfindforwardnavigationsymbol}%
+        }%
+    }
+\else%
+    \defbeamertemplate*{navigation symbols}{ua}{}%
+\fi%
+
+%-----------------------------------------------------------------------
+% frame title continuation template
+%-----------------------------------------------------------------------
+% Page template for continued frames (with option allowframebreaks)
+% This will show '(num)' after the title of each continued frame, except for
+% the first frame
+
+\defbeamertemplate*{frametitle continuation}{ua}
+    [1][(\insertcontinuationcount)]
+    {\expandafter\ifnum\insertcontinuationcount>1\relax#1\fi}
+    
+
+    
+\mode<all>

@@ -1,0 +1,283 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMP BEAMERTHEME: OUTERTHEMESIDEBAR PACKAGE
+% ---
+% $Id:$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{beamerouterthemesidebarcomp}
+
+%-----------------------------------------------------------------------
+% Global variables 
+%-----------------------------------------------------------------------
+\newdimen\beamer@sidebarwidth
+\usebeamerfont{frametitle}
+\beamer@sidebarwidth=2.5cm
+\reset@font
+
+\newdimen\beamer@sidebarheight
+\newdimen\beamer@sidebarroundx
+\newdimen\beamer@sidebarcurve
+\newdimen\beamer@sidebarroundy
+
+\def\beamer@lefttext{left}
+
+% Images
+\pgfdeclareimage[width=0.9\beamer@sidebarwidth]{titlelogo}{beamer-logo-comp}%
+
+%-----------------------------------------------------------------------
+% Package options 
+%-----------------------------------------------------------------------
+
+% --- Show title logo in sidebar [no] ----------------------------------
+
+\newif\ifbeamer@ua@showsidebartitlelogo
+\beamer@ua@showsidebartitlelogofalse
+\DeclareOptionBeamer{showsidebartitlelogo}[false]{%
+   \csname beamer@ua@showsidebartitlelogo#1\endcsname
+}
+
+% --- Hide subsections [no] --------------------------------------------
+
+\DeclareOptionBeamer{hideothersubsections}[false]{%
+    \ifthenelse{\equal{#1}{true}}{\beamer@nav@subsectionstyle{show/show/hide}}{}
+}
+\DeclareOptionBeamer{hideallsubsections}[false]{%
+    \ifthenelse{\equal{#1}{true}}{\beamer@nav@subsectionstyle{hide}}{}
+}
+
+% --- Sidebar location [left] ------------------------------------------
+
+\DeclareOptionBeamer{sidebarwidth}{\beamer@sidebarwidth=#1}
+\DeclareOptionBeamer{sidebarleft}{\def\beamer@sidebarside{left}}
+\DeclareOptionBeamer{sidebarright}{\def\beamer@sidebarside{right}}
+\ExecuteOptionsBeamer{sidebarleft}
+
+% --- Sidebar header [none] --------------------------------------------
+
+\def\beamer@ua@sidebarheader{part}
+\DeclareOptionBeamer{sidebarheader}[part]{%
+    \def\beamer@ua@sidebarheader{#1}
+}
+
+% --- Compact Sidebar [no] ----------------------------------------------
+
+\newif\ifbeamer@ua@compactsidebar
+\DeclareOptionBeamer{compactsidebar}[false]{%
+    \csname beamer@ua@compactsidebar#1\endcsname
+}
+
+%-----------------------------------------------------------------------
+% Process options 
+%-----------------------------------------------------------------------
+\ProcessOptionsBeamer
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer sidebar formatting
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<presentation>
+
+% --- Set positioning of section/subsection------------------------------
+
+\def\beamer@sidebarformat#1#2#3{%
+    \begin{beamercolorbox}[wd=\beamer@sidebarwidth,leftskip=#1,%
+                                rightskip=1ex plus1fil,vmode]{#2}%
+        \vbox{}%
+        {\usebeamerfont{#2}#3}\par%
+        \vbox{}%
+        \vskip-1.5ex%
+    \end{beamercolorbox}
+}
+
+% --- Markup of (sub)sections -------------------------------------------
+
+\defbeamertemplate*{section in sidebar}{sidebar theme}
+{%
+    \vbox{%
+        \ifbeamer@ua@compactsidebar%
+        \else%
+            \vskip1ex%
+        \fi%
+        \beamer@sidebarformat{3pt}{section in sidebar}%
+                {$\triangleright$~\insertsectionhead}%
+    }%
+}
+
+\defbeamertemplate*{section in sidebar shaded}{sidebar theme}
+{%
+    \vbox{%
+        \ifbeamer@ua@compactsidebar%
+        \else%
+            \vskip1ex%
+        \fi%
+        \beamer@sidebarformat{3pt}{section in sidebar shaded}%
+                {\insertsectionhead}%
+    }%
+}
+
+\defbeamertemplate*{subsection in sidebar}{sidebar theme}
+{%
+    \beamer@sidebarformat{5pt}{subsection in sidebar}%
+            {$\triangleright$~\insertsubsectionhead}%
+}
+
+\defbeamertemplate*{subsection in sidebar shaded}{sidebar theme}
+{%
+    \beamer@sidebarformat{5pt}{subsection in sidebar shaded}%
+            {\insertsubsectionhead}%
+}
+
+\defbeamertemplate*{subsubsection in sidebar}{sidebar theme}
+{%
+    \beamer@sidebarformat{7pt}{subsubsection in sidebar}%
+            {$\triangleright$~\insertsubsubsectionhead}%
+}
+
+\defbeamertemplate*{subsubsection in sidebar shaded}{sidebar theme}
+{%
+    \beamer@sidebarformat{7pt}{subsubsection in sidebar shaded}%
+            {\insertsubsubsectionhead}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer sidebar template definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{ifthen}
+% --- Only process this if sidebar has to be drawn ---
+\ifdim\beamer@sidebarwidth>0pt
+
+    % -- Set sidebar width --
+    \setbeamersize{sidebar width \beamer@sidebarside=\beamer@sidebarwidth}
+
+    % -- Set template for sidebar (left or right) --
+    \defbeamertemplate*{sidebar \beamer@sidebarside}{ua}[1][toc]
+    {
+        \beamer@tempdim=\beamer@sidebarwidth%
+        \advance\beamer@tempdim by -6pt%
+        {
+            \ifthenelse{\equal{\beamer@ua@sidebarheader}{title}}%
+                { % title only
+                    \usebeamerfont{title in sidebar}%
+                    \vskip1.5em%
+                    \hskip3pt%
+                    \usebeamercolor[fg]{title in sidebar}%
+                    \insertshorttitle[width=\beamer@tempdim,center,respectlinebreaks]\par
+                    \vskip1em%
+                }
+                {}
+            \ifthenelse{\equal{\beamer@ua@sidebarheader}{part}}%
+                { % part only
+                    \usebeamerfont{title in sidebar}%
+                    \vskip1.5em%
+                    \hskip3pt%
+                    \usebeamercolor[fg]{title in sidebar}%
+                    \insertshortpart[width=\beamer@tempdim,center,respectlinebreaks]\par
+                    \vskip1em%
+                }
+                {}
+            \ifthenelse{\equal{\beamer@ua@sidebarheader}{titleandpart}}%
+                { % title and part
+                    \usebeamerfont{title in sidebar}%
+                    \vskip1.5em%
+                    \hskip3pt%
+                    \usebeamercolor[fg]{title in sidebar}%
+                    \insertshorttitle[width=\beamer@tempdim,center,respectlinebreaks]\par
+                    \vskip1.0em%
+                    \insertshortpart[width=\beamer@tempdim,center,respectlinebreaks]\par
+                    \vskip1em%
+                }
+                {}
+        }%
+        % Determine whether to show the TOC or not
+        \ifthenelse{\equal{#1}{toc}}
+            {
+                \insertverticalnavigation{\beamer@sidebarwidth}
+            }%
+            {}%
+        %test: #1% DEBUG
+        \vfill%
+        \ifbeamer@ua@showsidebartitlelogo%
+            \begin{beamercolorbox}[wd=0.95\beamer@sidebarwidth]{sidebar canvas}%
+                \centering\pgfuseimage{titlelogo}%
+            \end{beamercolorbox}%
+            \vskip2.5ex%
+        \fi%
+        \ifx\beamer@sidebarside\beamer@lefttext%
+        \else%
+            \usebeamercolor{normal text}%
+            \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+            \vskip2pt%
+        \fi%
+    }%  -- end sidebar template --
+
+    % -- sidebar canvas --
+    % - Shared measures for colored sidebars left and right -
+    % Width of corner to make
+    \beamer@sidebarcurve=20pt%
+    % If sidebar must be shown on the left
+    \ifx\beamer@sidebarside\beamer@lefttext%
+        % - Canvas for colored sidebar on the left -
+        \defbeamertemplate*{sidebar canvas left}{ua}{
+            % Sidebar width
+            \beamer@tempdim=\beamer@leftsidebar%
+            \advance\beamer@tempdim by -1pt%
+            % Sidebar height
+            \beamer@sidebarheight=\sidebarheight%
+            \advance\beamer@sidebarheight by -3pt%
+            % Width and height, decreased by size of corner
+            \beamer@sidebarroundx=\beamer@tempdim%
+            \advance\beamer@sidebarroundx by -\beamer@sidebarcurve%
+            \beamer@sidebarroundy=\beamer@sidebarheight%
+            \advance\beamer@sidebarroundy by -\beamer@sidebarcurve%
+            % Draw the sidebar with rounded corners
+            \begin{pgfpicture}{0cm}{0cm}{\beamer@tempdim}{\beamer@sidebarheight}
+                \pgfpathmoveto{\pgfpointxy{0}{0}}%
+                \pgfpathlineto{\pgfpoint{\beamer@sidebarroundx}{0pt}}%
+                \pgfpathcurveto{\pgfpoint{\beamer@tempdim}{0pt}}%
+                        {\pgfpoint{\beamer@tempdim}{0pt}}%
+                        {\pgfpoint{\beamer@tempdim}{\beamer@sidebarcurve}}%
+                \pgfpathlineto{\pgfpoint{\beamer@tempdim}{\beamer@sidebarroundy}}%
+                \pgfpathcurveto{\pgfpoint{\beamer@tempdim}{\beamer@sidebarheight}}%
+                        {\pgfpoint{\beamer@tempdim}{\beamer@sidebarheight}}%
+                        {\pgfpoint{\beamer@sidebarroundx}{\beamer@sidebarheight}}%
+                \pgfpathlineto{\pgfpoint{0pt}{\beamer@sidebarheight}}%
+                \usebeamercolor[bg]{sidebar canvas}%
+                \pgfusepath{fill,stroke}%
+            \end{pgfpicture}
+        }%
+    % If sidebar will be shown on the right
+    \else%
+        % - Canvas for colored sidebar on the right -
+        \defbeamertemplate*{sidebar canvas right}{ua}{
+        % Sidebar width
+        \beamer@tempdim=\beamer@rightsidebar%
+        % Sidebar height
+        \beamer@sidebarheight=\sidebarheight%
+        \advance\beamer@sidebarheight by -3pt%
+        % Width and height, decreased by size of corner
+        \beamer@sidebarroundx=\beamer@sidebarcurve%
+        \beamer@sidebarroundy=\beamer@sidebarheight%
+        \advance\beamer@sidebarroundy by -\beamer@sidebarcurve%
+        \begin{pgfpicture}{0cm}{0cm}{\beamer@tempdim}{\beamer@sidebarheight}
+            \pgfpathmoveto{\pgfpoint{\beamer@tempdim}{0pt}}%
+            \pgfpathlineto{\pgfpoint{\beamer@sidebarroundx}{0pt}}%
+            \pgfpathcurveto{\pgfpoint{0pt}{0pt}}%
+                   {\pgfpoint{0pt}{0pt}}%
+                   {\pgfpoint{0pt}{\beamer@sidebarcurve}}%
+            \pgfpathlineto{\pgfpoint{0pt}{\beamer@sidebarroundy}}%
+            \pgfpathcurveto{\pgfpoint{0pt}{\beamer@sidebarheight}}%
+                   {\pgfpoint{0pt}{\beamer@sidebarheight}}%
+                   {\pgfpoint{\beamer@sidebarroundx}{\beamer@sidebarheight}}%
+            \pgfpathlineto{\pgfpoint{\beamer@tempdim}{\beamer@sidebarheight}}%
+            \usebeamercolor[bg]{sidebar canvas}%
+            \pgfusepath{fill,stroke}%
+            \end{pgfpicture}%
+        }%
+    \fi%
+    % -- end sidebar canvas --
+
+    % -- Set sidebar margins --
+    \setbeamersize{text margin left=0.5cm,text margin right=0.5cm}
+
+\fi % --- End Only process this if sidebar has to be drawn ---
+
+\mode<all>

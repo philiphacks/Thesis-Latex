@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  IDENTIFICATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{beamerthemecomp-listing}
+
+\RequirePackage{listings,color}
+\RequirePackage{lineno}
+
+
+%-------------------
+% myLstListingFormat
+%-------------------
+\newcommand{\myLstListingFormat}{%
+%
+	\def\myCodeTextSize{\scriptsize}
+	\def\myDirectiveTextSize{\scriptsize}
+	\def\myCommentTextSize{\scriptsize}
+%
+	\definecolor{keywordsColor}{rgb}{0.69,0,0.33}           % red
+	\definecolor{keywordsColor2}{rgb}{0.8,0,0}
+	\definecolor{includeColor}{rgb}{0,0.5,0}                % green
+	\definecolor{singleCommentColor}{rgb}{0,0.52,0.56}
+	\definecolor{multipleCommentColor}{rgb}{0,0.33,0.66}
+	\definecolor{stringColor}{rgb}{0,0,0}                   % black
+	\definecolor{identifierColor}{rgb}{0,0,0.9}             % blue
+%
+	\lstset{
+		tabsize=4, xleftmargin=0ex,
+		basicstyle=\myCodeTextSize\ttfamily,
+		identifierstyle=\color{identifierColor},
+		stringstyle=\color{stringColor},
+		keywordstyle=\color{keywordsColor}\bf,
+		keywordstyle=[2]\color{keywordsColor2},
+		showstringspaces=false
+		}
+%
+	\lstset{
+		commentstyle=\myCommentTextSize\ttfamily, 
+		morecomment=[l][\color{singleCommentColor}]{//},
+		morecomment=[n][\color{multipleCommentColor}]{/*}{*/},
+		moredelim=*[l][\color{includeColor}]{\#},
+	}
+%
+	\lstset{
+		%numbers=left, numberstyle=\tiny, numbersep=5pt
+		}
+	\lstloadlanguages{C++}
+	\lstset{language=C++, directivestyle=\color{includeColor}\myCommentTextSize}
+%
+	\lstdefinelanguage[CppUnit]{C++}{
+		morekeywords=[2]{
+			CPPUNIT\_ASSERT,CPPUNIT\_ASSERT\_MESSAGE,CPPUNIT\_ASSERT\_EQUAL,
+			CPPUNIT\_ASSERT\_DOUBLES\_EQUAL,CPPUNIT\_ASSERT\_EQUAL\_MESSAGE,
+			CPPUNIT\_FAIL,CPPUNIT\_TEST,CPPUNIT\_TEST\_SUITE,CPPUNIT\_TEST\_SUITE\_END,
+			CPPUNIT\_TEST\_EXCEPTION,CPPUNIT\_TEST\_SUITE\_REGISTRATION,
+			CPPUNIT\_TEST\_SUITE\_NAMED\_REGISTRATION
+		}
+	}
+}
+
+%-----------------
+% myCppInput
+%-----------------
+% #1 = (optional) line range to print. syntax <begin1>-<end1>, <begin2>-<end2> ..
+% #2 = dir
+% #3 = file
+\newcommand{\myCppInput}[3][1-9999999]{%
+        \lstset{escapeinside={/*@}{@*/}}
+        \lstset{
+                includerangemarker=false,
+                rangebeginprefix=//BEGIN_SNIPPET\{,
+                rangeendprefix=//END_SNIPPET\{,
+                rangesuffix=\}
+        }     
+        \ifthenelse { \equal{#1}{1-9999999} }
+                { \lstinputlisting[linerange={#1}, language=C++ ]{#2/#3} }
+                { \lstinputlisting[linerange={#1}, language=C++ ]{#2/#3} }
+}
+
+
+%-----------------
+% myJavaInput
+%-----------------
+% #1 = (optional) line range to print. syntax <begin1>-<end1>, <begin2>-<end2> ...
+% #2 = dir
+% #3 = file
+% example: \myJavaInput[7-8]{../code}{Serial1.java}
+% example: adding a line reference: /*@ \label{Serial5.java:Person} @*/
+% example: delimiting a range: //BEGIN_SNIPPET{Person}  ... //END_SNIPPET{Person}
+\newcommand{\myJavaInput}[3][1-9999999]{%
+	\lstset{escapeinside={/*@}{@*/}}
+	\lstset{
+		includerangemarker=false,
+                rangebeginprefix=//BEGIN_SNIPPET\{,
+                rangeendprefix=//END_SNIPPET\{,
+	        rangesuffix=\}
+	}     
+        \ifthenelse { \equal{#1}{1-9999999} }
+		{ \lstinputlisting[linerange={#1}, language=Java]{#2/#3} }
+		{ \lstinputlisting[linerange={#1}, language=Java]{#2/#3} }
+}
+
+%-----------------
+% myXMLInput
+%-----------------
+% #1 = (optional) line range to print. syntax <begin1>-<end1>, <begin2>-<end2> ...
+% #2 = dir
+% #3 = file
+\newcommand{\myXMLInput}[3][1-9999999]{%
+	\lstset{escapeinside={<!--@}{@-->}}
+	\lstset{includerangemarker=false,
+                rangebeginprefix=<!--BEGIN_SNIPPET-->,  
+                rangeendprefix=<!--END_SNIPPET-->,   
+	        rangesuffix=\}}          % }
+        \ifthenelse { \equal{#1}{1-9999999} }
+	{ \lstinputlisting[linerange={#1}, language=XML]{#2/#3} }
+	{ \lstinputlisting[linerange={#1}, language=XML]{#2/#3} }
+}

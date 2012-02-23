@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMP BEAMERTHEME: INNERTHEME PACKAGE
+% ---
+% $Id:$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{beamerinnerthemecomp}
+
+%-----------------------------------------------------------------------
+% default titlegraphic definition 
+%-----------------------------------------------------------------------
+\pgfdeclareimage[width=2cm]{comp-default-logo}{beamer-logo-comp}
+\titlegraphic{\pgfuseimage{comp-default-logo}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Package options 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --- determine titlepage logo footer [comp] ---------------------------
+%  Acceptable values: u, comp, ucomp
+\def\beamer@ua@titlepagelogo{comp}
+\DeclareOptionBeamer{titlepagelogo}[comp]{%
+	\def\beamer@ua@titlepagelogo{#1}
+	\ifthenelse{\equal{\beamer@ua@titlepagelogo}{u}}{%
+		\pgfdeclareimage[width=1.5cm]{titlepagelogo}{beamer-logo-u}
+		\titlegraphic{\pgfuseimage{titlepagelogo}}
+	}{}
+	\ifthenelse{\equal{\beamer@ua@titlepagelogo}{u+comp}}{%
+		\pgfdeclareimage[width=3.0cm]{titlepagelogo}{beamer-logo-u+comp}
+		\titlegraphic{\pgfuseimage{titlepagelogo}}
+	}{}
+	\ifthenelse{\equal{\beamer@ua@titlepagelogo}{comp}}{%
+		\pgfdeclareimage[width=2.0cm]{titlepagelogo}{beamer-logo-comp}
+		\titlegraphic{\pgfuseimage{titlepagelogo}}
+	}{}
+	\ifthenelse{\equal{\beamer@ua@titlepagelogo}{none}}{%
+		\pgfdeclareimage[width=2.0cm]{titlepagelogo}{beamer-logo-comp}
+		\titlegraphic{}
+	}{}
+}
+
+%-----------------------------------------------------------------------
+% process options 
+%-----------------------------------------------------------------------
+\ProcessOptionsBeamer
+
+%-----------------------------------------------------------------------
+% sections/subsections in toc shaded
+%-----------------------------------------------------------------------
+\setbeamertemplate{sections/subsections in toc shaded}[default][55]
+
+%-----------------------------------------------------------------------
+% title page template definition
+%-----------------------------------------------------------------------
+\defbeamertemplate*{title page}{ua}[1][]
+{%
+    \vbox{}%
+    \vfill%
+    \begin{centering}%
+        % Main presentation title
+        \begin{beamercolorbox}[sep=8pt,center,#1]{title}%
+            \usebeamerfont*{title}\inserttitle\par%
+            \ifx\insertsubtitle\@empty%
+            \else%
+                \vskip0.25em%
+                {
+                    \usebeamerfont{subtitle}
+                    \usebeamercolor[fg]{subtitle}%
+                    \insertsubtitle\par
+                }%
+            \fi%
+        \end{beamercolorbox}%
+        \vskip1em\par%
+        % Affiliation
+        \usebeamercolor[fg]{affiliation}%
+        \begin{beamercolorbox}[sep=8pt,center,#1]{author}
+            \usebeamerfont*{author}\insertauthor
+        \end{beamercolorbox}
+        \begin{beamercolorbox}[sep=8pt,center,#1]{institute}
+            \usebeamerfont*{institute}\insertinstitute
+        \end{beamercolorbox}
+        %\begin{beamercolorbox}[sep=8pt,center,#1]{date}
+        %   \usebeamerfont*{date}\insertdate
+        %\end{beamercolorbox}%\vskip0.5em
+        % Logo
+        {
+            \inserttitlegraphic
+            \par
+        }%
+  \end{centering}
+  \vfill%
+}

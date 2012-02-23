@@ -1,0 +1,44 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[masterthesis,english]{comp}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{subfigure}
+
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+\newtheorem{mydef}{Definition}
+
+% Titel van de bachelor thesis
+\title{Domain-Specific Modeling and Model Transformation to support Collaborative Work on Android}
+
+% Jouw naam
+\author{Philip De Smedt}
+
+% Promotor / Promotoren
+\principaladviser{Prof. dr. Hans Vangheluwe}
+\coprincipaladviser{Prof. dr. Juan de Lara}
+
+% Datum waarop de bachelor thesis ingediend wordt
+\submitdate{15 mei 2012}
+
+% .bib file (Gebruik JabRef om de file te editeren)
+\bibfile{thesis_example}
+
+\begin{document}
+\frontpages
+
+\mainbodypages
+\input{01-Introduction}
+\input{02-Modeling}
+\input{03-MultilevelModeling}
+\input{04-Android}
+\input{05-Collaboration}
+\input{06-Design}
+\input{07-CaseStudy}
+\input{08-Conclusion}
+
+\begin{appendices}
+\input{AA-PetriNet}
+\end{appendices}
+
+\backpages
+\end{document}

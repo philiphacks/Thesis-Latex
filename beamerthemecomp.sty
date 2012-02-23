@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMP BEAMERTHEME: MAIN PACKAGE
+% ---
+% $Id:$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{beamerthemecomp}
+
+\RequirePackage{ifthen}
+\RequirePackage{beamerthemecomp-listing}
+
+%-----------------------------------------------------------------------
+% Package options 
+%-----------------------------------------------------------------------
+
+% --- Options to innertheme --------------------------------------------
+\DeclareOptionBeamer{titlepagelogo}{%
+   \PassOptionsToPackage{titlepagelogo=#1}{beamerinnerthemecomp}
+}
+
+% --- Options to outertheme --------------------------------------------
+\DeclareOptionBeamer{footerstyle}{%
+   \PassOptionsToPackage{footerstyle=#1}{beamerouterthemecomp}
+}
+\DeclareOptionBeamer{showtoplogo}{%
+   \PassOptionsToPackage{showtoplogo}{beamerouterthemecomp}
+}
+\DeclareOptionBeamer{showbackgroundshading}{%
+   \PassOptionsToPackage{showbackgroundshading}{beamerouterthemecomp}
+}
+\DeclareOptionBeamer{shownavigationbar}{%
+   \PassOptionsToPackage{shownavigationbar}{beamerouterthemecomp}
+}
+\DeclareOptionBeamer{showtextlogo}{%
+   \PassOptionsToPackage{showtextlogo}{beamerouterthemecomp}
+}
+\DeclareOptionBeamer{showtopwave}{%
+   \PassOptionsToPackage{showtopwave}{beamerouterthemecomp}
+}
+\DeclareOptionBeamer{showbottomwave}{%
+   \PassOptionsToPackage{showbottomwave}{beamerouterthemecomp}
+}
+\DeclareOptionBeamer{showslideborder}{%
+   \PassOptionsToPackage{showslideborder}{beamerouterthemecomp}
+}
+
+% --- Options to outerthemesidebar -------------------------------------
+
+% Show sidebar [false]
+\newif\ifbeamer@ua@showsidebar
+\DeclareOptionBeamer{showsidebar}[nosidebar]{%
+    \ifthenelse{\equal{#1}{left} \or \equal{#1}{right}}%
+        {
+            \beamer@ua@showsidebartrue%
+            \ifthenelse{\equal{#1}{right}}
+                    {\PassOptionsToPackage{sidebarright}{beamerouterthemesidebarcomp}}
+                    {\PassOptionsToPackage{sidebarleft}{beamerouterthemesidebarcomp}}
+        }%
+        {
+            \beamer@ua@showsidebarfalse
+        }%
+}
+\DeclareOptionBeamer{showsidebartitlelogo}{%
+    \PassOptionsToPackage{showsidebartitlelogo=#1}{beamerouterthemesidebarcomp}
+}
+\DeclareOptionBeamer{hideothersubsections}{%
+    \PassOptionsToPackage{hideothersubsections=#1}{beamerouterthemesidebarcomp}
+}
+\DeclareOptionBeamer{hideallsubsections}{%
+    \PassOptionsToPackage{hideallsubsections=#1}{beamerouterthemesidebarcomp}
+}
+\DeclareOptionBeamer{compactsidebar}{%
+    \PassOptionsToPackage{compactsidebar=#1}{beamerouterthemesidebarcomp}
+}
+\DeclareOptionBeamer{sidebarwidth}{%
+   \PassOptionsToPackage{sidebarwidth=#1}{beamerouterthemesidebarcomp}
+}
+\DeclareOptionBeamer{sidebarheader}{%
+   \PassOptionsToPackage{sidebarheader=#1}{beamerouterthemesidebarcomp}
+}
+
+% --- Show top shading ? [no] -------------------------------------------
+\newif\ifbeamer@ua@showtopshading
+\newif\ifbeamer@ua@topshadingblue
+\DeclareOptionBeamer{showtopshading}[noshading]{%
+    \ifthenelse{\equal{#1}{uablue} \or \equal{#1}{uared}}%
+        {
+            \beamer@ua@showtopshadingtrue%
+            \ifthenelse{\equal{#1}{uablue}}
+                    {\beamer@ua@topshadingbluetrue}
+                    {\beamer@ua@topshadingbluefalse}
+        }%
+        {
+            \beamer@ua@showtopshadingfalse
+        }%
+}
+\newdimen\beamer@topshadingband
+\beamer@topshadingband=1.5cm
+\DeclareOptionBeamer{topshadingband}[1.5cm]{\beamer@topshadingband=#1}
+
+%-----------------------------------------------------------------------
+% Process options 
+%-----------------------------------------------------------------------
+\ProcessOptionsBeamer
+
+%-----------------------------------------------------------------------
+% Define theme 
+%-----------------------------------------------------------------------
+
+\mode<presentation>{
+    \usecolortheme{comp}
+    \usefonttheme{comp}
+    \ifbeamer@ua@showsidebar
+        \useoutertheme{sidebarcomp}
+    \fi
+    \useoutertheme{comp}
+    \useinnertheme{comp}
+    
+    
+    % --- topshading ---
+    \ifbeamer@ua@topshadingblue
+        \colorlet{topshading}{uablue}
+    \else
+        \colorlet{topshading}{uared}
+    \fi
+
+
+    \pgfdeclareverticalshading{beamer@headfade}{\paperwidth}
+    {%
+        color(0cm)=(white);
+        color(\beamer@topshadingband)=(topshading!70!white)%
+    }
+    \ifbeamer@ua@showtopshading
+        \addtoheadtemplate{\pgfuseshading{beamer@headfade}\vskip-\beamer@topshadingband}{}
+    \fi
+
+}
+
+\mode<all>
+
+\AtBeginDocument{
+  \myLstListingFormat
+}
