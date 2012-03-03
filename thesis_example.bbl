@@ -4,4 +4,16 @@
 W.~Scacchi, ``Process models in software engineering,'' {\em Encyclopedia of
   Software Engineering}, 2001.
 
+\bibitem{WhatAndroid}
+A.~D. Team, ``What is android?,''
+
+\bibitem{ContentProviders}
+A.~D. Team, ``Content providers,''
+
+\bibitem{AppResources}
+A.~D. Team, ``Application resources,''
+
+\bibitem{NotificationManager}
+A.~D. Team, ``Notification manager,''
+
 \end{thebibliography}

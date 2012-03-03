@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  3 MAR 2012 17:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  3 MAR 2012 23:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -823,33 +823,11 @@ ne 22.
  [25
 
 ]
-
-Package natbib Warning: Citation `WhatAndroid' on page 26 undefined on input li
-ne 33.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 33--36
 
  []
 
 [26 <./images/chap4_android_architecture.jpg>]
-
-Package natbib Warning: Citation `ContentProviders' on page 27 undefined on inp
-ut line 39.
-
-
-Package natbib Warning: Citation `AppResources' on page 27 undefined on input l
-ine 40.
-
-
-Package natbib Warning: Citation `NotificationManager' on page 27 undefined on 
-input line 41.
-
-
-Package natbib Warning: Citation `WhatAndroid' on page 27 undefined on input li
-ne 47.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
@@ -928,36 +906,169 @@ Package pdftex.def Info: images/chap4_app_inventor.png used on input line 165.
 (pdftex.def)             Requested size: 398.33858pt x 244.99232pt.
 ) (./05-Collaboration.tex [33 <./images/chap4_app_inventor.png>]
 Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
 [34
 
-]) (./06-Design.tex [35]
+]
+
+Package natbib Warning: Citation `groupware' on page 35 undefined on input line
+ 13.
+
+
+Package natbib Warning: Citation `CSCWConcepts' on page 35 undefined on input l
+ine 17.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
+
+ []
+
+
+Package natbib Warning: Citation `Facebook' on page 35 undefined on input line 
+25.
+
+
+Package natbib Warning: Citation `googleDocs' on page 35 undefined on input lin
+e 25.
+
+
+Package natbib Warning: Citation `Skype' on page 35 undefined on input line 25.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--28
+
+ []
+
+[35]
+Overfull \hbox (98.49826pt too wide) in alignment at lines 33--42
+[][][] 
+ []
+
+
+Package natbib Warning: Citation `other_paper_' on page 36 undefined on input l
+ine 49.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]|\OT1/cmr/m/n/10.95 synchronous dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]|\OT1/cmr/m/n/10.95 asynchronous dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\OT1/cmr/m/n/10.95 synchronous dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\OT1/cmr/m/n/10.95 asynchronous dis-
+ []
+
+
+Overfull \hbox (198.1171pt too wide) in alignment at lines 51--63
+[][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--67
+
+ []
+
+[36] [37]
+
+Package natbib Warning: Citation `StudyCSCW' on page 38 undefined on input line
+ 105.
+
+
+Package natbib Warning: Citation `CSCWReadings' on page 38 undefined on input l
+ine 105.
+
+
+Package natbib Warning: Citation `CSCWIntro' on page 38 undefined on input line
+ 105.
+
+
+Package natbib Warning: Citation `CSCWChars' on page 38 undefined on input line
+ 107.
+
+
+Package natbib Warning: Citation `groupware' on page 38 undefined on input line
+ 110.
+
+
+Package natbib Warning: Citation `CSCWGroupware' on page 38 undefined on input 
+line 116.
+
+
+Package natbib Warning: Citation `CSCWMethodology' on page 38 undefined on inpu
+t line 116.
+
+
+Package natbib Warning: Citation `CSCWReadings' on page 38 undefined on input l
+ine 118.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+
+ []
+
+[38]
+File: images/chap4_android_architecture.jpg Graphic file (type jpg)
+ <use images/chap4_android_architecture.jpg>
+Package pdftex.def Info: images/chap4_android_architecture.jpg used on input li
+ne 146.
+(pdftex.def)             Requested size: 398.33858pt x 286.04153pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./06-Design.tex [39] [40]
 Chapter 6.
-) (./07-CaseStudy.tex [36
+) (./07-CaseStudy.tex [41
 
 ]
 Chapter 7.
-) (./08-Conclusion.tex [37
+) (./08-Conclusion.tex [42
 
 ]
 Chapter 8.
-) [38
+) [43
 
-] [39
+] [44
 
 
 ] (./AA-PetriNet.tex
 Appendix A.
-) (./AA-ModelTransformation.tex [40
+) (./AA-ModelTransformation.tex [45
 
 ]
 Appendix B.
-) (./thesis_example.bbl [41
+) (./thesis_example.bbl [46
 
 ])
 
 Package natbib Warning: There were undefined citations.
 
-[42
+[47
 
 ] (./thesis_example.aux)
 
@@ -968,31 +1079,32 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6228 strings out of 493633
- 90349 string characters out of 3143377
- 196970 words of memory out of 3000000
- 9299 multiletter control sequences out of 15000+200000
- 14928 words of font info for 56 fonts, out of 3000000 for 9000
+ 6253 strings out of 493633
+ 90793 string characters out of 3143377
+ 199063 words of memory out of 3000000
+ 9323 multiletter control sequences out of 15000+200000
+ 15287 words of font info for 57 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  48i,12n,58p,1773b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
-cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local
-/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/
-texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/te
-xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
-live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis_example.pdf (48 pages, 1746206 bytes).
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loca
+l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local
+/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/
+texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/t
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/
+texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis_example.pdf (53 pages, 1773544 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
+ 292 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
