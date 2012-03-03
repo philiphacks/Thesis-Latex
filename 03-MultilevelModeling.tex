@@ -6,7 +6,7 @@ This chapter continues where chapter 2 left off. Now that we know we can capture
 
 A question that undoubtedly comes to ones mind is it is possible to keep the simplicity of figure ~\ref{fig:types_classes} and still support the ability to create new product types at runtime. In order to make this possible, the type level should be as dynamic as the object level. We should of course have some control over what types are created and what features they possess. Therefore, we need (domain-) meta-types controlling the features of (domain-) types (2). However, the problem with the "Item Description" pattern is that it uses three classification levels, where only two level (class/object) mechanisms are supported. This introduces a level mismatch problem, depicted in figure ~\ref{fig:mapping_inconsistent}. It shows that our example actually features \textit{three} ontological levels, while the corresponding models only contain \textit{two} modeling levels. The level of the model instance is used to represent two ontological levels, domain types and domain instances.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_mapping_inconsistent.png}
 \caption{Mapping domain levels to modeling levels.}
@@ -19,7 +19,7 @@ In the following, we will discuss how it is possible to avoid squeezing multiple
 
 In order to truly support multiple levels, modeling concepts that can be applied in a uniform way across all levels in a multilevel hierarchy should exist (2). A modeling construct that supports the representation of the dual ”type and object”-property of some domain concept is necessary. Therefore, the concept of \textit{clabject} was introduced. Clabjects are a combination of \textit{class} and \textit{object}. They have a name and a set of attributes, like classes, and a set of slots, like objects. The example of previous section, modeled using clabjects, is depicted in figure ~\ref{fig:model_clabject}. This solution features less accidental complexity than solutions of previous sections, because it maximizes the mapping between the problem structure and the solution structure. Note that the model types do not contain attributes, they only fill in slots, and subsequently instances do not contain any slots. Furthermore, we have used only a single notion of the "instance-of" relationship.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_model_clabject.png}
 \caption{Example modeled using clabjects.}
@@ -28,7 +28,7 @@ In order to truly support multiple levels, modeling concepts that can be applied
 
 Clabjects support any number of model classification levels, which creates a \textit{direct mapping} between ontological domain levels and modeling levels. This concept is visualized in figure 11. This direct mapping requires that the solution structure reflects the problem structure as close as possible. Now that we have introduced clabjects, a uniform way to support multiple domain levels, we can address the issue when elements in one level need to influence elements beyond its neighbouring levels.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_mapping_direct.png}
 \caption{Direct mapping between ontological domain levels and modeling levels.}
@@ -39,7 +39,7 @@ Clabjects support any number of model classification levels, which creates a \te
 
 Using clabjects, the accidental complexity in the domain model was reduced significantly. However, there is one additional issue that needs to be addressed to allow multiple classification levels to be modeled naturally. This is the issue of \textit{deep characterization}. Deep characterization means that a type can influence the attributes of its instances’ types as well as their object facets. Figure ~\ref{fig:deep_powertypes} shows an example of how powertypes can be used to represent deep characterization. If a superclass (e.g. \texttt{Computer}) is said to have a powertype (\texttt{ComputerModel}), then an instance of the powertype (\texttt{ComputerStandard}) is only well-formed when it inherits from the superclass (\texttt{Computer}). Every derived class of a class inheriting from a powertype should also be an instance of that powertype (e.g. \texttt{ComputerDeluxe} inherits from \texttt{Computer} and is also an instance of the powertype \texttt{ComputerModel}). Hence, all subclasses in our example will have a \texttt{processor} or \texttt{size} \textit{slot} and a \texttt{price} or \texttt{picQlty} \textit{attribute}. For example, the \texttt{size} attribute of \texttt{MonitorModel} is a slot in \texttt{MonitorFlat}, because it is an instance of \texttt{MonitorModel}. Powertypes therefore control the type facet of powertype instances by means of inheritance. The powertype mechanism supports deep characterization, but as can be seen in the example only at the cost of introducing supertypes whose only purpose might be to provide a type facet for their subclasses. In the next section, we will solve this accidental complexity by introducing \textit{deep instantiation}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_deep_powertypes.png}
 \caption{Deep characterization with powertypes.}
@@ -54,7 +54,7 @@ Deep characterization exists when a type should influence an entity beyond its i
 
 Deep instantiation covers two concepts. One is the unification of attributes and slots into a single concept, which we refer to as \texttt{field}. The other concept extends clabjects and fields with an additional property known as \textit{potency}. Potency defines how deep an instantiation chain produced by a clabject or field may become. For example, when we create a field of potency two, it can produce an instantiation depth of two. Each instantiation of the field lowers the potency value by one, until the potency value equals zero. Entities with potency zero cannot be further instantiated and act like regular objects or slots. Figure ~\ref{fig:deep_potency} shows our domain model represented by deep characterization.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_deep_potency.png}
 \caption{Deep characterization with potency.}
@@ -69,7 +69,7 @@ The example using potency features the least accidental complexity yet. It only 
 
 MetaDepth is a meta-modeling framework written in Java that uses a deep meta-modeling approach to support multiple programming levels. It allows a developer to work in two ontological (domain) instantiation modes: \textit{strict} and \textit{extensible}, as shown in figure ~\ref{fig:metadepth_schemes}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_metadepth_schemes.png}
 \caption{MetaDepth instantiation schemes: extensible ontological instantiation (left) and strict ontological instantiation (center). Example of strict instantiation (right).}
@@ -82,7 +82,7 @@ In the extensible case, it is possible to linguistically extend each ontological
 
 MetaDepth uses its own linguistic meta-model, inspired by MOF (5). It’s modified to accommodate an arbitrary number of meta-levels, deep instantiation and potency. Part of the linguistic meta-model is shown in figure 15. The uncolored classes are those the designer usually instantiates when building his own model.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_metadepth_mm.png}
 \caption{MetaDepth’s linguistic meta-model.}
@@ -91,7 +91,7 @@ MetaDepth uses its own linguistic meta-model, inspired by MOF (5). It’s modified
 
 The root class \texttt{Clabject} takes responsibility of handling the dual type/object facet of elements (5). Therefore, it contains a potency attribute and links to its instances and types. \texttt{Constraints} can be attached to clabjects, as shown in the class diagram. All working models are managed by a \texttt{VirtualMachine} container, which is a \textit{singleton} object. An example of the dual classification using a clabject and the two instance-of relationships is shown in figure ~\ref{fig:dual_class}. The ontological model stack depicts the user-defined (meta-)models, instantiated through the linguistic meta-model shown above.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/chap3_dual_class.png}
 \caption{Dual classification example.}
@@ -102,7 +102,7 @@ The root class \texttt{Clabject} takes responsibility of handling the dual type/
 
 MetaDepth models can be built through a Java API or through a \texttt{CommandShell} and a textual syntax, built with ANTLR (7). The storage of models is also done in this format. As an example, figure ~\ref{fig:model_ex} shows the three model dual classification example of figure ~\ref{fig:dual_class} in the textual notation. In this example, the model Store (with potency two) is extended linguistically through the Node \texttt{ProductType}. The VAT attribute in node \texttt{ProductType} has a potency of one (and a default value of 7.5), which means that it will be instantiated in its lower neighboring level. We could also declare \textit{anonymous} clabjects, like \texttt{Book\{price=10;\}}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_model_ex.png}
 \caption{Three model example.}
@@ -111,7 +111,7 @@ MetaDepth models can be built through a Java API or through a \texttt{CommandShe
 
 The Metadepth framework is integrated with Epsilon, a family of languages built on top of the Epsilon Object Language (EOL) (8), by communicating with the models through a connectivity layer. EOL can work with EMF models (9), but also with any other model technology that implements the interface of this connectivity layer. Metadepth works through this kind of interface and adds support to make EOL aware of multiple ontological levels. Using this approach, we can use EOL programs to create models, as shown in figure ~\ref{fig:eol}. We could also use EOL to define the semantics of a model (e.g. write a Petri Net simulator based on a model using the Epsilon Transformation Language (ETL) (10)).
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_eol.png}
 \caption{An EOL program that populates a MetaDepth model.}
@@ -122,7 +122,7 @@ The Metadepth framework is integrated with Epsilon, a family of languages built 
 
 Constraints and actions in Metadepth are usually defined using Java or EOL. Just like clabjects and model fields, they have an assigned potency that indicates at which meta-level they have to be evaluated. Figure 19 extends our Store example.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_metadepth_constraints.png}
 \caption{Constraints and derived fields in Metadepth.}
@@ -135,7 +135,7 @@ We have declared three constraints, on line 6, 7 and 8. An example of a derived 
 
 Linguistic extension is interesting to permit unforeseen extensions to Domain Specific Languages spawning more than one level (6). In these languages, the top-most meta-model is usually highly generic, and linguistic extensions in lower levels could therefore be useful. Figure ~\ref{fig:ling_ext} shows an extension of our running example.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_ling_ext.png}
 \caption{Linguistic extensions and associations in Metadepth.}

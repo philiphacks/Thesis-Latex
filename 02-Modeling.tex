@@ -19,7 +19,8 @@ This section discusses traditional meta-modeling approaches that are used in dom
 \subsection{Formalism}
 
 A formalism typically consists of a \textit{syntactic} part and a \textit{semantic} part. The syntax of the formalism deals with form and structure. Additionally, the syntactic part is separated into a \textit{concrete} and \textit{abstract} part. The concrete syntax relates to the actual appearance of the language elements (graphical or textual). The abstract syntax pertains to how the language components may be connected. For example, a Petri Net Transition may only be connected to a Petri Net Place.
-\\ \\The semantic part on its turn relates to the \textit{meaning} of the syntactic constructs. The semantic part is also separated in two parts, \textit{operational} and \textit{denotational}. The operational part explicitly captures how a model can be executed. With a denotational specification, we can provide rules to map a model in a given formalism onto a model in a different formalism for which a semantics is available. We can for example map a statechart to its equivalent petri net. Both semantic approaches ultimately define a transformation.
+\\ \\
+The semantic part on its turn relates to the \textit{meaning} of the syntactic constructs. The semantic part is also separated in two parts, \textit{operational} and \textit{denotational}. The operational part explicitly captures how a model can be executed. With a denotational specification, we can provide rules to map a model in a given formalism onto a model in a different formalism for which a semantics is available. We can for example map a statechart to its equivalent petri net. Both semantic approaches ultimately define a transformation.
 
 \subsection{Meta-Modeling}
 
@@ -35,7 +36,7 @@ In the following section, we will briefly discuss the UML Modeling Framework. Fi
 
 The overall architecture of the UML modeling framework is most heavily influenced by the CDIF standard developed by a consortium of CASE tool vendors\footnote{CASE Tools: Computer-Aided Software Engineering Tools}. The CDIF standard describes the different modeling languages used to create specific user models in terms of a single fixed, core model (a meta-meta-model) (3). The meta-modeling architecture is depicted in figure ~\ref{fig:mm_architecture}.
 
-\begin{figure}[htb]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/mm_architecture.png}
 \caption{The four-level meta-modeling architecture}
@@ -44,7 +45,7 @@ The overall architecture of the UML modeling framework is most heavily influence
 
 The M\subscript{3} level is the highest level, from which the UML meta-model is created. The UML meta-model (M\subscript{2}) describes the core from which specific language meta-models are created. Specific models are then created as instances of these language meta-models on the M1 level. The User Data depicts instances of such models created in M\subscript{1}. An example of this approach can be seen in figure ~\ref{fig:two_level_inst}.
 
-\begin{figure}[htb]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/chap2_two_level_inst.png}
 \caption{Extending the two levels of instantiation}
@@ -57,7 +58,7 @@ In this example, the dashed arrows in the figure describe an "instance of" relat
 
 The approach described earlier exhibits a number of fundamental problems. One of them is the fact that the precise meaning of the instance-of relationship is not defined. The UML documentation does not contain a formal definition of the instance-of relationship. It merely states that a modeling level in the hierarchy must be an instance of its level above. Therefore, a formal concept should be defined to encapsulate the exact meaning of the instance-of relationship. This concept is formalized through strict meta- modeling. Strict meta-modeling states that if a model A is an instance-of another model B, then every element of A must be an instance-of some element in B (3). This concept is illustrated in figure ~\ref{fig:strict_mm}. As a consequence, modeling levels have strict boundaries and may be crossed only by instance-of relationships.
 
-\begin{figure}[htb]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/chap2_strict_mm.png}
 \caption{Strict meta-modeling.}
@@ -81,7 +82,7 @@ There are several issues with the existing UML modeling framework, like \textit{
 \item{One instance-of relationship crosses more than one meta-level boundary.}
 \end{itemize}
 
-\begin{figure}[htb]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/chap2_multiple_class_uml.png}
 \caption{Multiple classification in the current UML framework.}
@@ -98,7 +99,7 @@ In this section, we will introduce an example domain model that is used througho
 
 This sample model adopts a computer hardware product hierarchy using the "Item Description" pattern. This example exhibits a typical technique which is often used to capture a multi-level do- main classification into the two-level UML modeling style. The example class diagram is depicted in figure ~\ref{fig:cd_itemdesc}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap2_cd_itemdesc.png}
 \caption{Example class diagram of the Item Description pattern.}
@@ -107,7 +108,7 @@ This sample model adopts a computer hardware product hierarchy using the "Item D
 
 The above class diagram is separated into two parts, one modeling products sold by an enterprise and the other part modeling the descriptions of these products. Here, instances of \texttt{ProductType} (\texttt{ComputerModel} and \texttt{MonitorModel}) are descriptions of the \texttt{Product} types (Computer and Monitor). The idea is to let objects play to role of classes in order to explicitly represent class-level information (2). In this way, we can dynamically change information about a product and keep this information even when no representation of this product type exists. When we create an instance of the above class diagram, we get something as depicted in figure ~\ref{fig:domain_instance}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap2_domain_instance.png}
 \caption{Domain instance (object diagram).}
@@ -135,7 +136,7 @@ Undoubtedly, the combination of these relationships introduce some kind of accid
 
 The black dots in the figure below the dashed lines represent the domain entities. On the one hand, we have got domain types and on the other hand, we’ve got domain instances. The relationships between the domain entities use the same "instance-of" relationships as between the model types and model instances. They represent \textit{ontological} "instance-of" relationships, because they show which domain entities are considered to be types of other domain entities.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap2_class_object_diagram.png}
 \caption{Combination of the class and object diagram.}
@@ -148,7 +149,7 @@ After investigation of the figure above, we see that it contains some redundant 
 
 The model presented in the previous subsection is often used when we need to introduce new types of products dynamically. When we do not need to create objects dynamically at runtime, we can simplify the model significantly. This approach is shown in figure ~\ref{fig:types_classes}. It shifts some modeling elements that represent domain types (i.e. \texttt{mt1}) to the type level (into the class diagram). According to the UML class/object modeling conventions, this is a more natural place for these elements to be.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap2_types_classes.png}
 \caption{Types as classes.}
