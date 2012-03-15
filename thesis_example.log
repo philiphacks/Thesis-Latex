@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  3 MAR 2012 23:42
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  15 MAR 2012 09:21
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -907,6 +907,10 @@ Package pdftex.def Info: images/chap4_app_inventor.png used on input line 165.
 ) (./05-Collaboration.tex [33 <./images/chap4_app_inventor.png>]
 Chapter 5.
 
+Package natbib Warning: Citation `DivisionCSCL' on page 34 undefined on input l
+ine 3.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
@@ -993,82 +997,220 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--67
 
  []
 
-[36] [37]
+[36] [37] [38]
 
-Package natbib Warning: Citation `StudyCSCW' on page 38 undefined on input line
- 105.
-
-
-Package natbib Warning: Citation `CSCWReadings' on page 38 undefined on input l
-ine 105.
+Package natbib Warning: Citation `StudyCSCW' on page 39 undefined on input line
+ 119.
 
 
-Package natbib Warning: Citation `CSCWIntro' on page 38 undefined on input line
- 105.
+Package natbib Warning: Citation `CSCWReadings' on page 39 undefined on input l
+ine 119.
 
 
-Package natbib Warning: Citation `CSCWChars' on page 38 undefined on input line
- 107.
+Package natbib Warning: Citation `CSCWIntro' on page 39 undefined on input line
+ 119.
 
 
-Package natbib Warning: Citation `groupware' on page 38 undefined on input line
- 110.
+Package natbib Warning: Citation `CSCWChars' on page 39 undefined on input line
+ 121.
 
 
-Package natbib Warning: Citation `CSCWGroupware' on page 38 undefined on input 
-line 116.
+Package natbib Warning: Citation `groupware' on page 39 undefined on input line
+ 124.
 
 
-Package natbib Warning: Citation `CSCWMethodology' on page 38 undefined on inpu
-t line 116.
+Package natbib Warning: Citation `CSCWGroupware' on page 39 undefined on input 
+line 130.
 
 
-Package natbib Warning: Citation `CSCWReadings' on page 38 undefined on input l
-ine 118.
+Package natbib Warning: Citation `CSCWMethodology' on page 39 undefined on inpu
+t line 130.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
+Package natbib Warning: Citation `CSCWReadings' on page 39 undefined on input l
+ine 132.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
-[38]
+[39]
+
+Package natbib Warning: Citation `CSCWConcepts' on page 40 undefined on input l
+ine 136.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--158
+
+ []
+
+[40]
+
+Package natbib Warning: Citation `CSCLHistory' on page 41 undefined on input li
+ne 161.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--181
+
+ []
+
+[41]
+
+Package natbib Warning: Citation `DefinitionCSCL' on page 42 undefined on input
+ line 183.
+
+
+Package natbib Warning: Citation `CSCLDefinition2' on page 42 undefined on inpu
+t line 188.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
+
+ []
+
+
+Package natbib Warning: Citation `DesignPatternsColl' on page 42 undefined on i
+nput line 206.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--207
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 210--218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--241
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 245--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
+
+ []
+
+
+Package natbib Warning: Citation `MongoDB' on page 44 undefined on input line 2
+72.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--294
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 299--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--339
+
+ []
+
+[45]
 File: images/chap4_android_architecture.jpg Graphic file (type jpg)
  <use images/chap4_android_architecture.jpg>
 Package pdftex.def Info: images/chap4_android_architecture.jpg used on input li
-ne 146.
+ne 350.
 (pdftex.def)             Requested size: 398.33858pt x 286.04153pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./06-Design.tex [39] [40]
+) (./06-Design.tex [46]
 Chapter 6.
-) (./07-CaseStudy.tex [41
+) (./07-CaseStudy.tex [47
 
 ]
 Chapter 7.
-) (./08-Conclusion.tex [42
+) (./08-Conclusion.tex [48
 
 ]
 Chapter 8.
-) [43
+) [49
 
-] [44
+] [50
 
 
 ] (./AA-PetriNet.tex
 Appendix A.
-) (./AA-ModelTransformation.tex [45
+) (./AA-ModelTransformation.tex [51
 
 ]
 Appendix B.
-) (./thesis_example.bbl [46
+) (./thesis_example.bbl [52
 
 ])
 
 Package natbib Warning: There were undefined citations.
 
-[47
+[53
 
 ] (./thesis_example.aux)
 
@@ -1079,10 +1221,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6253 strings out of 493633
- 90793 string characters out of 3143377
+ 6259 strings out of 493633
+ 90882 string characters out of 3143377
  199063 words of memory out of 3000000
- 9323 multiletter control sequences out of 15000+200000
+ 9329 multiletter control sequences out of 15000+200000
  15287 words of font info for 57 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  48i,12n,58p,1773b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1101,10 +1243,10 @@ exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/
 texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis_example.pdf (53 pages, 1773544 bytes).
+Output written on thesis_example.pdf (59 pages, 1789491 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
+ 311 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

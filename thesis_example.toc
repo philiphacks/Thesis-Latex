@@ -54,42 +54,44 @@
 \contentsline {subsection}{\numberline {4.2.6}Activity Lifecycle}{31}
 \contentsline {section}{\numberline {4.3}Android App Inventor}{33}
 \contentsline {chapter}{\numberline {5}Collaboration}{34}
-\contentsline {section}{\numberline {5.1}Groupware}{34}
-\contentsline {subsection}{\numberline {5.1.1}Definition}{34}
+\contentsline {section}{\numberline {5.1}Groupware}{35}
+\contentsline {subsection}{\numberline {5.1.1}Definition}{35}
 \contentsline {subsection}{\numberline {5.1.2}Communication, Collaboration and Coordination}{35}
 \contentsline {subsection}{\numberline {5.1.3}Taxonomies}{36}
-\contentsline {subsection}{\numberline {5.1.4}Real-time Groupware Concepts}{36}
+\contentsline {subsection}{\numberline {5.1.4}Real-time Groupware Concepts}{37}
 \contentsline {subsection}{\numberline {5.1.5}Pros and cons of distributed interaction}{37}
-\contentsline {subsection}{\numberline {5.1.6}Groupware Research and Problems}{37}
-\contentsline {section}{\numberline {5.2}Computer-Supported Cooperative Work}{38}
-\contentsline {subsection}{\numberline {5.2.1}Definition}{38}
-\contentsline {subsection}{\numberline {5.2.2}CSCW is Groupware}{38}
-\contentsline {subsection}{\numberline {5.2.3}Challenges in CSCW design}{39}
-\contentsline {subsection}{\numberline {5.2.4}Requirements engineering in CSCW}{39}
-\contentsline {subsection}{\numberline {5.2.5}Technology and CSCW application integration}{39}
-\contentsline {section}{\numberline {5.3}Computer-Supported Collaborative Learning}{39}
-\contentsline {subsection}{\numberline {5.3.1}Definition}{39}
-\contentsline {subsection}{\numberline {5.3.2}CSCW versus CSCL}{39}
-\contentsline {subsection}{\numberline {5.3.3}Jigsaw method in CSCL}{39}
-\contentsline {section}{\numberline {5.4}Collaborative Patterns}{39}
-\contentsline {subsection}{\numberline {5.4.1}Session}{39}
-\contentsline {subsection}{\numberline {5.4.2}Repository}{39}
-\contentsline {subsection}{\numberline {5.4.3}Object}{39}
-\contentsline {subsection}{\numberline {5.4.4}View}{39}
-\contentsline {subsection}{\numberline {5.4.5}Broadcast}{39}
-\contentsline {subsection}{\numberline {5.4.6}User}{39}
-\contentsline {subsection}{\numberline {5.4.7}Role}{39}
-\contentsline {subsection}{\numberline {5.4.8}Environment}{39}
-\contentsline {section}{\numberline {5.5}Collaboration Stack}{39}
-\contentsline {subsection}{\numberline {5.5.1}Ontology of collaboration patterns}{39}
-\contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{41}
-\contentsline {section}{\numberline {6.1}Components}{41}
-\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{42}
-\contentsline {section}{\numberline {7.1}Environmental Analysis}{42}
-\contentsline {section}{\numberline {7.2}Collaborative Knowledge-Management Platform}{42}
-\contentsline {chapter}{\numberline {8}Conclusion}{43}
-\contentsline {section}{\numberline {8.1}Summary}{43}
-\contentsline {section}{\numberline {8.2}Future Work}{43}
-\contentsline {chapter}{Appendices}{44}
-\contentsline {chapter}{Appendix \numberline {A}Meta-modeling and Petri Nets}{45}
-\contentsline {chapter}{Appendix \numberline {B}Model to model transformation [Research Internship 2]}{46}
+\contentsline {subsection}{\numberline {5.1.6}Groupware Research and Problems}{38}
+\contentsline {subsection}{\numberline {5.1.7}A groupware classification}{38}
+\contentsline {section}{\numberline {5.2}Computer-Supported Cooperative Work}{39}
+\contentsline {subsection}{\numberline {5.2.1}Definition}{39}
+\contentsline {subsection}{\numberline {5.2.2}CSCW is Groupware}{39}
+\contentsline {subsection}{\numberline {5.2.3}Challenges in CSCW design}{40}
+\contentsline {subsection}{\numberline {5.2.4}Requirements engineering in CSCW}{40}
+\contentsline {section}{\numberline {5.3}Computer-Supported Collaborative Learning}{41}
+\contentsline {subsection}{\numberline {5.3.1}Education and CSCL}{41}
+\contentsline {subsection}{\numberline {5.3.2}Definition}{41}
+\contentsline {subsection}{\numberline {5.3.3}Arguments and Implications of CSCL}{42}
+\contentsline {subsection}{\numberline {5.3.4}Jigsaw method in CSCL}{42}
+\contentsline {section}{\numberline {5.4}Collaborative Patterns}{42}
+\contentsline {subsection}{\numberline {5.4.1}Session}{43}
+\contentsline {subsection}{\numberline {5.4.2}Repository}{43}
+\contentsline {subsection}{\numberline {5.4.3}Object}{44}
+\contentsline {subsection}{\numberline {5.4.4}View}{44}
+\contentsline {subsection}{\numberline {5.4.5}Floor Control}{45}
+\contentsline {subsection}{\numberline {5.4.6}Broadcast}{45}
+\contentsline {subsection}{\numberline {5.4.7}User}{45}
+\contentsline {subsection}{\numberline {5.4.8}Role}{46}
+\contentsline {subsection}{\numberline {5.4.9}Environment}{46}
+\contentsline {section}{\numberline {5.5}Collaboration Stack}{46}
+\contentsline {subsection}{\numberline {5.5.1}Ontology of collaboration patterns}{46}
+\contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{47}
+\contentsline {section}{\numberline {6.1}Components}{47}
+\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{48}
+\contentsline {section}{\numberline {7.1}Environmental Analysis}{48}
+\contentsline {section}{\numberline {7.2}Collaborative Knowledge-Management Platform}{48}
+\contentsline {chapter}{\numberline {8}Conclusion}{49}
+\contentsline {section}{\numberline {8.1}Summary}{49}
+\contentsline {section}{\numberline {8.2}Future Work}{49}
+\contentsline {chapter}{Appendices}{50}
+\contentsline {chapter}{Appendix \numberline {A}Meta-modeling and Petri Nets}{51}
+\contentsline {chapter}{Appendix \numberline {B}Model to model transformation [Research Internship 2]}{52}

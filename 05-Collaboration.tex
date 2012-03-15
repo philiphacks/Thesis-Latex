@@ -1,6 +1,6 @@
 \chapter{Collaboration}
 
-In this chapter, we will introduce different types of collaborative methods. People will continue to interact in new and different ways. One outcome of the marriage between technology and communication is a technical workplace. The study of such workplaces gives rise to a new field: \textit{Computer-Supported Cooperative Work} (CSCW). CSCW analyzes the way groups work and seeks to discover how technology can help them work. Sometimes we refer to CSCW as \textit{groupware}. Often this term is used synonymously with CSCW technology. However, this is not completely true. In the following sections, we will define the exact definition of groupware and CSCW applications. We will also create a taxonomy of groupware and compare this taxonomy to CSCW applications. There exists another collaborative method, especially targeted at collaborative learning, \textit{Computer-Supported Collaborative Learning} (CSCL). This collaborative method is a refinement of CSCW. 
+In this chapter, we will introduce different types of collaborative methods. People will continue to interact in new and different ways. One outcome of the marriage between technology and communication is a technical workplace. The study of such workplaces gives rise to a new field: \textit{Computer-Supported Cooperative Work} (CSCW). CSCW analyzes the way groups work and seeks to discover how technology can help them work. Sometimes we refer to CSCW as \textit{groupware}. Often this term is used synonymously with CSCW technology. However, this is not completely true. In the following sections, we will define the exact definition of groupware and CSCW applications. We will also create a taxonomy of groupware and compare this taxonomy to CSCW applications. There exists another collaborative method, especially targeted at collaborative learning, \textit{Computer-Supported Collaborative Learning} (CSCL). This collaborative method is a refinement of CSCW. When studying these methods, we should make a clear distinction between cooperative and collaborative work. Cooperative work is accomplished by the division of labour among participants. It is an activity where each person is responsible for a portion of the problem solving. Collaboration involves the mutual engagement of participants in a coordinated effort to solve the problem together \cite{DivisionCSCL}.
 \\ \\
 The second part of this chapter defines the collaborative patterns typically used in a collaborative application (whether it is defined as groupware, CSCW or CSCL). We finish this chapter with a collaboration stack that defines the different levels in collaborative application.
 
@@ -94,7 +94,21 @@ If we look at the taxonomy of groupware systems and only consider systems at dif
 
 \subsection{Groupware Research and Problems}
 
-Maybe?
+Todo
+
+\subsection{A groupware classification}
+
+Groupware is about crewing computer-based systems that support groups of people involved in a common task. This is a very open definition and in practice it is often hard to decide what kind of functionality a particular group needs. In general, we can distinguish five application classes:
+
+\begin{itemize}
+\item{\textbf{Awareness support} - This class is one of the core concepts in groupware. Groupware tries to connect people and allows to coordinate each other. Almost every groupware application has some sort of Awareness support.}
+\item{\textbf{Communication support} - In order for people to be connecting with each other, we need some sort of communication in the groupware system. This sort of communication can be of a synchronous or asynchronous nature. Asynchronous communication examples are email or forums. Synchronous communication examples are chat or video.}
+\item{\textbf{Coordination support} - There is already some contribution to coordination through awareness, but in a very general way. We might need explicit coordination support in the form of workflow solutions.}
+\item{\textbf{Team support} - Not every person in a group of people will have the same needs and abilities within a groupware application. There is a need for special group types and their special needs. We might need to define roles that allow people to do different things within the application.}
+\item{\textbf{Community support} - Teams and communities are a different thing. To begin with, they have a different structure and probably completely different needs. A team is a group of people usually working on a bigger cause or goal. A community often does not consist of equals working together on the same things. There are many different functions in a community that make the groupware application complex.}
+\end{itemize}
+
+When we are faced with a particular situation, it is quite straightforward to identify one or two classes that cover the requirements in this situation. From there on, we can select the appropriate tools to start building the groupware application.
 
 \section{Computer-Supported Cooperative Work}
 
@@ -119,27 +133,239 @@ How does all of this relate to Groupware? In general, groupware is the term coin
 
 \subsection{Challenges in CSCW design}
 
+CSCW is not a typical software design activity. Several authors in the field have been analyzing CSCW projects and have been identifying core challenges of collaborative system design compared to software design in general \cite{CSCWConcepts}. 
+
+\begin{itemize}
+\item{It is hard to capture the requirements for a collaborative system, because the requirements are not clearly known to all participants or they change over time.}
+\item{All of the potential users have to use the CSCW system actively in order for the system to be a success.}
+\end{itemize}
+
+In the next subsection, we will address the requirements engineering of groupware in more detail. The other challenge, the adoption of a collaborative system, is largely due to a network effect and cannot be easily manipulated.
+
 \subsection{Requirements engineering in CSCW}
 
-\subsection{Technology and CSCW application integration}
+When a CSCW project was developed in the future, more often than not it wasn't able to satisfy its intended goals. The main reason for this problem is that most of these systems have been regarded as a technical system only. However, as we have seen there are two aspects of CSCW, a social and technological aspect. It turned out that very often the social aspect was not satisfied in the CSCW system and it wasn't seen as a sociotechnical system. The fact that the success of such a system depends on the social group that is using it is overlooked. This fact results in several problems:
+
+\begin{itemize}
+\item{It is hard to get the requirements from users. The social group using the end-product might change and thereby changing the requirements.}
+\item{When designing a CSCW system, there should be both a technical and a social design.}
+\item{It might be hard to get the potential users to accept the resulting CSCW system.}
+\end{itemize}
+
+The first problem of capturing the requirements from users in an initial development phase is a known problem in software engineering. To address this issue, iterative development has been introduced. If we build a prototype that engages users and produces some feedback, we might be able to create a much better product even from one iteration more.
+\\ \\
+If we look at typical collaborative applications today, we notice the trend that functionalities are offered as separate applications. In order to make collaboration a true success in an enterprise, there is a need to integrate the different functionalities and to adapt applications to the need of the individual and the group. There is a need for an all-in-one collaborative applications. This is one of the issues our modeling framework tries to tackle. 
 
 \section{Computer-Supported Collaborative Learning}
 
+Computer-supported collaborative learning (CSCL) has some interfaces with CSCW and Groupware, but is fundamentally different in a few aspects. The focus in CSCL is on learning, as the name suggests. It is concerned with studying how people can learn together with the help of computers \cite{CSCLHistory}. In this chapter, we will see several definitions for collaboration in the context of learning. It will become clear that the interplay of learning with technology turns out to be quite intricate. 
+
+\subsection{Education and CSCL}
+
+Computers have become an important artifact in formal education (e.g. high school or college) as well as informal education (e.g. museums). In the broader learning sciences, there also exists a trend in learning together in small groups. However, the ability to enhance learning through technology and education remains a challenge that CSCL is designed to address. 
+\\ \\
+CSCL proposes the development of new software that bring learners together and that can offer creative activities of intellectual exploration and social interaction. It is often conflated with e-learning, the organization of instruction across computer networks. E-learning is often associated with the creation and delivery of digital content such as slides, text or videos.There are a few problems with this view:
+
+\begin{itemize}
+\item{Digital content such as slides, text or videos does not necessarily make for compelling instruction. It may provide important resources for students, but there must exist a larger interactive context.}
+\item{Online teaching requires as much effort by human teachers as classroom teaching.}
+\item{CSCL stresses collaboration among the students, so that they are not simply reacting in isolation to posted materials.}
+\item{CSCL is concerned with Face-to-Face collaboration, either synchronously or asynchronously.}
+\end{itemize}
+
 \subsection{Definition}
 
-\subsection{CSCW versus CSCL}
+Even more than in groupware, a distinction between cooperation and collaboration is conceptually central in this review of CSCL. Cooperative work is accomplished by the division of labour among participants. It is an activity where each person is responsible for a portion of the problem solving. Collaboration involves the mutual engagement of participants in a coordinated effort to solve the problem together.
+\\ \\
+Before CSCL became a research topic, there had been a lot of research conducted on group learning. To distinguish CSCL from group learning, we can draw a distinction between \textit{cooperative} and \textit{collaborative} learning:
+
+\begin{mydef}
+In cooperation, partners split the work, solve sub-tasks individually and then assemble the partial results into the final output. In collaboration, partners do the work 'together' \cite {DefinitionCSCL}.
+\end{mydef}
+
+In cooperation, the learning is done by individuals who contribute their results and present these as their group product. Cooperative learning in groups is an activity that takes place individually. In contrast, collaborative learning occurs socially as the collaborative construction of knowledge. The activities that individuals engage in are not individual-learning activities, but group interactions like negotiation and sharing.
+\\ \\
+Finally, a formal, programmatic definition of CSCL was presented by Koschmann \cite{CSCLDefinition2}:
+\begin{mydef}
+CSCL is a field of study centrally concerned with meaning and the practices of meaning-making the context of joint activity, and the ways in which these practices are mediated through designed artifacts.
+\end{mydef}
+"Practices of meaning-making in the context of joint activity" might be hard to understand. It means that learning is not merely accomplished through interaction, but it is \textit{constituted} of interactions between participants. 
+
+\subsection{Arguments and Implications of CSCL}
+
+Todo
 
 \subsection{Jigsaw method in CSCL}
 
+Todo
+
 \section{Collaborative Patterns}
+
+In the previous sections we have discussed the different kinds of collaborative applications. In general, we may conclude that a collaborative application provides a group of users with the facility to communicate and share data in a coordinate way. In this section, we will propose several design patterns to help in the design and development of collaborative applications. These patterns cover the basic aspects such as data sharing and communication.
+\\ \\
+Every pattern proposed will describe a \textit{context} within which we can use this pattern, the \textit{problem} the pattern solves and the \textit{solution}. We will describe the \textit{forces}, \textit{implementation}, \textit{examples} and \textit{related patterns} as well. All these individual patterns can be interwoven into a \textit{patterns system} that describes how these patterns are connected, how they complement one another and how software development with patterns is supported \cite{DesignPatternsColl}. If we combine the following patterns, we arrive at a patterns system. I implemented the following patterns that form the patterns system as closely as possible in the modeling framework.
 
 \subsection{Session}
 
+In all collaborative applications, we have users working together in a session. A session can be both synchronous (at the same time) or asynchronous (at different times). Therefore, a session is usually tracked and we can identify who is currently connected in this session.
+\\ \\
+\textbf{Problem}
+\\
+How do we manage and coordinate a session in a collaborative application?
+\\ \\
+\textbf{Requirements}
+\begin{itemize}
+\item{Users work in groups}
+\item{We need to know which users are connected and working synchronously}
+\item{Data is protected from users outside of the session}
+\item{It is possible to register new users}
+\end{itemize}
+\textbf{Solution}
+\\
+Register a list of all users belonging to the session and show a list of users currently working and connected to the session.
+\\ \\
+\textbf{Examples}
+\\
+The collaborative modeling framework allows a developer to model a session that persists users and keeps track of currently connected users.
+
 \subsection{Repository}
+
+In all collaborative applications we need to store and share data.
+\\ \\
+\textbf{Problem}
+\\
+How can we provide tools to users currently connected in the session that allow them to get recourses that have been created? How can users share their own resources?
+\\ \\
+\textbf{Requirements}
+\begin{itemize}
+\item{Ability to store data}
+\item{Possibility to share data}
+\item{Edit or remove data that belongs to the repository}
+\end{itemize}
+\textbf{Solution}
+\\
+Provide a repository that can be managed and controls access to users.
+\\ \\
+\textbf{Examples}
+\\
+In the collaborative modeling framework, Dropbox is used as a repository. Users may upload new resources to Dropbox and a developer may model a view that shows the Dropbox repository.
 
 \subsection{Object}
 
+Every object (e.g. chat message, dropbox resource, generic list) that is created should be saved in order to provide data awareness. We typically save the meta-data related to the object, such as the user, the object type and the time.
+\\ \\
+\textbf{Problem}
+\\
+Data is generated by the members of a workgroup. How can we manage this data?
+\\ \\
+\textbf{Requirements}
+\begin{itemize}
+\item{Users can create new objects/resources}
+\item{If we want to store multiple revisions of a file, we need to store modified objects and make them available to users}
+\end{itemize}
+\textbf{Solution}
+\\
+Provide a meta-data information object for each data object. We typically store an object's creation data and time, the user and the object type.
+\\ \\
+\textbf{Examples}
+\\
+In the collaborative modeling framework, a developer can model and include a MongoDB \cite{MongoDB} database to persist all in-app objects and their meta-data. 
+
 \subsection{View}
+
+In a collaborative application, it is necessary to have a graphical view of the repository's data. Various groups of users may have various views.
+\\ \\
+\textbf{Problem}
+\\
+How can we provide a view of the data in the repository?
+\\ \\
+\textbf{Requirements}
+\begin{itemize}
+\item{All users should have access to the data they have created}
+\item{Some data needs to be hidden from certain users}
+\end{itemize}
+\textbf{Solution}
+\\
+Users are able to view the data in the repository, optionally in different views.
+\\ \\
+\textbf{Examples}
+\\
+In the collaborative modeling framework, it is currently only possible to view the repository's resources in a list view. In the future, multiple views might be supported. The repository might show both the resource itself as well as its meta-data.
+
+\subsection{Floor Control}
+
+\subsection{Broadcast}
+
+A user typically wants to send or share objects with other users in a session. Depending on the object type, a user may be able to send the object to all connected users, to all users or to a group of users.
+\\ \\
+\textbf{Problem}
+\\
+How can we send objects to other users?
+\\ \\
+\textbf{Requirements}
+\begin{itemize}
+\item{Users can send an object to a single connected user}
+\item{Users can send an object to all connected users}
+\item{Users can send an object to all users (connected or disconnected)}
+\end{itemize}
+\textbf{Solution}
+\\
+We need a broadcast technique to send objects to other users. This is a technical detail discussed in the next chapter.
+\\ \\
+\textbf{Examples}
+\\
+In the collaborative modeling framework, it is possible to model a chatroom and allow users to send messages to each other. Messages are persisted within MongoDB, so other users don't have to be connected at the time of sending the message. Currently it is not possible to send arbitrary binary data, but only text.
+
+\subsection{User}
+
+A user is an object that identifies a person in a group. Certain personal information about each user has to be saved. 
+\\ \\
+\textbf{Problem}
+\\
+How can we manage information about users?
+\\ \\
+\textbf{Requirements}
+\begin{itemize}
+\item{We need to check a user's credentials when entering an application}
+\item{User awareness is needed in applications, so we need to keep track of certain information about each user}
+\end{itemize}
+\textbf{Solution}
+\\
+A user object contains all necessary personal information for a person to initiate a session and participate in the application.
+\\ \\
+\textbf{Examples}
+\\
+In the collaborative modeling framework, in order to participate in a session, a developer can require every user to log in with a username and a password. The developer can model these accounts and restrict public access. In order to provide user awareness, every application also display all users currently connected.
+
+\subsection{Role}
+
+In a collaborative application, we may have different access rights for groups of users.
+\\ \\
+\textbf{Problem}
+\\
+How can we manage the access rights of users? Not all users will have the same permissions within a collaborative application.
+\\ \\
+\textbf{Requirements}
+\begin{itemize}
+\item{Collaborative applications have different types of users}
+\item{Roles are used to restrict data access}
+\item{Some views can be restricted by roles}
+\end{itemize}
+\textbf{Solution}
+\\
+We assign roles to each user in order to define their rights and permissions.
+\\ \\
+\textbf{Examples}
+\\
+In the collaborative modeling framework, we can restrict access to certain objects with different user roles. For instance, we can model a list that asks questions to a user, but only a user with the admin role can see the answers. 
+
+\subsection{Environment}
+
+
+
+\section{Collaboration Stack}
+
+\subsection{Ontology of collaboration patterns}
 
 \begin{figure}[h!]
 \centering
@@ -147,16 +373,4 @@ How does all of this relate to Groupware? In general, groupware is the term coin
 \caption{Android Architecture.}
 \label{fig:groupware_taxonomy}
 \end{figure}
-
-\subsection{Broadcast}
-
-\subsection{User}
-
-\subsection{Role}
-
-\subsection{Environment}
-
-\section{Collaboration Stack}
-
-\subsection{Ontology of collaboration patterns}
 
