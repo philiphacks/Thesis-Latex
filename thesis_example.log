@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  17 MAR 2012 11:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  17 MAR 2012 22:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -508,69 +508,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--10
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
  []
 
-<images/lifecycle.jpg, id=42, 73.2336pt x 122.1363pt>
+[3] <images/lifecycle.jpg, id=45, 73.2336pt x 122.1363pt>
 File: images/lifecycle.jpg Graphic file (type jpg)
 
 <use images/lifecycle.jpg>
-Package pdftex.def Info: images/lifecycle.jpg used on input line 33.
+Package pdftex.def Info: images/lifecycle.jpg used on input line 31.
 (pdftex.def)             Requested size: 239.00557pt x 398.68451pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--43
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
  []
 
-[3] [4 <./images/lifecycle.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 48--51
+[4 <./images/lifecycle.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
  [5])
 (./02-Modeling.tex [6]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--14
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--14
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--14
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--14
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
 
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
  []
 
@@ -578,40 +573,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
 File: images/mm_architecture.png Graphic file (type png)
 
 <use images/mm_architecture.png>
-Package pdftex.def Info: images/mm_architecture.png used on input line 41.
+Package pdftex.def Info: images/mm_architecture.png used on input line 39.
 (pdftex.def)             Requested size: 159.333pt x 179.06197pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/chap2_two_level_inst.png, id=64, 151.2852pt x 173.9298pt>
+ [9 <./images/mm_architecture.png>]
+<images/chap2_two_level_inst.png, id=71, 151.2852pt x 173.9298pt>
 File: images/chap2_two_level_inst.png Graphic file (type png)
 
 <use images/chap2_two_level_inst.png>
-Package pdftex.def Info: images/chap2_two_level_inst.png used on input line 50.
+Package pdftex.def Info: images/chap2_two_level_inst.png used on input line 48.
 
 (pdftex.def)             Requested size: 159.333pt x 183.18634pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9] <images/chap2_strict_mm.png, id=71, 275.5896pt x 132.495pt>
+<images/chap2_strict_mm.png, id=72, 275.5896pt x 132.495pt>
 File: images/chap2_strict_mm.png Graphic file (type png)
 
 <use images/chap2_strict_mm.png>
-Package pdftex.def Info: images/chap2_strict_mm.png used on input line 63.
-(pdftex.def)             Requested size: 159.333pt x 76.60454pt.
+Package pdftex.def Info: images/chap2_strict_mm.png used on input line 61.
+(pdftex.def)             Requested size: 278.83578pt x 134.06754pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./images/mm_architecture.png> <./images/chap2_two_level_inst.png>]
+[10 <./images/chap2_two_level_inst.png>]
 <images/chap2_multiple_class_uml.png, id=77, 166.221pt x 171.5208pt>
 File: images/chap2_multiple_class_uml.png Graphic file (type png)
 
 <use images/chap2_multiple_class_uml.png>
 Package pdftex.def Info: images/chap2_multiple_class_uml.png used on input line
- 87.
+ 84.
 (pdftex.def)             Requested size: 159.333pt x 164.41469pt.
 
 
@@ -622,23 +611,32 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: images/chap2_cd_itemdesc.png Graphic file (type png)
 
 <use images/chap2_cd_itemdesc.png>
-Package pdftex.def Info: images/chap2_cd_itemdesc.png used on input line 104.
+Package pdftex.def Info: images/chap2_cd_itemdesc.png used on input line 101.
 (pdftex.def)             Requested size: 358.50227pt x 168.43561pt.
- [12 <./images/chap2_multiple_class_uml.png> <./images/chap2_cd_itemdesc.png>]
-<images/chap2_domain_instance.png, id=88, 292.9344pt x 197.538pt>
+
+<images/chap2_domain_instance.png, id=83, 292.9344pt x 197.538pt>
 File: images/chap2_domain_instance.png Graphic file (type png)
 
 <use images/chap2_domain_instance.png>
-Package pdftex.def Info: images/chap2_domain_instance.png used on input line 11
-3.
+Package pdftex.def Info: images/chap2_domain_instance.png used on input line 10
+9.
 (pdftex.def)             Requested size: 358.50227pt x 241.77365pt.
-Missing character: There is no Ó in font cmr10!
-Missing character: There is no Ó in font cmr10!
 
-Overfull \hbox (11.3732pt too wide) in paragraph at lines 127--128
-[]\OT1/cmr/m/n/10.95 the "isOfT-ype" links be-tween in-stances of \OT1/cmtt/m/n
-/10.95 Product \OT1/cmr/m/n/10.95 and in-stances of \OT1/cmtt/m/n/10.95 Product
-Type
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./images/chap2_multiple_class_uml.png> <./images/chap2_cd_itemdesc.png>]
+Overfull \hbox (2.55179pt too wide) in paragraph at lines 123--124
+[]\OT1/cmr/m/n/10.95 the \OT1/cmtt/m/n/10.95 isOfType \OT1/cmr/m/n/10.95 links 
+be-tween in-stances of \OT1/cmtt/m/n/10.95 Product \OT1/cmr/m/n/10.95 and in-st
+ances of \OT1/cmtt/m/n/10.95 ProductType
+ []
+
+
+Overfull \hbox (6.33224pt too wide) in paragraph at lines 129--130
+[]\OT1/cmr/m/n/10.95 It shows all UML \OT1/cmr/m/it/10.95 instance-of \OT1/cmr/
+m/n/10.95 re-la-tion-ships ex-plic-itly in ad-di-tion to the \OT1/cmtt/m/n/10.9
+5 isOfType
  []
 
 [13 <./images/chap2_domain_instance.png>]
@@ -649,17 +647,18 @@ File: images/chap2_class_object_diagram.png Graphic file (type png)
 
 <use images/chap2_class_object_diagram.png>
 Package pdftex.def Info: images/chap2_class_object_diagram.png used on input li
-ne 141.
+ne 137.
 (pdftex.def)             Requested size: 358.50227pt x 186.11163pt.
- [14 <./images/chap2_class_object_diagram.png>] <images/chap2_types_classes.png
-, id=100, 390.258pt x 208.1376pt>
+
+<images/chap2_types_classes.png, id=96, 390.258pt x 208.1376pt>
 File: images/chap2_types_classes.png Graphic file (type png)
 
 <use images/chap2_types_classes.png>
-Package pdftex.def Info: images/chap2_types_classes.png used on input line 154.
+Package pdftex.def Info: images/chap2_types_classes.png used on input line 150.
 
 (pdftex.def)             Requested size: 358.50227pt x 191.20308pt.
-) (./03-MultilevelModeling.tex [15 <./images/chap2_types_classes.png>]
+ [14 <./images/chap2_class_object_diagram.png>]) (./03-MultilevelModeling.tex [
+15 <./images/chap2_types_classes.png>]
 Chapter 3.
 Missing character: There is no Ó in font cmr10!
 Missing character: There is no Ó in font cmr10!
@@ -907,10 +906,6 @@ Package pdftex.def Info: images/chap4_app_inventor.png used on input line 165.
 ) (./05-Collaboration.tex [33 <./images/chap4_app_inventor.png>]
 Chapter 5.
 
-Package natbib Warning: Citation `DivisionCSCL' on page 34 undefined on input l
-ine 3.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
@@ -921,10 +916,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
 Package natbib Warning: Citation `groupware' on page 35 undefined on input line
  13.
-
-
-Package natbib Warning: Citation `CSCWConcepts' on page 35 undefined on input l
-ine 17.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
@@ -999,36 +990,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--67
 
 [36] [37] [38]
 
-Package natbib Warning: Citation `StudyCSCW' on page 39 undefined on input line
- 119.
-
-
-Package natbib Warning: Citation `CSCWReadings' on page 39 undefined on input l
-ine 119.
-
-
-Package natbib Warning: Citation `CSCWIntro' on page 39 undefined on input line
- 119.
-
-
-Package natbib Warning: Citation `CSCWChars' on page 39 undefined on input line
- 121.
-
-
 Package natbib Warning: Citation `groupware' on page 39 undefined on input line
  124.
-
-
-Package natbib Warning: Citation `CSCWGroupware' on page 39 undefined on input 
-line 130.
-
-
-Package natbib Warning: Citation `CSCWMethodology' on page 39 undefined on inpu
-t line 130.
-
-
-Package natbib Warning: Citation `CSCWReadings' on page 39 undefined on input l
-ine 132.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 130--133
@@ -1036,21 +999,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
  []
 
 [39]
-
-Package natbib Warning: Citation `CSCWConcepts' on page 40 undefined on input l
-ine 136.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 155--158
 
  []
 
 [40]
-
-Package natbib Warning: Citation `CSCLHistory' on page 41 undefined on input li
-ne 161.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 165--168
 
  []
@@ -1062,10 +1015,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--181
 
 [41]
 
-Package natbib Warning: Citation `DefinitionCSCL' on page 42 undefined on input
- line 183.
-
-
 Package natbib Warning: Citation `CSCLDefinition2' on page 42 undefined on inpu
 t line 188.
 
@@ -1073,10 +1022,6 @@ t line 188.
 Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
-
-
-Package natbib Warning: Citation `DesignPatternsColl' on page 42 undefined on i
-nput line 206.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 204--207
@@ -1122,10 +1067,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--263
 Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
-
-
-Package natbib Warning: Citation `MongoDB' on page 44 undefined on input line 2
-72.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 266--273
@@ -1214,12 +1155,7 @@ File: images/chap5_pattern_system.png Graphic file (type png)
 Package pdftex.def Info: images/chap5_pattern_system.png used on input line 389
 .
 (pdftex.def)             Requested size: 398.33858pt x 193.79689pt.
-
-
-Package natbib Warning: Citation `CollOntology' on page 47 undefined on input l
-ine 398.
-
-[47 <./images/chap5_pattern_system.png>]
+ [47 <./images/chap5_pattern_system.png>]
 <images/chap5_coll_stack.png, id=244, 335.8146pt x 172.4844pt>
 File: images/chap5_coll_stack.png Graphic file (type png)
 
@@ -1249,13 +1185,13 @@ Appendix A.
 Appendix B.
 ) (./thesis_example.bbl [54
 
+] [55
+
 ])
 
 Package natbib Warning: There were undefined citations.
 
-[55
-
-] (./thesis_example.aux)
+[56] (./thesis_example.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1264,13 +1200,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6271 strings out of 493633
- 91222 string characters out of 3143377
- 199074 words of memory out of 3000000
- 9339 multiletter control sequences out of 15000+200000
+ 6342 strings out of 493633
+ 92771 string characters out of 3143377
+ 199517 words of memory out of 3000000
+ 9410 multiletter control sequences out of 15000+200000
  15287 words of font info for 57 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 48i,12n,58p,1773b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,12n,58p,1773b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
@@ -1286,10 +1222,10 @@ exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/
 texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis_example.pdf (61 pages, 1904502 bytes).
+Output written on thesis_example.pdf (62 pages, 1910880 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
+ 325 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

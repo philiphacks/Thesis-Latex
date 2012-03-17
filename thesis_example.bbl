@@ -1,8 +1,59 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{ProcessModels}
 W.~Scacchi, ``Process models in software engineering,'' {\em Encyclopedia of
   Software Engineering}, 2001.
+
+\bibitem{SoftwareDesign}
+J.~Reeves, ``What is software design?,''
+
+\bibitem{UnitTesting}
+M.~Kolling, ``Unit testing in bluej,''
+
+\bibitem{IntegrationTesting}
+Wikipedia, ``Integration testing,''
+
+\bibitem{RegressionTesting}
+M.~D. Network, ``Regression testing,''
+
+\bibitem{AccidentalComplexity}
+C.~Atkinson and T.~K\"uhne, ``Reducing accidental complexity in domain
+  models,'' 2007.
+
+\bibitem{CAMPaM}
+P.~Mosterman and H.~Vangheluwe, ``Computer automated multi-paradigm modeling:
+  An introduction,'' 2004.
+
+\bibitem{RearchitectingUML}
+C.~Atkinson and T.~K\"uhne, ``Rearchitecting the uml infrastructure,'' 2002.
+
+\bibitem{MetaDepth}
+de~Lara~J. and G.~E., ``Deep meta-modeling with metadepth,'' 2010.
+
+\bibitem{ANTLR}
+P.~T., ``Antlr,'' 2010.
+
+\bibitem{EclipseEOL}
+E.~D. Team, ``Eclipse eol,'' 2012.
+
+\bibitem{EclipseEMF}
+E.~D. Team, ``Eclipse modeling framework,'' 2012.
+
+\bibitem{EclipseETL}
+E.~D. Team, ``Eclipse transformation language,'' 2012.
+
+\bibitem{GenericMetaDepth}
+de~Lara~J. and G.~E., ``Generic meta-modeling with concepts, templates and
+  mixin layers.,'' 2010.
+
+\bibitem{LiberateProgramming}
+K.~T. and S.~D., ``Can programming be liberated from the two-level style?
+  multi-level programming with deepjava.,'' 2007.
+
+\bibitem{MultiLevelLangEng}
+G.~M. Atkinson~C. and K.~B., ``A flexible infrastructure for multilevel
+  language engineering,'' {\em IEEE Trans. Soft. Eng.}, vol.~35 (6),
+  pp.~742--755, 2009.
 
 \bibitem{WhatAndroid}
 A.~D. Team, ``What is android?,''
@@ -15,5 +66,60 @@ A.~D. Team, ``Application resources,''
 
 \bibitem{NotificationManager}
 A.~D. Team, ``Notification manager,''
+
+\bibitem{DivisionCSCL}
+J.~Roschelle and S.~Teasley, ``The construction of shared knowledge in
+  collaborative problem solving.,'' {\em Computer Supported Collaborative
+  Learning}, pp.~69--97, 1995.
+
+\bibitem{CSCWConcepts}
+M.~Koch and T.~Gross, ``Computer-supported cooperative work - concepts and
+  trends,'' {\em Proceedings of the 11th Conference of the Association
+  Information and Management}, pp.~165--172, 2006.
+
+\bibitem{StudyCSCW}
+J.~Bowers and S.~Benford, ``Studies in computer-supported cooperative work:
+  Theory, practice and design,'' {\em Elsevier Science; Amsterdam}, 1991.
+
+\bibitem{CSCWReadings}
+I.~Greif, ``Computer-supported cooperative work: A book of readings,'' {\em
+  Morgan Kaufman, Los Altos}, 1988.
+
+\bibitem{CSCWIntro}
+P.~Wilson, ``Computer-supported cooperative work: An introduction,'' {\em
+  Intellect Books, Oxford, UK}, 1991.
+
+\bibitem{CSCWChars}
+J.~Bannon and K.~Schmidt, ``Cscw: Four characters in search of a context,''
+  1989.
+
+\bibitem{CSCWGroupware}
+S.~Greenberg, ``Computer-supported cooperative work and groupware,'' {\em
+  Academic Press, London}, 1991.
+
+\bibitem{CSCWMethodology}
+T.~Gross and R.~Traunmuller, ``Methodological considerations on the design of
+  computer-supported cooperative work,'' {\em Cybernetics and Systems: An
+  International Journal}, vol.~27(3), pp.~279--303, 1996.
+
+\bibitem{CSCLHistory}
+S.~T.~K. Gerry and D.~Suthers, ``Computer-supported collaborative learning: an
+  historical perspective,'' {\em Cambridge handbook of the learning sciences},
+  pp.~409--426, 2006.
+
+\bibitem{DefinitionCSCL}
+D.~P., ``What do you mean by "collaborative learning"?,'' {\em Collaborative
+  learning: cognitive and computational approaches}, pp.~1--16, 1999a.
+
+\bibitem{DesignPatternsColl}
+G.~L.A. and F.~D.A., ``Jigsaw method in the context of cscl,'' {\em Proceedings
+  of World Conference on Educational Multimedia, Hypermedia and
+  Telecommunications 2002}, pp.~789 -- 794, 2002.
+
+\bibitem{MongoDB}
+10gen, ``Mongodb,''
+
+\bibitem{CollOntology}
+P.~J. and F.~M., ``Towards an ontology of collaboration patterns,'' 2002.
 
 \end{thebibliography}

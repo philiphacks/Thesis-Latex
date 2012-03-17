@@ -4,15 +4,15 @@
 \contentsline {chapter}{Preface }{v}
 \contentsline {chapter}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {1.1}Problem Description}{2}
-\contentsline {section}{\numberline {1.2}Background}{2}
+\contentsline {section}{\numberline {1.2}Background}{3}
 \contentsline {subsection}{\numberline {1.2.1}Specification}{3}
 \contentsline {subsection}{\numberline {1.2.2}Implementation}{3}
 \contentsline {subsection}{\numberline {1.2.3}Verification}{3}
-\contentsline {subsection}{\numberline {1.2.4}Code Generation}{3}
+\contentsline {subsection}{\numberline {1.2.4}Code Generation}{4}
 \contentsline {section}{\numberline {1.3}Contribution}{5}
 \contentsline {subsection}{\numberline {1.3.1}Aims and Objectives}{5}
 \contentsline {subsection}{\numberline {1.3.2}Research Questions}{5}
-\contentsline {subsection}{\numberline {1.3.3}Expected Outcomes}{5}
+\contentsline {subsection}{\numberline {1.3.3}Expected Outcomes}{6}
 \contentsline {section}{\numberline {1.4}Thesis Outline}{6}
 \contentsline {chapter}{\numberline {2}Domain Specific Modeling}{7}
 \contentsline {section}{\numberline {2.1}Traditional Meta-Modeling}{8}
@@ -22,10 +22,10 @@
 \contentsline {subsection}{\numberline {2.2.1}Linear Modeling Hierarchy}{9}
 \contentsline {subsection}{\numberline {2.2.2}Strict Meta-Modeling}{10}
 \contentsline {subsection}{\numberline {2.2.3}Limitations of Strict Meta-Modeling}{11}
-\contentsline {section}{\numberline {2.3}Problems with the two-level UML Modeling approach}{12}
+\contentsline {section}{\numberline {2.3}Problems with the two-level UML Modeling approach}{11}
 \contentsline {subsection}{\numberline {2.3.1}Example domain model}{12}
 \contentsline {subsection}{\numberline {2.3.2}Domain types as objects}{13}
-\contentsline {subsection}{\numberline {2.3.3}Domain types as classes}{15}
+\contentsline {subsection}{\numberline {2.3.3}Domain types as classes}{14}
 \contentsline {chapter}{\numberline {3}Multi-Level Modeling and Metadepth}{16}
 \contentsline {section}{\numberline {3.1}Deep Meta-Modeling}{16}
 \contentsline {subsection}{\numberline {3.1.1}Clabject}{17}
