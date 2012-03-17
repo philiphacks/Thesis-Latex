@@ -361,16 +361,51 @@ In the collaborative modeling framework, we can restrict access to certain objec
 
 \subsection{Environment}
 
+A collaborative application may contain multiple sessions, with users working on different repositories. This means that some groups might not interfere with others, in which way we can re-use an application.
+\\ \\
+\textbf{Problem}
+\\
+How can we provide access to collaborative applications with users identified among corresponding sessions? How can we control the 'environment'?
+\\ \\
+\textbf{Requirements}
+\begin{itemize}
+\item{A session member's work should not interfere with another session member}
+\item{All users among the sessions should have a uniform way to enter a collaborative application}
+\end{itemize}
+\textbf{Solution}
+\\
+The \textit{Environment} object has information on all sessions of users connected to the collaborative application.
+\\ \\
+\textbf{Examples}
+\\
+In the collaborative modeling framework, a developer may model a server that maintains an environment. This \textit{server}/\textit{environment} object pertains all sessions and handles calls between client and server.
 
+\subsection{Pattern System for Collaborative Applications Design}
 
-\section{Collaboration Stack}
-
-\subsection{Ontology of collaboration patterns}
+All these previous patterns together define a pattern system for the design of collaborative applications. The overall system design through these patterns is depicted in figure ~\ref{fig:pattern_system}.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=1.0\textwidth]{images/chap4_android_architecture.jpg}
-\caption{Android Architecture.}
-\label{fig:groupware_taxonomy}
+\includegraphics[width=1.0\textwidth]{images/chap5_pattern_system.png}
+\caption{Pattern system of a collaborative system}
+\label{fig:pattern_system}
 \end{figure}
 
+The environment object keeps track of all sessions in a collaborative application. A session can broadcast objects and is persisted through a user with a specific role. Furthermore, we have a Repository that is accessed through the session object and shown through a View.
+
+\section{Collaboration Stack}
+
+As we have seen in previous section, we have mapped the collaborative modeling framework onto the collaborative pattern system through several design patterns. These collaborative patterns can also regarded as a kind of documentation for a proven solution \cite{CollOntology}. In this section we will present an approach for creating an ontology of collaboration patterns and patterns languages. This ontology corresponds to a "collaboration stack" that identifies the various levels of abstraction. On one side we have some abstract collaboration patterns and on the other side we have the technologies that allow these patterns to be implemented.
+
+\subsection{Ontology of collaboration patterns}
+
+The collaboration stack is depicted in figure ~\ref{fig:coll_stack}. This stack was inspired by a typical IT protocol stack. Here we see the relation of collaboration patterns to collaborative services and their technologies. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\textwidth]{images/chap5_coll_stack.png}
+\caption{Collaboration Stack}
+\label{fig:coll_stack}
+\end{figure}
+
+These collaboration patterns make use of their underlying services. For instance our environment pattern from the previous section makes use of the user list to handle sessions. In turn, these collaboration services make use of basic technologies. Now that we have a clear idea of our pattern system and the corresponding collaboration stack, we can describe the design of our collaborative framework. All components and their design will be described in the next chapter.
