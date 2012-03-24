@@ -4,6 +4,16 @@
 \usepackage{float}
 \usepackage{subfigure}
 
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\lstset{breaklines=true, captionpos=t}
+
 \newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
 \newtheorem{mydef}{Definition}
 

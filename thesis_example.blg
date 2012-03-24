@@ -39,36 +39,38 @@ Warning--empty journal in CSCWChars
 Warning--empty journal in MongoDB
 Warning--empty year in MongoDB
 Warning--empty journal in CollOntology
-You've used 33 entries,
+Warning--empty journal in NodeJS
+Warning--empty journal in EGL
+You've used 35 entries,
             1876 wiz_defined-function locations,
-            657 strings with 7654 characters,
-and the built_in function-call counts, 5662 in all, are:
-= -- 479
-> -- 192
+            666 strings with 7781 characters,
+and the built_in function-call counts, 5922 in all, are:
+= -- 499
+> -- 200
 < -- 0
-+ -- 81
-- -- 48
-* -- 345
-:= -- 847
-add.period$ -- 24
-call.type$ -- 33
-change.case$ -- 33
++ -- 85
+- -- 50
+* -- 359
+:= -- 889
+add.period$ -- 26
+call.type$ -- 35
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 63
-duplicate$ -- 349
-empty$ -- 648
-format.name$ -- 48
-if$ -- 1351
+cite$ -- 67
+duplicate$ -- 367
+empty$ -- 682
+format.name$ -- 50
+if$ -- 1411
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 33
-newline$ -- 102
-num.names$ -- 33
-pop$ -- 174
+int.to.str$ -- 35
+missing$ -- 35
+newline$ -- 108
+num.names$ -- 35
+pop$ -- 186
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 141
+skip$ -- 143
 stack$ -- 0
 substring$ -- 183
 swap$ -- 64
@@ -76,8 +78,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 30
-while$ -- 47
-width$ -- 35
-write$ -- 245
-(There were 36 warnings)
+warning$ -- 32
+while$ -- 49
+width$ -- 37
+write$ -- 259
+(There were 38 warnings)

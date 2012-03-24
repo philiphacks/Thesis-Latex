@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  17 MAR 2012 22:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  24 MAR 2012 18:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -347,27 +347,65 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip77
 \subfig@bottom=\skip78
 )
-\c@mydef=\count128
+(/usr/local/texlive/2011/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen144
+\captionmargin@=\dimen145
+\captionwidth=\dimen146
+\caption@indent=\dimen147
+\caption@parindent=\dimen148
+\caption@hangindent=\dimen149
+)
+\c@ContinuedFloat=\count128
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: picinpar package is loaded.
+Package caption Info: subfigure package is loaded.
+)
+\c@mydef=\count129
 
 (./thesis_example.aux
 
 LaTeX Warning: Label `fig:metadepth_schemes' multiply defined.
 
+
+LaTeX Warning: Label `application-mm' multiply defined.
+
 )
 \openout1 = `thesis_example.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
  (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
 
@@ -413,20 +451,20 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count129
+\c@lstlisting=\count130
 
 (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
-\scratchdimen=\dimen144
+\scratchcounter=\count131
+\scratchdimen=\dimen150
 \scratchbox=\box48
-\nofMPsegments=\count131
-\nofMParguments=\count132
+\nofMPsegments=\count132
+\nofMParguments=\count133
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count133
-\MPscratchDim=\dimen145
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen151
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
 \everyMPtoPDFconversion=\toks31
 )
 \AtBeginShipoutBox=\box49
@@ -442,33 +480,36 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 <comp-logo-u+text.png, id=1, 586.19pt x 188.705pt>
 File: comp-logo-u+text.png Graphic file (type png)
  <use comp-logo-u+text.png>
-Package pdftex.def Info: comp-logo-u+text.png used on input line 27.
+Package pdftex.def Info: comp-logo-u+text.png used on input line 37.
 (pdftex.def)             Requested size: 117.23592pt x 37.74033pt.
 
-Underfull \hbox (badness 4660) in paragraph at lines 27--27
+Underfull \hbox (badness 4660) in paragraph at lines 37--37
 []\OT1/cmr/bx/n/20.74 Domain-Specific Mod-el-ing and
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 
  []
 
 <comp-logo-comp.png, id=2, 81.906pt x 83.8332pt>
 File: comp-logo-comp.png Graphic file (type png)
  <use comp-logo-comp.png>
-Package pdftex.def Info: comp-logo-comp.png used on input line 27.
+Package pdftex.def Info: comp-logo-comp.png used on input line 37.
 (pdftex.def)             Requested size: 40.9529pt x 41.91649pt.
 
 [1
@@ -728,14 +769,20 @@ File: images/chap3_metadepth_schemes.png Graphic file (type png)
 Package pdftex.def Info: images/chap3_metadepth_schemes.png used on input line 
 74.
 (pdftex.def)             Requested size: 358.50227pt x 150.48389pt.
- [20 <./images/chap3_deep_potency.png>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20 <./images/chap3_deep_potency.png>]
 Missing character: There is no Õ in font cmr10!
+
 <images/chap3_metadepth_mm.png, id=132, 384.9582pt x 197.0562pt>
 File: images/chap3_metadepth_mm.png Graphic file (type png)
 
 <use images/chap3_metadepth_mm.png>
 Package pdftex.def Info: images/chap3_metadepth_mm.png used on input line 87.
 (pdftex.def)             Requested size: 358.50227pt x 183.52196pt.
+Missing character: There is no Õ in font cmr10!
 Missing character: There is no Õ in font cmr10!
 
 
@@ -888,16 +935,17 @@ File: images/chap4_android_manifest.png Graphic file (type png)
 Package pdftex.def Info: images/chap4_android_manifest.png used on input line 1
 34.
 (pdftex.def)             Requested size: 278.83578pt x 210.73276pt.
- [31 <./images/chap4_android_manifest.png>] <images/chap4_activity_lifecycle.pn
-g, id=187, 524.96124pt x 675.52374pt>
+
+<images/chap4_activity_lifecycle.png, id=182, 524.96124pt x 675.52374pt>
 File: images/chap4_activity_lifecycle.png Graphic file (type png)
 
 <use images/chap4_activity_lifecycle.png>
 Package pdftex.def Info: images/chap4_activity_lifecycle.png used on input line
  154.
 (pdftex.def)             Requested size: 358.50227pt x 461.33945pt.
- [32 <./images/chap4_activity_lifecycle.png>] <images/chap4_app_inventor.png, i
-d=192, 451.6875pt x 277.78781pt>
+ [31 <./images/chap4_android_manifest.png>] [32 <./images/chap4_activity_lifecy
+cle.png>]
+<images/chap4_app_inventor.png, id=192, 451.6875pt x 277.78781pt>
 File: images/chap4_app_inventor.png Graphic file (type png)
 
 <use images/chap4_app_inventor.png>
@@ -1089,62 +1137,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--294
  []
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 299--307
+Underfull \hbox (badness 10000) in paragraph at lines 297--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--307
+Underfull \hbox (badness 10000) in paragraph at lines 297--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--318
+Underfull \hbox (badness 10000) in paragraph at lines 309--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--329
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--329
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--339
+Underfull \hbox (badness 10000) in paragraph at lines 330--337
 
  []
 
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 342--350
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--350
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--361
+Underfull \hbox (badness 10000) in paragraph at lines 352--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--372
+Underfull \hbox (badness 10000) in paragraph at lines 362--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--372
+Underfull \hbox (badness 10000) in paragraph at lines 362--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--382
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
 
  []
 
@@ -1152,7 +1200,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--382
 File: images/chap5_pattern_system.png Graphic file (type png)
 
 <use images/chap5_pattern_system.png>
-Package pdftex.def Info: images/chap5_pattern_system.png used on input line 389
+Package pdftex.def Info: images/chap5_pattern_system.png used on input line 387
 .
 (pdftex.def)             Requested size: 398.33858pt x 193.79689pt.
  [47 <./images/chap5_pattern_system.png>]
@@ -1160,38 +1208,84 @@ Package pdftex.def Info: images/chap5_pattern_system.png used on input line 389
 File: images/chap5_coll_stack.png Graphic file (type png)
 
 <use images/chap5_coll_stack.png>
-Package pdftex.def Info: images/chap5_coll_stack.png used on input line 406.
+Package pdftex.def Info: images/chap5_coll_stack.png used on input line 404.
 (pdftex.def)             Requested size: 358.50227pt x 184.13802pt.
 ) (./06-Design.tex [48 <./images/chap5_coll_stack.png>]
 Chapter 6.
-) (./07-CaseStudy.tex [49
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 11--11
+[][][][][][][] 
+ []
+
+[49
 
 ]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 28--28
+[][][][][][][] 
+ []
+
+[50]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 72--72
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 98--98
+[][][][][][][] 
+ []
+
+[51]
+
+Package natbib Warning: Citation `AndroidLayoutType' on page 52 undefined on in
+put line 147.
+
+[52]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 153--153
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (25.93256pt too wide) in paragraph at lines 187--189
+\OT1/cmr/m/n/10.95 The ac-tions listed above are the three most im-por-tant ac-
+tions. The \OT1/cmtt/m/n/10.95 ExtractLayoutAction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
+
+ []
+
+[53]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 190--190
+[][][][][][][] 
+ []
+
+[54]) (./07-CaseStudy.tex [55]
 Chapter 7.
-) (./08-Conclusion.tex [50
+) (./08-Conclusion.tex [56
 
 ]
 Chapter 8.
-) [51
+) [57
 
-] [52
+] [58
 
 
 ] (./AA-PetriNet.tex
 Appendix A.
-) (./AA-ModelTransformation.tex [53
+) (./AA-ModelTransformation.tex [59
 
 ]
 Appendix B.
-) (./thesis_example.bbl [54
+) (./thesis_example.bbl [60
 
-] [55
+] [61
 
-])
+] [62])
 
 Package natbib Warning: There were undefined citations.
 
-[56] (./thesis_example.aux)
+[63] (./thesis_example.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1200,13 +1294,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6342 strings out of 493633
- 92771 string characters out of 3143377
- 199517 words of memory out of 3000000
- 9410 multiletter control sequences out of 15000+200000
- 15287 words of font info for 57 fonts, out of 3000000 for 9000
+ 7949 strings out of 493633
+ 117622 string characters out of 3143377
+ 370620 words of memory out of 3000000
+ 11004 multiletter control sequences out of 15000+200000
+ 15931 words of font info for 60 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 48i,12n,58p,1773b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,12n,58p,1773b,1757s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
@@ -1221,11 +1315,12 @@ texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/
 texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
-xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis_example.pdf (62 pages, 1910880 bytes).
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
+live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on thesis_example.pdf (69 pages, 1937039 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
+ 352 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

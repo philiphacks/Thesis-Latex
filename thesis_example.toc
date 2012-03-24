@@ -77,22 +77,32 @@
 \contentsline {subsection}{\numberline {5.4.2}Repository}{43}
 \contentsline {subsection}{\numberline {5.4.3}Object}{44}
 \contentsline {subsection}{\numberline {5.4.4}View}{44}
-\contentsline {subsection}{\numberline {5.4.5}Floor Control}{45}
-\contentsline {subsection}{\numberline {5.4.6}Broadcast}{45}
-\contentsline {subsection}{\numberline {5.4.7}User}{45}
-\contentsline {subsection}{\numberline {5.4.8}Role}{46}
-\contentsline {subsection}{\numberline {5.4.9}Environment}{46}
-\contentsline {subsection}{\numberline {5.4.10}Pattern System for Collaborative Applications Design}{47}
+\contentsline {subsection}{\numberline {5.4.5}Broadcast}{45}
+\contentsline {subsection}{\numberline {5.4.6}User}{45}
+\contentsline {subsection}{\numberline {5.4.7}Role}{46}
+\contentsline {subsection}{\numberline {5.4.8}Environment}{46}
+\contentsline {subsection}{\numberline {5.4.9}Pattern System for Collaborative Applications Design}{47}
 \contentsline {section}{\numberline {5.5}Collaboration Stack}{47}
 \contentsline {subsection}{\numberline {5.5.1}Ontology of collaboration patterns}{48}
 \contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{49}
-\contentsline {section}{\numberline {6.1}Components}{49}
-\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{50}
-\contentsline {section}{\numberline {7.1}Environmental Analysis}{50}
-\contentsline {section}{\numberline {7.2}Collaborative Knowledge-Management Platform}{50}
-\contentsline {chapter}{\numberline {8}Conclusion}{51}
-\contentsline {section}{\numberline {8.1}Summary}{51}
-\contentsline {section}{\numberline {8.2}Future Work}{51}
-\contentsline {chapter}{Appendices}{52}
-\contentsline {chapter}{Appendix \numberline {A}Meta-modeling and Petri Nets}{53}
-\contentsline {chapter}{Appendix \numberline {B}Model to model transformation [Research Internship 2]}{54}
+\contentsline {section}{\numberline {6.1}Main component Meta-models}{49}
+\contentsline {subsection}{\numberline {6.1.1}Application}{49}
+\contentsline {subsection}{\numberline {6.1.2}Manifest}{50}
+\contentsline {subsection}{\numberline {6.1.3}Activity}{51}
+\contentsline {subsection}{\numberline {6.1.4}Presentation}{51}
+\contentsline {subsection}{\numberline {6.1.5}Action}{53}
+\contentsline {section}{\numberline {6.2}Component Meta-Model}{54}
+\contentsline {subsection}{\numberline {6.2.1}Component}{54}
+\contentsline {subsection}{\numberline {6.2.2}AndroidComponent}{54}
+\contentsline {subsection}{\numberline {6.2.3}Example Component}{54}
+\contentsline {section}{\numberline {6.3}Server}{55}
+\contentsline {section}{\numberline {6.4}Code Generation}{55}
+\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{56}
+\contentsline {section}{\numberline {7.1}Environmental Analysis}{56}
+\contentsline {section}{\numberline {7.2}Collaborative Knowledge-Management Platform}{56}
+\contentsline {chapter}{\numberline {8}Conclusion}{57}
+\contentsline {section}{\numberline {8.1}Summary}{57}
+\contentsline {section}{\numberline {8.2}Future Work}{57}
+\contentsline {chapter}{Appendices}{58}
+\contentsline {chapter}{Appendix \numberline {A}Meta-modeling and Petri Nets}{59}
+\contentsline {chapter}{Appendix \numberline {B}Model to model transformation [Research Internship 2]}{60}

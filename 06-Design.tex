@@ -1,4 +1,226 @@
 \chapter{Designing a Collaborative Modeling Framework}
 
-\section{Components}
+In this chapter, the complete collaborative modeling framework will be explained in depth. The target platform for applications modeled by the framework is Android. Once a modeler has a basic understanding of how Android development works, the modeler can use this framework to rapidly develop Android prototypes. Most Android components have an equivalent meta-model in the collaborative framework. In the next section, all meta-models that make up an Android application are discussed. In a next section, the server component written in Node.js \cite{NodeJS} and Javascript is described. Finally, we end the chapter with a section on code generation and EGL \cite{EGL}.
+
+\section{Main component Meta-models}
+
+\subsection{Application}
+
+The top-level meta-model that represents an Android application is the \texttt{Application} meta-model. \texttt{Application} contains an \texttt{AndroidManifest} and a set of \texttt{Activities}. If we want to communicate with a Server, we also need to specify an instance of the \texttt{Server} meta-model. The complete \texttt{Application} meta-model is described as follows:
+
+\begin{lstlisting}[label=application-mm,caption=Application meta-model, captionpos=t]
+load "Manifest"
+load "Activity"
+load "Server"
+
+Model Application imports Activity, Manifest, Server {
+	name			: String;
+	manifest		: ManifestDescription[1];
+	activities		: Activity[*];
+	server 			: Server[1];
+}
+\end{lstlisting}
+
+\subsection{Manifest}
+
+One field in the \texttt{Application} meta-model is the \texttt{AndroidManifest}. This document, as described in chapter 4, contains all activities and other Android components. The \texttt{AndroidManifest} meta-model is declared as follows:
+
+\begin{lstlisting}[label=application-mm,caption=Manifest meta-model, captionpos=t]
+Model Manifest {
+
+	Node ManifestDescription {
+		namespace		: String="http://schemas.android.com/apk/res/android";
+		package			: String;
+		versionCode		: String="1";
+		versionName		: String="1.0";
+		sdk				: String;
+		app_info		: AppInfo[1];
+		permissions		: Permission[*];
+	}
+
+	Node AppInfo {
+		icon 		: String="@drawable/icon";
+		label		: String="@string/app_name";
+
+		activities	: Activity[*];
+	}
+
+	// e.g. <uses-permission android:name="android.permission.SEND_SMS"/>
+	Node Permission {
+		name 	: String;
+	}
+
+	Node Activity {
+		name 	: String;
+		label 	: String="@string/app_name";
+		intent	: IntentFilter;
+	}
+
+	// e.g. http://developer.android.com/guide/topics/intents/intents-filters.html
+	Node IntentFilter {
+		action 		: String="android.intent.action.MAIN";
+		category	: String="android.intent.category.LAUNCHER";
+	}
+}
+\end{lstlisting}
+Some of the fields have a pre-defined value such as \texttt{namespace}, \texttt{icon} and \texttt{label}. Other fields need to be explicitly set by the modeler. The \texttt{package} field describes the Java package to organize the source code. Other fields describe the current SDK version of Android and the Activities that correspond with the ones that are modeled in the \texttt{Activity} meta-model. The \texttt{Permission} Node models the permissions that the modeled application needs. For instance, if the application needs to access the internet, we need to add an INTERNET permission.
+
+\subsection{Activity}
+
+The most important part of the collaborative framework is the \texttt{Activity} meta-model. It encapsulates all Android components, the layout and all actions on (layout) components. The \texttt{Activity} meta-model is designed as follows:
+
+\begin{lstlisting}[label=activity-mm,caption=Activity meta-model, captionpos=t]
+load "Presentation"
+load "Component"
+load "AndroidAction"
+load "UIAction"
+
+Model Activity imports Presentation, Component, AndroidAction, UIAction {
+
+	Node Activity {
+		name				: String;
+		// Is this the main activity that is launched when launching the application?
+		main 				: boolean;
+
+		content				: Component@0[*];
+		presentation		: Presentation[1];
+		onClickListeners 	: UIAction[*];
+	}
+
+}
+\end{lstlisting}
+As we can see, an Activity contains an arbitrary number of components (explained in next section), a presentation model and a set of UI actions. Both the \texttt{Presentation} and \texttt{Action}/\texttt{UIAction} meta-models will be explained in next subsections.
+
+\subsection{Presentation}
+
+In an Android application, the layout of an Activity is usually presented through an XML file. Alternatively, the layout of an \texttt{Activity} can also be described through Java code. For the collaborative modeling framework, the XML approach was chosen. The \texttt{Presentation} meta-model is described in Listing ~\ref{presentation-mm}.
+
+\begin{lstlisting}[label=presentation-mm,caption=Presentation meta-model, captionpos=t]
+load "Component"
+
+Model Presentation imports Component {
+	
+	Node Presentation {
+		activityname 	: String;
+		layout 			: LayoutDesc[1];
+	}
+
+	Node LayoutDesc {
+		name			: String;
+		layoutType		: LayoutType[1];
+	}
+
+	// e.g. LinearLayout
+	Node LayoutType : Layout {
+		name 		: String;
+		namespace	: String="http://schemas.android.com/apk/res/android";
+		orientation	: String;
+		width		: String="fill_parent";
+		height		: String="fill_parent";
+
+		children 	: Layout@0[*];
+	}
+
+	Node Button : LayoutComponent { }
+
+	Node EditText : LayoutComponent {
+		password 		: String;
+		requestFocus	: boolean;
+	}
+
+	Node TextView : LayoutComponent { }
+
+	Node ScrollView : Layout {
+		width 		: String;
+		height 		: String;
+		weight 		: String;
+		components 	: Layout@0[*];
+	}
+
+	Node ListView : Layout {
+		width		: String;
+		height		: String;
+		weight		: String;
+	}
+}
+\end{lstlisting}
+The relevant part of the meta-model is the \texttt{LayoutType} node. This node describes the type of layout to use in the \texttt{Activity}, together with a description of the children, the layout elements. We usually want to create a \texttt{LinearLayout} type, but other types are possible too \cite{AndroidLayoutType}. Examples of layout elements are \texttt{Button} or a child view that has its own layout elements, for example a \texttt{ScrollView}.
+
+\subsection{Action}
+
+The \texttt{Action} meta-model contains all actions that elements in a layout or for passing data between activities. A part of the \texttt{Action} meta-model is displayed in listing ~\ref{androidaction-mm}.
+
+\begin{lstlisting}[label=androidaction-mm,caption=AndroidAction meta-model, captionpos=t]
+load "Component"
+load "ServerProperty"
+load "Data"
+
+Model AndroidAction imports Component, ServerProperty, Data {
+	
+	abstract Node Action {
+		ctype			: String{id};
+		condition 		: Action;
+	}
+
+	// e.g. use the value of a text field to call the action method of a component
+	Node ExtractLayoutAction : Action {
+		source 			: Component@0;
+		name 			: String;
+	}
+
+	// Specify the target activity
+	Node ChangeActivityAction : Action {
+		oldActivity 	: String;
+		newActivity 	: String;
+		data 			: Data[*];
+	}
+
+	// Call the action method of a component.
+	// Might save a value if it's a sensor (i.e. geo)
+	// Or execute a real action if it's an actuator (i.e. send an SMS)
+	Node CallComponentAction : Action {
+		// properties needed to call the action method of the component
+		properties		: Data[*];
+	}
+}
+\end{lstlisting}
+The actions listed above are the three most important actions. The \texttt{ExtractLayoutAction} takes as arguments a source component and a name for the data that has to be extracted. This data will be extracted from the source component that was specified. Usually this is an Android \texttt{TextView} or \texttt{EditText} component. The \texttt{ChangeActivityAction} will take two activities and an arbitrary data structure as input. The first Activity specified should be the current Activity and the other Activity should be the Activity that is to be launched. Finally, the \texttt{CallComponentAction} calls the \textit{action} method that is implemented in every \texttt{AndroidComponent}. This \textit{action} method will be explained in the next section, Component Meta-Model. \\ \\
+Now, in order to execute those actions, we need to associate them with a \texttt{UIAction} model within an \texttt{AndroidComponent} or an \texttt{Activity}. The \texttt{UIAction} meta-model is listed in Listing ~\ref{uiaction-mm}.
+
+\begin{lstlisting}[label=uiaction-mm,caption=UIAction meta-model, captionpos=t]
+load "Presentation"
+load "AndroidAction"
+
+Model UIAction imports Presentation, AndroidAction {
+	
+	Node UIAction {
+		target 		: LayoutComponent;
+		actions 	: Action[*];
+	}
+
+	Node OnClickListener : UIAction { }
+
+}
+\end{lstlisting}
+In \texttt{UIAction}, we specify a target to execute a list of actions on. This target should be a \texttt{LayoutComponent} (hence the name \texttt{UIAction}). Finally, we can embed this \texttt{UIAction} in an \texttt{AndroidComponent} or an \texttt{Activity}.
+
+\section{Component Meta-Model}
+
+Two level potency, example component, android component, server component, properties hashmap, action method, pre-developed Java classes, ...
+
+\subsection{Component}
+
+\subsection{AndroidComponent}
+
+\subsection{Example Component}
+
+
+\section{Server}
+
+Node.js, server meta-model, server javascript, check server property (action)
+User, Session, Components,...
+
+\section{Code Generation}
+
+
 
