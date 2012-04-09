@@ -91,26 +91,31 @@ The most important aspect of this model is the use of the \texttt{GenericActivit
 
 \section{Demonstration}
 
-In this section, we will have a look at the running modeled application. In the previous section, the several activities and their models were discussed and now we can see them in action. In figure ~\ref{fig:coll_connected}, we see the main activity after a user successfully logged in. 
- 
+In this section, we will have a look at the running modeled application. In the previous section, the several activities and their models were discussed and now we can see them in action. In figure ~\ref{fig:coll_connected}, we see the main activity after a user successfully logged in. In this activity, a user can navigate to all other activities in the collaborative application.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/chap7_connected.png}
 \caption{In the main menu of the collaborative application with two connected users}
 \label{fig:coll_connected}
-\end{figure}
-
-
+\end{figure} \\
+When we start the chat activity, a simple screen with the latest chat messages comes up. A user can send a message to all other users. This message will be persisted in the MongoDB database and subsequently sent to all users. A view of the chat box is depicted in figure ~\ref{fig:coll_chatbox}. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.99\textwidth]{images/chap7_chatbox.png}
 \caption{In the chat box of the collaborative application}
 \label{fig:coll_chatbox}
-\end{figure}
-
+\end{figure} \\ 
+Dropbox repository!
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.5\textwidth]{images/chap7_dropbox1.png}
+\includegraphics[width=0.4\textwidth]{images/chap7_dropbox1.png}
 \caption{Fetched all research papers from the Dropbox repository}
 \label{fig:coll_dropbox1}
+\end{figure}
+Notes on research paper in Dropbox repository!
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.4\textwidth]{images/chap7_dropbox2.png}
+\caption{Notes and comments on a research paper in the Dropbox repository}
+\label{fig:coll_dropbox2}
 \end{figure}

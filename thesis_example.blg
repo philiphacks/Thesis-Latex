@@ -9,71 +9,44 @@ Warning--I didn't find a database entry for "googleDocs"
 Warning--I didn't find a database entry for "Skype"
 Warning--I didn't find a database entry for "other_paper_"
 Warning--I didn't find a database entry for "CSCLDefinition2"
-Warning--empty journal in SoftwareDesign
-Warning--empty year in SoftwareDesign
-Warning--empty journal in UnitTesting
-Warning--empty year in UnitTesting
-Warning--empty journal in IntegrationTesting
-Warning--empty year in IntegrationTesting
-Warning--empty journal in RegressionTesting
-Warning--empty year in RegressionTesting
 Warning--empty journal in AccidentalComplexity
 Warning--empty journal in CAMPaM
 Warning--empty journal in RearchitectingUML
 Warning--empty journal in MetaDepth
-Warning--empty journal in ANTLR
-Warning--empty journal in EclipseEOL
-Warning--empty journal in EclipseEMF
-Warning--empty journal in EclipseETL
 Warning--empty journal in GenericMetaDepth
 Warning--empty journal in LiberateProgramming
-Warning--empty journal in WhatAndroid
-Warning--empty year in WhatAndroid
-Warning--empty journal in ContentProviders
-Warning--empty year in ContentProviders
-Warning--empty journal in AppResources
-Warning--empty year in AppResources
-Warning--empty journal in NotificationManager
-Warning--empty year in NotificationManager
 Warning--empty journal in CSCWChars
-Warning--empty journal in MongoDB
-Warning--empty year in MongoDB
 Warning--empty journal in CollOntology
-Warning--empty journal in NodeJS
-Warning--empty journal in EGL
-Warning--empty journal in AndroidLayoutType
-Warning--empty journal in OAuth
-Warning--empty journal in WebSockets
-You've used 38 entries,
+You've used 39 entries,
             1876 wiz_defined-function locations,
-            681 strings with 8159 characters,
-and the built_in function-call counts, 6312 in all, are:
-= -- 529
-> -- 212
+            685 strings with 8352 characters,
+and the built_in function-call counts, 6329 in all, are:
+= -- 567
+> -- 216
 < -- 0
-+ -- 91
-- -- 53
-* -- 380
-:= -- 952
-add.period$ -- 29
-call.type$ -- 38
-change.case$ -- 38
++ -- 93
+- -- 54
+* -- 322
+:= -- 925
+add.period$ -- 39
+call.type$ -- 39
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 73
-duplicate$ -- 394
-empty$ -- 733
-format.name$ -- 53
-if$ -- 1501
+cite$ -- 47
+duplicate$ -- 308
+empty$ -- 769
+format.name$ -- 54
+if$ -- 1578
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 38
-newline$ -- 117
-num.names$ -- 38
-pop$ -- 204
+int.to.str$ -- 39
+missing$ -- 20
+newline$ -- 120
+num.names$ -- 39
+pop$ -- 192
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 146
+skip$ -- 213
 stack$ -- 0
 substring$ -- 183
 swap$ -- 64
@@ -81,8 +54,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 35
-while$ -- 52
-width$ -- 40
-write$ -- 280
-(There were 41 warnings)
+warning$ -- 8
+while$ -- 53
+width$ -- 41
+write$ -- 306
+(There were 14 warnings)

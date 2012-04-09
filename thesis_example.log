@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  9 APR 2012 12:17
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  9 APR 2012 12:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -394,18 +394,18 @@ LaTeX Warning: Label `application-mm' multiply defined.
 )
 \openout1 = `thesis_example.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
  (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
 
@@ -486,30 +486,30 @@ Package caption Info: End \AtBeginDocument code.
 <comp-logo-u+text.png, id=1, 586.19pt x 188.705pt>
 File: comp-logo-u+text.png Graphic file (type png)
  <use comp-logo-u+text.png>
-Package pdftex.def Info: comp-logo-u+text.png used on input line 37.
+Package pdftex.def Info: comp-logo-u+text.png used on input line 38.
 (pdftex.def)             Requested size: 117.23592pt x 37.74033pt.
 
-Underfull \hbox (badness 4660) in paragraph at lines 37--37
+Underfull \hbox (badness 4660) in paragraph at lines 38--38
 []\OT1/cmr/bx/n/20.74 Domain-Specific Mod-el-ing and
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 
  []
 
 <comp-logo-comp.png, id=2, 81.906pt x 83.8332pt>
 File: comp-logo-comp.png Graphic file (type png)
  <use comp-logo-comp.png>
-Package pdftex.def Info: comp-logo-comp.png used on input line 37.
+Package pdftex.def Info: comp-logo-comp.png used on input line 38.
 (pdftex.def)             Requested size: 40.9529pt x 41.91649pt.
 
 [1
@@ -549,27 +549,27 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 11--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--37
+Underfull \hbox (badness 10000) in paragraph at lines 11--38
 
  []
 
@@ -1358,11 +1358,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 [63
 
 ]
-
-Package natbib Warning: Citation `Github' on page 64 undefined on input line 25
-.
-
-
 Overfull \hbox (6.0pt too wide) in paragraph at lines 37--37
 [][][][][][][] 
  []
@@ -1404,31 +1399,45 @@ essage)\OT1/cmr/m/n/10.95 . The \OT1/cmtt/m/n/10.95 getComponent() \OT1/cmr/m/n
 File: images/chap7_connected.png Graphic file (type png)
 
 <use images/chap7_connected.png>
-Package pdftex.def Info: images/chap7_connected.png used on input line 98.
+Package pdftex.def Info: images/chap7_connected.png used on input line 97.
 (pdftex.def)             Requested size: 159.333pt x 264.76227pt.
 
 <images/chap7_chatbox.png, id=310, 872.25874pt x 740.7675pt>
 File: images/chap7_chatbox.png Graphic file (type png)
 
 <use images/chap7_chatbox.png>
-Package pdftex.def Info: images/chap7_chatbox.png used on input line 105.
+Package pdftex.def Info: images/chap7_chatbox.png used on input line 104.
 (pdftex.def)             Requested size: 394.35738pt x 334.90213pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/chap7_dropbox1.png, id=311, 403.5075pt x 675.52374pt>
+<images/chap7_dropbox1.png, id=311, 421.575pt x 698.61pt>
 File: images/chap7_dropbox1.png Graphic file (type png)
 
 <use images/chap7_dropbox1.png>
-Package pdftex.def Info: images/chap7_dropbox1.png used on input line 112.
-(pdftex.def)             Requested size: 199.16928pt x 333.43182pt.
+Package pdftex.def Info: images/chap7_dropbox1.png used on input line 111.
+(pdftex.def)             Requested size: 159.333pt x 264.03546pt.
+
+<images/chap7_dropbox2.png, id=312, 405.515pt x 673.51625pt>
+File: images/chap7_dropbox2.png Graphic file (type png)
+
+<use images/chap7_dropbox2.png>
+Package pdftex.def Info: images/chap7_dropbox2.png used on input line 118.
+(pdftex.def)             Requested size: 159.333pt x 264.64346pt.
+) (./08-Conclusion.tex [67 <./images/chap7_connected.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./08-Conclusion.tex [67 <./images/chap7_connected.png>] [68 <./images/chap7_
-chatbox.png>] [69 <./images/chap7_dropbox1.png>]
+[68 <./images/chap7_chatbox.png>]
+
+LaTeX Warning: Text page 69 contains only floats.
+
+
+Overfull \vbox (1.14467pt too high) has occurred while \output is active []
+
+
+[69 <./images/chap7_dropbox1.png> <./images/chap7_dropbox2.png>]
 Chapter 8.
 ) [70
 
@@ -1443,9 +1452,33 @@ Appendix A.
 Appendix B.
 ) (./thesis_example.bbl [73
 
-] [74
+]
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+[]\OT1/cmr/m/n/10.95 J. Reeves, ``What is Soft-ware De-sign?.'' $\OT1/cmtt/m/n/
+10.95 http : / / c2 . com / cgi / wiki ?
+ []
 
-] [75])
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+[]\OT1/cmr/m/n/10.95 Wikipedia, ``In-te-gra-tion test-ing.'' $\OT1/cmtt/m/n/10.
+95 http : / / en . wikipedia . org / wiki /
+ []
+
+[74
+
+]
+Underfull \hbox (badness 2277) in paragraph at lines 66--68
+[]\OT1/cmr/m/n/10.95 Android De-vel-op-ment Team, ``What is An-droid?.'' $\OT1/
+cmtt/m/n/10.95 http : / / developer .
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 70--72
+[]\OT1/cmr/m/n/10.95 Android De-vel-op-ment Team, ``Con-tent Providers.'' $\OT1
+/cmtt/m/n/10.95 http : / / developer .
+ []
+
+[75])
 
 Package natbib Warning: There were undefined citations.
 
@@ -1458,10 +1491,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8190 strings out of 493633
- 121400 string characters out of 3143377
- 375825 words of memory out of 3000000
- 11241 multiletter control sequences out of 15000+200000
+ 8198 strings out of 493633
+ 121590 string characters out of 3143377
+ 374852 words of memory out of 3000000
+ 11248 multiletter control sequences out of 15000+200000
  15931 words of font info for 60 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  48i,12n,58p,1773b,1757s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1481,10 +1514,10 @@ texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on thesis_example.pdf (82 pages, 2431433 bytes).
+Output written on thesis_example.pdf (82 pages, 2535051 bytes).
 PDF statistics:
- 402 PDF objects out of 1000 (max. 8388607)
+ 404 PDF objects out of 1000 (max. 8388607)
  232 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
