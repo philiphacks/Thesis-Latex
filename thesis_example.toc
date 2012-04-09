@@ -117,3 +117,4 @@
 \contentsline {chapter}{Appendices}{71}
 \contentsline {chapter}{Appendix \numberline {A}Meta-modeling and Petri Nets}{72}
 \contentsline {chapter}{Appendix \numberline {B}Model to model transformation [Research Internship 2]}{73}
+\contentsline {chapter}{Appendix \numberline {C}Commercial collaborative applications}{74}

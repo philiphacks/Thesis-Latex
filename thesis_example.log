@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  9 APR 2012 12:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  9 APR 2012 13:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1420,7 +1420,7 @@ Package pdftex.def Info: images/chap7_dropbox1.png used on input line 111.
 File: images/chap7_dropbox2.png Graphic file (type png)
 
 <use images/chap7_dropbox2.png>
-Package pdftex.def Info: images/chap7_dropbox2.png used on input line 118.
+Package pdftex.def Info: images/chap7_dropbox2.png used on input line 117.
 (pdftex.def)             Requested size: 159.333pt x 264.64346pt.
 ) (./08-Conclusion.tex [67 <./images/chap7_connected.png>]
 
@@ -1450,7 +1450,11 @@ Appendix A.
 
 ]
 Appendix B.
-) (./thesis_example.bbl [73
+) (./AA-CommercialApps.tex [73
+
+]
+Appendix C.
+) (./thesis_example.bbl [74
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
@@ -1464,7 +1468,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 95 http : / / en . wikipedia . org / wiki /
  []
 
-[74
+[75
 
 ]
 Underfull \hbox (badness 2277) in paragraph at lines 66--68
@@ -1478,11 +1482,11 @@ Underfull \hbox (badness 3471) in paragraph at lines 70--72
 /cmtt/m/n/10.95 http : / / developer .
  []
 
-[75])
+[76])
 
 Package natbib Warning: There were undefined citations.
 
-[76] (./thesis_example.aux)
+[77] (./thesis_example.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1491,8 +1495,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8198 strings out of 493633
- 121590 string characters out of 3143377
+ 8201 strings out of 493633
+ 121651 string characters out of 3143377
  374852 words of memory out of 3000000
  11248 multiletter control sequences out of 15000+200000
  15931 words of font info for 60 fonts, out of 3000000 for 9000
@@ -1514,10 +1518,10 @@ texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on thesis_example.pdf (82 pages, 2535051 bytes).
+Output written on thesis_example.pdf (83 pages, 2535893 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
+ 407 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
