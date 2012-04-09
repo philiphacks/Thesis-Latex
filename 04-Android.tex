@@ -169,3 +169,31 @@ Android App Inventor is an application provided by Google that allows anyone to 
 
 However, Google terminated the App Inventor on December 31, 2011. MIT Center for Mobile Learning is now supporting it under the name "App Inventor Edu". The Android App Inventor has been a source of inspiration in the development of my own modeling framework. 
 
+\section{Android compilation}
+
+\subsection{Problem}
+
+Usually when a developer creates an Android application, the Android Development Tools (ADT) 
+Plugin for Eclipse is used. It gives the developer a powerful and integrated environment in which to build Android applications. These tools extend the capabilities of Eclipse to set up new Android projects, rapidly create user interfaces, debug applications using the Android SDK tools and it also lets one create a binary \texttt{.apk} file of their Android project. After investigation of this solution, it proved unfeasible to apply this to our modeling framework. A modeler would have to generate the Java code, import it in Eclipse and ultimately generate the binary \texttt{.apk} file. This is a far from an optimal solution.
+
+\subsection{Solution}
+
+The best solution was to create a custom build file that generates the code together with the resources and compiles it into a \texttt{.apk} file afterwards. This process is defined as follows:
+
+\begin{enumerate}
+\item{Generate Android sources using the Metadepth model}
+\item{Generate resource files and packaged Resources using the Android Asset Packaging Tool (aapt). This utility creates files such as \texttt{AndroidManifest.xml} and also produces \texttt{R.java}, which contains references to resources in the Java code (resources such as layout elements).}
+\item{Compile the generated java source codes + R.java}
+\item{Convert compiled classes to Dalvik byte code. Any 3rd party libraries are also converted into \texttt{.dex} files so they can be packaged into the final \texttt{.apk} file.}
+\item{Create an unsigned \texttt{.apk}. All non-compiled resources (such as images), compiled resources and the \texttt{.dex} files are sent to the apkbuilder tool to be packaged into a \texttt{.apk} file.}
+\item{Sign the \texttt{.apk} with either a debug or release key}
+\end{enumerate}
+
+This process is also depicted in figure ~\ref{fig:android_process}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.0\textwidth]{images/chap6_android_build_process.png}
+\caption{Android build process}
+\label{fig:android_process}
+\end{figure}

@@ -206,21 +206,206 @@ In \texttt{UIAction}, we specify a target to execute a list of actions on. This 
 
 \section{Component Meta-Model}
 
+Another important part of the framework is the \texttt{Component} meta-model. Every implemented Android component should be inherited from this meta-model. Examples of such components are \texttt{SMSComponent}, \texttt{TwitterComponent} or \texttt{ChatComponent}. In the following sections we will describe the abstract \texttt{Component} meta-model, the derived \texttt{AndroidComponent} and an instantiation of an \texttt{AndroidComponent} as an example. 
+
 Two level potency, example component, android component, server component, properties hashmap, action method, pre-developed Java classes, ...
 
 \subsection{Component}
 
+The \texttt{Component} meta-model is listed in Listing ~\ref{component-mm}.
+
+\begin{lstlisting}[label=component-mm,caption=Component meta-model, captionpos=t]
+Model Component@2 {
+	
+	abstract Node ComponentType {
+		ctype@1		: String{id};
+	}
+
+	Node Component : ComponentType {
+		name			: String;
+	}
+
+	Node ComponentData@1 {
+		name 		: String;
+		value 		: String;
+	}
+	
+	Node Layout : Component {
+		layoutID		: String;
+		text 			: String;
+		gravity			: String;
+
+		paddingLeft 	: String;
+		paddingRight	: String;
+		paddingTop 		: String;
+		paddingBottom 	: String;
+		baselineAligned : String;
+	}
+
+	// e.g. Button, EditText, TextView, ...
+	Node LayoutComponent@2 : Layout {
+		width			: String;
+		height			: String;
+		weight			: String;
+	}
+
+}
+\end{lstlisting}
+As we can see, this meta-model has a potency level of 2. This means that we have three instantiation levels in our model. At the highest level, we define an abstract \texttt{Component} meta-model. If we go one level down, we can define the \texttt{AndroidComponent} itself (e.g. \textit{SMS}) and at level 0, we instantiate the component in our model. All components are of type \texttt{AndroidComponent} which is a subtype of \texttt{Component}. This component will be discussed in the next section. \texttt{LayoutComponent} is another component that inherits from our \texttt{Component} meta-model. It is used to describe the layout of an \texttt{Activity} and has a potency of two, which means it will be instantiated at our model level too.
+
 \subsection{AndroidComponent}
+
+\begin{lstlisting}[label=androidcomponent-mm,caption=AndroidComponent meta-model, captionpos=t]
+load "Component"
+load "AndroidAction"
+load "UIAction"
+
+Model AndroidComponent@2 imports Component, AndroidAction, UIAction {
+
+	// Android component for semantics and extensibility
+	Node AComp : Component {
+		gencodetemplate@1 		: String;
+
+		package@1 				: String;
+		layoutcomponents@2 		: LayoutComponent@0[*];
+
+		// Trigger can be another component (e.g. GeoComponent)
+		trigger 				: AComp@0;
+
+		// isTriggerOf defines the bi-directional connection with another component
+		// a component could be the trigger of another component or a layoutcomponent
+		isTriggerOf 			: AComp@0;
+		dependencies@1 			: DependencyComponent[*];
+
+		properties@1 			: ComponentData[*];
+		
+		// actions extend the action() method, so users can extend a component's functionality
+		actions 				: Action[*];
+		// uiactions are actions on a layoutcomponent
+		uiactions 				: UIAction[*];
+	}
+
+	Edge Trigger@(2)(AComp.trigger, AComp.isTriggerOf) {
+		actions 				: Action[*];
+	}
+
+	Node SComp : AComp {
+		childActivity	: String;
+	}
+}
+\end{lstlisting}
+The \texttt{AndroidComponent} meta-model contains a \texttt{Node} that inherits from \texttt{Component}. \texttt{AComp} contains all necessary slots to instantiate and generate an Android component. At potency level one, we instantiate the template to be used for generating the component code (in Java), the Java package that should be used, optional dependencies (regular Java classes) or properties to be associated with the component. An example of a possible property is a telephone number for sending an SMS. At potency level two, we can instantiate the remaining fields of \texttt{AComp}. A \texttt{trigger} or \texttt{isTriggerOf} field can be specified, which enables local communication between two components. For example, a \texttt{GeoComponent} can pass its location to an \texttt{SMSComponent}, after which this component can use the data to send an SMS. This trigger can additionally be extended by using the \texttt{Trigger} edge. Through \texttt{Trigger}, we can specify a list of actions to be executed when a trigger is captured. The trigger behavior is implicit to each component and cannot be changed. For instance, a \texttt{GeoComponent} will only trigger when a new location is found. \\ \\
+Apart from a normal \texttt{AComp} node, a modeler can also instantiate components of type \texttt{SComp}. These components are used to represent client/server components. Typically, an instantiation of \texttt{SComp} communicates with a server. An example of this is the \texttt{DropboxComponent}. These type of components are usually embedded in an activity and could optionally have a child activity. For instance in a \texttt{DropboxComponent}, we usually want to show additional information on documents found in a Dropbox repository. This additional information will be shown through a child activity that is specified in a Dropbox instantiation of type \texttt{SComp}. \\
 
 \subsection{Example Component}
 
+As an example, we will discuss the Dropbox component, both on potency level one as well as on the instantiation level. The model for potency level one is listed in Listing ~\ref{dropbox-m}.
+
+\begin{lstlisting}[label=dropbox-m,caption=Dropbox model, captionpos=t]
+load "Component"
+
+AndroidComponent dropboxComponent {
+	
+	SComp Dropbox {
+		ctype = "dropbox";
+		gencodetemplate = "dropbox.egl";
+
+		folder 		: String;
+		key 		: String;
+		secret 		: String;
+	}
+
+}
+\end{lstlisting}
+This level should and will never be visible to a developer. A modeler is only concerned about the instantiation level. At this level, we specify the template to generate the Java Dropbox component. We also introduce new slots that represent the name of the folder that should be used as a repository, together with the token key and token secret to authenticate with OAuth \cite{OAuth}. The model instantiation itself is listed in Listing ~\ref{dropbox-inst}.
+
+\begin{lstlisting}[label=dropbox-inst,caption=Dropbox instantiation, captionpos=t]
+Dropbox dropbox {
+	layoutcomponents = [dropboxButton, dirContentButton, contentText, dirContent];
+	actions = [];
+	uiactions = [triggerDropbox];
+
+	childActivity = "DropboxItemActivity";
+	folder = "/Thesis/";
+	key = "1yb8hkeirab3iq9";
+	secret = "NOT_FOR_YOU";
+}
+\end{lstlisting}
 
 \section{Server}
 
-Node.js, server meta-model, server javascript, check server property (action)
-User, Session, Components,...
+\subsection{Meta-model}
+
+The \texttt{Server} meta-model is quite straight-forward and the more complex parts are implemented in Node.js. \texttt{Server} is embedded into the \texttt{Application} meta-model. The code is listed in Listing ~\ref{server-mm}.
+
+\begin{lstlisting}[label=server-mm,caption=Server meta-model, captionpos=t]
+load "Session"
+load "AndroidComponent"
+
+Model Server imports Session, AndroidComponent {
+
+	Node Server {
+		name 			: String;
+		session 		: SessionObject;
+		host 			: String;
+		port 			: String;
+		components 		: Component@0[*];
+	}
+}
+\end{lstlisting}
+The host and port for the server can be set, together with the components that should be included in the server. Apart from that, a modeler should also set a \texttt{SessionObject} node. This node simply contains a list of users that are able to authenticate to the server, together with their roles. 
+
+\subsection{Javascript and WebSockets}
+
+The most relevant part of the \texttt{Server} meta-model lies in the implementation in Javascript. In order to realize both asynchronous as well as synchronous communication, Node.js \cite{NodeJS} was used together with WebSockets:
+\begin{quotation}
+The WebSocket specification - developed as part of the HTML5 initiative - introduced the WebSocket JavaScript interface, which defines a full-duplex single socket connection over which messages can be sent between client and server. The WebSocket standard simplifies much of the complexity around bi-directional web communication and connection management \cite{WebSockets}. 
+\end{quotation}
+If we send all our data packets through a \texttt{WebSocket}, we can communicate with our server in \textit{near real-time}, because there is bi-directional communication between the client and server. Combining this with a server implementation in Node.js, we leverage Javascript to implement a data-intensive real-time application suited for multiple devices:
+\begin{quotation}
+Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+\end{quotation}
+Since all communication works through WebSockets, the server implementation is decoupled from any Android application a developer may model. If at some point the modeling framework has to be adapted to generate iOS applications, nothing has to be changed to the Javascript server implementation. The only requirement is a \texttt{WebSocket} library on the client side (iOS/Android/web).
 
 \section{Code Generation}
 
+Finally after a model has been created, a developer can initiate the code generation phase. This phase loads a set of \textit{egl} files and traverses each model that has been created. A typical code generation process is implemented as follows:
 
-
+\begin{lstlisting}[label=codegen-app,caption=Android code-generation, captionpos=t]
+// generate main Android app
+var t : Template := TemplateFactory.load(basePath+'genActivity.egl');
+if (application.activities.isDefined() and application.activities.size() > 0) {
+	for (activity in application.activities) {
+		if (activity.main == true) {
+			"populating server var".println();
+			if (application.server.isDefined()) {
+				t.populate('server', application.server);
+			}
+		}
+		t.populate('activity', activity);
+		t.populate('application', application);
+		t.populate('path', path);
+		t.populate('basePath',    basePath);
+		t.populate('compPath',    compPath);
+		t.populate('codePath',	  codePath);
+		t.process();
+		t.generate(codePath + 'src/' + path + activity.name + '.java');
+	
+		var l : Template := TemplateFactory.load(basePath+'genDependency.egl');
+		if (activity.content.isDefined() and activity.content.size() > 0) {
+			for (c in activity.content) {
+				if (c.dependencies.isDefined() and c.dependencies.size() > 0) {
+					for (d in c.dependencies) {
+						l.populate('dependency', d);
+						l.populate('basePath',    basePath);
+						l.populate('compPath',    compPath);
+						l.process();
+						l.generate(codePath + 'src/' + path + d.name + '.java');
+					}
+				}
+			}
+		}
+	}
+}
+\end{lstlisting}
+This listing iterates all defined activities and generates the Java \texttt{Activity} files.

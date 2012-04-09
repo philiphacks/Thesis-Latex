@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  24 MAR 2012 18:28
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  9 APR 2012 12:17
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -537,7 +537,43 @@ Missing character: There is no Õ in font cmr10!
  (./00-Preface.tex
 [5
 
-]) (./01-Introduction.tex [1
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 11--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--37
+
+ []
+
+(./01-Introduction.tex [1
 
 ]
 Chapter 1.
@@ -553,7 +589,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
  []
 
-[3] <images/lifecycle.jpg, id=45, 73.2336pt x 122.1363pt>
+[3] <images/lifecycle.jpg, id=46, 73.2336pt x 122.1363pt>
 File: images/lifecycle.jpg Graphic file (type jpg)
 
 <use images/lifecycle.jpg>
@@ -569,14 +605,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
- [5])
-(./02-Modeling.tex [6]
+[5]) (./02-Modeling.tex [6]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--12
@@ -951,18 +980,30 @@ File: images/chap4_app_inventor.png Graphic file (type png)
 <use images/chap4_app_inventor.png>
 Package pdftex.def Info: images/chap4_app_inventor.png used on input line 165.
 (pdftex.def)             Requested size: 398.33858pt x 244.99232pt.
-) (./05-Collaboration.tex [33 <./images/chap4_app_inventor.png>]
+ [33 <./images/chap4_app_inventor.png>]
+<images/chap6_android_build_process.png, id=196, 602.25pt x 369.38pt>
+File: images/chap6_android_build_process.png Graphic file (type png)
+
+<use images/chap6_android_build_process.png>
+Package pdftex.def Info: images/chap6_android_build_process.png used on input l
+ine 196.
+(pdftex.def)             Requested size: 398.33858pt x 244.32135pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./05-Collaboration.tex [34] [35 <./images/chap6_android_build_process.png>]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-[34
+[36
 
 ]
 
-Package natbib Warning: Citation `groupware' on page 35 undefined on input line
+Package natbib Warning: Citation `groupware' on page 37 undefined on input line
  13.
 
 
@@ -971,15 +1012,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
  []
 
 
-Package natbib Warning: Citation `Facebook' on page 35 undefined on input line 
+Package natbib Warning: Citation `Facebook' on page 37 undefined on input line 
 25.
 
 
-Package natbib Warning: Citation `googleDocs' on page 35 undefined on input lin
+Package natbib Warning: Citation `googleDocs' on page 37 undefined on input lin
 e 25.
 
 
-Package natbib Warning: Citation `Skype' on page 35 undefined on input line 25.
+Package natbib Warning: Citation `Skype' on page 37 undefined on input line 25.
 
 
 
@@ -997,13 +1038,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--28
 
  []
 
-[35]
+[37]
 Overfull \hbox (98.49826pt too wide) in alignment at lines 33--42
 [][][] 
  []
 
 
-Package natbib Warning: Citation `other_paper_' on page 36 undefined on input l
+Package natbib Warning: Citation `other_paper_' on page 38 undefined on input l
 ine 49.
 
 
@@ -1036,9 +1077,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--67
 
  []
 
-[36] [37] [38]
+[38] [39] [40]
 
-Package natbib Warning: Citation `groupware' on page 39 undefined on input line
+Package natbib Warning: Citation `groupware' on page 41 undefined on input line
  124.
 
 
@@ -1046,12 +1087,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
-[39]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 155--158
 
  []
 
-[40]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 165--168
 
  []
@@ -1061,9 +1102,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--181
 
  []
 
-[41]
+[43]
 
-Package natbib Warning: Citation `CSCLDefinition2' on page 42 undefined on inpu
+Package natbib Warning: Citation `CSCLDefinition2' on page 44 undefined on inpu
 t line 188.
 
 
@@ -1076,7 +1117,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--207
 
  []
 
-[42]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 210--218
 
  []
@@ -1101,7 +1142,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--241
 
  []
 
-[43]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 245--252
 
  []
@@ -1136,7 +1177,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--294
 
  []
 
-[44]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 297--305
 
  []
@@ -1166,7 +1207,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--337
 
  []
 
-[45]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 340--348
 
  []
@@ -1196,35 +1237,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 373--380
 
  []
 
-[46] <images/chap5_pattern_system.png, id=239, 446.6286pt x 217.2918pt>
+[48] <images/chap5_pattern_system.png, id=247, 446.6286pt x 217.2918pt>
 File: images/chap5_pattern_system.png Graphic file (type png)
 
 <use images/chap5_pattern_system.png>
 Package pdftex.def Info: images/chap5_pattern_system.png used on input line 387
 .
 (pdftex.def)             Requested size: 398.33858pt x 193.79689pt.
- [47 <./images/chap5_pattern_system.png>]
-<images/chap5_coll_stack.png, id=244, 335.8146pt x 172.4844pt>
+ [49 <./images/chap5_pattern_system.png>]
+<images/chap5_coll_stack.png, id=253, 335.8146pt x 172.4844pt>
 File: images/chap5_coll_stack.png Graphic file (type png)
 
 <use images/chap5_coll_stack.png>
 Package pdftex.def Info: images/chap5_coll_stack.png used on input line 404.
 (pdftex.def)             Requested size: 358.50227pt x 184.13802pt.
-) (./06-Design.tex [48 <./images/chap5_coll_stack.png>]
+) (./06-Design.tex [50 <./images/chap5_coll_stack.png>]
 Chapter 6.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 11--11
 [][][][][][][] 
  []
 
-[49
+[51
 
 ]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 28--28
 [][][][][][][] 
  []
 
-[50]
+[52]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 72--72
 [][][][][][][] 
  []
@@ -1234,12 +1275,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 98--98
 [][][][][][][] 
  []
 
-[51]
-
-Package natbib Warning: Citation `AndroidLayoutType' on page 52 undefined on in
-put line 147.
-
-[52]
+[53] [54]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 153--153
 [][][][][][][] 
  []
@@ -1255,37 +1291,165 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
-[53]
+[55]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 190--190
 [][][][][][][] 
  []
 
-[54]) (./07-CaseStudy.tex [55]
+[56]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 217--217
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (4.97495pt too wide) in paragraph at lines 254--255
+\OT1/cmtt/m/n/10.95 Component \OT1/cmr/m/n/10.95 meta-model. If we go one level
+ down, we can de-fine the \OT1/cmtt/m/n/10.95 AndroidComponent
+ []
+
+[57]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 258--258
+[][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+[58]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 304--304
+[][][][][][][] 
+ []
+
+[59]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 322--322
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 341--341
+[][][][][][][] 
+ []
+
+[60]
+Overfull \hbox (6.082pt too wide) in paragraph at lines 366--367
+\OT1/cmr/m/n/10.95 per-fect for data-intensive real-time ap-pli-ca-tions that r
+un across dis-tributed
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 374--374
+[][][][][][][] 
+ []
+
+[61]) (./07-CaseStudy.tex [62]
 Chapter 7.
-) (./08-Conclusion.tex [56
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+[63
 
 ]
-Chapter 8.
-) [57
 
-] [58
+Package natbib Warning: Citation `Github' on page 64 undefined on input line 25
+.
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 37--37
+[][][][][][][] 
+ []
+
+[64]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 48--48
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 64--64
+[][][][][][][] 
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 81--81
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (7.75269pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/10.95 an ab-stract class that has two ab-stract meth-ods, \OT1/cmt
+t/m/n/10.95 AndroidComponent getComponent()
+ []
+
+
+Overfull \hbox (16.83534pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/10.95 and \OT1/cmtt/m/n/10.95 void onMessage(String user, String m
+essage)\OT1/cmr/m/n/10.95 . The \OT1/cmtt/m/n/10.95 getComponent() \OT1/cmr/m/n
+/10.95 method
+ []
+
+[66] <images/chap7_connected.png, id=309, 406.51875pt x 675.52374pt>
+File: images/chap7_connected.png Graphic file (type png)
+
+<use images/chap7_connected.png>
+Package pdftex.def Info: images/chap7_connected.png used on input line 98.
+(pdftex.def)             Requested size: 159.333pt x 264.76227pt.
+
+<images/chap7_chatbox.png, id=310, 872.25874pt x 740.7675pt>
+File: images/chap7_chatbox.png Graphic file (type png)
+
+<use images/chap7_chatbox.png>
+Package pdftex.def Info: images/chap7_chatbox.png used on input line 105.
+(pdftex.def)             Requested size: 394.35738pt x 334.90213pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/chap7_dropbox1.png, id=311, 403.5075pt x 675.52374pt>
+File: images/chap7_dropbox1.png Graphic file (type png)
+
+<use images/chap7_dropbox1.png>
+Package pdftex.def Info: images/chap7_dropbox1.png used on input line 112.
+(pdftex.def)             Requested size: 199.16928pt x 333.43182pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./08-Conclusion.tex [67 <./images/chap7_connected.png>] [68 <./images/chap7_
+chatbox.png>] [69 <./images/chap7_dropbox1.png>]
+Chapter 8.
+) [70
+
+] [71
 
 
 ] (./AA-PetriNet.tex
 Appendix A.
-) (./AA-ModelTransformation.tex [59
+) (./AA-ModelTransformation.tex [72
 
 ]
 Appendix B.
-) (./thesis_example.bbl [60
+) (./thesis_example.bbl [73
 
-] [61
+] [74
 
-] [62])
+] [75])
 
 Package natbib Warning: There were undefined citations.
 
-[63] (./thesis_example.aux)
+[76] (./thesis_example.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1294,10 +1458,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7949 strings out of 493633
- 117622 string characters out of 3143377
- 370620 words of memory out of 3000000
- 11004 multiletter control sequences out of 15000+200000
+ 8190 strings out of 493633
+ 121400 string characters out of 3143377
+ 375825 words of memory out of 3000000
+ 11241 multiletter control sequences out of 15000+200000
  15931 words of font info for 60 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  48i,12n,58p,1773b,1757s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1317,10 +1481,10 @@ texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on thesis_example.pdf (69 pages, 1937039 bytes).
+Output written on thesis_example.pdf (82 pages, 2431433 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
- 203 compressed objects within 3 object streams
+ 402 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

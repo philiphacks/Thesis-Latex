@@ -41,36 +41,39 @@ Warning--empty year in MongoDB
 Warning--empty journal in CollOntology
 Warning--empty journal in NodeJS
 Warning--empty journal in EGL
-You've used 35 entries,
+Warning--empty journal in AndroidLayoutType
+Warning--empty journal in OAuth
+Warning--empty journal in WebSockets
+You've used 38 entries,
             1876 wiz_defined-function locations,
-            666 strings with 7781 characters,
-and the built_in function-call counts, 5922 in all, are:
-= -- 499
-> -- 200
+            681 strings with 8159 characters,
+and the built_in function-call counts, 6312 in all, are:
+= -- 529
+> -- 212
 < -- 0
-+ -- 85
-- -- 50
-* -- 359
-:= -- 889
-add.period$ -- 26
-call.type$ -- 35
-change.case$ -- 35
++ -- 91
+- -- 53
+* -- 380
+:= -- 952
+add.period$ -- 29
+call.type$ -- 38
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 367
-empty$ -- 682
-format.name$ -- 50
-if$ -- 1411
+cite$ -- 73
+duplicate$ -- 394
+empty$ -- 733
+format.name$ -- 53
+if$ -- 1501
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 35
-newline$ -- 108
-num.names$ -- 35
-pop$ -- 186
+int.to.str$ -- 38
+missing$ -- 38
+newline$ -- 117
+num.names$ -- 38
+pop$ -- 204
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 143
+skip$ -- 146
 stack$ -- 0
 substring$ -- 183
 swap$ -- 64
@@ -78,8 +81,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 32
-while$ -- 49
-width$ -- 37
-write$ -- 259
-(There were 38 warnings)
+warning$ -- 35
+while$ -- 52
+width$ -- 40
+write$ -- 280
+(There were 41 warnings)
