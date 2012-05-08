@@ -83,10 +83,27 @@ J.~Roschelle and S.~Teasley, ``{The construction of shared knowledge in
   collaborative problem solving},'' {\em Computer Supported Collaborative
   Learning}, pp.~69--97, 1995.
 
+\bibitem{CSCWGroupware}
+S.~Greenberg, ``{Computer-Supported cooperative work and Groupware},'' {\em
+  Academic Press, London}, 1991.
+
 \bibitem{CSCWConcepts}
 M.~Koch and T.~Gross, ``{Computer-Supported Cooperative Work - Concepts and
   Trends},'' {\em Proceedings of the 11th Conference of the Association
   Information and Management}, pp.~165--172, 2006.
+
+\bibitem{Facebook}
+{Facebook}, ``{Facebook}.'' \url{http://www.facebook.com}.
+
+\bibitem{GDocs}
+{Google}, ``{Google Docs}.'' \url{http://docs.google.com}.
+
+\bibitem{Skype}
+{Skype}, ``{Skype}.'' \url{http://www.skype.com}.
+
+\bibitem{CSCLHistory2}
+J.~Grudin, ``{Computer-supported Cooperative Work: History and Focus},'' {\em
+  University of California, Irvine}, 1994.
 
 \bibitem{StudyCSCW}
 J.~Bowers and S.~Benford, ``{Studies in Computer-Supported Cooperative Work:
@@ -104,10 +121,6 @@ P.~Wilson, ``{Computer-supported cooperative work: An Introduction},'' {\em
 J.~Bannon and K.~Schmidt, ``{CSCW: Four Characters in Search of a Context},''
   1989.
 
-\bibitem{CSCWGroupware}
-S.~Greenberg, ``{Computer-Supported cooperative work and Groupware},'' {\em
-  Academic Press, London}, 1991.
-
 \bibitem{CSCWMethodology}
 T.~Gross and R.~Traunm\"uller, ``{Methodological Considerations on the Design
   of Computer-Supported cooperative work},'' {\em Cybernetics and Systems: An
@@ -122,6 +135,11 @@ T.~K. S.~Gerry and D.~Suthers, ``{Computer-supported collaborative learning: an
 P.~Dillenbourg, ``{What do you mean by "collaborative learning"?},'' {\em
   Collaborative learning: cognitive and computational approaches}, pp.~1--16,
   1999a.
+
+\bibitem{DefinitionCSCL2}
+T.~Koschmann and T.~L. Ernbaum, ``{CSCL: Theory and Practice of an emerging
+  paradigm},'' {\em Paradigm shift and instructional technology}, pp.~1--23,
+  1996.
 
 \bibitem{DesignPatternsColl}
 L.~Guerrero and D.~Fuller, ``Jigsaw method in the context of cscl,'' {\em

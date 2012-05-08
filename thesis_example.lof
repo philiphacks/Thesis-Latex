@@ -19,28 +19,28 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces MetaDepth instantiation schemes: extensible ontological instantiation (left) and strict ontological instantiation (center). Example of strict instantiation (right).\relax }}{21}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces MetaDepth’s linguistic meta-model.\relax }}{22}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Dual classification example.\relax }}{22}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Three model example.\relax }}{22}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Three model example.\relax }}{23}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces An EOL program that populates a MetaDepth model.\relax }}{23}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Constraints and derived fields in Metadepth.\relax }}{23}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Linguistic extensions and associations in Metadepth.\relax }}{24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Android Architecture.\relax }}{26}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces A Java application running in a JVM.\relax }}{29}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Activities in a single task spanning multiple applications.\relax }}{29}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Structure of an AndroidManifest.xml.\relax }}{31}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The lifecycle of an Android Activity.\relax }}{32}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Google App Inventor.\relax }}{33}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Android build process\relax }}{35}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Android Architecture.\relax }}{27}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A Java application running in a JVM.\relax }}{30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Activities in a single task spanning multiple applications.\relax }}{30}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Structure of an AndroidManifest.xml.\relax }}{32}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The lifecycle of an Android Activity.\relax }}{33}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Google App Inventor.\relax }}{34}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Android build process\relax }}{36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Pattern system of a collaborative system\relax }}{49}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Collaboration Stack\relax }}{50}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Groupware 3x3 Time Space Matrix\relax }}{40}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Pattern system of a collaborative system\relax }}{51}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Collaboration Stack\relax }}{51}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces In the main menu of the collaborative application with two connected users\relax }}{67}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces In the chat box of the collaborative application\relax }}{68}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Fetched all research papers from the Dropbox repository\relax }}{69}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Notes and comments on a research paper in the Dropbox repository\relax }}{69}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces In the main menu of the collaborative application with two connected users\relax }}{68}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces In the chat box of the collaborative application\relax }}{69}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Fetched all research papers from the Dropbox repository\relax }}{70}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Notes and comments on a research paper in the Dropbox repository\relax }}{70}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

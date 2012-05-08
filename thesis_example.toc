@@ -22,99 +22,95 @@
 \contentsline {subsection}{\numberline {2.2.1}Linear Modeling Hierarchy}{9}
 \contentsline {subsection}{\numberline {2.2.2}Strict Meta-Modeling}{10}
 \contentsline {subsection}{\numberline {2.2.3}Limitations of Strict Meta-Modeling}{11}
-\contentsline {section}{\numberline {2.3}Problems with the two-level UML Modeling approach}{11}
+\contentsline {section}{\numberline {2.3}Problems with the two-level UML Modeling approach}{12}
 \contentsline {subsection}{\numberline {2.3.1}Example domain model}{12}
 \contentsline {subsection}{\numberline {2.3.2}Domain types as objects}{13}
-\contentsline {subsection}{\numberline {2.3.3}Domain types as classes}{14}
+\contentsline {subsection}{\numberline {2.3.3}Domain types as classes}{15}
 \contentsline {chapter}{\numberline {3}Multi-Level Modeling and Metadepth}{16}
 \contentsline {section}{\numberline {3.1}Deep Meta-Modeling}{16}
 \contentsline {subsection}{\numberline {3.1.1}Clabject}{17}
 \contentsline {subsection}{\numberline {3.1.2}Powertypes}{17}
 \contentsline {subsection}{\numberline {3.1.3}Deep Instantiation}{19}
-\contentsline {subsubsection}{Potency}{19}
-\contentsline {section}{\numberline {3.2}Metadepth}{20}
+\contentsline {subsubsection}{Potency}{20}
+\contentsline {section}{\numberline {3.2}Metadepth}{21}
 \contentsline {subsection}{\numberline {3.2.1}The Linguistic Meta-Model}{21}
-\contentsline {subsection}{\numberline {3.2.2}Tool Support}{21}
+\contentsline {subsection}{\numberline {3.2.2}Tool Support}{22}
 \contentsline {subsection}{\numberline {3.2.3}Constraints and Derived Attributes}{23}
-\contentsline {subsection}{\numberline {3.2.4}Controlling linguistic extensions}{23}
+\contentsline {subsection}{\numberline {3.2.4}Controlling linguistic extensions}{24}
 \contentsline {section}{\numberline {3.3}Other deep meta-modeling solutions}{24}
-\contentsline {chapter}{\numberline {4}Android Development}{25}
-\contentsline {section}{\numberline {4.1}Android Architecture}{25}
-\contentsline {subsection}{\numberline {4.1.1}Applications}{26}
-\contentsline {subsection}{\numberline {4.1.2}Application Framework}{26}
-\contentsline {subsection}{\numberline {4.1.3}Libraries}{27}
-\contentsline {subsection}{\numberline {4.1.4}Android Runtime}{27}
-\contentsline {subsection}{\numberline {4.1.5}Linux Kernel}{28}
-\contentsline {section}{\numberline {4.2}Android Components}{28}
-\contentsline {subsection}{\numberline {4.2.1}Traditional versus Android programming}{28}
-\contentsline {subsection}{\numberline {4.2.2}Activities and Intents}{28}
-\contentsline {subsection}{\numberline {4.2.3}Tasks}{29}
-\contentsline {subsection}{\numberline {4.2.4}Other components}{30}
-\contentsline {subsection}{\numberline {4.2.5}AndroidManifest}{30}
-\contentsline {subsection}{\numberline {4.2.6}Activity Lifecycle}{31}
-\contentsline {section}{\numberline {4.3}Android App Inventor}{33}
-\contentsline {section}{\numberline {4.4}Android compilation}{33}
-\contentsline {subsection}{\numberline {4.4.1}Problem}{33}
-\contentsline {subsection}{\numberline {4.4.2}Solution}{34}
-\contentsline {chapter}{\numberline {5}Collaboration}{36}
-\contentsline {section}{\numberline {5.1}Groupware}{37}
-\contentsline {subsection}{\numberline {5.1.1}Definition}{37}
-\contentsline {subsection}{\numberline {5.1.2}Communication, Collaboration and Coordination}{37}
-\contentsline {subsection}{\numberline {5.1.3}Taxonomies}{38}
+\contentsline {chapter}{\numberline {4}Android Development}{26}
+\contentsline {section}{\numberline {4.1}Android Architecture}{26}
+\contentsline {subsection}{\numberline {4.1.1}Applications}{27}
+\contentsline {subsection}{\numberline {4.1.2}Application Framework}{27}
+\contentsline {subsection}{\numberline {4.1.3}Libraries}{28}
+\contentsline {subsection}{\numberline {4.1.4}Android Runtime}{28}
+\contentsline {subsection}{\numberline {4.1.5}Linux Kernel}{29}
+\contentsline {section}{\numberline {4.2}Android Components}{29}
+\contentsline {subsection}{\numberline {4.2.1}Traditional versus Android programming}{29}
+\contentsline {subsection}{\numberline {4.2.2}Activities and Intents}{29}
+\contentsline {subsection}{\numberline {4.2.3}Tasks}{30}
+\contentsline {subsection}{\numberline {4.2.4}Other components}{31}
+\contentsline {subsection}{\numberline {4.2.5}AndroidManifest}{31}
+\contentsline {subsection}{\numberline {4.2.6}Activity Lifecycle}{32}
+\contentsline {section}{\numberline {4.3}Android App Inventor}{34}
+\contentsline {section}{\numberline {4.4}Android compilation}{34}
+\contentsline {subsection}{\numberline {4.4.1}Problem}{34}
+\contentsline {subsection}{\numberline {4.4.2}Solution}{35}
+\contentsline {chapter}{\numberline {5}Collaboration}{37}
+\contentsline {section}{\numberline {5.1}Groupware}{38}
+\contentsline {subsection}{\numberline {5.1.1}Definition}{38}
+\contentsline {subsection}{\numberline {5.1.2}Communication, Collaboration and Coordination}{38}
+\contentsline {subsection}{\numberline {5.1.3}Taxonomies}{39}
 \contentsline {subsection}{\numberline {5.1.4}Real-time Groupware Concepts}{39}
-\contentsline {subsection}{\numberline {5.1.5}Pros and cons of distributed interaction}{39}
-\contentsline {subsection}{\numberline {5.1.6}Groupware Research and Problems}{40}
-\contentsline {subsection}{\numberline {5.1.7}A groupware classification}{40}
-\contentsline {section}{\numberline {5.2}Computer-Supported Cooperative Work}{41}
-\contentsline {subsection}{\numberline {5.2.1}Definition}{41}
-\contentsline {subsection}{\numberline {5.2.2}CSCW is Groupware}{41}
-\contentsline {subsection}{\numberline {5.2.3}Challenges in CSCW design}{42}
-\contentsline {subsection}{\numberline {5.2.4}Requirements engineering in CSCW}{42}
-\contentsline {section}{\numberline {5.3}Computer-Supported Collaborative Learning}{43}
-\contentsline {subsection}{\numberline {5.3.1}Education and CSCL}{43}
-\contentsline {subsection}{\numberline {5.3.2}Definition}{43}
-\contentsline {subsection}{\numberline {5.3.3}Arguments and Implications of CSCL}{44}
-\contentsline {subsection}{\numberline {5.3.4}Jigsaw method in CSCL}{44}
-\contentsline {section}{\numberline {5.4}Collaborative Patterns}{44}
-\contentsline {subsection}{\numberline {5.4.1}Session}{45}
-\contentsline {subsection}{\numberline {5.4.2}Repository}{45}
-\contentsline {subsection}{\numberline {5.4.3}Object}{46}
-\contentsline {subsection}{\numberline {5.4.4}View}{46}
-\contentsline {subsection}{\numberline {5.4.5}Broadcast}{47}
-\contentsline {subsection}{\numberline {5.4.6}User}{47}
-\contentsline {subsection}{\numberline {5.4.7}Role}{48}
-\contentsline {subsection}{\numberline {5.4.8}Environment}{48}
-\contentsline {subsection}{\numberline {5.4.9}Pattern System for Collaborative Applications Design}{49}
-\contentsline {section}{\numberline {5.5}Collaboration Stack}{49}
-\contentsline {subsection}{\numberline {5.5.1}Ontology of collaboration patterns}{50}
-\contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{51}
-\contentsline {section}{\numberline {6.1}Main component Meta-models}{51}
-\contentsline {subsection}{\numberline {6.1.1}Application}{51}
-\contentsline {subsection}{\numberline {6.1.2}Manifest}{52}
-\contentsline {subsection}{\numberline {6.1.3}Activity}{53}
-\contentsline {subsection}{\numberline {6.1.4}Presentation}{53}
-\contentsline {subsection}{\numberline {6.1.5}Action}{55}
-\contentsline {section}{\numberline {6.2}Component Meta-Model}{56}
-\contentsline {subsection}{\numberline {6.2.1}Component}{57}
-\contentsline {subsection}{\numberline {6.2.2}AndroidComponent}{58}
-\contentsline {subsection}{\numberline {6.2.3}Example Component}{59}
-\contentsline {section}{\numberline {6.3}Server}{60}
-\contentsline {subsection}{\numberline {6.3.1}Meta-model}{60}
-\contentsline {subsection}{\numberline {6.3.2}Javascript and WebSockets}{60}
-\contentsline {section}{\numberline {6.4}Code Generation}{61}
-\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{63}
-\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{63}
-\contentsline {subsection}{\numberline {7.1.1}Problem}{63}
-\contentsline {subsection}{\numberline {7.1.2}Solution}{64}
-\contentsline {section}{\numberline {7.2}Platform implementation}{64}
-\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{64}
-\contentsline {subsection}{\numberline {7.2.2}MainActivity}{65}
-\contentsline {subsection}{\numberline {7.2.3}ListActivity}{66}
-\contentsline {section}{\numberline {7.3}Demonstration}{67}
-\contentsline {chapter}{\numberline {8}Conclusion}{70}
-\contentsline {section}{\numberline {8.1}Summary}{70}
-\contentsline {section}{\numberline {8.2}Future Work}{70}
-\contentsline {chapter}{Appendices}{71}
-\contentsline {chapter}{Appendix \numberline {A}Meta-modeling and Petri Nets}{72}
-\contentsline {chapter}{Appendix \numberline {B}Model to model transformation [Research Internship 2]}{73}
-\contentsline {chapter}{Appendix \numberline {C}Commercial collaborative applications}{74}
+\contentsline {subsection}{\numberline {5.1.5}Pros and cons of distributed interaction}{41}
+\contentsline {subsection}{\numberline {5.1.6}A groupware classification}{41}
+\contentsline {section}{\numberline {5.2}Computer-Supported Cooperative Work}{42}
+\contentsline {subsection}{\numberline {5.2.1}Definition}{42}
+\contentsline {subsection}{\numberline {5.2.2}CSCW is Groupware}{43}
+\contentsline {subsection}{\numberline {5.2.3}Challenges in CSCW design}{43}
+\contentsline {subsection}{\numberline {5.2.4}Requirements engineering in CSCW}{43}
+\contentsline {section}{\numberline {5.3}Computer-Supported Collaborative Learning}{44}
+\contentsline {subsection}{\numberline {5.3.1}Education and CSCL}{44}
+\contentsline {subsection}{\numberline {5.3.2}Definition}{45}
+\contentsline {section}{\numberline {5.4}Collaborative Patterns}{46}
+\contentsline {subsection}{\numberline {5.4.1}Session}{46}
+\contentsline {subsection}{\numberline {5.4.2}Repository}{47}
+\contentsline {subsection}{\numberline {5.4.3}Object}{47}
+\contentsline {subsection}{\numberline {5.4.4}View}{48}
+\contentsline {subsection}{\numberline {5.4.5}Broadcast}{48}
+\contentsline {subsection}{\numberline {5.4.6}User}{49}
+\contentsline {subsection}{\numberline {5.4.7}Role}{49}
+\contentsline {subsection}{\numberline {5.4.8}Environment}{50}
+\contentsline {subsection}{\numberline {5.4.9}Pattern System for Collaborative Applications Design}{50}
+\contentsline {section}{\numberline {5.5}Collaboration Stack}{50}
+\contentsline {subsection}{\numberline {5.5.1}Ontology of collaboration patterns}{51}
+\contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{52}
+\contentsline {section}{\numberline {6.1}Main component Meta-models}{52}
+\contentsline {subsection}{\numberline {6.1.1}Application}{52}
+\contentsline {subsection}{\numberline {6.1.2}Manifest}{53}
+\contentsline {subsection}{\numberline {6.1.3}Activity}{54}
+\contentsline {subsection}{\numberline {6.1.4}Presentation}{54}
+\contentsline {subsection}{\numberline {6.1.5}Action}{56}
+\contentsline {section}{\numberline {6.2}Component Meta-Model}{57}
+\contentsline {subsection}{\numberline {6.2.1}Component}{58}
+\contentsline {subsection}{\numberline {6.2.2}AndroidComponent}{59}
+\contentsline {subsection}{\numberline {6.2.3}Example Component}{60}
+\contentsline {section}{\numberline {6.3}Server}{61}
+\contentsline {subsection}{\numberline {6.3.1}Meta-model}{61}
+\contentsline {subsection}{\numberline {6.3.2}Javascript and WebSockets}{61}
+\contentsline {section}{\numberline {6.4}Code Generation}{62}
+\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{64}
+\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{64}
+\contentsline {subsection}{\numberline {7.1.1}Problem}{64}
+\contentsline {subsection}{\numberline {7.1.2}Solution}{65}
+\contentsline {section}{\numberline {7.2}Platform implementation}{65}
+\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{65}
+\contentsline {subsection}{\numberline {7.2.2}MainActivity}{66}
+\contentsline {subsection}{\numberline {7.2.3}ListActivity}{67}
+\contentsline {section}{\numberline {7.3}Demonstration}{68}
+\contentsline {chapter}{\numberline {8}Conclusion}{71}
+\contentsline {section}{\numberline {8.1}Summary}{71}
+\contentsline {section}{\numberline {8.2}Future Work}{71}
+\contentsline {chapter}{Appendices}{72}
+\contentsline {chapter}{Appendix \numberline {A}Model to model transformation [Research Internship 2]}{73}
+\contentsline {chapter}{Appendix \numberline {B}Commercial collaborative applications}{74}

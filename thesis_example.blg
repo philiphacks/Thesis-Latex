@@ -3,12 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis_example.aux
 The style file: ieeetr.bst
 Database file #1: thesis_example.bib
-Warning--I didn't find a database entry for "groupware"
-Warning--I didn't find a database entry for "Facebook"
-Warning--I didn't find a database entry for "googleDocs"
-Warning--I didn't find a database entry for "Skype"
-Warning--I didn't find a database entry for "other_paper_"
-Warning--I didn't find a database entry for "CSCLDefinition2"
 Warning--empty journal in AccidentalComplexity
 Warning--empty journal in CAMPaM
 Warning--empty journal in RearchitectingUML
@@ -17,45 +11,45 @@ Warning--empty journal in GenericMetaDepth
 Warning--empty journal in LiberateProgramming
 Warning--empty journal in CSCWChars
 Warning--empty journal in CollOntology
-You've used 39 entries,
+You've used 44 entries,
             1876 wiz_defined-function locations,
-            685 strings with 8352 characters,
-and the built_in function-call counts, 6329 in all, are:
-= -- 567
-> -- 216
+            700 strings with 8701 characters,
+and the built_in function-call counts, 7068 in all, are:
+= -- 632
+> -- 240
 < -- 0
-+ -- 93
-- -- 54
-* -- 322
-:= -- 925
-add.period$ -- 39
-call.type$ -- 39
-change.case$ -- 39
++ -- 104
+- -- 60
+* -- 356
+:= -- 1033
+add.period$ -- 44
+call.type$ -- 44
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 308
-empty$ -- 769
-format.name$ -- 54
-if$ -- 1578
+cite$ -- 52
+duplicate$ -- 342
+empty$ -- 865
+format.name$ -- 60
+if$ -- 1765
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 20
-newline$ -- 120
-num.names$ -- 39
-pop$ -- 192
+int.to.str$ -- 44
+missing$ -- 22
+newline$ -- 135
+num.names$ -- 44
+pop$ -- 214
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 213
+skip$ -- 241
 stack$ -- 0
-substring$ -- 183
-swap$ -- 64
+substring$ -- 198
+swap$ -- 70
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 8
-while$ -- 53
-width$ -- 41
-write$ -- 306
-(There were 14 warnings)
+while$ -- 60
+width$ -- 46
+write$ -- 344
+(There were 8 warnings)
