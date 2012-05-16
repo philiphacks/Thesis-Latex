@@ -1,7 +1,7 @@
 \select@language {english}
-\contentsline {chapter}{List of Figures}{i}
-\contentsline {chapter}{List of Tables}{ii}
-\contentsline {chapter}{Preface }{iii}
+\contentsline {chapter}{List of Figures}{ii}
+\contentsline {chapter}{List of Tables}{iv}
+\contentsline {chapter}{Preface }{v}
 \contentsline {chapter}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {1.1}Problem Description}{2}
 \contentsline {section}{\numberline {1.2}Background}{3}
@@ -115,7 +115,8 @@
 \contentsline {section}{\numberline {8.2}Future Work}{73}
 \contentsline {chapter}{Appendices}{74}
 \contentsline {chapter}{Appendix \numberline {A}Visual Editor}{75}
-\contentsline {section}{\numberline {A.1}Visual Environment}{75}
-\contentsline {section}{\numberline {A.2}Creating the target model using the Epsilon Generation Language}{75}
-\contentsline {section}{\numberline {A.3}Creating the target model using the Epsilon Transformation Language}{75}
-\contentsline {chapter}{Appendix \numberline {B}Commercial collaborative applications}{76}
+\contentsline {section}{\numberline {A.1}Domain model}{75}
+\contentsline {section}{\numberline {A.2}Creating the visual environment}{77}
+\contentsline {section}{\numberline {A.3}Creating the target model using the Epsilon Generation Language}{79}
+\contentsline {section}{\numberline {A.4}Creating the target model using the Epsilon Transformation Language}{79}
+\contentsline {chapter}{Appendix \numberline {B}Commercial collaborative applications}{80}
