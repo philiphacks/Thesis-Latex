@@ -160,6 +160,18 @@ Joyent, ``Node.js.'' \url{http://nodejs.org/}, 2012.
 {Eclipse Development Team}, ``{Epsilon Generation Language}.''
   \url{http://www.eclipse.org/epsilon/doc/egl/}, 2012.
 
+\bibitem{AndroidPermissions}
+{Android Development Team}, ``{Manifest.permission}.''
+  \url{http://developer.android.com/reference/android/Manifest.permission.html}.
+
+\bibitem{AndroidIntentFilter}
+{Android Development Team}, ``{Intents and Intent Filters}.''
+  \url{http://developer.android.com/guide/topics/intents/intents-filters.html}.
+
+\bibitem{AndroidLinearLayout}
+{Android Development Team}, ``{LinearLayout}.''
+  \url{http://developer.android.com/reference/android/widget/LinearLayout.html}.
+
 \bibitem{AndroidLayoutType}
 Android, ``{Common Android Layout Objects}.''
   \url{http://developer.android.com/guide/topics/ui/layout-objects.html}, 2012.
@@ -171,6 +183,14 @@ OAuth, ``{OAuth: An open protocol to allow secure API authorization in a simple
 
 \bibitem{WebSockets}
 WebSocket, ``{What is WebSocket?}.'' \url{http://websocket.org/}, 2012.
+
+\bibitem{EpsilonGenerationLanguage}
+{Eclipse Development Team}, ``{Epsilon Generation Language}.''
+  \url{http://www.eclipse.org/epsilon/doc/egl/}.
+
+\bibitem{EpsilonBook}
+{Eclipse Development Team}, ``{The Epsilon Book}.''
+  \url{http://www.eclipse.org/epsilon/doc/book/}.
 
 \bibitem{Github}
 Github, ``We make it easier to collaborate with others and share your projects

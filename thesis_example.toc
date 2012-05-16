@@ -1,7 +1,7 @@
 \select@language {english}
-\contentsline {chapter}{List of Figures}{ii}
-\contentsline {chapter}{List of Tables}{iv}
-\contentsline {chapter}{Preface }{v}
+\contentsline {chapter}{List of Figures}{i}
+\contentsline {chapter}{List of Tables}{ii}
+\contentsline {chapter}{Preface }{iii}
 \contentsline {chapter}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {1.1}Problem Description}{2}
 \contentsline {section}{\numberline {1.2}Background}{3}
@@ -89,28 +89,33 @@
 \contentsline {subsection}{\numberline {6.1.1}Application}{52}
 \contentsline {subsection}{\numberline {6.1.2}Manifest}{53}
 \contentsline {subsection}{\numberline {6.1.3}Activity}{54}
-\contentsline {subsection}{\numberline {6.1.4}Presentation}{54}
+\contentsline {subsection}{\numberline {6.1.4}Presentation}{55}
 \contentsline {subsection}{\numberline {6.1.5}Action}{56}
-\contentsline {section}{\numberline {6.2}Component Meta-Model}{57}
+\contentsline {section}{\numberline {6.2}Component Meta-Model}{58}
 \contentsline {subsection}{\numberline {6.2.1}Component}{58}
 \contentsline {subsection}{\numberline {6.2.2}AndroidComponent}{59}
 \contentsline {subsection}{\numberline {6.2.3}Example Component}{60}
 \contentsline {section}{\numberline {6.3}Server}{61}
 \contentsline {subsection}{\numberline {6.3.1}Meta-model}{61}
-\contentsline {subsection}{\numberline {6.3.2}Javascript and WebSockets}{61}
-\contentsline {section}{\numberline {6.4}Code Generation}{62}
-\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{64}
-\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{64}
-\contentsline {subsection}{\numberline {7.1.1}Problem}{64}
-\contentsline {subsection}{\numberline {7.1.2}Solution}{65}
-\contentsline {section}{\numberline {7.2}Platform implementation}{65}
-\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{65}
-\contentsline {subsection}{\numberline {7.2.2}MainActivity}{66}
-\contentsline {subsection}{\numberline {7.2.3}ListActivity}{67}
-\contentsline {section}{\numberline {7.3}Demonstration}{68}
-\contentsline {chapter}{\numberline {8}Conclusion}{71}
-\contentsline {section}{\numberline {8.1}Summary}{71}
-\contentsline {section}{\numberline {8.2}Future Work}{71}
-\contentsline {chapter}{Appendices}{72}
-\contentsline {chapter}{Appendix \numberline {A}Model to model transformation [Research Internship 2]}{73}
-\contentsline {chapter}{Appendix \numberline {B}Commercial collaborative applications}{74}
+\contentsline {subsection}{\numberline {6.3.2}Javascript and WebSockets}{62}
+\contentsline {section}{\numberline {6.4}Code Generation}{63}
+\contentsline {subsection}{\numberline {6.4.1}Epsilon Generation Language}{63}
+\contentsline {subsection}{\numberline {6.4.2}Example}{63}
+\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{65}
+\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{65}
+\contentsline {subsection}{\numberline {7.1.1}Problem}{65}
+\contentsline {subsection}{\numberline {7.1.2}Solution}{66}
+\contentsline {section}{\numberline {7.2}Platform implementation}{66}
+\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{67}
+\contentsline {subsection}{\numberline {7.2.2}MainActivity}{67}
+\contentsline {subsection}{\numberline {7.2.3}ListActivity}{68}
+\contentsline {section}{\numberline {7.3}Demonstration}{69}
+\contentsline {chapter}{\numberline {8}Conclusion}{73}
+\contentsline {section}{\numberline {8.1}Summary}{73}
+\contentsline {section}{\numberline {8.2}Future Work}{73}
+\contentsline {chapter}{Appendices}{74}
+\contentsline {chapter}{Appendix \numberline {A}Visual Editor}{75}
+\contentsline {section}{\numberline {A.1}Visual Environment}{75}
+\contentsline {section}{\numberline {A.2}Creating the target model using the Epsilon Generation Language}{75}
+\contentsline {section}{\numberline {A.3}Creating the target model using the Epsilon Transformation Language}{75}
+\contentsline {chapter}{Appendix \numberline {B}Commercial collaborative applications}{76}

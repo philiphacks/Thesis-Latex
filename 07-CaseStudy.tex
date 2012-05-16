@@ -1,19 +1,19 @@
 \chapter{Case Study: Collaborative Knowledge-Management Platform}
 
-In this chapter, we will discuss an example application of the collaborative modeling framework in detail. Using the framework, we built a model of a collaborative knowledge-management platform. This application allows several people to join a session and work together on a research project. Most of the components and collaborative patterns that are incorporated into the framework have been used in order to model this application. 
+In this chapter, we will discuss an example application of the collaborative modeling framework in detail. Using the framework, I modeled a collaborative knowledge-management platform. This application allows a group of people to create sessions and collaborate on a research project. Most of the components and collaborative patterns incorporated into the framework have been used in order to model this case study application. 
 
 \section{Collaborative Knowledge-Management Platform}
 
-The goal of this case study is the modeling of an application that shows the abilities of the collaborative modeling framework, but I also wanted to solve a real-life problem with it. The modeled application proposes a prototype that should make it easier for researchers to collaborate on research projects.
+The goal of this case study is the modeling of an application that shows the abilities of the collaborative modeling framework. However, I also wanted to solve a real-life problem. The modeled application proposes a prototype that should make it easier for researchers to collaborate on research projects.
 
 \subsection{Problem}
 
-Currently, it is hard to work on a research project with multiple people. When reading papers, it is hard to make notes on them and it is not straightforward how to share those notes with other people. Currently, people make notes in the margin of a paper and pass this paper on to other people. This method does not encourage collaboration and it's hard to collaborate in real-time when both people want to read the same paper. This situation is one problem I wanted to fix with the collaborative platform. \\ \\
-A second problem goes back to the collaboration in real-time. When two researchers are not in the same place (and/or time), it makes it hard to collaborate in real-time on a research project. How do people on one research project keep in sync all the time? We currently have the technology, we only need to build the right tools with this technology. If we use this technology as an enabler to work more efficiently (i.e. create the tools), how will this make us more efficient on a research project?
+Currently, it is hard to work on a research project with multiple people. For instance, when reading papers, it is hard to make notes on them and it is not straightforward how to share these notes with other people. Currently, people make notes in the margin of a paper and pass this paper on to other people. This method does not encourage collaboration and it's hard to collaborate in real-time when both people want to read the same paper. Moreover, this classical approach is not scalable to a group of researchers. This situation is one problem I wanted to fix with the collaborative platform. \\ \\
+A second problem goes back to collaboration in real-time. When two researchers are not in the same place (and/or time), it is hard to collaborate in real-time on a research project. How do people working on one research project keep in sync at all the times? We currently have access to the technology, we only need to build the right tools with this technology. If we use technology as an enabler to work more efficiently (i.e. create the tools), how will this make us more efficient on a research project?
 
 \subsection{Solution}
 
-It looks like that the problem as I analyzed it is twofold:
+It looks like the solution to the problem as I analyzed it is twofold:
 \begin{itemize}
 \item{In order to solve the first problem, we can introduce an annotation layer on top of a repository. In the collaborative modeling framework, a repository is modeled using a Dropbox folder. The metadata of every item in this folder can be fetched and annotated with a note by one of the registered researchers of the application. This allows people to simultaneously share their insights on new papers.} 
 \item{When we want to allow a group of researchers to truly collaborate in real-time when they are not in the same place, we have to introduce a way to make it possible to easily communicate with current technology constraints. This problem is solved by integrating a chat box that allows a team to have a discussion in real-time, whether they are in the same place at the same time or not.}
@@ -22,7 +22,7 @@ In addition to solutions to those problems, the case study also includes other m
 
 \section{Platform implementation}
 
-The main entities of the model for the Collaborative Knowledge-Management Platform are the Android activities. These activities represent the main features found in the application. Each of those are embedded in the main \texttt{Application} object. We will discuss the most important activities in depth in this section. All source code can be found on Github\footnote{https://github.com/philipdesmedt/Thesis-Android} \cite{Github}.
+The main entities of the model for the Collaborative Knowledge-Management Platform are the Android activities. These activities represent the main features found in the application. Each of those are embedded in a main \texttt{Application} object. All source code can be found on Github\footnote{https://github.com/philipdesmedt/Thesis-Android} \cite{Github}. We will discuss the most important activities in depth in this section:
 
 \begin{itemize}
 \item{LoginActivity}
@@ -55,7 +55,7 @@ Login login {
 	uiactions = [triggerLogin];
 }
 \end{lstlisting}
-Both the \texttt{host} and \texttt{port} fields are settings that should be set to connect to the server. The layout components are, as mentioned earlier, the inputs for authentication with the server. The \texttt{actions} list  extends the functionality of the \texttt{action} method of a component and the \texttt{uiactions} list contains actions that will be executed on UI elements. In the login component, \texttt{ela1} and \texttt{ela2} are both \texttt{ExtractLayoutAction} elements that extract both the username and the password from UI elements and use these in the \texttt{action} method to pass our credentials to the server. The UI action \texttt{triggerLogin} specifies what has to be done when the login button is triggered. This specific action effectively calls the \texttt{action} method of our login component and changes the Activity to \texttt{MainActivity} when the given credentials are verified. If the credentials are incorrect, nothing happens at all.
+Both the \texttt{host} and \texttt{port} fields are settings that should be set to connect to the server users should authenticate with. The layout components are, as mentioned earlier, the inputs for authentication with the server. The \texttt{actions} list  extends the functionality of the \texttt{action} method of a component and the \texttt{uiactions} list contains actions that will be executed on UI elements in the application. In the login component, \texttt{ela1} and \texttt{ela2} are both \texttt{ExtractLayoutAction} elements that extract both the username and the password from UI elements and use these in the \texttt{action} method to pass credentials to the server. The UI action \texttt{triggerLogin} specifies what has to be done when the login button is triggered. This specific action effectively calls the \texttt{action} method of our login component and changes the Activity to \texttt{MainActivity} when the given credentials are verified. If the credentials are incorrect, nothing happens at all.
 
 \subsection{MainActivity}
 
@@ -72,8 +72,8 @@ MainActivity act2 {
 	userView = connectedUsers;
 }
 \end{lstlisting}
-We only modeled one component in \texttt{MainActivity}, a Twitter component. We don't want a separate Activity for a Twitter component, so that's why we just embedded it into the current Activity and used a \texttt{Button} as a trigger for it. Because this component is offered as a complete integration, this \texttt{Button} is not included in the onClickListeners, but in the Twitter component itself. Because this component does not need a lot of customizations (apart from the text to tweet), it is offered as an integrated component solution in the framework. The onClickListeners specify all shortcuts to the other Activities in the current Activity. Finally, we also specified a \texttt{userView} field that, if set, shows all currently connected users in the application. \\ \\
-Note that we don't just use the \texttt{Activity} meta-model, but the \texttt{MainActivity} meta-model. This meta-model has no difference with the \texttt{Activity} meta-model on a modeling level, but it has some differences on the implementation level. The \texttt{MainActivity.java} implementation inherits from the \texttt{Activity} implementation included in the Android SDK. Moreover, it is an \texttt{abstract class} that asks for the implementation of the \texttt{setConnectedUsers} method. This method takes a \texttt{String} of users as input and allows a modeler to show the currently connected users. That way, our collaborative framework can easily support the awareness of users in a collaborative application.
+We only modeled one component in \texttt{MainActivity}, a Twitter component. We don't want a separate Activity for a Twitter component, so that's why we just embedded it into the current Activity and used a \texttt{Button} as a trigger for it. Because this component does not need a lot of customizations (apart from the text to tweet), it is offered as an integrated component solution in the framework. The \texttt{onClickListeners} specify all shortcuts to the other Activities in the current Activity. Finally, we also specified a \texttt{userView} field that, if set, shows all currently connected users in the application. \\ \\
+Note that we don't just use the \texttt{Activity} meta-model, but the \texttt{MainActivity} meta-model. This meta-model has no difference with the \texttt{Activity} meta-model on a modeling level, but it has some differences on the implementation level. The \texttt{MainActivity.java} implementation inherits from the \texttt{Activity} implementation included in the Android SDK. It is an \texttt{abstract class} that requires  the implementation of the \texttt{setConnectedUsers} method. This method takes a \texttt{String} of users as input and allows a modeler to show the currently connected users. That way, our collaborative framework can easily support the awareness of users in a collaborative application.
 
 \subsection{ListActivity}
 
@@ -87,7 +87,7 @@ GenericActivity act5 {
 	presentation = pres5;
 }
 \end{lstlisting}
-The most important aspect of this model is the use of the \texttt{GenericActivity} type. Just like the \texttt{MainActivity}, this meta-model has no difference with the \texttt{Activity} meta-model, but the implementation again is slightly different. \texttt{GenericActivity} is an abstract class that has two abstract methods, \texttt{AndroidComponent getComponent()} and \texttt{void onMessage(String user, String message)}. The \texttt{getComponent()} method is used when we need to notify the embedded component within this Activity and the \texttt{onMessage()} method is a callback function that is called when we receive a message from the server. Usually, those \texttt{GenericActivity} classes also have a child Activity associated with them. This is true for our list component too. This child activity is used to display the comments or notes on a particular list item. For instance, if we model a list of goals, we can comment on these goals. These comments are wrapped into the child activity.
+The most important aspect of this model is the use of the \texttt{GenericActivity} meta-model type. Just like the \texttt{MainActivity} meta-model, this meta-model has no difference with the \texttt{Activity} meta-model, but the implementation again is slightly different. \texttt{GenericActivity} is an abstract class that contains two abstract methods, \texttt{AndroidComponent getComponent()} and \texttt{void onMessage(String user, String message)}. The \texttt{getComponent()} method is used when we need to notify the embedded component within this Activity and the \texttt{onMessage()} method is a callback function that is called when we receive a message from the server. Usually, those \texttt{GenericActivity} classes also have a child Activity associated with them, in particular when we implement a list component. This child activity is used to display the comments or notes on a particular list item. For instance, if we model a list of goals, we can comment on these goals. These comments are wrapped into the child activity.
 
 \section{Demonstration}
 
@@ -98,14 +98,14 @@ In this section, we will have a look at the running modeled application. In the 
 \caption{In the main menu of the collaborative application with two connected users}
 \label{fig:coll_connected}
 \end{figure} \\
-When we start the chat activity, a simple screen with the latest chat messages comes up. A user can send a message to all other users. This message will be persisted in the MongoDB database and subsequently sent to all users. A view of the chat box is depicted in figure ~\ref{fig:coll_chatbox}. 
+When we start the chat activity, a simple screen with the latest chat messages comes up. A user can then send a message to all other users. This message will be persisted in a MongoDB database and subsequently be sent to all users. A view of the chat box is depicted in figure ~\ref{fig:coll_chatbox}. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.99\textwidth]{images/chap7_chatbox.png}
 \caption{In the chat box of the collaborative application}
 \label{fig:coll_chatbox}
 \end{figure} \\ 
-Finally, we see the functionality of the Dropbox repository in figures ~\ref{fig:coll_dropbox1} and ~\ref{fig:coll_dropbox2}. The first figure shows the content of the folder we passed when modeling the Dropbox repository. This directory contains all research papers used to write this thesis. The other figure shows notes on a particular research paper in this directory. Users are able to comment on the paper and make additional notes to e.g. remember the summary of a paper. All users with the \texttt{admin} permission can view all notes on a file.
+Finally, the functionality of the Dropbox repository is depicted in figures ~\ref{fig:coll_dropbox1} and ~\ref{fig:coll_dropbox2}. The first figure shows the content of the folder we passed when modeling the Dropbox repository. This directory contains all research papers used to write this thesis. The other figure shows notes on a particular research paper in this directory. Users are able to comment on the paper and make additional notes to e.g. remember the summary of a paper. Users with the \texttt{admin} permission can view all notes on a file. Other users with non-admin permission can only see their own comments.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/chap7_dropbox1.png}

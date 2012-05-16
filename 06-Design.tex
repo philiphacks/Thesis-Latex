@@ -1,12 +1,12 @@
 \chapter{Designing a Collaborative Modeling Framework}
 
-In this chapter, the complete collaborative modeling framework will be explained in depth. The target platform for applications modeled by the framework is Android. Once a modeler has a basic understanding of how Android development works, the modeler can use this framework to rapidly develop Android prototypes. Most Android components have an equivalent meta-model in the collaborative framework. In the next section, all meta-models that make up an Android application are discussed. In a next section, the server component written in Node.js \cite{NodeJS} and Javascript is described. Finally, we end the chapter with a section on code generation and EGL \cite{EGL}.
+In this chapter, the collaborative modeling framework will be explained in depth. The target platform for applications modeled through the framework is Android. Once a modeler has a basic understanding of how Android development works, the modeler can use this framework to rapidly develop Android prototypes. Most Android components have an equivalent meta-model in the collaborative framework. In the first section, several meta-models that make up an Android application are discussed. In a next section, the server component written in Node.js \cite{NodeJS} and Javascript is described. This component is used to save data created by a user and to distributed this data to other users currently involved in a session. Finally, we end the chapter with a section on code generation and EGL \cite{EGL}.
 
 \section{Main component Meta-models}
 
 \subsection{Application}
 
-The top-level meta-model that represents an Android application is the \texttt{Application} meta-model. \texttt{Application} contains an \texttt{AndroidManifest} and a set of \texttt{Activities}. If we want to communicate with a Server, we also need to specify an instance of the \texttt{Server} meta-model. The complete \texttt{Application} meta-model is described as follows:
+The top-level meta-model that represents an Android application is the \texttt{Application} meta-model. \texttt{Application} has a \texttt{name} field and contains an \texttt{AndroidManifest} and a set of \texttt{Activities}. If we want to communicate with a server, we also need to specify an instance of the \texttt{Server} meta-model. The complete \texttt{Application} meta-model is described as follows:
 
 \begin{lstlisting}[label=application-mm,caption=Application meta-model, captionpos=t]
 load "Manifest"
@@ -23,7 +23,7 @@ Model Application imports Activity, Manifest, Server {
 
 \subsection{Manifest}
 
-One field in the \texttt{Application} meta-model is the \texttt{AndroidManifest}. This document, as described in chapter 4, contains all activities and other Android components. The \texttt{AndroidManifest} meta-model is declared as follows:
+One field in the \texttt{Application} meta-model is the \texttt{AndroidManifest}. The \textit{AndroidManifest.xml}, as described in chapter 4, contains all activities and other Android components. The equivalent meta-model is declared as follows:
 
 \begin{lstlisting}[label=application-mm,caption=Manifest meta-model, captionpos=t]
 Model Manifest {
@@ -63,7 +63,7 @@ Model Manifest {
 	}
 }
 \end{lstlisting}
-Some of the fields have a pre-defined value such as \texttt{namespace}, \texttt{icon} and \texttt{label}. Other fields need to be explicitly set by the modeler. The \texttt{package} field describes the Java package to organize the source code. Other fields describe the current SDK version of Android and the Activities that correspond with the ones that are modeled in the \texttt{Activity} meta-model. The \texttt{Permission} Node models the permissions that the modeled application needs. For instance, if the application needs to access the internet, we need to add an INTERNET permission.
+Some of the fields have a pre-defined value, such as \texttt{namespace}, \texttt{icon} or \texttt{label}. Other fields need to be set explicitly by the modeler. The \texttt{package} field describes the Java package used to logically organize the source code. Other fields describe the current SDK version of Android and the Activities that correspond with the ones that are modeled in the \texttt{Activity} meta-model. The \texttt{Permission} Node models the permissions that the modeled application needs. For instance, if the application needs to access the internet, we need to add an INTERNET permission. Every Android application can have a variety of permissions set to use the functionality provided by the SDK \cite{AndroidPermissions}. An \texttt{IntentFilter} is associated to an Activity, we indicate that this Activity is the entry point of the application. In Android, other options can be specified through intent filters, but these are not supported in the collaborative modeling framework \cite{AndroidIntentFilter}.
 
 \subsection{Activity}
 
@@ -93,7 +93,7 @@ As we can see, an Activity contains an arbitrary number of components (explained
 
 \subsection{Presentation}
 
-In an Android application, the layout of an Activity is usually presented through an XML file. Alternatively, the layout of an \texttt{Activity} can also be described through Java code. For the collaborative modeling framework, the XML approach was chosen. The \texttt{Presentation} meta-model is described in Listing ~\ref{presentation-mm}.
+In an Android application, the layout of an Activity is usually presented through an XML file. Alternatively, the layout of an \texttt{Activity} can also be described through Java code. For the collaborative modeling framework, the XML approach was chosen, so the code generation part will generate a set of XML files that represent the application's layout. The \texttt{Presentation} meta-model is described in Listing ~\ref{presentation-mm}.
 
 \begin{lstlisting}[label=presentation-mm,caption=Presentation meta-model, captionpos=t]
 load "Component"
@@ -144,11 +144,11 @@ Model Presentation imports Component {
 	}
 }
 \end{lstlisting}
-The relevant part of the meta-model is the \texttt{LayoutType} node. This node describes the type of layout to use in the \texttt{Activity}, together with a description of the children, the layout elements. We usually want to create a \texttt{LinearLayout} type, but other types are possible too \cite{AndroidLayoutType}. Examples of layout elements are \texttt{Button} or a child view that has its own layout elements, for example a \texttt{ScrollView}.
+The relevant part of the meta-model is defined through the \texttt{LayoutType} node. This node describes the type of layout (e.g. LinearLayout, a layout that arranges its children in a single row or column \cite{AndroidLinearLayout}) to use in the \texttt{Activity}. Apart from the type, it also contains a description of the elements contained in the layout itself. We usually want to create a \texttt{LinearLayout} type, but other types are possible too \cite{AndroidLayoutType}. Examples of layout elements are \texttt{Button} or a child view that has its own layout elements, for example a \texttt{ScrollView}.
 
 \subsection{Action}
 
-The \texttt{Action} meta-model contains all actions that elements in a layout or for passing data between activities. A part of the \texttt{Action} meta-model is displayed in listing ~\ref{androidaction-mm}.
+The \texttt{Action} meta-model is an important part in the functionality of the collaborative modeling framework. It provides a skeleton for executing actions on Android components or elements in a layout. Another example of an action would be the exchange of data between activities. A part of the \texttt{Action} meta-model is displayed in listing ~\ref{androidaction-mm}.
 
 \begin{lstlisting}[label=androidaction-mm,caption=AndroidAction meta-model, captionpos=t]
 load "Component"
@@ -184,8 +184,8 @@ Model AndroidAction imports Component, ServerProperty, Data {
 	}
 }
 \end{lstlisting}
-The actions listed above are the three most important actions. The \texttt{ExtractLayoutAction} takes as arguments a source component and a name for the data that has to be extracted. This data will be extracted from the source component that was specified. Usually this is an Android \texttt{TextView} or \texttt{EditText} component. The \texttt{ChangeActivityAction} will take two activities and an arbitrary data structure as input. The first Activity specified should be the current Activity and the other Activity should be the Activity that is to be launched. Finally, the \texttt{CallComponentAction} calls the \textit{action} method that is implemented in every \texttt{AndroidComponent}. This \textit{action} method will be explained in the next section, Component Meta-Model. \\ \\
-Now, in order to execute those actions, we need to associate them with a \texttt{UIAction} model within an \texttt{AndroidComponent} or an \texttt{Activity}. The \texttt{UIAction} meta-model is listed in Listing ~\ref{uiaction-mm}.
+The actions listed above are the three most used and important actions. The \texttt{ExtractLayoutAction} takes as arguments a source layout component and a name for the data that has to be extracted. This data will be extracted from the source component that is specified. Usually this is an Android \texttt{TextView} or \texttt{EditText} component. The \texttt{ChangeActivityAction} will take two activities and an arbitrary data structure as input. The first Activity specified should be the current Activity and the other Activity should be the Activity that is to be launched. When executing this action, the application will change to the destination activity and the data structure will be available in the new activity. Finally, the \texttt{CallComponentAction} calls the \textit{action} method that has to be implemented in every \texttt{AndroidComponent}. The \textit{action} method will be explained in the next section, Component Meta-Model. \\ \\
+Now, in order to execute those actions, we usually want to associate them with a \texttt{UIAction} model within an \texttt{AndroidComponent} or an \texttt{Activity}. The \texttt{UIAction} meta-model is listed in Listing ~\ref{uiaction-mm}.
 
 \begin{lstlisting}[label=uiaction-mm,caption=UIAction meta-model, captionpos=t]
 load "Presentation"
@@ -202,13 +202,11 @@ Model UIAction imports Presentation, AndroidAction {
 
 }
 \end{lstlisting}
-In \texttt{UIAction}, we specify a target to execute a list of actions on. This target should be a \texttt{LayoutComponent} (hence the name \texttt{UIAction}). Finally, we can embed this \texttt{UIAction} in an \texttt{AndroidComponent} or an \texttt{Activity}.
+In \texttt{UIAction}, we specify a target to execute a list of actions on. This target should be a \texttt{LayoutComponent} (hence the name \texttt{UIAction}). For instance, if we want to change activities when clicking a button (i.e. in a menu), a \texttt{ChangeActivityAction} should be created that is added to the list of actions of the \texttt{OnClickListener} instance.
 
 \section{Component Meta-Model}
 
-Another important part of the framework is the \texttt{Component} meta-model. Every implemented Android component should be inherited from this meta-model. Examples of such components are \texttt{SMSComponent}, \texttt{TwitterComponent} or \texttt{ChatComponent}. In the following sections we will describe the abstract \texttt{Component} meta-model, the derived \texttt{AndroidComponent} and an instantiation of an \texttt{AndroidComponent} as an example. 
-
-Two level potency, example component, android component, server component, properties hashmap, action method, pre-developed Java classes, ...
+Another important part of the framework is the \texttt{Component} meta-model. Every implemented Android component should be inherited from this meta-model. Examples of such components are \texttt{SMSComponent}, \texttt{TwitterComponent} or \texttt{ChatComponent}. In the following sections we will describe the abstract \texttt{Component} meta-model, the derived \texttt{AndroidComponent} and an instantiation of an \texttt{AndroidComponent} as an example.
 
 \subsection{Component}
 
@@ -251,7 +249,7 @@ Model Component@2 {
 
 }
 \end{lstlisting}
-As we can see, this meta-model has a potency level of 2. This means that we have three instantiation levels in our model. At the highest level, we define an abstract \texttt{Component} meta-model. If we go one level down, we can define the \texttt{AndroidComponent} itself (e.g. \textit{SMS}) and at level 0, we instantiate the component in our model. All components are of type \texttt{AndroidComponent} which is a subtype of \texttt{Component}. This component will be discussed in the next section. \texttt{LayoutComponent} is another component that inherits from our \texttt{Component} meta-model. It is used to describe the layout of an \texttt{Activity} and has a potency of two, which means it will be instantiated at our model level too.
+As we can see, this meta-model has a potency level of 2. This means that we have three levels in the meta-model. At the highest level, we define an abstract \texttt{Component} meta-model. Going down one level, we have defined the \texttt{AndroidComponent} itself (e.g. \textit{SMS}) and at level 0, we instantiate the component in our model. All components are of type \texttt{AndroidComponent} which is a subtype of \texttt{Component}. This component will be discussed in the next section. \texttt{LayoutComponent} is another component that inherits from our \texttt{Component} meta-model. It is used to describe the layout elements of an \texttt{Activity} and has a potency of two. It follows the same instantiation scheme as an \texttt{AndroidComponent} does.
 
 \subsection{AndroidComponent}
 
@@ -294,12 +292,12 @@ Model AndroidComponent@2 imports Component, AndroidAction, UIAction {
 	}
 }
 \end{lstlisting}
-The \texttt{AndroidComponent} meta-model contains a \texttt{Node} that inherits from \texttt{Component}. \texttt{AComp} contains all necessary slots to instantiate and generate an Android component. At potency level one, we instantiate the template to be used for generating the component code (in Java), the Java package that should be used, optional dependencies (regular Java classes) or properties to be associated with the component. An example of a possible property is a telephone number for sending an SMS. At potency level two, we can instantiate the remaining fields of \texttt{AComp}. A \texttt{trigger} or \texttt{isTriggerOf} field can be specified, which enables local communication between two components. For example, a \texttt{GeoComponent} can pass its location to an \texttt{SMSComponent}, after which this component can use the data to send an SMS. This trigger can additionally be extended by using the \texttt{Trigger} edge. Through \texttt{Trigger}, we can specify a list of actions to be executed when a trigger is captured. The trigger behavior is implicit to each component and cannot be changed. For instance, a \texttt{GeoComponent} will only trigger when a new location is found. \\ \\
+The \texttt{AndroidComponent} meta-model contains a \texttt{Node} that inherits from \texttt{Component}. \texttt{AComp} contains all necessary slots to instantiate and generate an Android component. At potency level one, we instantiate the EGL template to be used for generating the component code (in Java), the Java package that should be used, optional dependencies (regular Java classes) or properties to be associated with the component. An example of a possible property is a telephone number for sending an SMS. At the instantiation level, we can instantiate the remaining fields of \texttt{AComp}, such as \textit{layoutcomponents} or \textit{actions}. A \texttt{trigger} or \texttt{isTriggerOf} field can be specified, which enables local communication between two components. For example, when the trigger of a \texttt{GeoComponent} is fired, it passes its location to another component (e.g. \texttt{SMSComponent}), after which this component can use the location data to perform an action (e.g. send an SMS). This trigger can additionally be extended by using the \texttt{Trigger} edge. Through the \texttt{Trigger} edge, we can specify a list of actions to be executed when a trigger is fired. The trigger behavior is implicit to each component and cannot be changed. For instance, a \texttt{GeoComponent} will only trigger when a new location is found. \\ \\
 Apart from a normal \texttt{AComp} node, a modeler can also instantiate components of type \texttt{SComp}. These components are used to represent client/server components. Typically, an instantiation of \texttt{SComp} communicates with a server. An example of this is the \texttt{DropboxComponent}. These type of components are usually embedded in an activity and could optionally have a child activity. For instance in a \texttt{DropboxComponent}, we usually want to show additional information on documents found in a Dropbox repository. This additional information will be shown through a child activity that is specified in a Dropbox instantiation of type \texttt{SComp}. \\
 
 \subsection{Example Component}
 
-As an example, we will discuss the Dropbox component, both on potency level one as well as on the instantiation level. The model for potency level one is listed in Listing ~\ref{dropbox-m}.
+As an example, we will show the Dropbox component, both on potency level one as well as on the instantiation level. The model for potency level one is listed in Listing ~\ref{dropbox-m}.
 
 \begin{lstlisting}[label=dropbox-m,caption=Dropbox model, captionpos=t]
 load "Component"
@@ -317,7 +315,7 @@ AndroidComponent dropboxComponent {
 
 }
 \end{lstlisting}
-This level should and will never be visible to a developer. A modeler is only concerned about the instantiation level. At this level, we specify the template to generate the Java Dropbox component. We also introduce new slots that represent the name of the folder that should be used as a repository, together with the token key and token secret to authenticate with OAuth \cite{OAuth}. The model instantiation itself is listed in Listing ~\ref{dropbox-inst}.
+At this level, we specify the template to generate the Java Dropbox component. We also introduce new slots that represent the name of the folder that should be used as a repository, together with the token key and token secret to authenticate with OAuth \cite{OAuth}. This level should and will never be visible to a developer. A modeler is only concerned about the instantiation level. The model instantiation is listed in Listing ~\ref{dropbox-inst}.
 
 \begin{lstlisting}[label=dropbox-inst,caption=Dropbox instantiation, captionpos=t]
 Dropbox dropbox {
@@ -327,10 +325,11 @@ Dropbox dropbox {
 
 	childActivity = "DropboxItemActivity";
 	folder = "/Thesis/";
-	key = "1yb8hkeirab3iq9";
-	secret = "NOT_FOR_YOU";
+	key = "KEY";
+	secret = "SECRET";
 }
 \end{lstlisting}
+We have defined a few layout components that make up the layout of the Dropbox activity. For instance, the \texttt{dirContentButton} value is used to grab the content of the Dropbox folder and the \texttt{dirContent} value represents the list that contains all filenames after the content is fetched from the Dropbox folder, that is specified by the folder, key and secret fields. When clicking on an item in a list, the activity that is specified in the \texttt{childActivity} field is initiated. This activity allows a user to make comments on a file (e.g. a research paper) in the specified Dropbox folder.
 
 \section{Server}
 
@@ -353,7 +352,7 @@ Model Server imports Session, AndroidComponent {
 	}
 }
 \end{lstlisting}
-The host and port for the server can be set, together with the components that should be included in the server. Apart from that, a modeler should also set a \texttt{SessionObject} node. This node simply contains a list of users that are able to authenticate to the server, together with their roles. 
+The host and port for the server can be set, together with the components that should be included in the server. Apart from that, a modeler should also set a \texttt{SessionObject} node. This node simply contains a list of users that are able to authenticate to the server, together with their role. 
 
 \subsection{Javascript and WebSockets}
 
@@ -369,7 +368,19 @@ Since all communication works through WebSockets, the server implementation is d
 
 \section{Code Generation}
 
-Finally after a model has been created, a developer can initiate the code generation phase. This phase loads a set of \textit{egl} files and traverses each model that has been created. A typical code generation process is implemented as follows:
+\subsection{Epsilon Generation Language}
+
+EGL is a template-based model-to-text language for generating code, documentation and other textual artefacts from models. EGL supports content-destination decoupling, protected regions for mixing generated with hand-written code, and template coordination \cite{EpsilonGenerationLanguage}. \\ \\
+The concrete syntax of EGL closely resembles the style of other template-based code generation languages, such as PHP \cite{EpsilonBook}. Any text enclosed in a tag pair \textit{[\%} \textit{\%]} is used to delimit a dynamic code section. Text not inclosed in a tag pair is considered static code. Listing ~\ref{egl-template} illustrates the use of dynamic and static code sections to from a basic EGL template. 
+\begin{lstlisting}[label=egl-template,caption=EGL template, captionpos=t]
+?[% for (i in Sequence{1..5}) { %]
+	i is [%= i %][% } %]
+\end{lstlisting}
+The structure of this basic template is used for the generation of Java code in the collaborative modeling framework. The next subsection shows an example of a real EGL template used in the collaborative modeling framework.
+
+\subsection{Example}
+
+Finally, after a model has been created, a developer can initiate the code generation phase. This phase loads a set of EGL files and traverses each model that has been created. A typical code generation process is implemented as follows:
 
 \begin{lstlisting}[label=codegen-app,caption=Android code-generation, captionpos=t]
 // generate main Android app
