@@ -61,7 +61,7 @@ The approach described earlier exhibits a number of fundamental problems. One of
 \end{figure}
 The exact definition of strict meta-modeling is defined as follows:
 \begin{mydef}
-In an \textit{n}-level modeling architecture, M\subscript{0}, M\subscript{1}, ..., M\subscript{n-1}, every element of an M\subscript{m}-level model must be an instance-of exactly one element of an M\subscript{m+1}-level model, for all \textit{m} $\leq$ \textit{m} $\le$ \textit{n-1}, and any relationship other than the instance-of relationship between two elements \textit{X} and \textit{Y} implies that level(X) = level(Y ).
+In an \textit{n}-level modeling architecture, M\subscript{0}, M\subscript{1}, ..., M\subscript{n-1}, every element of an M\subscript{m}-level model must be an instance-of exactly one element of an M\subscript{m+1}-level model, for all \textit{0} $\leq$ \textit{m} $\le$ \textit{n-1}, and any relationship other than the instance-of relationship between two elements \textit{X} and \textit{Y} implies that level(X) = level(Y ).
 \end{mydef}
 It is clear that the topmost level \textit{n} is ignored in this definition. Nevertheless, we can model the top level so that its elements are instances of themselves, such that we can terminate the hierarchy of meta-levels.
 

@@ -112,11 +112,10 @@
 \contentsline {section}{\numberline {7.3}Demonstration}{69}
 \contentsline {chapter}{\numberline {8}Conclusion}{73}
 \contentsline {section}{\numberline {8.1}Summary}{73}
-\contentsline {section}{\numberline {8.2}Future Work}{73}
-\contentsline {chapter}{Appendices}{74}
-\contentsline {chapter}{Appendix \numberline {A}Visual Editor}{75}
-\contentsline {section}{\numberline {A.1}Domain model}{75}
-\contentsline {section}{\numberline {A.2}Creating the visual environment}{77}
-\contentsline {section}{\numberline {A.3}Creating the target model using the Epsilon Generation Language}{79}
-\contentsline {section}{\numberline {A.4}Creating the target model using the Epsilon Transformation Language}{79}
-\contentsline {chapter}{Appendix \numberline {B}Commercial collaborative applications}{80}
+\contentsline {section}{\numberline {8.2}Future Work}{74}
+\contentsline {chapter}{Appendices}{76}
+\contentsline {chapter}{Appendix \numberline {A}Visual Editor}{77}
+\contentsline {section}{\numberline {A.1}Domain model}{77}
+\contentsline {section}{\numberline {A.2}Creating the visual environment}{79}
+\contentsline {section}{\numberline {A.3}Creating the target model using EGL}{81}
+\contentsline {section}{\numberline {A.4}Conclusion}{81}

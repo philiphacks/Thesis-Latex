@@ -1,16 +1,25 @@
 \chapter{Conclusion}
 
+This chapter concludes the thesis 'Domain-Specific Modeling and Model Transformation to support Collaborative Work on Android' by giving an overview of the chapters contained in this work. In the second and last section, a number of possible extensions to the collaborative modeling framework are proposed. 
+
 \section{Summary}
+
+The document started out with the problem description and an introduction to a traditional software development cycle in chapter 1. The traditional software development cycle established a workflow of analysis, design, implementation, testing and maintenance. With domain-specific modeling, we can  test assumptions we make very early in the development process. Moreover, another benefit of DSM is the ability to use other verification techniques apart from testing, i.e. formal verification. Formal verification techniques include formal analysis and model checking. \\ \\
+Next, an overview of domain-specific modeling was given in chapter 2. Here we discussed the traditional modeling approach using UML and its shortcomings. In this chapter, a definition for strict meta-modeling was given. Afterwards, the limitations of strict meta-modeling and the two-level UML modeling approach were discussed. In strict meta-modeling, every element of an M\subscript{m}-level model must be an instance-of exactly one element of an M\subscript{m+1}-level model, for all \textit{0} $\leq$ \textit{m} $\le$ \textit{n-1}. Any relationship other than an instance-of relationship between two elements X and Y implies that both elements reside on the same modeling level. This approach introduces some problems that can be solved through multi-level modeling. \\ \\
+In chapter 3, we proposed a multi-level modeling solution (applied to Metadepth) to solve the problems discussed in chapter 2. The chapter started off introducing new modeling elements (e.g. clabjects, powertypes) and properties (e.g. potency) used in a multi-level modeling approach. Afterwards, the specifics of Metadepth, such as tool support, constraints and linguistic extensions were covered. \\ \\
+Chapter 4 gives an introduction to the Android SDK and Android development in general. Moreover, the layered Android architecture, together with the most important components modeled in the collaborative modeling framework have been covered. The chapter ends with an overview of the Android Activity lifecycle, the most prominent Android SDK component, and Android App Inventor, a What You See Is What You Get (WYSYWYG) editor for building Android application. \\ \\
+The theory and thought process behind the collaborative components included in the collaborative modeling framework were discussed in chapter 5. First the chapter covers two collaborative fields, Computer-Supported Cooperative Work (CSCW) and Computer-Supported Collaborative Learning (CSCL), together with Groupware, a generic term for collaborative work. The second part of the chapter defines the collaborative patterns typically used in a collaborative application and a collaboration stack that defines the different levels in a collaborative application.  \\ \\
+Chapter 6 covers the design of the collaborative framework. First, the most prominent meta-models such as \texttt{Application}, \texttt{Activity} and \texttt{Manifest} are explained. Next, we describe the \texttt{Component} meta-model hierarchy that has two implementing meta-models \texttt{LayoutComponent} and \texttt{AndroidComponent}. The other sections explain the \texttt{Server} meta-model and how instantiations of these meta-models are used to generate Java code with EGL and the Android SDK. \\ \\
+Finally, chapter 7 describes a case study application that shows off the capabilities of the modeling framework described in chapter 6. In this case study, I modeled a collaborative Android application that allows a group of people to create sessions and work together on a research project. This application uses the majority of the capabilities of the modeling framework.
 
 \section{Future Work}
 
-The collaborative modeling framework and proposed collaborative case study can be extended with different components. Unfortunately, the time frame in which this research was conducted was too small to elaborate on certain aspects. Here are a number of possible extensions to the collaborative modeling framework:
+Based on the previous section, the main conclusion of this work is that it \textit{is} possible to build a modeling framework for Android. However, the Android SDK is \textit{very} extensive and therefore requires an enormous amount of work to map all the SDK components to meta-models. Therefore, the collaborative modeling framework can still be extended with different functionalities and components. Unfortunately, the time frame in which this research was conducted was too small to elaborate on certain aspects. Here are a number of possible extensions to the collaborative modeling framework:
 
 \begin{itemize}
-\item{Better constraints checking}
 \item{Support for custom resources (images, graphics, icons, backgrounds,...)}
-\item{Visual editor}
-\item{Better M2M Transformation}
+\item{Extended M2M Transformation}
 \item{Web service to model and generate .apk Android apps}
+\item{Improved constraints checking}
 \item{Additional components to extend functionality}
 \end{itemize}

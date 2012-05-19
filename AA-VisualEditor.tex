@@ -52,7 +52,7 @@ Finally, the \texttt{User} Node represents a simplified model of the \texttt{Use
 \section{Creating the visual environment}
 
 For the creation of the visual environment, I extended the work of Leonardo Diez Dolinski \footnote{http://www.linkedin.com/in/leio10}. The environment exists in the form of a web application, that allows people to create their own visual models, backed by a Metadepth meta-model. The core HTML and Javascript was written already when I started extending this project. In order to create a visual environment that allows the creation of models in our newly created domain model, we need to create an instance of the \texttt{VModel} meta-model included in the existing visual environment. All names prepended with the character \texttt{V} model a visual node in the environment. 
-\begin{lstlisting}[label=domain-mm,caption=Domain meta-model, captionpos=t]
+\begin{lstlisting}[label=visual-mm,caption=Domain meta-model, captionpos=t]
 VModel VAndroid imports Android, VWidgets {
 	VNode VApp : Draggable, Connectable {
         refApp: App{ref};
@@ -100,7 +100,26 @@ The model of the \texttt{VAndroid} meta-model is created in the same file. The m
 \label{fig:visual_environment}
 \end{figure}
 
-\section{Creating the target model using the Epsilon Generation Language}
+\section{Creating the target model using EGL}
 
-\section{Creating the target model using the Epsilon Transformation Language}
+Now that we have created the visual editor, we can construct simple models in the domain model. After creating a model, a user can download this model, which produces a file containing Metadepth code. This Metadepth code follows the textual syntax of the domain model we created and is an instance of the \texttt{Android} model created before. The source model that contains a list component with items and a server component associated with a list of users now has to be transformed into a target model. \\ \\
+One approach to transforming the source model into the target model is to use an EGL template that interweaves static code sections with dynamic code sections. The static code sections contain the \texttt{Presentation}, \texttt{Activity} and \texttt{Actions} models. The dynamic code sections are filled in with the parts found in the generated source model. For example, we use the following EGL template to construct a list component in the target model:
+\begin{lstlisting}[label=target-model,caption=List component in the target model, captionpos=t]
+[% for (li in app.content) { %]
+	List [%= li %] {
+		childActivity = "MainChildActivity";
+		items = [[% for (it in li.items) { %][%= it %], [% } %]];
+	}
+	[% for (it in li.items) { %]
+		ListItem [%= it %] {
+			text = "[%= it.text %]";
+			type = "MainActivity";
+		}
+	[% } %]
+[% } %]
+\end{lstlisting}
+In this EGL template we iterate the \texttt{app.content} field, which is a collection of items (in the source model). These items are created on their own in a \texttt{ListItem} node, which re-uses the \texttt{text} field from the \texttt{Item} source model. Executing the complete EGL template results in a target model that is conform to the collaborative modeling framework. Using this target model, we can generate an Android binary that runs on all Android phones that have a version of 2.2 or higher.
 
+\section{Conclusion}
+
+Now that we have created a visual editor for the collaborative modeling framework, the barriers of entry to modeling an Android application have been lowered significantly. Although the applications that can be created using the visual environment are limited to a narrow problem domain, they allow a modeler to easily create domain specific Android applications, eliminating the need of technical knowledge.
