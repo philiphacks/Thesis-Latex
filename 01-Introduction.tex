@@ -22,8 +22,9 @@ After creating a requirements specification and any accompanying design document
 
 \subsection{Verification}
 
-Verification is the process of determining that a system, or a module, meets the specified requirements. Therefore, the verification process always relies on the requirements specification, as this document defines the intended behavior of the system. We should ask ourselves \textit{"Are we building the system right?"}. Verification is usually performed by (automated) testing of the system. The testing process can involve unit testing (testing a component in isolation \cite{UnitTesting}), integration testing (components tested as a group \cite{IntegrationTesting}), regression testing (uncover new errors in existing functionality after changes have been made to a system \cite{RegressionTesting}) and other ways of verifying that the system behaves as we expect it to. Another process closely related to this is \textit{validation}. Validation is the process of determining that a system meets the \textit{actual} requirements of the user. In this process, we should ask ourselves \textit{"Are we building the right system?"}. Moreover, we should both \texttt{verify} and \texttt{analyze} a software system.
-\\ \\
+Verification is the process of determining that a system, or a module, meets the specified requirements. Therefore, the verification process always relies on the requirements specification, as this document defines the intended behavior of the system. We should ask ourselves \textit{"Are we building the system right?"}. Verification is usually performed by (automated) testing of the system. The testing process can involve unit testing (testing a component in isolation \cite{UnitTesting}), integration testing (components tested as a group \cite{IntegrationTesting}), regression testing (uncover new errors in existing functionality after changes have been made to a system \cite{RegressionTesting}) and other ways of verifying that the system behaves as we expect it to. Another process closely related to this is \textit{validation}. Validation is the process of determining that a system meets the \textit{actual} requirements of the user. In this process, we should ask ourselves \textit{"Are we building the right system?"}. Moreover, we should both \texttt{verify} and \texttt{analyze} a software system. \\ \\
+One of the major benefits of DSM is the ability to use other verification techniques than testing, i.e. formal verification. In the context of this work, formal verification is the act of proving or disproving the  correctness of a system with respect to a certain formal specification or property, using formal methods, where formal means "mathematically precise" \cite{FormalSpec}. An example of formal verification is model checking. Domain-specific languages (DSLs) can be verified using model checkers, which are tools that automatically verify that a system cannot exhibit some specified undesirable behavior such as deadlock, livelock, information leakage etc. The model checker explores all logically possible execution traces of the system, making the verification equivalent to exhaustive testing. The model checker returns an execution trace exhibiting the unintended behaviour  (e.g., deadlock) if such a 
+trace exists, a useful feature during debugging \cite{ModelChecking}. \\ \\
 A complete software development lifecycle is depicted in figure \ref{fig:lifecycle}. One of the goals of this thesis is to minimize or even eliminate the implementation and testing cycles. Using a DSL, an end-user can easily create and customize their own applications by specifying its functionality in a clear and non-verbose way. This makes the design lifecycle is a lot easier, as the modeling of applications is very rapid and processes several cycles on the background. The activity of generating code is explained in the next subsection.
 
 \begin{figure}[htb]
@@ -49,7 +50,7 @@ These are the main objectives of the study:
 
 \begin{itemize}
 \item{Discuss the shortcomings of two level modeling and why we need multi-level modeling}
-\item{Analyze the possibilities of model driven engineering in the context of the Android platform}
+\item{Analyze the possibilities of domain-specific modeling in the context of the Android platform}
 \item{Analyze and define the different types of collaboration methods}
 \item{Create a coherent framework that allows the creation of collaborative Android applications}
 \end{itemize}
@@ -64,7 +65,7 @@ Research Question 1. How can we leverage the Android stack to support the modeli
 \item{Hypothesis 2. There exists a categorization of different types of groupware. \\
 Research Question 2. How can we support the different types of groupware in a modeling framework?}
 \item{Hypothesis 3. We have a broad offering of collaborative applications and functionalities are offered as separate applications. \\
-Research Question 3. How can we integrate different functionalities in one collaborative application that is adaptable to a group of people?}
+Research Question 3. How can we integrate different functionalities in one collaborative application that is adaptable to a group of (non-technical) people?}
 \end{itemize}
 
 \subsection{Expected Outcomes}

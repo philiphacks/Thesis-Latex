@@ -9,113 +9,115 @@
 \contentsline {subsection}{\numberline {1.2.2}Implementation}{3}
 \contentsline {subsection}{\numberline {1.2.3}Verification}{3}
 \contentsline {subsection}{\numberline {1.2.4}Code Generation}{4}
-\contentsline {section}{\numberline {1.3}Contribution}{5}
-\contentsline {subsection}{\numberline {1.3.1}Aims and Objectives}{5}
-\contentsline {subsection}{\numberline {1.3.2}Research Questions}{5}
+\contentsline {section}{\numberline {1.3}Contribution}{4}
+\contentsline {subsection}{\numberline {1.3.1}Aims and Objectives}{4}
+\contentsline {subsection}{\numberline {1.3.2}Research Questions}{6}
 \contentsline {subsection}{\numberline {1.3.3}Expected Outcomes}{6}
 \contentsline {section}{\numberline {1.4}Thesis Outline}{6}
-\contentsline {chapter}{\numberline {2}Domain Specific Modeling}{7}
-\contentsline {section}{\numberline {2.1}Traditional Meta-Modeling}{8}
-\contentsline {subsection}{\numberline {2.1.1}Formalism}{8}
-\contentsline {subsection}{\numberline {2.1.2}Meta-Modeling}{8}
-\contentsline {section}{\numberline {2.2}UML Modeling Framework}{9}
-\contentsline {subsection}{\numberline {2.2.1}Linear Modeling Hierarchy}{9}
-\contentsline {subsection}{\numberline {2.2.2}Strict Meta-Modeling}{10}
-\contentsline {subsection}{\numberline {2.2.3}Limitations of Strict Meta-Modeling}{11}
-\contentsline {section}{\numberline {2.3}Problems with the two-level UML Modeling approach}{12}
-\contentsline {subsection}{\numberline {2.3.1}Example domain model}{12}
-\contentsline {subsection}{\numberline {2.3.2}Domain types as objects}{13}
-\contentsline {subsection}{\numberline {2.3.3}Domain types as classes}{15}
-\contentsline {chapter}{\numberline {3}Multi-Level Modeling and Metadepth}{16}
-\contentsline {section}{\numberline {3.1}Deep Meta-Modeling}{16}
-\contentsline {subsection}{\numberline {3.1.1}Clabject}{17}
-\contentsline {subsection}{\numberline {3.1.2}Powertypes}{17}
-\contentsline {subsection}{\numberline {3.1.3}Deep Instantiation}{19}
-\contentsline {subsubsection}{Potency}{20}
-\contentsline {section}{\numberline {3.2}Metadepth}{21}
-\contentsline {subsection}{\numberline {3.2.1}The Linguistic Meta-Model}{21}
-\contentsline {subsection}{\numberline {3.2.2}Tool Support}{22}
-\contentsline {subsection}{\numberline {3.2.3}Constraints and Derived Attributes}{23}
-\contentsline {subsection}{\numberline {3.2.4}Controlling linguistic extensions}{24}
-\contentsline {section}{\numberline {3.3}Other deep meta-modeling solutions}{24}
-\contentsline {chapter}{\numberline {4}Android Development}{26}
-\contentsline {section}{\numberline {4.1}Android Architecture}{26}
-\contentsline {subsection}{\numberline {4.1.1}Applications}{27}
-\contentsline {subsection}{\numberline {4.1.2}Application Framework}{27}
-\contentsline {subsection}{\numberline {4.1.3}Libraries}{28}
-\contentsline {subsection}{\numberline {4.1.4}Android Runtime}{28}
-\contentsline {subsection}{\numberline {4.1.5}Linux Kernel}{29}
-\contentsline {section}{\numberline {4.2}Android Components}{29}
-\contentsline {subsection}{\numberline {4.2.1}Traditional versus Android programming}{29}
-\contentsline {subsection}{\numberline {4.2.2}Activities and Intents}{29}
-\contentsline {subsection}{\numberline {4.2.3}Tasks}{30}
-\contentsline {subsection}{\numberline {4.2.4}Other components}{31}
-\contentsline {subsection}{\numberline {4.2.5}AndroidManifest}{31}
-\contentsline {subsection}{\numberline {4.2.6}Activity Lifecycle}{32}
-\contentsline {section}{\numberline {4.3}Android App Inventor}{34}
-\contentsline {section}{\numberline {4.4}Android compilation}{34}
-\contentsline {subsection}{\numberline {4.4.1}Problem}{34}
-\contentsline {subsection}{\numberline {4.4.2}Solution}{35}
-\contentsline {chapter}{\numberline {5}Collaboration}{37}
-\contentsline {section}{\numberline {5.1}Groupware}{38}
-\contentsline {subsection}{\numberline {5.1.1}Definition}{38}
-\contentsline {subsection}{\numberline {5.1.2}Communication, Collaboration and Coordination}{38}
-\contentsline {subsection}{\numberline {5.1.3}Taxonomies}{39}
-\contentsline {subsection}{\numberline {5.1.4}Real-time Groupware Concepts}{39}
-\contentsline {subsection}{\numberline {5.1.5}Pros and cons of distributed interaction}{41}
-\contentsline {subsection}{\numberline {5.1.6}A groupware classification}{41}
-\contentsline {section}{\numberline {5.2}Computer-Supported Cooperative Work}{42}
-\contentsline {subsection}{\numberline {5.2.1}Definition}{42}
-\contentsline {subsection}{\numberline {5.2.2}CSCW is Groupware}{43}
-\contentsline {subsection}{\numberline {5.2.3}Challenges in CSCW design}{43}
-\contentsline {subsection}{\numberline {5.2.4}Requirements engineering in CSCW}{43}
-\contentsline {section}{\numberline {5.3}Computer-Supported Collaborative Learning}{44}
-\contentsline {subsection}{\numberline {5.3.1}Education and CSCL}{44}
-\contentsline {subsection}{\numberline {5.3.2}Definition}{45}
-\contentsline {section}{\numberline {5.4}Collaborative Patterns}{46}
-\contentsline {subsection}{\numberline {5.4.1}Session}{46}
-\contentsline {subsection}{\numberline {5.4.2}Repository}{47}
-\contentsline {subsection}{\numberline {5.4.3}Object}{47}
-\contentsline {subsection}{\numberline {5.4.4}View}{48}
-\contentsline {subsection}{\numberline {5.4.5}Broadcast}{48}
-\contentsline {subsection}{\numberline {5.4.6}User}{49}
-\contentsline {subsection}{\numberline {5.4.7}Role}{49}
-\contentsline {subsection}{\numberline {5.4.8}Environment}{50}
-\contentsline {subsection}{\numberline {5.4.9}Pattern System for Collaborative Applications Design}{50}
-\contentsline {section}{\numberline {5.5}Collaboration Stack}{50}
-\contentsline {subsection}{\numberline {5.5.1}Ontology of collaboration patterns}{51}
-\contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{52}
-\contentsline {section}{\numberline {6.1}Main component Meta-models}{52}
-\contentsline {subsection}{\numberline {6.1.1}Application}{52}
-\contentsline {subsection}{\numberline {6.1.2}Manifest}{53}
-\contentsline {subsection}{\numberline {6.1.3}Activity}{54}
-\contentsline {subsection}{\numberline {6.1.4}Presentation}{55}
-\contentsline {subsection}{\numberline {6.1.5}Action}{56}
-\contentsline {section}{\numberline {6.2}Component Meta-Model}{58}
-\contentsline {subsection}{\numberline {6.2.1}Component}{58}
-\contentsline {subsection}{\numberline {6.2.2}AndroidComponent}{59}
-\contentsline {subsection}{\numberline {6.2.3}Example Component}{60}
-\contentsline {section}{\numberline {6.3}Server}{61}
-\contentsline {subsection}{\numberline {6.3.1}Meta-model}{61}
-\contentsline {subsection}{\numberline {6.3.2}Javascript and WebSockets}{62}
-\contentsline {section}{\numberline {6.4}Code Generation}{63}
-\contentsline {subsection}{\numberline {6.4.1}Epsilon Generation Language}{63}
-\contentsline {subsection}{\numberline {6.4.2}Example}{63}
-\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{65}
-\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{65}
-\contentsline {subsection}{\numberline {7.1.1}Problem}{65}
-\contentsline {subsection}{\numberline {7.1.2}Solution}{66}
-\contentsline {section}{\numberline {7.2}Platform implementation}{66}
-\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{67}
-\contentsline {subsection}{\numberline {7.2.2}MainActivity}{67}
-\contentsline {subsection}{\numberline {7.2.3}ListActivity}{68}
-\contentsline {section}{\numberline {7.3}Demonstration}{69}
-\contentsline {chapter}{\numberline {8}Conclusion}{73}
-\contentsline {section}{\numberline {8.1}Summary}{73}
-\contentsline {section}{\numberline {8.2}Future Work}{74}
-\contentsline {chapter}{Appendices}{76}
-\contentsline {chapter}{Appendix \numberline {A}Visual Editor}{77}
-\contentsline {section}{\numberline {A.1}Domain model}{77}
-\contentsline {section}{\numberline {A.2}Creating the visual environment}{79}
-\contentsline {section}{\numberline {A.3}Creating the target model using EGL}{81}
-\contentsline {section}{\numberline {A.4}Conclusion}{81}
+\contentsline {chapter}{\numberline {2}Domain Specific Modeling}{8}
+\contentsline {section}{\numberline {2.1}Traditional Meta-Modeling}{9}
+\contentsline {subsection}{\numberline {2.1.1}Formalism}{9}
+\contentsline {subsection}{\numberline {2.1.2}Meta-Modeling}{9}
+\contentsline {subsection}{\numberline {2.1.3}Linear Modeling Hierarchy}{10}
+\contentsline {subsection}{\numberline {2.1.4}Linguistic Meta-Modeling}{11}
+\contentsline {subsection}{\numberline {2.1.5}Ontological Meta-Modeling}{11}
+\contentsline {section}{\numberline {2.2}Strict Meta-Modeling}{13}
+\contentsline {subsection}{\numberline {2.2.1}Definition}{13}
+\contentsline {subsection}{\numberline {2.2.2}Limitations of Strict Meta-Modeling}{14}
+\contentsline {section}{\numberline {2.3}Problems with the two-level UML Modeling approach}{15}
+\contentsline {subsection}{\numberline {2.3.1}Example domain model}{15}
+\contentsline {subsection}{\numberline {2.3.2}Domain types as objects}{16}
+\contentsline {subsection}{\numberline {2.3.3}Domain types as classes}{18}
+\contentsline {chapter}{\numberline {3}Multi-Level Modeling and Metadepth}{19}
+\contentsline {section}{\numberline {3.1}Deep Meta-Modeling}{19}
+\contentsline {subsection}{\numberline {3.1.1}Clabject}{20}
+\contentsline {subsection}{\numberline {3.1.2}Powertypes}{20}
+\contentsline {subsection}{\numberline {3.1.3}Deep Instantiation}{22}
+\contentsline {subsubsection}{Potency}{23}
+\contentsline {section}{\numberline {3.2}Metadepth}{24}
+\contentsline {subsection}{\numberline {3.2.1}The Linguistic Meta-Model}{24}
+\contentsline {subsection}{\numberline {3.2.2}Tool Support}{25}
+\contentsline {subsection}{\numberline {3.2.3}Constraints and Derived Attributes}{26}
+\contentsline {subsection}{\numberline {3.2.4}Controlling linguistic extensions}{27}
+\contentsline {section}{\numberline {3.3}Other deep meta-modeling solutions}{27}
+\contentsline {chapter}{\numberline {4}Android Development}{29}
+\contentsline {section}{\numberline {4.1}Android Architecture}{29}
+\contentsline {subsection}{\numberline {4.1.1}Applications}{30}
+\contentsline {subsection}{\numberline {4.1.2}Application Framework}{30}
+\contentsline {subsection}{\numberline {4.1.3}Libraries}{31}
+\contentsline {subsection}{\numberline {4.1.4}Android Runtime}{31}
+\contentsline {subsection}{\numberline {4.1.5}Linux Kernel}{32}
+\contentsline {section}{\numberline {4.2}Android Components}{32}
+\contentsline {subsection}{\numberline {4.2.1}Traditional versus Android programming}{32}
+\contentsline {subsection}{\numberline {4.2.2}Activities and Intents}{32}
+\contentsline {subsection}{\numberline {4.2.3}Tasks}{33}
+\contentsline {subsection}{\numberline {4.2.4}Other components}{34}
+\contentsline {subsection}{\numberline {4.2.5}AndroidManifest}{34}
+\contentsline {subsection}{\numberline {4.2.6}Activity Lifecycle}{35}
+\contentsline {section}{\numberline {4.3}Android App Inventor}{37}
+\contentsline {section}{\numberline {4.4}Android compilation}{37}
+\contentsline {subsection}{\numberline {4.4.1}Problem}{37}
+\contentsline {subsection}{\numberline {4.4.2}Solution}{38}
+\contentsline {chapter}{\numberline {5}Collaboration}{40}
+\contentsline {section}{\numberline {5.1}Groupware}{41}
+\contentsline {subsection}{\numberline {5.1.1}Definition}{41}
+\contentsline {subsection}{\numberline {5.1.2}Communication, Collaboration and Coordination}{41}
+\contentsline {subsection}{\numberline {5.1.3}Taxonomies}{42}
+\contentsline {subsection}{\numberline {5.1.4}Real-time Groupware Concepts}{42}
+\contentsline {subsection}{\numberline {5.1.5}Pros and cons of distributed interaction}{44}
+\contentsline {subsection}{\numberline {5.1.6}A groupware classification}{44}
+\contentsline {section}{\numberline {5.2}Computer-Supported Cooperative Work}{45}
+\contentsline {subsection}{\numberline {5.2.1}Definition}{45}
+\contentsline {subsection}{\numberline {5.2.2}CSCW is Groupware}{46}
+\contentsline {subsection}{\numberline {5.2.3}Challenges in CSCW design}{46}
+\contentsline {subsection}{\numberline {5.2.4}Requirements engineering in CSCW}{46}
+\contentsline {section}{\numberline {5.3}Computer-Supported Collaborative Learning}{47}
+\contentsline {subsection}{\numberline {5.3.1}Education and CSCL}{47}
+\contentsline {subsection}{\numberline {5.3.2}Definition}{48}
+\contentsline {section}{\numberline {5.4}Collaborative Patterns}{49}
+\contentsline {subsection}{\numberline {5.4.1}Session}{49}
+\contentsline {subsection}{\numberline {5.4.2}Repository}{50}
+\contentsline {subsection}{\numberline {5.4.3}Object}{50}
+\contentsline {subsection}{\numberline {5.4.4}View}{51}
+\contentsline {subsection}{\numberline {5.4.5}Broadcast}{51}
+\contentsline {subsection}{\numberline {5.4.6}User}{52}
+\contentsline {subsection}{\numberline {5.4.7}Role}{52}
+\contentsline {subsection}{\numberline {5.4.8}Environment}{53}
+\contentsline {subsection}{\numberline {5.4.9}Pattern System for Collaborative Applications Design}{53}
+\contentsline {section}{\numberline {5.5}Collaboration Stack}{53}
+\contentsline {subsection}{\numberline {5.5.1}Ontology of collaboration patterns}{54}
+\contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{55}
+\contentsline {section}{\numberline {6.1}Main component Meta-models}{55}
+\contentsline {subsection}{\numberline {6.1.1}Application}{55}
+\contentsline {subsection}{\numberline {6.1.2}Manifest}{56}
+\contentsline {subsection}{\numberline {6.1.3}Activity}{57}
+\contentsline {subsection}{\numberline {6.1.4}Presentation}{58}
+\contentsline {subsection}{\numberline {6.1.5}Action}{59}
+\contentsline {section}{\numberline {6.2}Component Meta-Model}{61}
+\contentsline {subsection}{\numberline {6.2.1}Component}{61}
+\contentsline {subsection}{\numberline {6.2.2}AndroidComponent}{62}
+\contentsline {subsection}{\numberline {6.2.3}Example Component}{63}
+\contentsline {section}{\numberline {6.3}Server}{64}
+\contentsline {subsection}{\numberline {6.3.1}Meta-model}{64}
+\contentsline {subsection}{\numberline {6.3.2}Javascript and WebSockets}{65}
+\contentsline {section}{\numberline {6.4}Code Generation}{66}
+\contentsline {subsection}{\numberline {6.4.1}Epsilon Generation Language}{66}
+\contentsline {subsection}{\numberline {6.4.2}Example}{66}
+\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{68}
+\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{68}
+\contentsline {subsection}{\numberline {7.1.1}Problem}{68}
+\contentsline {subsection}{\numberline {7.1.2}Solution}{69}
+\contentsline {section}{\numberline {7.2}Platform implementation}{69}
+\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{70}
+\contentsline {subsection}{\numberline {7.2.2}MainActivity}{70}
+\contentsline {subsection}{\numberline {7.2.3}ListActivity}{71}
+\contentsline {section}{\numberline {7.3}Demonstration}{72}
+\contentsline {chapter}{\numberline {8}Conclusion}{76}
+\contentsline {section}{\numberline {8.1}Summary}{76}
+\contentsline {section}{\numberline {8.2}Future Work}{77}
+\contentsline {chapter}{Appendices}{79}
+\contentsline {chapter}{Appendix \numberline {A}Visual Editor}{80}
+\contentsline {section}{\numberline {A.1}Domain model}{80}
+\contentsline {section}{\numberline {A.2}Creating the visual environment}{82}
+\contentsline {section}{\numberline {A.3}Creating the target model using EGL}{84}
+\contentsline {section}{\numberline {A.4}Conclusion}{84}

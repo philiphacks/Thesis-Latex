@@ -13,12 +13,21 @@ M.~Kolling, ``{Unit Testing in BlueJ}.''
   \url{http://www.bluej.org/tutorial/testing-tutorial.pdf}.
 
 \bibitem{IntegrationTesting}
-Wikipedia, ``{Integration testing}.''
-  \url{http://en.wikipedia.org/wiki/Integration_testing}.
+{Microsoft Developer Network}, ``{Integration testing}.''
+  \url{http://msdn.microsoft.com/en-us/library/aa292128(v=vs.71).aspx}.
 
 \bibitem{RegressionTesting}
 {Microsoft Developer Network}, ``Regression testing.''
   \url{http://msdn.microsoft.com/en-us/library/aa292167(v=vs.71).aspx}.
+
+\bibitem{FormalSpec}
+T.~Szmethy, ``Domain-specific models, model analysis, model transformation.''
+  \url{http://etd.library.vanderbilt.edu/available/etd-06052006-110407/unrestricted/Dissertation_12pt.pdf}.
+
+\bibitem{ModelChecking}
+M.~Cohen, ``Domain-specific model checking: exhaustive testing in model-based
+  development (position paper).''
+  \url{http://www.foi.se/upload/projects/fusion/TAMSEC_2011_p62.pdf}.
 
 \bibitem{AccidentalComplexity}
 C.~Atkinson and T.~K\"uhne, ``{Reducing accidental complexity in domain
@@ -30,6 +39,11 @@ P.~Mosterman and H.~Vangheluwe, ``{Computer Automated Multi-Paradigm Modeling:
 
 \bibitem{RearchitectingUML}
 C.~Atkinson and T.~K\"uhne, ``{Rearchitecting the UML infrastructure},'' 2002.
+
+\bibitem{MDDFound}
+C.~Atkinson and T.~K\"uhne, ``Model-driven development: A metamodeling
+  foundation.''
+  \url{http://homepages.mcs.vuw.ac.nz/~tk/publications/papers/mda-foundation.pdf}.
 
 \bibitem{MetaDepth}
 J.~de~Lara and E.~Guerra, ``{Deep Meta-Modeling with MetaDepth},'' 2010.
@@ -54,7 +68,7 @@ J.~de~Lara and E.~Guerra, ``{Generic Meta-modeling with Concepts, Templates and
   Mixin Layers},'' 2010.
 
 \bibitem{LiberateProgramming}
-T.~Kuhne and D.~Schreiber, ``{Can Programming be Liberated from the Two-Level
+T.~K\"uhne and D.~Schreiber, ``{Can Programming be Liberated from the Two-Level
   style? Multi-Level Programming with DeepJava.},'' 2007.
 
 \bibitem{MultiLevelLangEng}

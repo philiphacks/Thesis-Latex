@@ -3,44 +3,42 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis_example.aux
 The style file: ieeetr.bst
 Database file #1: thesis_example.bib
-Warning--empty journal in AccidentalComplexity
-Warning--empty journal in CAMPaM
 Warning--empty journal in RearchitectingUML
 Warning--empty journal in MetaDepth
 Warning--empty journal in GenericMetaDepth
 Warning--empty journal in LiberateProgramming
 Warning--empty journal in CSCWChars
 Warning--empty journal in CollOntology
-You've used 49 entries,
+You've used 52 entries,
             1876 wiz_defined-function locations,
-            718 strings with 9242 characters,
-and the built_in function-call counts, 7673 in all, are:
-= -- 682
-> -- 260
+            731 strings with 9783 characters,
+and the built_in function-call counts, 8036 in all, are:
+= -- 713
+> -- 276
 < -- 0
-+ -- 114
-- -- 65
-* -- 376
-:= -- 1118
-add.period$ -- 49
-call.type$ -- 49
-change.case$ -- 49
++ -- 121
+- -- 69
+* -- 384
+:= -- 1164
+add.period$ -- 52
+call.type$ -- 52
+change.case$ -- 52
 chr.to.int$ -- 0
-cite$ -- 57
-duplicate$ -- 362
-empty$ -- 955
-format.name$ -- 65
-if$ -- 1920
+cite$ -- 58
+duplicate$ -- 364
+empty$ -- 1011
+format.name$ -- 69
+if$ -- 2019
 int.to.chr$ -- 0
-int.to.str$ -- 49
-missing$ -- 22
-newline$ -- 150
-num.names$ -- 49
-pop$ -- 239
+int.to.str$ -- 52
+missing$ -- 20
+newline$ -- 159
+num.names$ -- 52
+pop$ -- 256
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 271
+skip$ -- 296
 stack$ -- 0
 substring$ -- 198
 swap$ -- 70
@@ -48,8 +46,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 8
-while$ -- 65
-width$ -- 51
-write$ -- 379
-(There were 8 warnings)
+warning$ -- 6
+while$ -- 68
+width$ -- 54
+write$ -- 400
+(There were 6 warnings)

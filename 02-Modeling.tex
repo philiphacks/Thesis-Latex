@@ -8,7 +8,7 @@ The most common way for creating domain models is through the modeling language 
 \\ \\
 In the next section, traditional approaches to meta-modeling will be discussed. We continue with the shortcomings and problems of the UML Modeling Framework and current meta-modeling techniques. An example domain model will be presented and used throughout consecutive sections. This example will be based around a computer hardware product hierarchy and can be described in several ways.
 \\ \\
-Furthermore, the main issues introduced by the \textit{strict} meta-modeling approach, inherent to the UML Framework, will be discussed. These issues arise from the need to capture both \textit{classlike} and \textit{objectlike} features of model elements in a few modeling levels. As a consequence, the modeler introduces a mismatch between the problem and the technology used to represent this problem. A mismatch that makes models more complex than they need to be, and by which \textit{accidental complexity} is introduced. Solutions for avoiding this accidental complexity will be discussed in depth in chapter 3 too.
+Furthermore, the main issues introduced by the \textit{strict} meta-modeling approach, inherent to the UML Framework, will be discussed. These issues arise from the need to capture both \textit{classlike} and \textit{objectlike} features of model elements in two modeling levels. As a consequence, the modeler introduces a mismatch between the problem and the technology used to represent this problem. A mismatch that makes models more complex than they need to be, and by which \textit{accidental complexity} is introduced. Solutions for avoiding this accidental complexity will be discussed in depth in chapter 3.
 
 \section{Traditional Meta-Modeling}
 
@@ -16,22 +16,17 @@ This section discusses traditional meta-modeling approaches that are used in dom
 
 \subsection{Formalism}
 
-A formalism typically consists of a \textit{syntactic} part and a \textit{semantic} part. The syntax of the formalism deals with form and structure. Additionally, the syntactic part is separated into a \textit{concrete} and \textit{abstract} part. The concrete syntax relates to the actual appearance of the language elements (graphical or textual). The abstract syntax pertains to how the language components may be connected. For example, a Petri Net Transition may only be connected to a Petri Net Place.
-\\ \\
+A formalism typically consists of a \textit{syntactic} part and a \textit{semantic} part. The syntax of the formalism deals with form and structure. Additionally, the syntactic part is separated into a \textit{concrete} and \textit{abstract} part. The concrete syntax relates to the actual appearance of the language elements (graphical or textual). The abstract syntax pertains to how the language components may be connected. For example, a Petri Net Transition may only be connected to a Petri Net Place. \\ \\
 The semantic part on its turn relates to the \textit{meaning} of the syntactic constructs. The semantic part is also separated in two parts, \textit{operational} and \textit{denotational}. The operational part explicitly captures how a model can be executed. With a denotational specification, we can provide rules to map a model in a given formalism onto a model in a different formalism for which a semantics is available. We can for example map a Statechart to its equivalent Petri Net. Both semantic approaches ultimately define a transformation.
 
 \subsection{Meta-Modeling}
 
-Meta-modeling concentrates on the modeling of modeling formalisms. To solve domain specific problems as fast as possible, explicitly modeling the formalisms is the most efficient approach. Additionally, meta-modeling exhibits lots of other advantages. First of all, a modeling environment may be generated from a meta-model by a set of language tools. A model of a modeling language can also serve as documentation and as a specification. Additionally, by modifying a meta-model, new domain-specific languages can be designed in an easy manner. Last but not least, the generation of a modeling tool through a meta-model is possibly orders of magnitude faster than developing such a tool by hand. This generated modeling tool will most likely be less error prone too \cite{CAMPaM}.
-\\ \\
+Meta-modeling concentrates on the modeling of modeling formalisms. To solve domain specific problems as fast as possible, explicitly modeling the formalisms is the most efficient approach. Additionally, meta-modeling exhibits lots of other advantages. First of all, a modeling environment may be generated from a meta-model by a set of language tools. A model of a modeling language can also serve as documentation and as a specification. Additionally, by modifying a meta-model, new domain-specific languages can be designed in an easy manner. Last but not least, the generation of a modeling tool through a meta-model is possibly orders of magnitude faster than developing such a tool by hand. This generated modeling tool will most likely be less error prone too \cite{CAMPaM}. \\ \\
 Meta-models are models on their own, so they must be specified in a modeling language. This modeling language is specified by a meta-meta-model. Most of the time, UML class diagrams are used to express the meta-model. On their own, UML class diagrams are expressive enough to be expressed by themselves, e.g. UML is partly defined in terms of UML. This so-called \textit{meta-circularity} refers to the fact that the meta-model of a language L is a model in language L.
-
-\section{UML Modeling Framework}
-
-In the following section, we will briefly discuss the UML Modeling Framework. First, we present the four-layered Meta-Object Facility (MOF) along with a small example. Afterwards, strict meta-modeling and the fundamental problems it exhibits are introduced.
 
 \subsection{Linear Modeling Hierarchy}
 
+In this section, we briefly discuss the UML Modeling Framework. First, we present the four-layered Meta-Object Facility (MOF) along with a small example. \\ \\
 The overall architecture of the UML modeling framework is most heavily influenced by the CASE Data Interchange Format (CDIF) standard developed by a consortium of CASE tool vendors\footnote{CASE Tools: Computer-Aided Software Engineering Tools}. The CDIF standard describes the different modeling languages used to create specific user models in terms of a single fixed, core model (a meta-meta-model) \cite{RearchitectingUML}. The meta-modeling architecture is depicted in figure ~\ref{fig:mm_architecture}.
 \begin{figure}[h!]
 \centering
@@ -40,19 +35,43 @@ The overall architecture of the UML modeling framework is most heavily influence
 \label{fig:mm_architecture}
 \end{figure}
 The meta-meta-model (M\subscript{3}) level is the highest level, from which the UML meta-model is created. In general, it is the core from which the descriptions of specific modeling languages (i.e. specific language meta-models) are created. The UML meta-model (M\subscript{2}) describes the core from which specific language meta-models are created. Specific models are then created as instances of these language meta-models on the M1 level. The User Data depicts instances of such models created in M\subscript{1}. An example of this approach can be seen in figure ~\ref{fig:two_level_inst}.
-
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/chap2_two_level_inst.png}
 \caption{Extending the two levels of instantiation}
 \label{fig:two_level_inst}
 \end{figure}
-
 In this example, the dashed arrows in the figure describe an "instance of" relationship. Every level in the diagram is an instance of its level above. For example, an instantiation of the concept Video resides at level M\subscript{0}. Video on its turn is an instantiation of Class and Class is regarded as an instance of the meta-meta-model elements (the M\subscript{3} level, not shown in this example).
 
-\subsection{Strict Meta-Modeling}
+\subsection{Linguistic Meta-Modeling}
 
-The approach described earlier exhibits a number of fundamental problems. One of them is the fact that the precise meaning of the instance-of relationship is not defined. The UML documentation does not contain a formal definition of the instance-of relationship. It merely states that a modeling level in the hierarchy must be an instance of its level above. Therefore, a formal concept should be defined to encapsulate the exact meaning of the instance-of relationship. This concept is formalized through strict meta-modeling. Strict meta-modeling states that if a model A is an instance-of another model B, then every element of A must be an instance-of some element in B \cite{RearchitectingUML}. This concept is illustrated in figure ~\ref{fig:strict_mm}. Here we see that strict meta-modeling interprets the instance-of relationship at the level of individual model elements. As a consequence, modeling levels have strict boundaries and may be crossed only by instance-of relationships.
+In the meta-modeling field, we can distinguish two different approaches of meta-modeling, linguistic and ontological meta-modeling. The linguistic approach relegates ontological instance-of relationships, which relate user concepts to their domain types, to a secondary role \cite{MDDFound}. A linguistic instance-of relationship crosses a linguistic metalevel, whereas ontological instance-of relationships do not cross such levels. Ontological instance-of relationships merely relate entities within a given level. Figure ~\ref{fig:ling_mm} shows this interpretation of the four layered architecture as embraced by the UML and MOF standards. 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{images/chap2_linguistic_mm.png}
+\caption{Linguistic meta-modeling \cite{MDDFound}}
+\label{fig:ling_mm}
+\end{figure}
+
+\subsection{Ontological Meta-Modeling}
+
+When we want to dynamically extend a modeling language, only linguistic meta-modeling doesn't suffice. Modeling language extensions are facilitated as dynamic user extensions, introducing the need for ontological meta-modeling. This dynamic requirement in turn requires the capability to define domain metatypes (i.e. types of types). We refer to this form of meta-modeling as ontological meta-modeling since it is concerned with describing what concepts exist in a certain domain and what properties they have \cite{MDDFound}. \\ \\
+When we take a look back at figure ~\ref{fig:ling_mm}, we already see an ontological instantiation example. The model element \texttt{Lassie} is an ontological instance-of relationship of \texttt{Collie}, and thus resides at a lower ontological level than \texttt{Collie}. This expresses the fact that in the real world, the mental concept \texttt{Collie} is the logical type of \texttt{Lassie} \cite{MDDFound}. Figure ~\ref{fig:ling_mm} only contains two ontological levels, both contained within the linguistic level M\subscript{1}. We can extend the ontological approach among multiple levels too. This is featured in figure ~\ref{fig:ont_mm}, where we introduce three ontological levels. In ontological level O\subscript{2}, we show that \texttt{Collie} can be regarded as an ontological instance of \texttt{Breed}. The ontological metatype \texttt{Breed} not only distinguishes types like \texttt{Collie} and \texttt{Poodle}, but also from other types (such as \texttt{CD} and \texttt{DVD}). Moreover, we can also use this metatype to define breed properties, for example, where a particular breed first originated.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{images/chap2_ontological_mm.png}
+\caption{Ontological meta-modeling \cite{MDDFound}}
+\label{fig:ont_mm}
+\end{figure}
+\newpage
+
+\section{Strict Meta-Modeling}
+
+In the following section, we will discuss strict meta-modeling and the fundamental problems it exhibits are introduced.
+
+\subsection{Definition}
+
+The linear modeling approach described in the previous section exhibits a number of fundamental problems. One of them is the fact that the precise meaning of the instance-of relationship is not defined. The UML documentation does not contain a formal definition of the instance-of relationship. It merely states that a modeling level in the hierarchy must be an instance of its level above. Therefore, a formal concept should be defined to encapsulate the exact meaning of the instance-of relationship. This concept is formalized through strict meta-modeling. Strict meta-modeling states that if a model A is an instance-of another model B, then every element of A must be an instance-of some element in B \cite{RearchitectingUML}. This concept is illustrated in figure ~\ref{fig:strict_mm}. Here we see that strict meta-modeling interprets the instance-of relationship at the level of individual model elements. As a consequence, modeling levels have strict boundaries and may be crossed only by instance-of relationships.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\textwidth]{images/chap2_strict_mm.png}
@@ -61,13 +80,13 @@ The approach described earlier exhibits a number of fundamental problems. One of
 \end{figure}
 The exact definition of strict meta-modeling is defined as follows:
 \begin{mydef}
-In an \textit{n}-level modeling architecture, M\subscript{0}, M\subscript{1}, ..., M\subscript{n-1}, every element of an M\subscript{m}-level model must be an instance-of exactly one element of an M\subscript{m+1}-level model, for all \textit{0} $\leq$ \textit{m} $\le$ \textit{n-1}, and any relationship other than the instance-of relationship between two elements \textit{X} and \textit{Y} implies that level(X) = level(Y ).
+In an \textit{n}-level modeling architecture, M\subscript{0}, M\subscript{1}, ..., M\subscript{n-1}, every element of an M\subscript{m}-level model must be an instance-of exactly one element of an M\subscript{m+1}-level model, for all \textit{0} $\leq$ \textit{m} $\le$ \textit{n-1}, and any relationship other than the instance-of relationship between two elements \textit{X} and \textit{Y} implies that level(X) = level(Y).
 \end{mydef}
 It is clear that the topmost level \textit{n} is ignored in this definition. Nevertheless, we can model the top level so that its elements are instances of themselves, such that we can terminate the hierarchy of meta-levels.
 
 \subsection{Limitations of Strict Meta-Modeling}
 
-There are several issues with the existing UML modeling framework, such as \textit{dual classification} and the \textit{class/object duality} \cite{RearchitectingUML}. The class/duality problem arsis from the need to capture both classlike and objectlike facets of some model elements in one level and dual classification is based on the fact that we need to capture both logical (e.g. \texttt{Video}) as well as physical (e.g. \texttt{Object}) aspects of model elements. Every solution to these problems ultimately leads to unwanted, accidental complexity. They try to cramp multiple programming levels into a single modeling level, due to the limitations of strict meta-modeling. In what follows, we will focus on both the class/duality problem and the dual classification problem. For example, one could note that in figure ~\ref{fig:two_level_inst}, the M\subscript{2} level aims to address two concerns. This problem is denoted in figure ~\ref{fig:multiple_class_mm}. Here, user types at the M\subscript{0} level are defined as instances of two concepts. First, the \textit{2001} instance is an instance of the M\subscript{1}-level type \textit{Video}, and second of the M\subscript{2}-level meta-type Object. Although this approach feels natural, it is clearly in violation with our definition of strict meta-modeling:
+There are several issues with the existing UML modeling framework, such as \textit{dual classification} and the \textit{class/object duality} \cite{RearchitectingUML}. The class/duality problem arises from the need to capture both classlike and objectlike facets of some model elements in one level and dual classification is based on the fact that we need to capture both logical (e.g. \texttt{Video}) as well as physical (e.g. \texttt{Object}) aspects of model elements. Every solution to these problems ultimately leads to unwanted, accidental complexity. Those solutions try to include multiple programming levels into a single modeling level, due to the limitations of strict meta-modeling. In what follows, we will focus on both the class/duality problem and the dual classification problem. For example, one could note that in figure ~\ref{fig:two_level_inst}, the M\subscript{2} level aims to address two concerns. This problem is denoted in figure ~\ref{fig:multiple_class_mm}. Here, user types at the M\subscript{0} level are defined as instances of two concepts. First, the \textit{2001} instance is an instance of the M\subscript{1}-level type \textit{Video}, and second of the M\subscript{2}-level meta-type Object. Although this approach feels natural, it is clearly in violation with our definition of strict meta-modeling:
 
 \begin{itemize}
 \item{Object 2001 has more than one classifier (Video and Object).}
@@ -95,19 +114,19 @@ This sample model adopts a computer hardware product hierarchy using the "Item D
 \includegraphics[width=0.9\textwidth]{images/chap2_cd_itemdesc.png}
 \caption{Example class diagram of the Item Description pattern.}
 \label{fig:cd_itemdesc}
-\end{figure}
-The above class diagram is separated into two parts. One part models products sold by an enterprise and the other part models the descriptions of these products. Here, instances of \texttt{ProductType} (\texttt{ComputerModel} and \texttt{MonitorModel}) are descriptions of the \texttt{Product} types (Computer and Monitor). The idea is to let objects play the role of classes in order to explicitly represent class-level information \cite{AccidentalComplexity}. In this way, we can dynamically change information about a product and keep this information even when no representation of this product type exists. When we create an instance of the above class diagram, we get something as depicted in figure ~\ref{fig:domain_instance}.
+\end{figure} \\
+The above class diagram is separated into two parts. One part models products sold by an enterprise and the other part models the descriptions of these products. Here, instances of \texttt{ProductType} (\texttt{ComputerModel} and \texttt{MonitorModel}) are descriptions of the \texttt{Product} types (Computer and Monitor). The idea is to let objects play the role of classes in order to explicitly represent class-level information \cite{AccidentalComplexity}. In this way, we can dynamically change information about a product and keep this information even when no representation of this product type exists. An example of an instance of the above class diagram is depicted in figure ~\ref{fig:domain_instance}.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap2_domain_instance.png}
 \caption{Domain instance (object diagram).}
 \label{fig:domain_instance}
-\end{figure}
+\end{figure} \\
 The \texttt{isOfType} links between \texttt{Monitor} / \texttt{Computer} instances and \texttt{MonitorModel} / \texttt{ComputerModel} instances conceptually represent a form of \textit{instance-of} relationship (as explained in previous section), although all objects involved in the example are at the instance level in an object diagram. This verbosity does not violate strict meta-modeling, but introduces a workaround at the object level in order to create new objects at runtime.
 
 \subsection{Domain types as objects}
 
-We have used the graphical \texttt{isOfType} links to model the instance/type relationships at the object level. However, we can distinct up to three different kinds of instance-of relationships:
+We have used the graphical \texttt{isOfType} links to model the instance/type relationships at the object level. However, we can distinguish up to three different kinds of instance-of relationships:
 
 \begin{itemize}
 \item{the UML built-in \textit{instance-of} relationship between the elements in the object diagram and the elements in the class diagram (e.g. \texttt{m1} \textit{instance-of} \texttt{Monitor})}
