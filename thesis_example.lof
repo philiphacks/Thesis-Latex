@@ -28,10 +28,10 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Android Architecture.\relax }}{31}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces A Java application running in a JVM.\relax }}{34}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Activities in a single task spanning multiple applications.\relax }}{34}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Activities in a single task spanning multiple applications.\relax }}{35}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Structure of an AndroidManifest.xml.\relax }}{36}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The lifecycle of an Android Activity.\relax }}{37}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Google App Inventor.\relax }}{38}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The lifecycle of an Android Activity.\relax }}{38}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Google App Inventor.\relax }}{39}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Android build process\relax }}{40}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Groupware 3x3 Time Space Matrix\relax }}{44}

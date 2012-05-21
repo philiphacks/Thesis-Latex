@@ -41,21 +41,20 @@
 \contentsline {subsection}{\numberline {3.2.4}Controlling linguistic extensions}{28}
 \contentsline {section}{\numberline {3.3}Other deep meta-modeling solutions}{29}
 \contentsline {chapter}{\numberline {4}Android Development}{30}
-\contentsline {section}{\numberline {4.1}Android Architecture}{30}
+\contentsline {section}{\numberline {4.1}Android Architecture}{31}
 \contentsline {subsection}{\numberline {4.1.1}Applications}{31}
-\contentsline {subsection}{\numberline {4.1.2}Application Framework}{31}
-\contentsline {subsection}{\numberline {4.1.3}Libraries}{32}
-\contentsline {subsection}{\numberline {4.1.4}Android Runtime}{32}
+\contentsline {subsection}{\numberline {4.1.2}Application Framework}{32}
+\contentsline {subsection}{\numberline {4.1.3}Libraries}{33}
+\contentsline {subsection}{\numberline {4.1.4}Android Runtime}{33}
 \contentsline {subsection}{\numberline {4.1.5}Linux Kernel}{33}
-\contentsline {section}{\numberline {4.2}Android Components}{33}
-\contentsline {subsection}{\numberline {4.2.1}Traditional versus Android programming}{33}
-\contentsline {subsection}{\numberline {4.2.2}Activities and Intents}{33}
-\contentsline {subsection}{\numberline {4.2.3}Tasks}{34}
-\contentsline {subsection}{\numberline {4.2.4}Other components}{35}
-\contentsline {subsection}{\numberline {4.2.5}AndroidManifest}{35}
-\contentsline {subsection}{\numberline {4.2.6}Activity Lifecycle}{36}
-\contentsline {section}{\numberline {4.3}Android App Inventor}{38}
-\contentsline {section}{\numberline {4.4}Android compilation}{38}
+\contentsline {section}{\numberline {4.2}Android programming}{34}
+\contentsline {subsection}{\numberline {4.2.1}Traditional versus Android programming}{34}
+\contentsline {subsection}{\numberline {4.2.2}Activities and Intents}{34}
+\contentsline {subsection}{\numberline {4.2.3}Tasks}{35}
+\contentsline {subsection}{\numberline {4.2.4}AndroidManifest}{36}
+\contentsline {subsection}{\numberline {4.2.5}Activity Lifecycle}{36}
+\contentsline {section}{\numberline {4.3}Android App Inventor}{37}
+\contentsline {section}{\numberline {4.4}Android compilation}{37}
 \contentsline {subsection}{\numberline {4.4.1}Problem}{38}
 \contentsline {subsection}{\numberline {4.4.2}Solution}{39}
 \contentsline {chapter}{\numberline {5}Collaboration}{41}

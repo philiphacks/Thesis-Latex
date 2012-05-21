@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{MDDFound}
+C.~Atkinson and T.~K\"uhne, ``Model-driven development: A metamodeling
+  foundation.''
+  \url{http://homepages.mcs.vuw.ac.nz/~tk/publications/papers/mda-foundation.pdf}.
+
 \bibitem{ProcessModels}
 W.~Scacchi, ``{Process Models in Software Engineering},'' {\em Encyclopedia of
   Software Engineering}, 2001.
@@ -39,11 +44,6 @@ P.~Mosterman and H.~Vangheluwe, ``{Computer Automated Multi-Paradigm Modeling:
 
 \bibitem{RearchitectingUML}
 C.~Atkinson and T.~K\"uhne, ``{Rearchitecting the UML infrastructure},'' 2002.
-
-\bibitem{MDDFound}
-C.~Atkinson and T.~K\"uhne, ``Model-driven development: A metamodeling
-  foundation.''
-  \url{http://homepages.mcs.vuw.ac.nz/~tk/publications/papers/mda-foundation.pdf}.
 
 \bibitem{MetaDepth}
 J.~de~Lara and E.~Guerra, ``{Deep Meta-Modeling with MetaDepth},'' 2010.
