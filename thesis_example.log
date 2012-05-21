@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  20 MAY 2012 14:38
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  21 MAY 2012 13:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -539,47 +539,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+[6
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 11--38
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
+ [7
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--38
-
- []
-
+])
 (./01-Introduction.tex [1
 
-]
+] [2]
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--10
 
  []
 
-[2
+[3
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 25--29
@@ -591,7 +582,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--29
 
  []
 
-[3] <images/lifecycle.jpg, id=47, 73.2336pt x 122.1363pt>
+[4] <images/lifecycle.jpg, id=56, 73.2336pt x 122.1363pt>
 File: images/lifecycle.jpg Graphic file (type jpg)
 
 <use images/lifecycle.jpg>
@@ -607,7 +598,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--50
 
  []
 
-[4] [5 <./images/lifecycle.jpg>]) (./02-Modeling.tex [6] [7]
+[5] [6 <./images/lifecycle.jpg>]) (./02-Modeling.tex [7] [8]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--12
@@ -629,7 +620,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
 
-[8
+[9
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 19--21
@@ -641,14 +632,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-[9] <images/mm_architecture.png, id=67, 147.9126pt x 166.221pt>
+[10] <images/mm_architecture.png, id=76, 147.9126pt x 166.221pt>
 File: images/mm_architecture.png Graphic file (type png)
 
 <use images/mm_architecture.png>
 Package pdftex.def Info: images/mm_architecture.png used on input line 33.
 (pdftex.def)             Requested size: 159.333pt x 179.06197pt.
 
-<images/chap2_two_level_inst.png, id=68, 151.2852pt x 173.9298pt>
+<images/chap2_two_level_inst.png, id=77, 151.2852pt x 173.9298pt>
 File: images/chap2_two_level_inst.png Graphic file (type png)
 
 <use images/chap2_two_level_inst.png>
@@ -663,8 +654,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--45
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./images/mm_architecture.png>]
-<images/chap2_linguistic_mm.png, id=76, 172.9662pt x 243.309pt>
+[11 <./images/mm_architecture.png>]
+<images/chap2_linguistic_mm.png, id=86, 172.9662pt x 243.309pt>
 File: images/chap2_linguistic_mm.png Graphic file (type png)
 
 <use images/chap2_linguistic_mm.png>
@@ -674,7 +665,7 @@ Package pdftex.def Info: images/chap2_linguistic_mm.png used on input line 51.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/chap2_ontological_mm.png, id=77, 209.583pt x 199.4652pt>
+<images/chap2_ontological_mm.png, id=87, 209.583pt x 199.4652pt>
 File: images/chap2_ontological_mm.png Graphic file (type png)
 
 <use images/chap2_ontological_mm.png>
@@ -686,12 +677,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--66
 
  []
 
-[11 <./images/chap2_two_level_inst.png>]
+[12 <./images/chap2_two_level_inst.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./images/chap2_linguistic_mm.png>]
-<images/chap2_strict_mm.png, id=86, 275.5896pt x 132.495pt>
+[13 <./images/chap2_linguistic_mm.png>]
+<images/chap2_strict_mm.png, id=96, 275.5896pt x 132.495pt>
 File: images/chap2_strict_mm.png Graphic file (type png)
 
 <use images/chap2_strict_mm.png>
@@ -701,8 +692,8 @@ Package pdftex.def Info: images/chap2_strict_mm.png used on input line 77.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <./images/chap2_ontological_mm.png>]
-<images/chap2_multiple_class_uml.png, id=92, 166.221pt x 171.5208pt>
+[14 <./images/chap2_ontological_mm.png>]
+<images/chap2_multiple_class_uml.png, id=101, 166.221pt x 171.5208pt>
 File: images/chap2_multiple_class_uml.png Graphic file (type png)
 
 <use images/chap2_multiple_class_uml.png>
@@ -713,66 +704,66 @@ Package pdftex.def Info: images/chap2_multiple_class_uml.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14 <./images/chap2_strict_mm.png>]
-<images/chap2_cd_itemdesc.png, id=97, 327.1422pt x 153.6942pt>
+[15 <./images/chap2_strict_mm.png>]
+<images/chap2_cd_itemdesc.png, id=106, 327.1422pt x 153.6942pt>
 File: images/chap2_cd_itemdesc.png Graphic file (type png)
 
 <use images/chap2_cd_itemdesc.png>
 Package pdftex.def Info: images/chap2_cd_itemdesc.png used on input line 114.
 (pdftex.def)             Requested size: 358.50227pt x 168.43561pt.
 
-<images/chap2_domain_instance.png, id=98, 292.9344pt x 197.538pt>
+<images/chap2_domain_instance.png, id=107, 292.9344pt x 197.538pt>
 File: images/chap2_domain_instance.png Graphic file (type png)
 
 <use images/chap2_domain_instance.png>
 Package pdftex.def Info: images/chap2_domain_instance.png used on input line 12
 1.
 (pdftex.def)             Requested size: 358.50227pt x 241.77365pt.
- [15 <./images/chap2_multiple_class_uml.png> <./images/chap2_cd_itemdesc.png>]
+ [16 <./images/chap2_multiple_class_uml.png> <./images/chap2_cd_itemdesc.png>]
 Overfull \hbox (2.55179pt too wide) in paragraph at lines 134--135
 []\OT1/cmr/m/n/10.95 the \OT1/cmtt/m/n/10.95 isOfType \OT1/cmr/m/n/10.95 links 
 be-tween in-stances of \OT1/cmtt/m/n/10.95 Product \OT1/cmr/m/n/10.95 and in-st
 ances of \OT1/cmtt/m/n/10.95 ProductType
  []
 
-[16 <./images/chap2_domain_instance.png>]
+[17 <./images/chap2_domain_instance.png>]
 Overfull \hbox (6.33224pt too wide) in paragraph at lines 139--140
 []\OT1/cmr/m/n/10.95 It shows all UML \OT1/cmr/m/it/10.95 instance-of \OT1/cmr/
 m/n/10.95 re-la-tion-ships ex-plic-itly in ad-di-tion to the \OT1/cmtt/m/n/10.9
 5 isOfType
  []
 
-<images/chap2_class_object_diagram.png, id=108, 390.7398pt x 202.8378pt>
+<images/chap2_class_object_diagram.png, id=118, 390.7398pt x 202.8378pt>
 File: images/chap2_class_object_diagram.png Graphic file (type png)
 
 <use images/chap2_class_object_diagram.png>
 Package pdftex.def Info: images/chap2_class_object_diagram.png used on input li
 ne 145.
 (pdftex.def)             Requested size: 398.33858pt x 206.79277pt.
- [17 <./images/chap2_class_object_diagram.png>] <images/chap2_types_classes.png
-, id=113, 390.258pt x 208.1376pt>
+ [18 <./images/chap2_class_object_diagram.png>] <images/chap2_types_classes.png
+, id=123, 390.258pt x 208.1376pt>
 File: images/chap2_types_classes.png Graphic file (type png)
 
 <use images/chap2_types_classes.png>
 Package pdftex.def Info: images/chap2_types_classes.png used on input line 156.
 
 (pdftex.def)             Requested size: 398.33858pt x 212.44998pt.
-) (./03-MultilevelModeling.tex [18 <./images/chap2_types_classes.png>]
+) (./03-MultilevelModeling.tex [19 <./images/chap2_types_classes.png>]
 Chapter 3.
-<images/chap3_mapping_inconsistent.png, id=118, 287.6346pt x 117.5592pt>
+<images/chap3_mapping_inconsistent.png, id=128, 287.6346pt x 117.5592pt>
 File: images/chap3_mapping_inconsistent.png Graphic file (type png)
 
 <use images/chap3_mapping_inconsistent.png>
 Package pdftex.def Info: images/chap3_mapping_inconsistent.png used on input li
 ne 10.
 (pdftex.def)             Requested size: 358.50227pt x 146.52707pt.
- [19
+ [20
 
 ]
 Missing character: There is no Ó in font cmr10!
 Missing character: There is no Ó in font cmr10!
 
-<images/chap3_model_clabject.png, id=123, 426.393pt x 314.1336pt>
+<images/chap3_model_clabject.png, id=132, 426.393pt x 314.1336pt>
 File: images/chap3_model_clabject.png Graphic file (type png)
 
 <use images/chap3_model_clabject.png>
@@ -783,7 +774,7 @@ Package pdftex.def Info: images/chap3_model_clabject.png used on input line 21.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/chap3_mapping_direct.png, id=124, 278.4804pt x 117.0774pt>
+<images/chap3_mapping_direct.png, id=133, 278.4804pt x 117.0774pt>
 File: images/chap3_mapping_direct.png Graphic file (type png)
 
 <use images/chap3_mapping_direct.png>
@@ -794,7 +785,7 @@ Package pdftex.def Info: images/chap3_mapping_direct.png used on input line 29.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/chap3_deep_powertypes.png, id=125, 370.5042pt x 280.4076pt>
+<images/chap3_deep_powertypes.png, id=134, 370.5042pt x 280.4076pt>
 File: images/chap3_deep_powertypes.png Graphic file (type png)
 
 <use images/chap3_deep_powertypes.png>
@@ -811,9 +802,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--45
 
  []
 
-[20 <./images/chap3_mapping_inconsistent.png>] [21 <./images/chap3_model_clabje
-ct.png> <./images/chap3_mapping_direct.png>] [22 <./images/chap3_deep_powertype
-s.png>] <images/chap3_deep_potency.png, id=139, 400.3758pt x 277.9986pt>
+[21 <./images/chap3_mapping_inconsistent.png>] [22 <./images/chap3_model_clabje
+ct.png> <./images/chap3_mapping_direct.png>] [23 <./images/chap3_deep_powertype
+s.png>] <images/chap3_deep_potency.png, id=149, 400.3758pt x 277.9986pt>
 File: images/chap3_deep_potency.png Graphic file (type png)
 
 <use images/chap3_deep_potency.png>
@@ -826,8 +817,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--61
 
  []
 
-[23 <./images/chap3_deep_potency.png>]
-<images/chap3_metadepth_schemes.png, id=144, 390.258pt x 163.812pt>
+[24 <./images/chap3_deep_potency.png>]
+<images/chap3_metadepth_schemes.png, id=154, 390.258pt x 163.812pt>
 File: images/chap3_metadepth_schemes.png Graphic file (type png)
 
 <use images/chap3_metadepth_schemes.png>
@@ -835,101 +826,117 @@ Package pdftex.def Info: images/chap3_metadepth_schemes.png used on input line
 67.
 (pdftex.def)             Requested size: 358.50227pt x 150.48389pt.
 
-<images/chap3_metadepth_mm.png, id=145, 384.9582pt x 197.0562pt>
+Underfull \hbox (badness 10000) in paragraph at lines 64--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--74
+
+ []
+
+[25 <./images/chap3_metadepth_schemes.png>]
+<images/chap3_metadepth_mm.png, id=159, 384.9582pt x 197.0562pt>
 File: images/chap3_metadepth_mm.png Graphic file (type png)
 
 <use images/chap3_metadepth_mm.png>
-Package pdftex.def Info: images/chap3_metadepth_mm.png used on input line 78.
+Package pdftex.def Info: images/chap3_metadepth_mm.png used on input line 80.
 (pdftex.def)             Requested size: 358.50227pt x 183.52196pt.
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no Õ in font cmr10!
 
-<images/chap3_dual_class.png, id=146, 193.6836pt x 162.8484pt>
+<images/chap3_dual_class.png, id=160, 193.6836pt x 162.8484pt>
 File: images/chap3_dual_class.png Graphic file (type png)
 
 <use images/chap3_dual_class.png>
-Package pdftex.def Info: images/chap3_dual_class.png used on input line 86.
+Package pdftex.def Info: images/chap3_dual_class.png used on input line 88.
 (pdftex.def)             Requested size: 159.333pt x 133.97389pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24 <./images/chap3_metadepth_schemes.png>]
-<images/chap3_model_ex.png, id=151, 329.0694pt x 72.27pt>
+<images/chap3_model_ex.png, id=161, 329.0694pt x 72.27pt>
 File: images/chap3_model_ex.png Graphic file (type png)
 
 <use images/chap3_model_ex.png>
-Package pdftex.def Info: images/chap3_model_ex.png used on input line 96.
+Package pdftex.def Info: images/chap3_model_ex.png used on input line 98.
 (pdftex.def)             Requested size: 358.50227pt x 78.73521pt.
 
-<images/chap3_eol.png, id=152, 382.5492pt x 55.407pt>
+<images/chap3_eol.png, id=162, 382.5492pt x 55.407pt>
 File: images/chap3_eol.png Graphic file (type png)
 
 <use images/chap3_eol.png>
-Package pdftex.def Info: images/chap3_eol.png used on input line 103.
+Package pdftex.def Info: images/chap3_eol.png used on input line 105.
 (pdftex.def)             Requested size: 358.50227pt x 51.92616pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--107
+Underfull \hbox (badness 10000) in paragraph at lines 95--109
 
  []
 
-[25 <./images/chap3_metadepth_mm.png> <./images/chap3_dual_class.png>]
-<images/chap3_metadepth_constraints.png, id=159, 390.258pt x 89.6148pt>
+[26 <./images/chap3_metadepth_mm.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/chap3_metadepth_constraints.png, id=167, 390.258pt x 89.6148pt>
 File: images/chap3_metadepth_constraints.png Graphic file (type png)
 
 <use images/chap3_metadepth_constraints.png>
 Package pdftex.def Info: images/chap3_metadepth_constraints.png used on input l
-ine 113.
+ine 115.
 (pdftex.def)             Requested size: 358.50227pt x 82.32355pt.
- [26 <./images/chap3_model_ex.png> <./images/chap3_eol.png> <./images/chap3_met
-adepth_constraints.png>]
-<images/chap3_ling_ext.png, id=166, 397.9668pt x 122.859pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27 <./images/chap3_dual_class.png> <./images/chap3_model_ex.png>]
+<images/chap3_ling_ext.png, id=173, 397.9668pt x 122.859pt>
 File: images/chap3_ling_ext.png Graphic file (type png)
 
 <use images/chap3_ling_ext.png>
-Package pdftex.def Info: images/chap3_ling_ext.png used on input line 124.
+Package pdftex.def Info: images/chap3_ling_ext.png used on input line 126.
 (pdftex.def)             Requested size: 358.50227pt x 110.68265pt.
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 128
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 130
 .
-LaTeX Font Info:    No file OMScmtt.fd. on input line 128.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 130.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 128.
+(Font)              for symbol `textbraceleft' on input line 130.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--131
-
- []
-
-) (./04-Android.tex
-Underfull \hbox (badness 10000) in paragraph at lines 134--1
+Underfull \hbox (badness 10000) in paragraph at lines 123--134
 
  []
 
-[27 <./images/chap3_ling_ext.png>] [28]
+[28 <./images/chap3_eol.png> <./images/chap3_metadepth_constraints.png> <./imag
+es/chap3_ling_ext.png>]) (./04-Android.tex
+Underfull \hbox (badness 10000) in paragraph at lines 137--1
+
+ []
+
+[29]
 Chapter 4.
-<images/chap4_android_architecture.jpg, id=174, 725.75366pt x 521.15831pt>
+<images/chap4_android_architecture.jpg, id=184, 725.75366pt x 521.15831pt>
 File: images/chap4_android_architecture.jpg Graphic file (type jpg)
 
 <use images/chap4_android_architecture.jpg>
 Package pdftex.def Info: images/chap4_android_architecture.jpg used on input li
 ne 22.
 (pdftex.def)             Requested size: 398.33858pt x 286.04153pt.
- [29
+ [30
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 33--36
 
  []
 
-[30 <./images/chap4_android_architecture.jpg>]
+[31 <./images/chap4_android_architecture.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
-[31] <images/chap4_java_app.png, id=185, 319.1925pt x 279.0425pt>
+[32] <images/chap4_java_app.png, id=194, 319.1925pt x 279.0425pt>
 File: images/chap4_java_app.png Graphic file (type png)
 
 <use images/chap4_java_app.png>
@@ -948,13 +955,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--87
 
  []
 
-[32] <images/chap4_android_task.png, id=189, 356.33125pt x 117.43875pt>
+[33] <images/chap4_android_task.png, id=198, 356.33125pt x 117.43875pt>
 File: images/chap4_android_task.png Graphic file (type png)
 
 <use images/chap4_android_task.png>
 Package pdftex.def Info: images/chap4_android_task.png used on input line 94.
 (pdftex.def)             Requested size: 278.83578pt x 91.9011pt.
- [33 <./images/chap4_java_app.png> <./images/chap4_android_task.png>]
+ [34 <./images/chap4_java_app.png> <./images/chap4_android_task.png>]
 Overfull \hbox (8.8759pt too wide) in paragraph at lines 103--114
 [][]
  []
@@ -979,7 +986,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--127
 
  []
 
-[34] <images/chap4_android_manifest.png, id=198, 525.965pt x 397.485pt>
+[35] <images/chap4_android_manifest.png, id=208, 525.965pt x 397.485pt>
 File: images/chap4_android_manifest.png Graphic file (type png)
 
 <use images/chap4_android_manifest.png>
@@ -987,23 +994,23 @@ Package pdftex.def Info: images/chap4_android_manifest.png used on input line 1
 34.
 (pdftex.def)             Requested size: 278.83578pt x 210.73276pt.
 
-<images/chap4_activity_lifecycle.png, id=199, 524.96124pt x 675.52374pt>
+<images/chap4_activity_lifecycle.png, id=209, 524.96124pt x 675.52374pt>
 File: images/chap4_activity_lifecycle.png Graphic file (type png)
 
 <use images/chap4_activity_lifecycle.png>
 Package pdftex.def Info: images/chap4_activity_lifecycle.png used on input line
  154.
 (pdftex.def)             Requested size: 358.50227pt x 461.33945pt.
- [35 <./images/chap4_android_manifest.png>] [36 <./images/chap4_activity_lifecy
+ [36 <./images/chap4_android_manifest.png>] [37 <./images/chap4_activity_lifecy
 cle.png>]
-<images/chap4_app_inventor.png, id=208, 451.6875pt x 277.78781pt>
+<images/chap4_app_inventor.png, id=218, 451.6875pt x 277.78781pt>
 File: images/chap4_app_inventor.png Graphic file (type png)
 
 <use images/chap4_app_inventor.png>
 Package pdftex.def Info: images/chap4_app_inventor.png used on input line 165.
 (pdftex.def)             Requested size: 398.33858pt x 244.99232pt.
- [37 <./images/chap4_app_inventor.png>]
-<images/chap6_android_build_process.png, id=213, 602.25pt x 369.38pt>
+ [38 <./images/chap4_app_inventor.png>]
+<images/chap6_android_build_process.png, id=222, 602.25pt x 369.38pt>
 File: images/chap6_android_build_process.png Graphic file (type png)
 
 <use images/chap6_android_build_process.png>
@@ -1014,14 +1021,14 @@ ine 196.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./05-Collaboration.tex [38] [39 <./images/chap6_android_build_process.png>]
+) (./05-Collaboration.tex [39] [40 <./images/chap6_android_build_process.png>]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-[40
+[41
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
@@ -1043,12 +1050,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--28
 
  []
 
-[41]
+[42]
 Overfull \hbox (98.49826pt too wide) in alignment at lines 33--42
 [][][] 
  []
 
-<images/chap5_3by3matrix.png, id=228, 215.3646pt x 192.2382pt>
+<images/chap5_3by3matrix.png, id=239, 215.3646pt x 192.2382pt>
 File: images/chap5_3by3matrix.png Graphic file (type png)
 
 <use images/chap5_3by3matrix.png>
@@ -1062,12 +1069,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--57
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42] [43 <./images/chap5_3by3matrix.png>] [44] [45]
+[43] [44 <./images/chap5_3by3matrix.png>] [45] [46]
 Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
 
-[46]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
@@ -1077,7 +1084,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-[47]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 165--168
 
  []
@@ -1087,7 +1094,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--177
 
  []
 
-[48]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
@@ -1107,7 +1114,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--220
 
  []
 
-[49]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 223--231
 
  []
@@ -1147,7 +1154,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--274
 
  []
 
-[50]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 277--284
 
  []
@@ -1177,7 +1184,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--317
 
  []
 
-[51]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 320--327
 
  []
@@ -1207,12 +1214,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--360
 
  []
 
-[52]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 363--370
 
  []
 
-<images/chap5_pattern_system.png, id=266, 446.6286pt x 217.2918pt>
+<images/chap5_pattern_system.png, id=276, 446.6286pt x 217.2918pt>
 File: images/chap5_pattern_system.png Graphic file (type png)
 
 <use images/chap5_pattern_system.png>
@@ -1223,13 +1230,13 @@ Package pdftex.def Info: images/chap5_pattern_system.png used on input line 377
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[53] <images/chap5_coll_stack.png, id=270, 335.8146pt x 172.4844pt>
+[54] <images/chap5_coll_stack.png, id=280, 335.8146pt x 172.4844pt>
 File: images/chap5_coll_stack.png Graphic file (type png)
 
 <use images/chap5_coll_stack.png>
 Package pdftex.def Info: images/chap5_coll_stack.png used on input line 394.
 (pdftex.def)             Requested size: 358.50227pt x 184.13802pt.
-) (./06-Design.tex [54 <./images/chap5_pattern_system.png> <./images/chap5_coll
+) (./06-Design.tex [55 <./images/chap5_pattern_system.png> <./images/chap5_coll
 _stack.png>]
 Chapter 6.
 
@@ -1237,29 +1244,29 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 11--11
 [][][][][][][] 
  []
 
-[55
+[56
 
 ]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 28--28
 [][][][][][][] 
  []
 
-[56]
+[57]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 72--72
 [][][][][][][] 
  []
 
-[57]
+[58]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 98--98
 [][][][][][][] 
  []
 
-[58]
+[59]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 153--153
 [][][][][][][] 
  []
 
-[59]
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
@@ -1269,17 +1276,17 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 190--190
 [][][][][][][] 
  []
 
-[60]
+[61]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 215--215
 [][][][][][][] 
  []
 
-[61]
+[62]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 256--256
 [][][][][][][] 
  []
 
-[62]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
@@ -1294,7 +1301,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 302--302
 [][][][][][][] 
  []
 
-[63]
+[64]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 320--320
 [][][][][][][] 
  []
@@ -1304,7 +1311,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 340--340
 [][][][][][][] 
  []
 
-[64]
+[65]
 Overfull \hbox (6.082pt too wide) in paragraph at lines 365--366
 \OT1/cmr/m/n/10.95 per-fect for data-intensive real-time ap-pli-ca-tions that r
 un across dis-tributed
@@ -1315,7 +1322,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 373--375
 
  []
 
-[65]
+[66]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 375--375
 [][][][][][][] 
  []
@@ -1325,21 +1332,21 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 386--386
 [][][][][][][] 
  []
 
-[66]) (./07-CaseStudy.tex [67]
+[67]) (./07-CaseStudy.tex [68]
 Chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-[68
+[69
 
 ]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 37--37
 [][][][][][][] 
  []
 
-[69]
+[70]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 48--48
 [][][][][][][] 
  []
@@ -1349,7 +1356,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 64--64
 [][][][][][][] 
  []
 
-[70]
+[71]
 Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
@@ -1359,28 +1366,28 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 81--81
 [][][][][][][] 
  []
 
-[71] <images/chap7_connected.png, id=331, 406.51875pt x 675.52374pt>
+[72] <images/chap7_connected.png, id=341, 406.51875pt x 675.52374pt>
 File: images/chap7_connected.png Graphic file (type png)
 
 <use images/chap7_connected.png>
 Package pdftex.def Info: images/chap7_connected.png used on input line 97.
 (pdftex.def)             Requested size: 159.333pt x 264.76227pt.
 
-<images/chap7_chatbox.png, id=332, 872.25874pt x 740.7675pt>
+<images/chap7_chatbox.png, id=342, 872.25874pt x 740.7675pt>
 File: images/chap7_chatbox.png Graphic file (type png)
 
 <use images/chap7_chatbox.png>
 Package pdftex.def Info: images/chap7_chatbox.png used on input line 104.
 (pdftex.def)             Requested size: 394.35738pt x 334.90213pt.
 
-<images/chap7_dropbox1.png, id=333, 421.575pt x 698.61pt>
+<images/chap7_dropbox1.png, id=343, 421.575pt x 698.61pt>
 File: images/chap7_dropbox1.png Graphic file (type png)
 
 <use images/chap7_dropbox1.png>
 Package pdftex.def Info: images/chap7_dropbox1.png used on input line 111.
 (pdftex.def)             Requested size: 159.333pt x 264.03546pt.
 
-<images/chap7_dropbox2.png, id=334, 405.515pt x 673.51625pt>
+<images/chap7_dropbox2.png, id=344, 405.515pt x 673.51625pt>
 File: images/chap7_dropbox2.png Graphic file (type png)
 
 <use images/chap7_dropbox2.png>
@@ -1399,8 +1406,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[72] [73 <./images/chap7_connected.png>] [74 <./images/chap7_chatbox.png>]
-[75 <./images/chap7_dropbox1.png> <./images/chap7_dropbox2.png>]
+[73] [74 <./images/chap7_connected.png>] [75 <./images/chap7_chatbox.png>]
+[76 <./images/chap7_dropbox1.png> <./images/chap7_dropbox2.png>]
 Chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--14
@@ -1432,14 +1439,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--14
 
  []
 
-[76
+[77
 
-] [77]) [78] [79
+] [78]) [79] [80
 
 
 ] (./AA-VisualEditor.tex
 Appendix A.
-[80
+[81
 
 ]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 15--15
@@ -1456,12 +1463,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-[81]
+[82]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 55--55
 [][][][][][][] 
  []
 
-[82] <images/app1_visual_environment.jpg, id=374, 1131.22626pt x 631.35875pt>
+[83] <images/app1_visual_environment.jpg, id=384, 1131.22626pt x 631.35875pt>
 File: images/app1_visual_environment.jpg Graphic file (type jpg)
 
 <use images/app1_visual_environment.jpg>
@@ -1478,12 +1485,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
-[83 <./images/app1_visual_environment.jpg>]
+[84 <./images/app1_visual_environment.jpg>]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 107--107
 [][][][][][][] 
  []
 
-) (./thesis_example.bbl [84] [85]
+) (./thesis_example.bbl [85] [86]
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 []\OT1/cmr/m/n/10.95 J. Reeves, ``What is Soft-ware De-sign?.'' $\OT1/cmtt/m/n/
 10.95 http : / / c2 . com / cgi / wiki ?
@@ -1507,7 +1514,7 @@ Underfull \hbox (badness 2158) in paragraph at lines 44--47
 ages . mcs . vuw . ac . nz / []tk / publications /
  []
 
-[86
+[87
 
 ]
 Underfull \hbox (badness 2277) in paragraph at lines 80--82
@@ -1521,13 +1528,13 @@ Underfull \hbox (badness 3471) in paragraph at lines 84--86
 /cmtt/m/n/10.95 http : / / developer .
  []
 
-[87]
+[88]
 Underfull \hbox (badness 2644) in paragraph at lines 178--180
 []\OT1/cmr/m/n/10.95 Android De-vel-op-ment Team, ``Man-i-fest.permission.'' $\
 OT1/cmtt/m/n/10.95 http : / / developer .
  []
 
-[88]) [89] (./thesis_example.aux)
+[89]) [90] (./thesis_example.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1559,10 +1566,10 @@ texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on thesis_example.pdf (95 pages, 2945303 bytes).
+Output written on thesis_example.pdf (98 pages, 2951691 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
+ 462 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

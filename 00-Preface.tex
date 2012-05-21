@@ -1,22 +1,28 @@
 \chapter*{Preface}
 
-\textit{Preface here...}
-\\ \\
-3 problems
+Almost a year ago I was taking on a new challenge and left Belgium for Spain. A few months before, I was presented this thesis subject. I would have the chance to work out of Madrid to use the Metadepth framework and explore the possibilities of domain-specific modeling and model transformation to support collaborative work on Android. \\ \\
+Now, more than a year later, I can say I'm very satisfied and happy of all the chances I got when taking on this challenge. The regular meetings with my mentors kept me on the right track. Working on this project wasn't always easy, but the thought that I could be doing things I like and achieving real progress kept me going. Throughout the whole year, we conducted research to collaborative patterns and we've been thinking about ways to integrate collaboration. The result is a modeling framework that supports the creation of collaborative Android apps.   \\ \\
+First of all, I'd like to thank my promoter Hans Vangheluwe, co-promoter Juan de Lara and mentor Bart Meyers. Without them, I would never have had the chance to pursue a year of studying in Spain. This country changed my life, both on a professional and on a personal level. I always knew I wanted to build things, but here I created my first startup and learned about raising money from actual investors. Not only that, but I saw the importance of a healthy mix of business sense and technical knowledge. Also, without the continuous support of Juan, my work wouldn't be as valuable. It was a pleasure to have someone I could rely on at all times. Thanks to all the friends I made in Spain. I guess most of them didn't really understand what a thesis is about, but they were always listening. And of course I would not have been able to successfully get my computer science degree without the support of my parents. \\ \\ 
+Let me finish by saying that I hope the information in this work will be as valuable to you as it is to me. Thanks to everyone reading this.
+
+\chapter*{Abstract}
+
+Domain-specific modeling (DSM) is a software engineering methodology for designing and developing systems, such as computer software. Among other things, it can be used to rapidly validate ideas through prototypes. Moreover, it also provides a way of doing formal verification. A developer can easily do model checking or formal analysis by transforming a domain-specific language into another formalism. Metadepth is a multi-level meta-modeling framework developed at the Universidad Aut\'onoma de Madrid that supports DSM. The main features of Metadepth are the following:
 \begin{itemize}
-\item{Non-technical people creating apps}
-\item{Rapid prototyping to validate an idea}
-\item{All-in-one solution for collaborative apps}
+\item{Support for an arbitrary number of ontological meta-levels. This feature makes Metadepth especially useful to define multi-level languages.}
+\item{Textual modeling. A concrete textual syntax allows us to specify a Metadepth meta-model in detail and uses standardized keywords accompanied by parameters to make computer-interpretable expressions.}
+\item{Integration with the Epsilon family of languages. Hosts both Java and Epsilon Object Language (EOL) as action and constraint languages.}
+\item{Not based on the Eclipse Modeling Framework (EMF). Metadepth runs as a stand alone application.}
 \end{itemize}
-Solution: \\ \\
-Collaborative modeling framework.
-M2M transformation
-\\ \\
-Results: \\ \\
-How long does it take? \\
-How easy? \\
-Variety of collaborative applications? i.e. how many different collaborative apps can we create with the modeling framework? How extensive is the framework? (collaborative patterns)
-\\ \\
-Interpretation: \\ \\
-- Is it easier and faster? \\
-- How domain specific are our modeled applications?
+At present, there is no all-in-one modeling solution that allows the generation of Android applications. Nevertheless, the potential for Android through (meta-)modeling is huge. In this work, Metadepth is used to create a new modeling framework that allows the creation of collaborative Android applications. This involves the creation of collaborative patterns and the design and implementation of a set of meta-models that model an Android application. These meta-models are transformed to Java code using the Epsilon Generation Language (EGL). 
+
+\chapter*{Abstract (Dutch)}
+
+Domein-specifiek modelleren (DSM) is een software engineering methodologie voor het ontwerpen en ontwikkelen van systemen, zoals computer software. Het kan onder andere gebruikt worden voor het valideren van idee\"en door middel van prototypes. Bovendien biedt het ook een manier om aan formele verificatie te doen. Een ontwikkelaar kan gemakkelijk model checking of een formele analyse uitvoeren door middel van transformatie van een domein specifieke taal (DSL) naar een ander formalisme. Metadepth is een multi-level meta-modeling framework dat DSM ondersteunt, ontwikkeld aan de Universidad Aut\'onoma de Madrid. Metadepth ondersteunt volgende functies:
+\begin{itemize}
+\item{Ondersteuning voor een willekeurig aantal ontologische meta-levels. Deze functie maakt Metadepth in het bijzonder nuttig voor het defini\"eren van multi-level languages.}
+\item{Tekstueel modelleren. Een concrete tekstuele syntax stelt ons in staat om een Metadepth meta-model in detail te specifi\"eren. Het gebruikt gestandaardiseerde trefwoorden vergezeld van parameters om computer-interpreteerbare uitdrukkingen op te stellen.}
+\item{Integratie van de Epsilon familie van \textit{languages}. Gebruikt zowel Java als de Epsilon Object Language (EOL) als action en constraint \textit{languages}.}
+\item{Niet gebaseerd op het Eclipse Modeling Framework (EMF). Metadepth kan als een stand-alone autonome applicatie uitgevoerd worden.}
+\end{itemize}
+Op dit moment bestaat er geen all-in-one oplossing die een modeler toelaat om Android applications te genereren. Desondanks is het potentieel voor Android door middel van (meta-)modeling enorm. In dit werk wordt Metadepth gebruikt om een nieuw modeling framework te ontwikkelen. Dit framework laat een modeler toe om snel collaboratieve Android applicaties te ontwikkelen. Het gaat hier om het cre\"eren van collaboratieve patterns en het design en implementeren van een verzameling van meta-models die een Android applicatie kunnen modelleren. Deze meta-models kunnen vervolgens getransformeerd worden naar Java code met behulp van de Epsilon Generation Language (EGL).

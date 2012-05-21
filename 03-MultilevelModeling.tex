@@ -68,7 +68,9 @@ MetaDepth is a meta-modeling framework written in Java that uses a deep meta-mod
 \caption{MetaDepth instantiation schemes: extensible ontological instantiation (left) and strict ontological instantiation (center). Example of strict instantiation (right).}
 \label{fig:metadepth_schemes}
 \end{figure} \\
-In the extensible case, it is possible to linguistically extend each ontological instance model (as depicted in the figure, on the left side). This means that instances of elements marked as \texttt{ext} can be extended with new linguistic attributes. We can also mark a complete model as extensible, allowing us to add new types and extend its elements. The alternative \textit{strict} case is similar to most meta-modeling environments in the sense that the top-level meta-model hardcodes all language concepts and can be subsequently instantiated. This is depicted in the center of figure ~\ref{fig:metadepth_schemes}.
+In the extensible case, it is possible to linguistically extend each ontological instance model (as depicted in the figure, on the left side). This means that instances of elements marked as \texttt{ext} can be extended with new linguistic attributes. We can also mark a complete model as extensible, allowing us to add new types and extend its elements. \\ \\
+The alternative \textit{strict} case is similar to most meta-modeling environments in the sense that the top-level meta-model hardcodes all language concepts and can be subsequently instantiated ontologically. Note that such instances cannot be extended linguistically. This situation is depicted in the center of figure ~\ref{fig:metadepth_schemes}. For example, we could use this mode to describe the MOF meta-model at the highest level (and give it a potency of 2). This model could then be instantiated ontologically to describe meta-models for languages at potency 1. In turn, we can create instantiations (models) at potency level 0. Thus, the strict mode is similar to most meta-modeling environments, without restrictions on the number of meta-levels (i.e. deep meta-modeling). We will be using this \textit{strict} case in the collaborative modeling framework. \\ \\
+On the right of figure ~\ref{fig:metadepth_schemes}, we see an example of the strict instantiation. Here we use the linguistic meta-model (see next section) to create a Petri Nets meta-model. The user then creates an ontological instance (i.e. a model) of the Petri Nets meta-model on the same linguistic meta-level.
 
 \subsection{The Linguistic Meta-Model}
 
@@ -90,7 +92,7 @@ An example of the dual classification using a clabject and the two instance-of r
 
 \subsection{Tool Support}
 
-MetaDepth models can be built through a Java API or through a \texttt{CommandShell} and a textual syntax, built with ANTLR \cite{ANTLR}. The storage of models is also done in this format. As an example, figure ~\ref{fig:model_ex} shows the three model dual classification example of figure ~\ref{fig:dual_class} in the textual notation. In this example, the model Store (with potency two) is extended linguistically through the Node \texttt{ProductType}. The VAT attribute in node \texttt{ProductType} has a potency of one (and a default value of 7.5), which means that it will be instantiated in its lower neighboring level. The majority of the collaborative modeling framework will be written in this textual syntax.
+MetaDepth models can be built through a Java API or through a \texttt{CommandShell} and a textual syntax, built with ANTLR \cite{ANTLR}. The storage of models is also done in this format. As an example, figure ~\ref{fig:model_ex} shows the three model dual classification example of figure ~\ref{fig:dual_class} in the textual notation. In this example, the model Store (with potency two) is extended linguistically through the Node \texttt{ProductType}. The \texttt{VAT} attribute in node \texttt{ProductType} has a potency of one (and a default value of 7.5), which means that it will be instantiated in its lower neighboring level. The \texttt{price} attribute has a potency of two. This is not visually indicated, but attributes are automatically assigned the parent (that of Model \texttt{Store}) potency if no explicit value is given. The majority of the collaborative modeling framework will be written in this textual syntax.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_model_ex.png}
@@ -118,16 +120,17 @@ We have declared three constraints, on line 6, 7 and 8. An example of a derived 
 
 \subsection{Controlling linguistic extensions}
 
-Linguistic extension is interesting to permit unforeseen extensions to Domain Specific Languages spawning more than one level \cite{GenericMetaDepth}. In these languages, the top-most meta-model is usually highly generic, and linguistic extensions in lower levels could therefore be useful. Figure ~\ref{fig:ling_ext} shows an extension of our running example.
+A linguistic extension is interesting to permit unforeseen extensions to Domain Specific Languages spawning more than one level \cite{GenericMetaDepth}. In these languages, the top-most meta-model is usually highly generic, and linguistic extensions in lower levels could therefore be useful. Figure ~\ref{fig:ling_ext} shows an extension of our running example.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap3_ling_ext.png}
 \caption{Linguistic extensions and associations in Metadepth.}
 \label{fig:ling_ext}
 \end{figure} \\
-In the scenario above, we are interested in associating an author with \texttt{ProductType} instances. To achieve this, we linguistically extend the \texttt{Store} model by adding a new node \texttt{Author}, instance of \texttt{Node} in the linguistic meta-model (briefly discussed earlier). Authors are related to one or more books, modelled through the field books. The \texttt{\{unique\}} modifier ensures that a given \texttt{Author} is not related to the same \texttt{Book} twice.
+In the scenario above, we are interested in associating an author with \texttt{ProductType} instances. To achieve this, we linguistically extend the \texttt{Store} model by adding a new Node \texttt{Author}, which is an instance of \texttt{Node} in the linguistic meta-model (briefly discussed earlier). Authors are related to one or more books, modelled through the field books. The \texttt{\{unique\}} modifier ensures that a given \texttt{Author} is not related to the same \texttt{Book} twice.
 \\ \\
-Associations can be annotated with fields by explicitly defining an \texttt{Edge} between their association ends. In the example above, we have an association \texttt{writer} instantiated as an \texttt{Edge} that relates books and authors. This \texttt{Edge} has got an extra field \texttt{year} that includes the year in which the book was written by that author. We could also define a more generic type of association. We could refer to linguistic types, like \texttt{Node}, when defining association ends. This makes sense if we want to specify that a certain association end is to be taken by any (linguistic) instance of \texttt{Node}.
+In figure ~\ref{fig:ling_ext}, we also notice an association \texttt{writer}, that associates an author with a book. In Metadepth, associations can be annotated with fields by explicitly defining an \texttt{Edge} between their association ends. So in our example above, the association \texttt{writer} is instantiated as an \texttt{Edge} that relates books and authors. This \texttt{Edge} has got an extra field \texttt{year} that includes the year in which the book was written by that author.
+%We could also define a more generic type of association. We could refer to linguistic types, like \texttt{Node}, when defining association ends. This makes sense if we want to specify that a certain association end is to be taken by any (linguistic) instance of \texttt{Node}.
 
 \section{Other deep meta-modeling solutions}
 
