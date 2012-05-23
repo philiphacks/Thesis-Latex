@@ -1,8 +1,14 @@
 \chapter{Designing a Collaborative Modeling Framework}
 
-In this chapter, the collaborative modeling framework will be explained in depth. The target platform for applications modeled through the framework is Android. Once a modeler has a basic understanding of how Android development works, the modeler can use this framework to rapidly develop Android prototypes. Most Android components have an equivalent meta-model in the collaborative framework. In the first section, several meta-models that make up an Android application are discussed. In a next section, the server component written in Node.js \cite{NodeJS} and Javascript is described. This component is used to save data created by a user and to distributed this data to other users currently involved in a session. Finally, we end the chapter with a section on code generation and EGL \cite{EGL}.
+In this chapter, the collaborative modeling framework will be explained in depth. The target platform for applications modeled through the framework is Android. Once a modeler has a basic understanding of how Android development works, the modeler can use this framework to rapidly develop Android collaborative prototype applications. In the first section, we will briefly state the requirements for the collaborative modeling framework. Next, several meta-models that make up an Android application are discussed. In the third section we describe the server component, written in Node.js \cite{NodeJS} and Javascript. The server component is used to persist data created by a user and to distributed this data to other users currently involved in a session. Finally, we end the chapter with a section on code generation and EGL \cite{EGL}.
+
+\section{Framework requirements}
+
+todo
 
 \section{Main component Meta-models}
+
+In this section, we will discuss the main component meta-models featured in the collaborative modeling framework. First, an overview in the form of a megamodel will be given. Next, individual meta-models will be explained in more detail.
 
 \subsection{Application}
 
@@ -17,7 +23,7 @@ Model Application imports Activity, Manifest, Server {
 	name			: String;
 	manifest		: ManifestDescription[1];
 	activities		: Activity[*];
-	server 			: Server[1];
+	server 			: Server[0..1];
 }
 \end{lstlisting}
 
@@ -63,7 +69,7 @@ Model Manifest {
 	}
 }
 \end{lstlisting}
-Some of the fields have a pre-defined value, such as \texttt{namespace}, \texttt{icon} or \texttt{label}. Other fields need to be set explicitly by the modeler. The \texttt{package} field describes the Java package used to logically organize the source code. Other fields describe the current SDK version of Android and the Activities that correspond with the ones that are modeled in the \texttt{Activity} meta-model. The \texttt{Permission} Node models the permissions that the modeled application needs. For instance, if the application needs to access the internet, we need to add an INTERNET permission. Every Android application can have a variety of permissions set to use the functionality provided by the SDK \cite{AndroidPermissions}. An \texttt{IntentFilter} is associated to an Activity, we indicate that this Activity is the entry point of the application. In Android, other options can be specified through intent filters, but these are not supported in the collaborative modeling framework \cite{AndroidIntentFilter}.
+Some of the fields have a pre-defined value, such as \texttt{namespace}, \texttt{icon} or \texttt{label}. Other fields need to be set explicitly by the modeler. The \texttt{package} field describes the Java package used to logically organize the source code. Other fields describe the current SDK version of Android and the Activities that correspond with the ones that are modeled in the \texttt{Activity} meta-model. The \texttt{Permission} Node models the permissions that the modeled application needs. For instance, if the application needs to access the internet, we need to add an INTERNET permission. Every Android application can have a variety of permissions set to use the functionality provided by the SDK \cite{AndroidPermissions}. An \texttt{IntentFilter} is associated to an Activity, we indicate that this Activity is the entry point of the application. In Android, other options can be specified through intent filters \cite{AndroidIntentFilter}, but these are not supported in the collaborative modeling framework.
 
 \subsection{Activity}
 
@@ -93,7 +99,8 @@ As we can see, an Activity contains an arbitrary number of components (explained
 
 \subsection{Presentation}
 
-In an Android application, the layout of an Activity is usually presented through an XML file. Alternatively, the layout of an \texttt{Activity} can also be described through Java code. For the collaborative modeling framework, the XML approach was chosen, so the code generation part will generate a set of XML files that represent the application's layout. The \texttt{Presentation} meta-model is described in Listing ~\ref{presentation-mm}.
+In this section, we will review the \texttt{Presentation} meta-model. This meta-model represents a mapping from the Metadepth syntax to the XML representation in Android. The \texttt{Presentation} meta-model is described in Listing ~\ref{presentation-mm}
+%In an Android application, the layout of an Activity is usually presented through an XML file. Alternatively, the layout of an \texttt{Activity} can also be described through Java code. For the collaborative modeling framework, the XML approach was chosen, so the code generation part will generate a set of XML files that represent the application's layout.
 
 \begin{lstlisting}[label=presentation-mm,caption=Presentation meta-model, captionpos=t]
 load "Component"
@@ -333,6 +340,8 @@ We have defined a few layout components that make up the layout of the Dropbox a
 
 \section{Server}
 
+In this section, we will review the \texttt{Server} meta-model and very briefly discuss the implementation details. The server component was written in Javascript and uses WebSockets for bi-directional communication, i.e. communication from client to server and vice versa.
+
 \subsection{Meta-model}
 
 The \texttt{Server} meta-model is quite straight-forward and the more complex parts are implemented in Node.js. \texttt{Server} is embedded into the \texttt{Application} meta-model. The code is listed in Listing ~\ref{server-mm}.
@@ -368,13 +377,16 @@ Since all communication works through WebSockets, the server implementation is d
 
 \section{Code Generation}
 
+In this section, we will explain the code generation details of Metadepth and the collaborative modeling framework. First, we will briefly explain the Epsilon Generation Language (EGL) syntax. Afterwards, we will show an example of the code generation of the activities in an Android application.
+
 \subsection{Epsilon Generation Language}
 
 EGL is a template-based model-to-text language for generating code, documentation and other textual artefacts from models. EGL supports content-destination decoupling, protected regions for mixing generated with hand-written code, and template coordination \cite{EpsilonGenerationLanguage}. \\ \\
 The concrete syntax of EGL closely resembles the style of other template-based code generation languages, such as PHP \cite{EpsilonBook}. Any text enclosed in a tag pair \textit{[\%} \textit{\%]} is used to delimit a dynamic code section. Text not inclosed in a tag pair is considered static code. Listing ~\ref{egl-template} illustrates the use of dynamic and static code sections to from a basic EGL template. 
 \begin{lstlisting}[label=egl-template,caption=EGL template, captionpos=t]
 ?[% for (i in Sequence{1..5}) { %]
-	i is [%= i %][% } %]
+	i is [%= i %]
+[% } %]
 \end{lstlisting}
 The structure of this basic template is used for the generation of Java code in the collaborative modeling framework. The next subsection shows an example of a real EGL template used in the collaborative modeling framework.
 
@@ -419,4 +431,4 @@ if (application.activities.isDefined() and application.activities.size() > 0) {
 	}
 }
 \end{lstlisting}
-This listing iterates all defined activities and generates the Java \texttt{Activity} files.
+This listing iterates all defined activities and generates the Java \texttt{Activity} files. Lines 11 through 16 populate the template with variables we need to generate the target (Java) code. The \texttt{populate} method passes variables in the source formalism and map these onto a name. For example, in line 11, we assigned the activity variable to 'activity' in the EGL template that will be called. Line 17 processes all this information and line 18 finally calls the template we initiated in line 2. The template is initiated by calling the \texttt{generate} method. This method expects one parameter, the location on the file system of the file that is to be generated.

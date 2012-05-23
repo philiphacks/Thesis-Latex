@@ -85,37 +85,38 @@
 \contentsline {subsection}{\numberline {5.4.9}Pattern System for Collaborative Applications Design}{54}
 \contentsline {section}{\numberline {5.5}Conclusion}{55}
 \contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{57}
-\contentsline {section}{\numberline {6.1}Main component Meta-models}{57}
-\contentsline {subsection}{\numberline {6.1.1}Application}{57}
-\contentsline {subsection}{\numberline {6.1.2}Manifest}{58}
-\contentsline {subsection}{\numberline {6.1.3}Activity}{59}
-\contentsline {subsection}{\numberline {6.1.4}Presentation}{60}
-\contentsline {subsection}{\numberline {6.1.5}Action}{61}
-\contentsline {section}{\numberline {6.2}Component Meta-Model}{63}
-\contentsline {subsection}{\numberline {6.2.1}Component}{63}
-\contentsline {subsection}{\numberline {6.2.2}AndroidComponent}{64}
-\contentsline {subsection}{\numberline {6.2.3}Example Component}{65}
-\contentsline {section}{\numberline {6.3}Server}{66}
-\contentsline {subsection}{\numberline {6.3.1}Meta-model}{66}
-\contentsline {subsection}{\numberline {6.3.2}Javascript and WebSockets}{67}
-\contentsline {section}{\numberline {6.4}Code Generation}{68}
-\contentsline {subsection}{\numberline {6.4.1}Epsilon Generation Language}{68}
-\contentsline {subsection}{\numberline {6.4.2}Example}{68}
-\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{70}
-\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{70}
-\contentsline {subsection}{\numberline {7.1.1}Problem}{70}
-\contentsline {subsection}{\numberline {7.1.2}Solution}{71}
-\contentsline {section}{\numberline {7.2}Platform implementation}{71}
-\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{72}
-\contentsline {subsection}{\numberline {7.2.2}MainActivity}{72}
-\contentsline {subsection}{\numberline {7.2.3}ListActivity}{73}
-\contentsline {section}{\numberline {7.3}Demonstration}{74}
-\contentsline {chapter}{\numberline {8}Conclusion}{78}
-\contentsline {section}{\numberline {8.1}Summary}{78}
-\contentsline {section}{\numberline {8.2}Future Work}{79}
-\contentsline {chapter}{Appendices}{81}
-\contentsline {chapter}{Appendix \numberline {A}Visual Editor}{82}
-\contentsline {section}{\numberline {A.1}Domain model}{82}
-\contentsline {section}{\numberline {A.2}Creating the visual environment}{84}
-\contentsline {section}{\numberline {A.3}Creating the target model using EGL}{86}
-\contentsline {section}{\numberline {A.4}Conclusion}{86}
+\contentsline {section}{\numberline {6.1}Framework requirements}{57}
+\contentsline {section}{\numberline {6.2}Main component Meta-models}{57}
+\contentsline {subsection}{\numberline {6.2.1}Application}{58}
+\contentsline {subsection}{\numberline {6.2.2}Manifest}{58}
+\contentsline {subsection}{\numberline {6.2.3}Activity}{59}
+\contentsline {subsection}{\numberline {6.2.4}Presentation}{60}
+\contentsline {subsection}{\numberline {6.2.5}Action}{61}
+\contentsline {section}{\numberline {6.3}Component Meta-Model}{63}
+\contentsline {subsection}{\numberline {6.3.1}Component}{63}
+\contentsline {subsection}{\numberline {6.3.2}AndroidComponent}{64}
+\contentsline {subsection}{\numberline {6.3.3}Example Component}{66}
+\contentsline {section}{\numberline {6.4}Server}{67}
+\contentsline {subsection}{\numberline {6.4.1}Meta-model}{67}
+\contentsline {subsection}{\numberline {6.4.2}Javascript and WebSockets}{67}
+\contentsline {section}{\numberline {6.5}Code Generation}{68}
+\contentsline {subsection}{\numberline {6.5.1}Epsilon Generation Language}{68}
+\contentsline {subsection}{\numberline {6.5.2}Example}{69}
+\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{71}
+\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{71}
+\contentsline {subsection}{\numberline {7.1.1}Problem}{71}
+\contentsline {subsection}{\numberline {7.1.2}Solution}{72}
+\contentsline {section}{\numberline {7.2}Platform implementation}{72}
+\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{73}
+\contentsline {subsection}{\numberline {7.2.2}MainActivity}{73}
+\contentsline {subsection}{\numberline {7.2.3}ListActivity}{74}
+\contentsline {section}{\numberline {7.3}Demonstration}{75}
+\contentsline {chapter}{\numberline {8}Conclusion}{79}
+\contentsline {section}{\numberline {8.1}Summary}{79}
+\contentsline {section}{\numberline {8.2}Future Work}{80}
+\contentsline {chapter}{Appendices}{82}
+\contentsline {chapter}{Appendix \numberline {A}Visual Editor}{83}
+\contentsline {section}{\numberline {A.1}Domain model}{83}
+\contentsline {section}{\numberline {A.2}Creating the visual environment}{85}
+\contentsline {section}{\numberline {A.3}Creating the target model using EGL}{87}
+\contentsline {section}{\numberline {A.4}Conclusion}{87}
