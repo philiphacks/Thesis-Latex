@@ -364,30 +364,16 @@ All these previous patterns together define a pattern system for the design of c
 \includegraphics[width=1.0\textwidth]{images/chap5_pattern_system.png}
 \caption{Pattern system of a collaborative system}
 \label{fig:pattern_system}
-\end{figure} \\
-The environment object keeps track of all sessions in a collaborative application. A session can broadcast objects and is persisted through a user with a specific role. Furthermore, we have a Repository that is accessed through the session object and shown through a View.
-
-\section{Collaboration Stack}
-
-As we have seen in previous section, we have mapped the collaborative modeling framework onto the collaborative pattern system through several design patterns. These collaborative patterns can also be regarded as a kind of documentation for a proven solution \cite{CollOntology}. In this section we will present an approach for creating an ontology of collaboration patterns and patterns languages. This ontology corresponds to a "collaboration stack" that identifies the various levels of abstraction. On one side we have some abstract collaboration patterns and on the other side we have the technologies that allow these patterns to be implemented. The goal of this ontology is to see where our underlying patterns, seen in previous section, belong in a stack. All patterns described correspond with the so-called low-level collaboration patterns in the collaboration stack. We can even combine those patterns to form higher level patterns. For instance, we could combine a revision history concept with the object pattern, which would result in a higher level version control pattern. Using these patterns in an application results in a further specialization that creates collaboration services, such as a shared whiteboard.
-
-\subsection{Ontology of collaboration patterns}
-
-The collaboration stack is depicted in figure ~\ref{fig:coll_stack}. This stack was inspired by a typical IT protocol stack. Here we see the relation of collaboration patterns to collaborative services and their technologies. 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.9\textwidth]{images/chap5_coll_stack.png}
-\caption{Collaboration Stack}
-\label{fig:coll_stack}
 \end{figure} \\ \\
-These collaboration patterns make use of their underlying services. For instance our environment pattern from the previous section makes use of the user list to handle sessions. In turn, these collaboration services make use of basic technologies. Now that we have a clear idea of our pattern system and the corresponding collaboration stack, we can describe the design of our collaborative framework. All components and their design will be described in the next chapter.
+The environment object keeps track of all sessions in a collaborative application. A session can broadcast objects and is persisted through a user with a specific role. Furthermore, we have a Repository that is accessed through the session object and shown through a View. \\ \\
+One more thing, the patterns covered in the pattern system are so-called low-level patterns. It is possible to combine those low-level patterns to form higher-level patterns. For example, if we combine the Role, User and Session pattern, we can come up with a full-fledged authentication/authorization pattern. Some of these patterns also feature cross-cutting concerns \cite{CrossCutting}. Cross-cutting concerns are parts of a program which rely on or must affect many other parts of the system. For instance, the Role pattern depends on the View pattern, because a user's role affects what can be seen in the view.
 
 \section{Conclusion}
 
-Problems tackled in the framework:
-
--> Pattern System allows for structured solution
--> Easy to create all patterns
--> Meta-models for several components
-
-===> Rapid validation of an idea/prototype, Ability to create an all-in-one integrated collaborative solution
+In this chapter, we have described the concepts of Groupware, CSCL and CSCW. Afterwards, we discussed several collaborative patterns that help us in the design and development of collaborative applications. These patterns are important in providing collaboration support in the modeling framework created in this work. To conclude, our framework tackles the following problems using the proposed pattern system:
+\begin{itemize}
+\item{Without a pattern system there is no defined structure for solving problems. The use of a pattern system allows for a structured solution to solve recurring collaborative problems, such as session creation, object persistence or broadcasting of data.}
+\item{Having a collaborative pattern system, it makes it more obvious how to implement the meta-models and code that support collaboration.}
+\end{itemize}
+Using this pattern system in the modeling framework, we allow the rapid validation of an idea or prototype that involves collaboration. Moreover, the pattern system incorporated into the framework gives us the ability to create an all-in-one integrated collaborative solution. An example of such an application will be shown in chapter 7. \\ \\
+Now that we have a clear idea of our pattern system, we can describe the design of our collaborative framework. Important components and their design will be described in the next chapter.

@@ -92,6 +92,11 @@ M.~G. C.~Atkinson and B.~Kennel, ``A flexible infrastructure for multilevel
 {Android Development Team}, ``{Notification Manager}.''
   \url{http://developer.android.com/reference/android/app/NotificationManager.html}.
 
+\bibitem{AndroidStates}
+{StackOverflow}, ``{Difference between the Active and Running state in an
+  Android activity}.''
+  \url{http://stackoverflow.com/questions/10685973/android-activity-difference-between-active-and-running}.
+
 \bibitem{DivisionCSCL}
 J.~Roschelle and S.~Teasley, ``{The construction of shared knowledge in
   collaborative problem solving},'' {\em Computer Supported Collaborative
@@ -163,9 +168,9 @@ L.~Guerrero and D.~Fuller, ``Jigsaw method in the context of cscl,'' {\em
 \bibitem{MongoDB}
 {10gen}, ``Mongodb.'' \url{http://www.mongodb.org/}.
 
-\bibitem{CollOntology}
-J.~Pattberg and M.~Fluegge, ``Towards an ontology of collaboration patterns,''
-  2002.
+\bibitem{CrossCutting}
+{Microsoft Developer Network}, ``Crosscutting concerns.''
+  \url{http://msdn.microsoft.com/en-us/library/ee658105.aspx}.
 
 \bibitem{NodeJS}
 Joyent, ``Node.js.'' \url{http://nodejs.org/}, 2012.

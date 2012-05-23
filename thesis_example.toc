@@ -83,9 +83,7 @@
 \contentsline {subsection}{\numberline {5.4.7}Role}{53}
 \contentsline {subsection}{\numberline {5.4.8}Environment}{54}
 \contentsline {subsection}{\numberline {5.4.9}Pattern System for Collaborative Applications Design}{54}
-\contentsline {section}{\numberline {5.5}Collaboration Stack}{55}
-\contentsline {subsection}{\numberline {5.5.1}Ontology of collaboration patterns}{55}
-\contentsline {section}{\numberline {5.6}Conclusion}{56}
+\contentsline {section}{\numberline {5.5}Conclusion}{55}
 \contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{57}
 \contentsline {section}{\numberline {6.1}Main component Meta-models}{57}
 \contentsline {subsection}{\numberline {6.1.1}Application}{57}

@@ -8,37 +8,36 @@ Warning--empty journal in MetaDepth
 Warning--empty journal in GenericMetaDepth
 Warning--empty journal in LiberateProgramming
 Warning--empty journal in CSCWChars
-Warning--empty journal in CollOntology
-You've used 52 entries,
+You've used 53 entries,
             1876 wiz_defined-function locations,
-            731 strings with 9783 characters,
-and the built_in function-call counts, 8036 in all, are:
-= -- 713
+            736 strings with 10009 characters,
+and the built_in function-call counts, 8130 in all, are:
+= -- 722
 > -- 276
 < -- 0
-+ -- 121
++ -- 122
 - -- 69
-* -- 384
-:= -- 1164
-add.period$ -- 52
-call.type$ -- 52
-change.case$ -- 52
+* -- 383
+:= -- 1174
+add.period$ -- 53
+call.type$ -- 53
+change.case$ -- 53
 chr.to.int$ -- 0
 cite$ -- 58
-duplicate$ -- 364
-empty$ -- 1011
+duplicate$ -- 363
+empty$ -- 1030
 format.name$ -- 69
-if$ -- 2019
+if$ -- 2047
 int.to.chr$ -- 0
-int.to.str$ -- 52
-missing$ -- 20
-newline$ -- 159
-num.names$ -- 52
-pop$ -- 256
+int.to.str$ -- 53
+missing$ -- 19
+newline$ -- 162
+num.names$ -- 53
+pop$ -- 260
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 296
+skip$ -- 306
 stack$ -- 0
 substring$ -- 198
 swap$ -- 70
@@ -46,8 +45,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 68
-width$ -- 54
-write$ -- 400
-(There were 6 warnings)
+warning$ -- 5
+while$ -- 69
+width$ -- 55
+write$ -- 407
+(There were 5 warnings)
