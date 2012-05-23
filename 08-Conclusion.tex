@@ -17,9 +17,9 @@ Finally, chapter 7 describes a case study application that shows off the capabil
 Based on the previous section, the main conclusion of this work is that it \textit{is} possible to build a modeling framework for Android. However, the Android SDK is \textit{very} extensive and therefore requires an enormous amount of work to map all the SDK components to meta-models. Therefore, the collaborative modeling framework can still be extended with different functionalities and components. Unfortunately, the time frame in which this research was conducted was too small to elaborate on certain aspects. Here are a number of possible extensions to the collaborative modeling framework:
 
 \begin{itemize}
-\item{Support for custom resources (images, graphics, icons, backgrounds,...)}
-\item{Extended M2M Transformation}
-\item{Web service to model and generate .apk Android apps}
-\item{Improved constraints checking}
-\item{Additional components to extend functionality}
+\item{Support for custom resources (images, graphics, icons, backgrounds,...). Right now the framework does not support custom UIs or visualizations. The consequence is that all applications will look the same, which does not give much flexibility to the framework.}
+%\item{Extended M2M Transformation.}
+\item{Improved constraints checking. The collaborative modeling framework consists of minimal constraint checking, but when those constraints are violated, no errors are thrown. Ideally, we would need a building process that throws an error once we violate a high-priority constraint. Unfortunately, it is not easy to give priority to constraints in Metadepth, but it should be possible to catch all errors thrown by violating constraints.}
+\item{Additional components to extend functionality. The current functionality in the framework allows a modeler to create a fine range of collaborative Android applications, but there are missing pieces. Right now, there is not a lot of social media support (i.e. in the form of a Facebook or Foursquare component). Adding new components to the framework would give it more commercial value.}
+\item{Web service to model and generate .apk Android apps. Right now, we have a minimal visual environment to model Android applications (see appendix A). It would be beneficial to create a web service that allows one to model applications and downloading binaries that can be deployed to Android phones immediately.}
 \end{itemize}
