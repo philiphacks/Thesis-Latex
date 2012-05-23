@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  21 MAY 2012 15:21
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  23 MAY 2012 00:57
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1019,27 +1019,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 [41
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 15--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--28
+Underfull \hbox (badness 10000) in paragraph at lines 23--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--28
+Underfull \hbox (badness 10000) in paragraph at lines 23--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--28
+Underfull \hbox (badness 10000) in paragraph at lines 23--30
 
  []
 
 [42]
-Overfull \hbox (98.49826pt too wide) in alignment at lines 33--42
+Overfull \hbox (98.49826pt too wide) in alignment at lines 35--44
 [][][] 
  []
 
@@ -1047,10 +1047,10 @@ Overfull \hbox (98.49826pt too wide) in alignment at lines 33--42
 File: images/chap5_3by3matrix.png Graphic file (type png)
 
 <use images/chap5_3by3matrix.png>
-Package pdftex.def Info: images/chap5_3by3matrix.png used on input line 52.
+Package pdftex.def Info: images/chap5_3by3matrix.png used on input line 54.
 (pdftex.def)             Requested size: 278.83578pt x 248.91522pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--57
+Underfull \hbox (badness 10000) in paragraph at lines 33--59
 
  []
 
@@ -1058,152 +1058,152 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--57
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [43] [44 <./images/chap5_3by3matrix.png>] [45] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 117--120
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 
  []
 
 [47]
-Underfull \hbox (badness 10000) in paragraph at lines 142--145
+Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--155
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
 
  []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 165--168
+Underfull \hbox (badness 10000) in paragraph at lines 163--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--177
+Underfull \hbox (badness 10000) in paragraph at lines 171--175
 
  []
 
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 181--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--208
+Underfull \hbox (badness 10000) in paragraph at lines 187--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--220
+Underfull \hbox (badness 10000) in paragraph at lines 187--195
 
  []
 
 [50]
-Underfull \hbox (badness 10000) in paragraph at lines 223--231
+Underfull \hbox (badness 10000) in paragraph at lines 202--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--231
+Underfull \hbox (badness 10000) in paragraph at lines 212--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--242
+Underfull \hbox (badness 10000) in paragraph at lines 212--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--253
+Underfull \hbox (badness 10000) in paragraph at lines 224--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--253
+Underfull \hbox (badness 10000) in paragraph at lines 234--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--263
+Underfull \hbox (badness 10000) in paragraph at lines 234--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--274
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--274
+Underfull \hbox (badness 10000) in paragraph at lines 245--252
 
  []
 
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 277--284
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--295
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--295
+Underfull \hbox (badness 10000) in paragraph at lines 266--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--306
+Underfull \hbox (badness 10000) in paragraph at lines 276--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--317
+Underfull \hbox (badness 10000) in paragraph at lines 276--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--317
+Underfull \hbox (badness 10000) in paragraph at lines 288--295
 
  []
 
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 320--327
+Underfull \hbox (badness 10000) in paragraph at lines 298--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--338
+Underfull \hbox (badness 10000) in paragraph at lines 298--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--338
+Underfull \hbox (badness 10000) in paragraph at lines 308--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--349
+Underfull \hbox (badness 10000) in paragraph at lines 318--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--360
+Underfull \hbox (badness 10000) in paragraph at lines 318--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--360
+Underfull \hbox (badness 10000) in paragraph at lines 330--337
 
  []
 
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 363--370
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--358
 
  []
 
@@ -1211,7 +1211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--370
 File: images/chap5_pattern_system.png Graphic file (type png)
 
 <use images/chap5_pattern_system.png>
-Package pdftex.def Info: images/chap5_pattern_system.png used on input line 377
+Package pdftex.def Info: images/chap5_pattern_system.png used on input line 364
 .
 (pdftex.def)             Requested size: 398.33858pt x 193.79689pt.
 
@@ -1222,39 +1222,47 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: images/chap5_coll_stack.png Graphic file (type png)
 
 <use images/chap5_coll_stack.png>
-Package pdftex.def Info: images/chap5_coll_stack.png used on input line 394.
+Package pdftex.def Info: images/chap5_coll_stack.png used on input line 379.
 (pdftex.def)             Requested size: 358.50227pt x 184.13802pt.
-) (./06-Design.tex [55 <./images/chap5_pattern_system.png> <./images/chap5_coll
-_stack.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--384
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[55 <./images/chap5_pattern_system.png>]) (./06-Design.tex [56 <./images/chap5_
+coll_stack.png>]
 Chapter 6.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 11--11
 [][][][][][][] 
  []
 
-[56
+[57
 
 ]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 28--28
 [][][][][][][] 
  []
 
-[57]
+[58]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 72--72
 [][][][][][][] 
  []
 
-[58]
+[59]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 98--98
 [][][][][][][] 
  []
 
-[59]
+[60]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 153--153
 [][][][][][][] 
  []
 
-[60]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
@@ -1264,17 +1272,17 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 190--190
 [][][][][][][] 
  []
 
-[61]
+[62]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 215--215
 [][][][][][][] 
  []
 
-[62]
+[63]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 256--256
 [][][][][][][] 
  []
 
-[63]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
@@ -1289,7 +1297,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 302--302
 [][][][][][][] 
  []
 
-[64]
+[65]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 320--320
 [][][][][][][] 
  []
@@ -1299,7 +1307,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 340--340
 [][][][][][][] 
  []
 
-[65]
+[66]
 Overfull \hbox (6.082pt too wide) in paragraph at lines 365--366
 \OT1/cmr/m/n/10.95 per-fect for data-intensive real-time ap-pli-ca-tions that r
 un across dis-tributed
@@ -1310,7 +1318,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 373--375
 
  []
 
-[66]
+[67]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 375--375
 [][][][][][][] 
  []
@@ -1320,21 +1328,21 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 386--386
 [][][][][][][] 
  []
 
-[67]) (./07-CaseStudy.tex [68]
+[68]) (./07-CaseStudy.tex [69]
 Chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-[69
+[70
 
 ]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 37--37
 [][][][][][][] 
  []
 
-[70]
+[71]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 48--48
 [][][][][][][] 
  []
@@ -1344,7 +1352,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 64--64
 [][][][][][][] 
  []
 
-[71]
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
@@ -1354,28 +1362,28 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 81--81
 [][][][][][][] 
  []
 
-[72] <images/chap7_connected.png, id=341, 406.51875pt x 675.52374pt>
+[73] <images/chap7_connected.png, id=344, 406.51875pt x 675.52374pt>
 File: images/chap7_connected.png Graphic file (type png)
 
 <use images/chap7_connected.png>
 Package pdftex.def Info: images/chap7_connected.png used on input line 97.
 (pdftex.def)             Requested size: 159.333pt x 264.76227pt.
 
-<images/chap7_chatbox.png, id=342, 872.25874pt x 740.7675pt>
+<images/chap7_chatbox.png, id=345, 872.25874pt x 740.7675pt>
 File: images/chap7_chatbox.png Graphic file (type png)
 
 <use images/chap7_chatbox.png>
 Package pdftex.def Info: images/chap7_chatbox.png used on input line 104.
 (pdftex.def)             Requested size: 394.35738pt x 334.90213pt.
 
-<images/chap7_dropbox1.png, id=343, 421.575pt x 698.61pt>
+<images/chap7_dropbox1.png, id=346, 421.575pt x 698.61pt>
 File: images/chap7_dropbox1.png Graphic file (type png)
 
 <use images/chap7_dropbox1.png>
 Package pdftex.def Info: images/chap7_dropbox1.png used on input line 111.
 (pdftex.def)             Requested size: 159.333pt x 264.03546pt.
 
-<images/chap7_dropbox2.png, id=344, 405.515pt x 673.51625pt>
+<images/chap7_dropbox2.png, id=347, 405.515pt x 673.51625pt>
 File: images/chap7_dropbox2.png Graphic file (type png)
 
 <use images/chap7_dropbox2.png>
@@ -1394,8 +1402,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[73] [74 <./images/chap7_connected.png>] [75 <./images/chap7_chatbox.png>]
-[76 <./images/chap7_dropbox1.png> <./images/chap7_dropbox2.png>]
+[74] [75 <./images/chap7_connected.png>] [76 <./images/chap7_chatbox.png>]
+[77 <./images/chap7_dropbox1.png> <./images/chap7_dropbox2.png>]
 Chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--14
@@ -1427,14 +1435,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--14
 
  []
 
-[77
+[78
 
-] [78]) [79] [80
+] [79]) [80] [81
 
 
 ] (./AA-VisualEditor.tex
 Appendix A.
-[81
+[82
 
 ]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 15--15
@@ -1451,12 +1459,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-[82]
+[83]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 55--55
 [][][][][][][] 
  []
 
-[83] <images/app1_visual_environment.jpg, id=384, 1131.22626pt x 631.35875pt>
+[84] <images/app1_visual_environment.jpg, id=387, 1131.22626pt x 631.35875pt>
 File: images/app1_visual_environment.jpg Graphic file (type jpg)
 
 <use images/app1_visual_environment.jpg>
@@ -1473,12 +1481,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
-[84 <./images/app1_visual_environment.jpg>]
+[85 <./images/app1_visual_environment.jpg>]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 107--107
 [][][][][][][] 
  []
 
-) (./thesis_example.bbl [85] [86]
+) (./thesis_example.bbl [86] [87]
 Underfull \hbox (badness 1320) in paragraph at lines 4--7
 []\OT1/cmr/m/n/10.95 C. Atkin-son and T. K^^?uhne, ``Model-driven de-vel-op-men
 t: A meta-mod-
@@ -1502,7 +1510,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--31
 td-[]06052006-[]110407 /
  []
 
-[87
+[88
 
 ]
 Underfull \hbox (badness 2277) in paragraph at lines 80--82
@@ -1516,22 +1524,17 @@ Underfull \hbox (badness 3471) in paragraph at lines 84--86
 /cmtt/m/n/10.95 http : / / developer .
  []
 
-[88]
+[89]
 Underfull \hbox (badness 2644) in paragraph at lines 178--180
 []\OT1/cmr/m/n/10.95 Android De-vel-op-ment Team, ``Man-i-fest.permission.'' $\
 OT1/cmtt/m/n/10.95 http : / / developer .
  []
 
-[89])
+[90])
 
 Package natbib Warning: There were undefined citations.
 
-[90] (./thesis_example.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+[91] (./thesis_example.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1563,10 +1566,10 @@ texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on thesis_example.pdf (98 pages, 2958696 bytes).
+Output written on thesis_example.pdf (99 pages, 2960463 bytes).
 PDF statistics:
- 462 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
+ 465 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

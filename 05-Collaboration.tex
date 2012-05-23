@@ -1,10 +1,12 @@
 \chapter{Collaboration}
 
-In this chapter, we will introduce different types of collaborative methods. People will continue to interact in new and different ways. One outcome of the marriage between technology and communication is a technical workplace. The study of such workplaces gives rise to a new field: \textit{Computer-Supported Cooperative Work} (CSCW). CSCW analyzes the way groups work and seeks to discover how technology can help them work. Sometimes we refer to CSCW as \textit{groupware}. Often this term is used synonymously with CSCW technology. However, this is not completely true. In the following sections, we will define the exact definition of groupware and CSCW applications. We will also create a taxonomy of groupware and compare this taxonomy to CSCW applications. There exists another collaborative method, especially targeted at collaborative learning, \textit{Computer-Supported Collaborative Learning} (CSCL). This collaborative method is a refinement of CSCW. When studying these methods, we should make a clear distinction between cooperative and collaborative work. Cooperative work is accomplished by the division of labour among participants. It is an activity where each person is responsible for a portion of the problem solving. Collaboration involves the mutual engagement of participants in a coordinated effort to solve the problem together \cite{DivisionCSCL}.
+In this chapter, we will introduce different types of collaborative methods. People will continue to interact in new and different ways. One outcome of the marriage between technology and communication is a technical workplace. The study of such workplaces gives rise to a new field: \textit{Computer-Supported Cooperative Work} (CSCW). CSCW analyzes the way groups work and seeks to discover how technology can help them work. Sometimes we refer to CSCW as \textit{groupware}. Often this term is used synonymously with CSCW technology. However, this is not completely true. In the following sections, we will define the concept of groupware and CSCW applications. We will also create a taxonomy of groupware and compare this taxonomy to CSCW applications. There exists another collaborative method, especially targeted at collaborative learning, \textit{Computer-Supported Collaborative Learning} (CSCL). This collaborative method is a refinement of CSCW. When studying these methods, we should make a clear distinction between cooperative and collaborative work. Cooperative work is accomplished by the division of labour among participants. It is an activity where each person is responsible for a portion of the problem that's being solved. Collaboration involves the mutual engagement of participants in a coordinated effort to solve the problem together \cite{DivisionCSCL}.
 \\ \\
 The second part of this chapter defines the collaborative patterns typically used in a collaborative application (whether it is defined as groupware, CSCW or CSCL). We finish this chapter with a collaboration stack that defines the different levels in collaborative applications.
 
 \section{Groupware}
+
+In the following section, we will first give a definition for Groupware. Next, we will discuss different taxonomies of Groupware and concepts of real-time (distributed) Groupware, which is the emphasis of the collaborative modeling framework. Subsequently we will discuss the benefits and drawbacks of distributed interaction, which is a central concept in distributed Groupware. Finally, we will give a classification of Groupware which states the different concepts a Groupware application should support.
 
 \subsection{Definition}
 
@@ -67,9 +69,9 @@ The concept of groupware is not new. It has been around since the early nineties
 \item{\textit{Role}. A role is a set of privileges or responsibilities related to a user. For instance, a user can be assigned the role of admin to control a groupware application.}
 \end{itemize}
 
-\subsection{Pros and cons of distributed interaction}
+\subsection{Benefits and drawbacks of distributed interaction}
 
-If we look at the taxonomy of groupware systems and only consider systems at different places, we get a distributed interaction model. From a user's perspective, these distributed interaction sessions are completely different experiences from face-to-face (i.e. same place) sessions. Because our modeling framework primarily targets interaction at different places, we list the pros and the cons of these distributed interaction types here: 
+If we look at the taxonomy of groupware systems and only consider systems at different places, we get a distributed interaction model. From a user's perspective, these distributed interaction sessions are completely different experiences from face-to-face (i.e. same place) sessions. Because our modeling framework primarily targets interaction at different places, we list the benefits and drawbacks of these distributed interaction types here: 
 
 \begin{itemize}
 \item{\textit{Encourages parallel work within the group}. Usually, people divide into subgroups to work on different parts of an assignment. It is easy for distributed members to drop out for a while, do something else and then return. In most face-to-face situations, this is not socially acceptable.}
@@ -78,10 +80,6 @@ If we look at the taxonomy of groupware systems and only consider systems at dif
 \item{\textit{Cuts down on social interaction}. This item has both a positive and a negative connotation. Distributed sessions are usually more serious. As a consequence, there is less interchange about nontask-related topics and people tend to focus on the task immediately. The effect is a possible efficiency gain from time saved and a possible loss from social needs.}
 \item{\textit{Can be efficient}. Distributed sessions allow for parallel work. In contrast to face-to-face sessions, people in a distributed session are usually more concentrated on the to be accomplished task itself.}
 \end{itemize}
-
-%\subsection{Groupware Research and Problems}
-
-%Todo
 
 \subsection{A groupware classification}
 
@@ -131,7 +129,7 @@ In the next subsection, we will address the requirements engineering of groupwar
 
 \subsection{Requirements engineering in CSCW}
 
-When a CSCW project was developed in the future, more often than not it wasn't able to satisfy its intended goals. The main reason for this problem is that most of these systems have been regarded as a technical system only. However, as we have seen there are two aspects of CSCW, a social and technological aspect. It turned out that very often the social aspect was not satisfied in the CSCW system and it wasn't seen as a sociotechnical system. The fact that the success of such a system depends on the social group that is using it is overlooked. This fact results in several problems:
+When a CSCW project was developed in the future, more often than not it was not able to satisfy its intended goals. The main reason for this problem is that most of these systems have been regarded as a technical system only. However, as we have seen there are two aspects of CSCW, a social and technological aspect. It turned out that very often the social aspect was not satisfied in the CSCW system and it was not seen as a socio-technical system. The fact that the success of such a system depends on the social group that is using it is overlooked. This fact results in several problems:
 
 \begin{itemize}
 \item{It is hard to get the requirements from users. The social group using the end-product might change and thereby changing the requirements.}
@@ -151,7 +149,7 @@ Computer-supported collaborative learning (CSCL) has some interfaces with CSCW a
 
 Computers have become an important artifact in formal education (e.g. high school or college) as well as informal education (e.g. museums). In the broader learning sciences, there also exists a trend in learning together in small groups. However, the ability to enhance learning through technology and education remains a challenge that CSCL is designed to address. 
 \\ \\
-CSCL proposes the development of new software that bring learners together and that can offer creative activities of intellectual exploration and social interaction. It is often conflated with e-learning, the organization of instruction across computer networks. E-learning is often associated with the creation and delivery of digital content such as slides, text or videos.There are a few problems with this view:
+CSCL proposes the development of new software that bring learners together and that can offer creative activities of intellectual exploration and social interaction. It is often conflated with e-learning, the organization of instruction across computer networks. E-learning is often associated with the creation and delivery of digital content such as slides, text or videos. There are a few problems with this view:
 
 \begin{itemize}
 \item{Digital content such as slides, text or videos does not necessarily make for compelling instruction. It may provide important resources for students, but there must exist a larger interactive context.}
@@ -178,17 +176,6 @@ CSCL is a field of study centrally concerned with meaning and the practices of m
 \end{mydef}
 "Practices of meaning-making in the context of joint activity" might be hard to understand. It means that learning is not merely accomplished through interaction, but it is \textit{constituted} of interactions between participants. 
 
-%\subsection{Arguments and Implications of CSCL}
-
-%Generally, teamwork is strongly associated with a high degree of effectiveness and efficiency \cite{JigsawCSCL}. However, with respect to CSCL, there are arguments that explain both negative as well as positive effects. We can say that \textit{'cooperative learning is supporting the success in learning in general'}. This statement seems plausible, but we might as well state that: \textit{'you can decide neither theoretically nor empirically which social form of learning and working is better'}. In what follows, we will take three positions into consideration that argue on both positive as well as arguments speaking for CSCL.
-
-%\subsubsection{Cognitive Elaboration}
-
-%\subsubsection{Multiple contexts and perspectives}
-
-%\subsubsection{Construction of shared knowledge} 
-
-
 \section{Collaborative Patterns}
 
 In the previous sections we have discussed the different kinds of collaborative applications. In general, we may conclude that a collaborative application provides a group of users with the facility to communicate and share data in a coordinate way. In this section, we will propose several design patterns to help in the design and development of collaborative applications. These patterns cover the basic aspects such as data sharing and communication.
@@ -209,6 +196,8 @@ How do we manage and coordinate a session in a collaborative application?
 \item{We need to know which users are connected and working synchronously}
 \item{Data is protected from users outside of the session}
 \item{It is possible to register new users}
+\item{It is possible to unregister new users}
+\item{We need to check a user's credentials when creating a session}
 \end{itemize}
 \textbf{Solution}
 \\
@@ -251,7 +240,7 @@ Data is generated by the members of a workgroup. How can we manage this data?
 \textbf{Requirements}
 \begin{itemize}
 \item{Users can create new objects/resources}
-\item{If we want to store multiple revisions of a file, we need to store modified objects and make them available to users}
+%\item{If we want to store multiple revisions of a file, we need to store modified objects and make them available to users}
 \end{itemize}
 \textbf{Solution}
 \\
@@ -314,7 +303,6 @@ How can we manage information about users?
 \\ \\
 \textbf{Requirements}
 \begin{itemize}
-\item{We need to check a user's credentials when entering an application}
 \item{User awareness is needed in applications, so we need to keep track of certain information about each user}
 \end{itemize}
 \textbf{Solution}
@@ -371,29 +359,35 @@ In the collaborative modeling framework, a developer may model a server that mai
 \subsection{Pattern System for Collaborative Applications Design}
 
 All these previous patterns together define a pattern system for the design of collaborative applications. The overall system design through these patterns is depicted in figure ~\ref{fig:pattern_system}.
-
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.0\textwidth]{images/chap5_pattern_system.png}
 \caption{Pattern system of a collaborative system}
 \label{fig:pattern_system}
-\end{figure}
-
+\end{figure} \\
 The environment object keeps track of all sessions in a collaborative application. A session can broadcast objects and is persisted through a user with a specific role. Furthermore, we have a Repository that is accessed through the session object and shown through a View.
 
 \section{Collaboration Stack}
 
-As we have seen in previous section, we have mapped the collaborative modeling framework onto the collaborative pattern system through several design patterns. These collaborative patterns can also regarded as a kind of documentation for a proven solution \cite{CollOntology}. In this section we will present an approach for creating an ontology of collaboration patterns and patterns languages. This ontology corresponds to a "collaboration stack" that identifies the various levels of abstraction. On one side we have some abstract collaboration patterns and on the other side we have the technologies that allow these patterns to be implemented.
+As we have seen in previous section, we have mapped the collaborative modeling framework onto the collaborative pattern system through several design patterns. These collaborative patterns can also be regarded as a kind of documentation for a proven solution \cite{CollOntology}. In this section we will present an approach for creating an ontology of collaboration patterns and patterns languages. This ontology corresponds to a "collaboration stack" that identifies the various levels of abstraction. On one side we have some abstract collaboration patterns and on the other side we have the technologies that allow these patterns to be implemented. The goal of this ontology is to see where our underlying patterns, seen in previous section, belong in a stack. All patterns described correspond with the so-called low-level collaboration patterns in the collaboration stack. We can even combine those patterns to form higher level patterns. For instance, we could combine a revision history concept with the object pattern, which would result in a higher level version control pattern. Using these patterns in an application results in a further specialization that creates collaboration services, such as a shared whiteboard.
 
 \subsection{Ontology of collaboration patterns}
 
 The collaboration stack is depicted in figure ~\ref{fig:coll_stack}. This stack was inspired by a typical IT protocol stack. Here we see the relation of collaboration patterns to collaborative services and their technologies. 
-
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap5_coll_stack.png}
 \caption{Collaboration Stack}
 \label{fig:coll_stack}
-\end{figure}
-
+\end{figure} \\ \\
 These collaboration patterns make use of their underlying services. For instance our environment pattern from the previous section makes use of the user list to handle sessions. In turn, these collaboration services make use of basic technologies. Now that we have a clear idea of our pattern system and the corresponding collaboration stack, we can describe the design of our collaborative framework. All components and their design will be described in the next chapter.
+
+\section{Conclusion}
+
+Problems tackled in the framework:
+
+-> Pattern System allows for structured solution
+-> Easy to create all patterns
+-> Meta-models for several components
+
+===> Rapid validation of an idea/prototype, Ability to create an all-in-one integrated collaborative solution
