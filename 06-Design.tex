@@ -8,7 +8,17 @@ todo
 
 \section{Main component Meta-models}
 
-In this section, we will discuss the main component meta-models featured in the collaborative modeling framework. First, an overview in the form of a megamodel will be given. Next, individual meta-models will be explained in more detail.
+In this section, we will discuss the main component meta-models featured in the collaborative modeling framework. First, a high-level overview in the form of a megamodel will be given. Next, individual meta-models will be explained in more detail.
+
+\subsection{High-level megamodel}
+
+In figure ~\ref{fig:highlevel_mm}, we see a high-level overview megamodel. This megamodel contains all the important meta-models that make up an application model in the framework. There is one important piece missing in the megamodel, which is the \texttt{Component} hierarchy. This hierarchy will be reviewed in section 6.3. The meta-models \texttt{Application}, \texttt{Manifest}, \texttt{Activity}, \texttt{AndroidAction}, \texttt{UIAction} and \texttt{Server} will be explained in detail in this chapter. 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.02\textwidth]{images/chap6_high_level.png}
+\caption{High-level Megamodel}
+\label{fig:highlevel_mm}
+\end{figure}
 
 \subsection{Application}
 
@@ -214,6 +224,16 @@ In \texttt{UIAction}, we specify a target to execute a list of actions on. This 
 \section{Component Meta-Model}
 
 Another important part of the framework is the \texttt{Component} meta-model. Every implemented Android component should be inherited from this meta-model. Examples of such components are \texttt{SMSComponent}, \texttt{TwitterComponent} or \texttt{ChatComponent}. In the following sections we will describe the abstract \texttt{Component} meta-model, the derived \texttt{AndroidComponent} and an instantiation of an \texttt{AndroidComponent} as an example.
+
+\subsection{Component megamodel}
+
+The component megamodel describes the whole \texttt{Component} meta-model hierarchy. As seen in figure ~\ref{fig:component_megamodel}, we see that the \texttt{Component} meta-model is used to model both layout components as well as Android framework components. The general Android framework components are instantiated through the Node \texttt{AComp}. Examples of these components are \texttt{Dropbox} or \texttt{Twitter}. When we need a component that communicates with our server (e.g. a \texttt{List} component), we need to instantiate the \texttt{SComp} component. The layout components \texttt{Button}, \texttt{EditText} and \texttt{TextView} are layout elements visible in an Android application. \texttt{ListView} and \texttt{ScrollView} are used to divide the layout into parts, respectively when we want to show a list of items or have a scrolling view in the UI. The structure of a layout is described through the \texttt{LayoutType} Node. An example of such a structure is a \texttt{LinearLayout}, that arranges its children (layout elements such as \texttt{Button}) in a single column or a single row.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.0\textwidth]{images/chap6_component_megam.png}
+\caption{Component Megamodel}
+\label{fig:component_megamodel}
+\end{figure}
 
 \subsection{Component}
 

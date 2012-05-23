@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  23 MAY 2012 13:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  23 MAY 2012 17:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1229,109 +1229,139 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--1
 
 [55 <./images/chap5_pattern_system.png>] [56]
 Chapter 6.
+<images/chap6_high_level.png, id=287, 405.6756pt x 553.5882pt>
+File: images/chap6_high_level.png Graphic file (type png)
+
+<use images/chap6_high_level.png>
+Package pdftex.def Info: images/chap6_high_level.png used on input line 18.
+(pdftex.def)             Requested size: 406.30704pt x 554.47377pt.
+
+Overfull \hbox (7.96846pt too wide) in paragraph at lines 18--19
+ [][] 
+ []
+
 [57
 
 ]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 17--17
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 27--27
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 34--34
+Overfull \hbox (6.0pt too wide) in paragraph at lines 44--44
 [][][][][][][] 
  []
 
 [58]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 78--78
-[][][][][][][] 
- []
 
-[59]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 105--105
+LaTeX Warning: Text page 59 contains only floats.
+
+[59 <./images/chap6_high_level.png>]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 88--88
 [][][][][][][] 
  []
 
 [60]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 160--160
+Overfull \hbox (6.0pt too wide) in paragraph at lines 115--115
 [][][][][][][] 
  []
 
 [61]
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
-
- []
-
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 197--197
+Overfull \hbox (6.0pt too wide) in paragraph at lines 170--170
 [][][][][][][] 
  []
 
 [62]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 222--222
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 207--207
 [][][][][][][] 
  []
 
-[63]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 263--263
+[63] <images/chap6_component_megam.png, id=312, 556.9608pt x 595.5048pt>
+File: images/chap6_component_megam.png Graphic file (type png)
+
+<use images/chap6_component_megam.png>
+Package pdftex.def Info: images/chap6_component_megam.png used on input line 23
+3.
+(pdftex.def)             Requested size: 398.33858pt x 425.919pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 242--242
 [][][][][][][] 
  []
 
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 302--304
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 302--304
-
- []
-
-[65]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 309--309
-[][][][][][][] 
- []
-
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 327--327
+[64] [65 <./images/chap6_component_megam.png>]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 283--283
 [][][][][][][] 
  []
 
 [66]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 349--349
-[][][][][][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
+
  []
 
 [67]
-Overfull \hbox (6.082pt too wide) in paragraph at lines 374--375
+Overfull \hbox (6.0pt too wide) in paragraph at lines 329--329
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 347--347
+[][][][][][][] 
+ []
+
+[68]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 369--369
+[][][][][][][] 
+ []
+
+[69]
+Overfull \hbox (6.082pt too wide) in paragraph at lines 394--395
 \OT1/cmr/m/n/10.95 per-fect for data-intensive real-time ap-pli-ca-tions that r
 un across dis-tributed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--386
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
  []
 
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 386--386
+[70]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 406--406
 [][][][][][][] 
  []
 
-[68]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 397--397
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 417--417
 [][][][][][][] 
  []
 
-) (./07-CaseStudy.tex [69] [70]
+[71]) (./07-CaseStudy.tex [72]
 Chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-[71
+[73
 
-] [72]
+] [74]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 36--36
 [][][][][][][] 
  []
@@ -1346,7 +1376,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 63--63
 [][][][][][][] 
  []
 
-[73]
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 74--76
 
  []
@@ -1356,28 +1386,28 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 80--80
 [][][][][][][] 
  []
 
-[74] <images/chap7_connected.png, id=345, 406.51875pt x 675.52374pt>
+[76] <images/chap7_connected.png, id=355, 406.51875pt x 675.52374pt>
 File: images/chap7_connected.png Graphic file (type png)
 
 <use images/chap7_connected.png>
 Package pdftex.def Info: images/chap7_connected.png used on input line 96.
 (pdftex.def)             Requested size: 159.333pt x 264.76227pt.
 
-<images/chap7_chatbox.png, id=346, 872.25874pt x 740.7675pt>
+<images/chap7_chatbox.png, id=356, 872.25874pt x 740.7675pt>
 File: images/chap7_chatbox.png Graphic file (type png)
 
 <use images/chap7_chatbox.png>
 Package pdftex.def Info: images/chap7_chatbox.png used on input line 103.
 (pdftex.def)             Requested size: 394.35738pt x 334.90213pt.
 
-<images/chap7_dropbox1.png, id=347, 421.575pt x 698.61pt>
+<images/chap7_dropbox1.png, id=357, 421.575pt x 698.61pt>
 File: images/chap7_dropbox1.png Graphic file (type png)
 
 <use images/chap7_dropbox1.png>
 Package pdftex.def Info: images/chap7_dropbox1.png used on input line 110.
 (pdftex.def)             Requested size: 159.333pt x 264.03546pt.
 
-<images/chap7_dropbox2.png, id=348, 405.515pt x 673.51625pt>
+<images/chap7_dropbox2.png, id=358, 405.515pt x 673.51625pt>
 File: images/chap7_dropbox2.png Graphic file (type png)
 
 <use images/chap7_dropbox2.png>
@@ -1405,8 +1435,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[75] [76 <./images/chap7_connected.png>] [77 <./images/chap7_chatbox.png>]
-[78 <./images/chap7_dropbox1.png> <./images/chap7_dropbox2.png>]
+[77] [78 <./images/chap7_connected.png>] [79 <./images/chap7_chatbox.png>]
+[80 <./images/chap7_dropbox1.png> <./images/chap7_dropbox2.png>]
 Chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--14
@@ -1438,14 +1468,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--14
 
  []
 
-[79
+[81
 
-] [80]) [81] [82
+] [82]) [83] [84
 
 
 ] (./AA-VisualEditor.tex
 Appendix A.
-[83
+[85
 
 ]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 15--15
@@ -1462,12 +1492,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-[84]
+[86]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 55--55
 [][][][][][][] 
  []
 
-[85] <images/app1_visual_environment.jpg, id=388, 1131.22626pt x 631.35875pt>
+[87] <images/app1_visual_environment.jpg, id=398, 1131.22626pt x 631.35875pt>
 File: images/app1_visual_environment.jpg Graphic file (type jpg)
 
 <use images/app1_visual_environment.jpg>
@@ -1484,12 +1514,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
-[86 <./images/app1_visual_environment.jpg>]
+[88 <./images/app1_visual_environment.jpg>]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 107--107
 [][][][][][][] 
  []
 
-) (./thesis_example.bbl [87] [88]
+) (./thesis_example.bbl [89] [90]
 Underfull \hbox (badness 1320) in paragraph at lines 4--7
 []\OT1/cmr/m/n/10.95 C. Atkin-son and T. K^^?uhne, ``Model-driven de-vel-op-men
 t: A meta-mod-
@@ -1513,7 +1543,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--31
 td-[]06052006-[]110407 /
  []
 
-[89
+[91
 
 ]
 Underfull \hbox (badness 2277) in paragraph at lines 80--82
@@ -1539,7 +1569,7 @@ Underfull \hbox (badness 3158) in paragraph at lines 96--99
 ackoverflow . com / questions / 10685973 /
  []
 
-[90]
+[92]
 Underfull \hbox (badness 5939) in paragraph at lines 172--174
 []\OT1/cmr/m/n/10.95 Microsoft De-vel-oper Net-work, ``Cross-cut-ting con-cerns
 .'' $\OT1/cmtt/m/n/10.95 http : / / msdn .
@@ -1551,7 +1581,7 @@ Underfull \hbox (badness 2644) in paragraph at lines 183--185
 OT1/cmtt/m/n/10.95 http : / / developer .
  []
 
-[91]) [92] (./thesis_example.aux)
+[93]) [94] (./thesis_example.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1560,10 +1590,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8357 strings out of 493633
- 124125 string characters out of 3143377
- 426156 words of memory out of 3000000
- 11407 multiletter control sequences out of 15000+200000
+ 8369 strings out of 493633
+ 124487 string characters out of 3143377
+ 397178 words of memory out of 3000000
+ 11417 multiletter control sequences out of 15000+200000
  15931 words of font info for 60 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  48i,12n,58p,1477b,1711s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1583,10 +1613,10 @@ texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on thesis_example.pdf (100 pages, 2880779 bytes).
+Output written on thesis_example.pdf (102 pages, 3120919 bytes).
 PDF statistics:
- 466 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
+ 476 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
