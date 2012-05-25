@@ -1,49 +1,49 @@
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Software Development lifecycle\relax }}{6}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Software Development lifecycle\relax }}{5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The four-level meta-modeling architecture\relax }}{11}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Extending the two levels of instantiation\relax }}{12}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Linguistic meta-modeling \cite {MDDFound}\relax }}{13}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Ontological meta-modeling \cite {MDDFound}\relax }}{14}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Strict meta-modeling.\relax }}{15}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Multiple classification in the current UML framework.\relax }}{16}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Example class diagram of the Item Description pattern.\relax }}{16}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Domain instance (object diagram).\relax }}{17}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Combination of the class and object diagram.\relax }}{18}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Types as classes.\relax }}{19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The four-level meta-modeling architecture \cite {RearchitectingUML}\relax }}{10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Extending the two levels of instantiation \cite {RearchitectingUML}\relax }}{11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Linguistic meta-modeling \cite {MDDFound}.\relax }}{12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ontological meta-modeling \cite {MDDFound}.\relax }}{13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Strict meta-modeling \cite {RearchitectingUML}.\relax }}{14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Multiple classification in the current UML framework \cite {RearchitectingUML}.\relax }}{15}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Example class diagram of the Item Description pattern \cite {AccidentalComplexity}.\relax }}{15}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Domain instance (object diagram) \cite {AccidentalComplexity}.\relax }}{16}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Combination of the class and object diagram \cite {AccidentalComplexity}.\relax }}{17}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Types as classes \cite {AccidentalComplexity}.\relax }}{18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Mapping domain levels to modeling levels.\relax }}{21}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Example modeled using clabjects.\relax }}{22}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Direct mapping between ontological domain levels and modeling levels.\relax }}{22}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Deep characterization with powertypes.\relax }}{23}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Deep characterization with potency.\relax }}{24}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces MetaDepth instantiation schemes: extensible ontological instantiation (left) and strict ontological instantiation (center). Example of strict instantiation (right).\relax }}{25}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces MetaDepth’s linguistic meta-model.\relax }}{26}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Dual classification example.\relax }}{27}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Three model example.\relax }}{27}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces An EOL program that populates a MetaDepth model.\relax }}{28}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Constraints and derived fields in Metadepth.\relax }}{28}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Linguistic extensions and associations in Metadepth.\relax }}{28}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Mapping domain levels to modeling levels \cite {AccidentalComplexity}.\relax }}{20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example modeled using clabjects \cite {AccidentalComplexity}.\relax }}{21}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Direct mapping between ontological domain levels and modeling levels \cite {AccidentalComplexity}.\relax }}{21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Deep characterization with powertypes \cite {AccidentalComplexity}.\relax }}{22}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Deep characterization with potency \cite {AccidentalComplexity}.\relax }}{23}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces MetaDepth instantiation schemes: extensible ontological instantiation (left) and strict ontological instantiation (center). Example of strict instantiation (right) \cite {MetaDepth}.\relax }}{24}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces MetaDepth’s linguistic meta-model \cite {MetaDepth}.\relax }}{25}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Dual classification example \cite {MetaDepth}.\relax }}{26}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Three model example \cite {MetaDepth}.\relax }}{26}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces An EOL program that populates a MetaDepth model \cite {MetaDepth}.\relax }}{27}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Constraints and derived fields in Metadepth \cite {MetaDepth}.\relax }}{27}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Linguistic extensions and associations in Metadepth \cite {MetaDepth}.\relax }}{27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Android Architecture.\relax }}{31}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces A Java application running in a JVM.\relax }}{34}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Activities in a single task spanning multiple applications.\relax }}{35}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Structure of an AndroidManifest.xml.\relax }}{36}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The lifecycle of an Android Activity.\relax }}{38}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Google App Inventor.\relax }}{39}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Android build process\relax }}{40}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Android Architecture \cite {WhatAndroid}.\relax }}{30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A Java application running in a JVM.\relax }}{33}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Activities in a single task spanning multiple applications.\relax }}{34}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Structure of an AndroidManifest.xml.\relax }}{35}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The lifecycle of an Android Activity \cite {AndroidActivity}.\relax }}{37}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Google App Inventor \cite {AppInventor}.\relax }}{38}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Android build process\relax }}{39}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Groupware 3x3 Time Space Matrix\relax }}{44}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Pattern system of a collaborative system\relax }}{55}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Groupware 3x3 Time Space Matrix \cite {CSCLHistory2}.\relax }}{43}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Pattern system of a collaborative system\relax }}{54}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces High-level Megamodel\relax }}{59}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Component Megamodel\relax }}{65}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces High-level Class Diagram.\relax }}{57}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Component Class Diagram\relax }}{64}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces In the main menu of the collaborative application with two connected users\relax }}{78}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces In the chat box of the collaborative application\relax }}{79}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Fetched all research papers from the Dropbox repository\relax }}{80}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Notes and comments on a research paper in the Dropbox repository\relax }}{80}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces In the main menu of the collaborative application with two connected users\relax }}{77}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces In the chat box of the collaborative application\relax }}{78}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Fetched all research papers from the Dropbox repository\relax }}{79}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Notes and comments on a research paper in the Dropbox repository\relax }}{79}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Visual environment.\relax }}{88}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Visual environment.\relax }}{87}

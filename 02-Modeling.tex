@@ -31,14 +31,14 @@ The overall architecture of the UML modeling framework is most heavily influence
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/mm_architecture.png}
-\caption{The four-level meta-modeling architecture}
+\caption{The four-level meta-modeling architecture \cite{RearchitectingUML}}
 \label{fig:mm_architecture}
-\end{figure}
-The meta-meta-model (M\subscript{3}) level is the highest level, from which the UML meta-model is created. In general, it is the core from which the descriptions of specific modeling languages (i.e. specific language meta-models) are created. The UML meta-model (M\subscript{2}) describes the core from which specific language meta-models are created. Specific models are then created as instances of these language meta-models on the M1 level. The User Data depicts instances of such models created in M\subscript{1}. An example of this approach can be seen in figure ~\ref{fig:two_level_inst}.
+\end{figure} \\
+The meta-meta-model level (M\subscript{3}) is the highest level, from which the UML meta-model is created. In general, it is the core from which the descriptions of specific modeling languages (i.e. specific language meta-models) are created. The UML meta-model (M\subscript{2}) describes the core from which specific language meta-models are created. Specific models are then created as instances of these language meta-models on the M\subscript{1} level. The User Data level (M\subscript{0}) depicts instances of such models created in M\subscript{1}. An example of this approach can be seen in figure ~\ref{fig:two_level_inst}.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/chap2_two_level_inst.png}
-\caption{Extending the two levels of instantiation}
+\caption{Extending the two levels of instantiation \cite{RearchitectingUML}}
 \label{fig:two_level_inst}
 \end{figure}
 In this example, the dashed arrows in the figure describe an "instance of" relationship. Every level in the diagram is an instance of its level above. For example, an instantiation of the concept Video resides at level M\subscript{0}. Video on its turn is an instantiation of Class and Class is regarded as an instance of the meta-meta-model elements (the M\subscript{3} level, not shown in this example).
@@ -49,7 +49,7 @@ In the meta-modeling field, we can distinguish two different approaches of meta-
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.6\textwidth]{images/chap2_linguistic_mm.png}
-\caption{Linguistic meta-modeling \cite{MDDFound}}
+\caption{Linguistic meta-modeling \cite{MDDFound}.}
 \label{fig:ling_mm}
 \end{figure}
 
@@ -60,7 +60,7 @@ When we take a look back at figure ~\ref{fig:ling_mm}, we already see an ontolog
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.6\textwidth]{images/chap2_ontological_mm.png}
-\caption{Ontological meta-modeling \cite{MDDFound}}
+\caption{Ontological meta-modeling \cite{MDDFound}.}
 \label{fig:ont_mm}
 \end{figure}
 \newpage
@@ -75,12 +75,12 @@ The linear modeling approach described in the previous section exhibits a number
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\textwidth]{images/chap2_strict_mm.png}
-\caption{Strict meta-modeling.}
+\caption{Strict meta-modeling \cite{RearchitectingUML}.}
 \label{fig:strict_mm}
 \end{figure}
 The exact definition of strict meta-modeling is defined as follows:
 \begin{mydef}
-In an \textit{n}-level modeling architecture, M\subscript{0}, M\subscript{1}, ..., M\subscript{n-1}, every element of an M\subscript{m}-level model must be an instance-of exactly one element of an M\subscript{m+1}-level model, for all \textit{0} $\leq$ \textit{m} $\le$ \textit{n-1}, and any relationship other than the instance-of relationship between two elements \textit{X} and \textit{Y} implies that level(X) = level(Y).
+In an \textit{n}-level modeling architecture, M\subscript{0}, M\subscript{1}, ..., M\subscript{n-1}, every element of an M\subscript{m}-level model must be an instance-of exactly one element of an M\subscript{m+1}-level model, for all \textit{0} $\leq$ \textit{m} $\le$ \textit{n-1}, and any relationship other than the instance-of relationship between two elements \textit{X} and \textit{Y} implies that level(X) = level(Y) \cite{RearchitectingUML}.
 \end{mydef}
 It is clear that the topmost level \textit{n} is ignored in this definition. Nevertheless, we can model the top level so that its elements are instances of themselves, such that we can terminate the hierarchy of meta-levels.
 
@@ -96,7 +96,7 @@ There are several issues with the existing UML modeling framework, such as \text
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\textwidth]{images/chap2_multiple_class_uml.png}
-\caption{Multiple classification in the current UML framework.}
+\caption{Multiple classification in the current UML framework \cite{RearchitectingUML}.}
 \label{fig:multiple_class_mm}
 \end{figure}
 
@@ -112,14 +112,14 @@ This sample model adopts a computer hardware product hierarchy using the "Item D
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap2_cd_itemdesc.png}
-\caption{Example class diagram of the Item Description pattern.}
+\caption{Example class diagram of the Item Description pattern \cite{AccidentalComplexity}.}
 \label{fig:cd_itemdesc}
 \end{figure} \\
 The above class diagram is separated into two parts. One part models products sold by an enterprise and the other part models the descriptions of these products. Here, instances of \texttt{ProductType} (\texttt{ComputerModel} and \texttt{MonitorModel}) are descriptions of the \texttt{Product} types (Computer and Monitor). The idea is to let objects play the role of classes in order to explicitly represent class-level information \cite{AccidentalComplexity}. In this way, we can dynamically change information about a product and keep this information even when no representation of this product type exists. An example of an instance of the above class diagram is depicted in figure ~\ref{fig:domain_instance}.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{images/chap2_domain_instance.png}
-\caption{Domain instance (object diagram).}
+\caption{Domain instance (object diagram) \cite{AccidentalComplexity}.}
 \label{fig:domain_instance}
 \end{figure} \\
 The \texttt{isOfType} links between \texttt{Monitor} / \texttt{Computer} instances and \texttt{MonitorModel} / \texttt{ComputerModel} instances conceptually represent a form of \textit{instance-of} relationship (as explained in previous section), although all objects involved in the example are at the instance level in an object diagram. This verbosity does not violate strict meta-modeling, but introduces a workaround at the object level in order to create new objects at runtime.
@@ -143,7 +143,7 @@ The black dots in the figure below the dashed lines represent the domain entitie
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.0\textwidth]{images/chap2_class_object_diagram.png}
-\caption{Combination of the class and object diagram.}
+\caption{Combination of the class and object diagram \cite{AccidentalComplexity}.}
 \label{fig:class_object_diagram}
 \end{figure} \\
 After investigation of the figure above, we see that it contains some redundant information. There are some model elements that do not represent any domain elements. Type \texttt{Product} and its subclasses can be considered as abundant model attributes if the model is interpreted as a domain model, because they have two classification relationships instead of just one. The subclasses \texttt{Computer} and \texttt{Monitor} merely exist to set up the \textit{Item Description} pattern. For instance, \texttt{m1} has type \texttt{Monitor} plus a modeled type \texttt{mt1}. The redundancy introduced here is an example of accidental complexity, because some information only exists to realize some workaround technique.
@@ -154,7 +154,7 @@ The model presented in the previous subsection is often used when we need to int
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.0\textwidth]{images/chap2_types_classes.png}
-\caption{Types as classes.}
+\caption{Types as classes \cite{AccidentalComplexity}.}
 \label{fig:types_classes}
 \end{figure} \\
 Although the figure above removes some accidental complexity from the previous example, we also lost some features. It is no longer possible to instantiate new types at runtime, because product types are now represented by classes. Without additional information, we cannot conclude whether the workaround methods of previous section were necessary or not. Therefore, it is hard to compare the models and evaluate them on the level of accidental complexity. In the next chapter we will see whether it is possible to keep the simplicity of figure ~\ref{fig:types_classes} and still support the ability to create new product types at runtime.

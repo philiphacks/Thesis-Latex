@@ -1,8 +1,6 @@
 \chapter{Collaboration}
 
-In this chapter, we will introduce different types of collaborative methods. People will continue to interact in new and different ways. One outcome of the marriage between technology and communication is a technical workplace. The study of such workplaces gives rise to a new field: \textit{Computer-Supported Cooperative Work} (CSCW). CSCW analyzes the way groups work and seeks to discover how technology can help them work. Sometimes we refer to CSCW as \textit{groupware}. Often this term is used synonymously with CSCW technology. However, this is not completely true. In the following sections, we will define the concept of groupware and CSCW applications. We will also create a taxonomy of groupware and compare this taxonomy to CSCW applications. There exists another collaborative method, especially targeted at collaborative learning, \textit{Computer-Supported Collaborative Learning} (CSCL). This collaborative method is a refinement of CSCW. When studying these methods, we should make a clear distinction between cooperative and collaborative work. Cooperative work is accomplished by the division of labour among participants. It is an activity where each person is responsible for a portion of the problem that's being solved. Collaboration involves the mutual engagement of participants in a coordinated effort to solve the problem together \cite{DivisionCSCL}.
-\\ \\
-The second part of this chapter defines the collaborative patterns typically used in a collaborative application (whether it is defined as groupware, CSCW or CSCL). We finish this chapter with a collaboration stack that defines the different levels in collaborative applications.
+In this chapter, we will introduce different types of collaborative methods. People will continue to interact in new and different ways. One outcome of the marriage between technology and communication is a technical workplace. The study of such workplaces gives rise to a new field: \textit{Computer-Supported Cooperative Work} (CSCW). CSCW analyzes the way groups work and seeks to discover how technology can help them work. Sometimes we refer to CSCW as \textit{groupware}. Often this term is used synonymously with CSCW technology. However, this is not completely true. In the following sections, we will define the concept of groupware and CSCW applications. We will also create a taxonomy of groupware and compare this taxonomy to CSCW applications. There exists another collaborative method, especially targeted at collaborative learning, \textit{Computer-Supported Collaborative Learning} (CSCL). This collaborative method is a refinement of CSCW. When studying these methods, we should make a clear distinction between cooperative and collaborative work. Cooperative work is accomplished by the division of labour among participants. It is an activity where each person is responsible for a portion of the problem that's being solved. Collaboration involves the mutual engagement of participants in a coordinated effort to solve the problem together \cite{DivisionCSCL}. The second part of this chapter defines the collaborative patterns typically used in a collaborative application (whether it is defined as groupware, CSCW or CSCL). These patterns will subsequently be used in the modeling framework to implement collaborative features.
 
 \section{Groupware}
 
@@ -10,9 +8,9 @@ In the following section, we will first give a definition for Groupware. Next, w
 
 \subsection{Definition}
 
-Several definitions for groupware exist. Some define groupware as collaborative software for small focused groups, that do not give organization-wide support. Another definitions says that groupware can be viewed as the class of applications arising from the merging of computers and large information bases and communications technology. These applications may or may not specifically support cooperation. Ellis et al define groupware as follows:
+Several definitions for groupware exist. Some define groupware as collaborative software for small focused groups that do not give organization-wide support. Another definitions says that groupware can be viewed as the class of applications arising from the merging of computers and large information bases and communications technology. These applications may or may not specifically support cooperation. Ellis et al define groupware as follows:
 \begin{mydef}
-\textbf{Groupware}. computer-based systems that support groups of people engaged in a common task (or goal) and that provide an interface to a shared environment. \cite{CSCWGroupware}
+\textbf{Groupware}. computer-based systems that support groups of people engaged in a common task (or goal) and that provide an interface to a shared environment \cite{CSCWGroupware}.
 \end{mydef}
 In this definition, the writer uses the notions of \textit{common task} and \textit{shared environment}. This definition excludes multi-user environments where people do not share a common task. Moreover, the definition does not require users to be active at the same time. We can make a distinction between \textit{real-time groupware} and \textit{non-real-time groupware}. Our modeling framework tries to support both real-time as well as non-real-time groupware.
 \\ \\
@@ -42,7 +40,7 @@ Same Place & face-to-face interaction & asynchronous interaction \\
 Different Places & synchronous distributed interaction & asynchronous distributed interaction \\
 \cline{2-3}
 \end{tabular*}
-\caption{Groupware 2x2 Time Space Matrix}
+\caption{Groupware 2x2 Time Space Matrix \cite{CSCLHistory2}.}
 \label{tab:groupware_taxonomy}
 \end{table}
 \\
@@ -52,7 +50,7 @@ This taxonomy can be extended by the fact that our activities can be predictable
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\textwidth]{images/chap5_3by3matrix.png}
-\caption{Groupware 3x3 Time Space Matrix}
+\caption{Groupware 3x3 Time Space Matrix \cite{CSCLHistory2}.}
 \label{fig:ext_taxonomy}
 \end{figure}
 Activity can be carried out in a single place (top row), in several places known to the participants (middle row) or in numerous places, not all of which are known to the participants (bottom row). Each of these activities can then be carried out in real time (left column), at different times that are highly predictable (like sending a mail to a colleague and expecting it to be read within a day) or at different times that are unpredictable (like collaborative writing).
@@ -62,11 +60,11 @@ Activity can be carried out in a single place (top row), in several places known
 The concept of groupware is not new. It has been around since the early nineties, but it is still constantly evolving. In this section, we define some important terms for comparing groupware systems. These concepts will mainly be applicable on real-time groupware. In the remainder of this chapter we will also mainly focus on real-time applications, because they are mainly used for easy and effective communication and collaboration.
 
 \begin{itemize}
-\item{\textit{Shared context}. A shared context is a set of objects where the objects and the actions performed on the objects are visible to a set of users. For example, a group of users can make notes on files shared in a Dropbox shared folder or class notes within electronic classrooms.}
-\item{\textit{View}. A view is a representation of some portion of a shared context. Different views might display the same information in different ways or they can use the same presentation but refer to different parts of the shared context. For example, we can show a dropbox folder as a list of filenames or as a group of images showing an in-file view.}
-\item{\textit{Synchronous and asynchronous interaction}. Synchronous interaction happens when people interact in real-time and asynchronous action happens when people interact over an extended period of time. Usually, a groupware application only supports one of the two interaction types. Our modeling framework allows the creation of both interaction types at the same time.}
-\item{\textit{Session}. A session usually represents a period of synchronous interaction supported by a groupware system. When a user logs in into a groupware system, he starts his session and can start interacting with other users that currently own a session.}
-\item{\textit{Role}. A role is a set of privileges or responsibilities related to a user. For instance, a user can be assigned the role of admin to control a groupware application.}
+\item{\textit{Shared context}. A shared context is a set of objects where the objects and the actions performed on the objects are visible to a set of users \cite{CSCWGroupware}. For example, a group of users can make notes on files shared in a Dropbox shared folder or class notes within electronic classrooms.}
+\item{\textit{View}. A view is a representation of some portion of a shared context. Different views might display the same information in different ways or they can use the same presentation but refer to different parts of the shared context \cite{CSCWGroupware}. For example, we can show a dropbox folder as a list of filenames or as a group of images showing an in-file view.}
+\item{\textit{Synchronous and asynchronous interaction}. Synchronous interaction happens when people interact in real-time and asynchronous action happens when people interact over an extended period of time \cite{CSCWGroupware}. Usually, a groupware application only supports one of the two interaction types. Our modeling framework allows the creation of both interaction types at the same time.}
+\item{\textit{Session}. A session usually represents a period of synchronous interaction supported by a groupware system. When a user logs in into a groupware system, he starts his session and can start interacting with other users that currently own a session \cite{CSCWGroupware}.}
+\item{\textit{Role}. A role is a set of privileges or responsibilities related to a user \cite{CSCWGroupware}. For instance, a user can be assigned the role of admin to control a groupware application.}
 \end{itemize}
 
 \subsection{Benefits and drawbacks of distributed interaction}
@@ -74,23 +72,23 @@ The concept of groupware is not new. It has been around since the early nineties
 If we look at the taxonomy of groupware systems and only consider systems at different places, we get a distributed interaction model. From a user's perspective, these distributed interaction sessions are completely different experiences from face-to-face (i.e. same place) sessions. Because our modeling framework primarily targets interaction at different places, we list the benefits and drawbacks of these distributed interaction types here: 
 
 \begin{itemize}
-\item{\textit{Encourages parallel work within the group}. Usually, people divide into subgroups to work on different parts of an assignment. It is easy for distributed members to drop out for a while, do something else and then return. In most face-to-face situations, this is not socially acceptable.}
-\item{\textit{Increases information access}. Apart from sources on the internet, participants in distributed sessions have access to local books and files.}
-\item{\textit{Makes discussion more difficult}. In comparison to face-to-face sessions, it is a lot harder to have a discussion or host a panel over a distributed session. Usually, people tend to take turns and are unusually polite.}
-\item{\textit{Cuts down on social interaction}. This item has both a positive and a negative connotation. Distributed sessions are usually more serious. As a consequence, there is less interchange about nontask-related topics and people tend to focus on the task immediately. The effect is a possible efficiency gain from time saved and a possible loss from social needs.}
-\item{\textit{Can be efficient}. Distributed sessions allow for parallel work. In contrast to face-to-face sessions, people in a distributed session are usually more concentrated on the to be accomplished task itself.}
+\item{\textit{Encourages parallel work within the group}. Usually, people divide into subgroups to work on different parts of an assignment. It is easy for distributed members to drop out for a while, do something else and then return. In most face-to-face situations, this is not socially acceptable \cite{CSCWGroupware}.}
+\item{\textit{Increases information access}. Apart from sources on the internet, participants in distributed sessions have access to local books and files \cite{CSCWGroupware}.}
+\item{\textit{Makes discussion more difficult}. In comparison to face-to-face sessions, it is a lot harder to have a discussion or host a panel over a distributed session. Usually, people tend to take turns and are unusually polite \cite{CSCWGroupware}.}
+\item{\textit{Cuts down on social interaction}. This item has both a positive and a negative connotation. Distributed sessions are usually more serious. As a consequence, there is less interchange about nontask-related topics and people tend to focus on the task immediately. The effect is a possible efficiency gain from time saved and a possible loss from social needs \cite{CSCWGroupware}.}
+\item{\textit{Can be efficient}. Distributed sessions allow for parallel work. In contrast to face-to-face sessions, people in a distributed session are usually more concentrated on the to be accomplished task itself \cite{CSCWGroupware}.}
 \end{itemize}
 
 \subsection{A groupware classification}
 
-Groupware is about crewing computer-based systems that support groups of people involved in a common task. This is a very open definition and in practice it is often hard to decide what kind of functionality a particular group needs. In general, we can distinguish five application classes:
+Groupware is about endorsing computer-based systems that support groups of people involved in a common task. This is a very open definition and in practice it is often hard to decide what kind of functionality a particular group needs. In general, we can distinguish five application classes:
 
 \begin{itemize}
-\item{\textbf{Awareness support} - This class is one of the core concepts in groupware. Groupware tries to connect people and allows to coordinate each other. Almost every groupware application has some sort of Awareness support.}
-\item{\textbf{Communication support} - In order for people to be connecting with each other, we need some sort of communication in the groupware system. This sort of communication can be of a synchronous or asynchronous nature. Asynchronous communication examples are email or forums. Synchronous communication examples are chat or video.}
-\item{\textbf{Coordination support} - There is already some contribution to coordination through awareness, but in a very general way. We might need explicit coordination support in the form of workflow solutions.}
-\item{\textbf{Team support} - Not every person in a group of people will have the same needs and abilities within a groupware application. There is a need for special group types and their special needs. We might need to define roles that allow people to do different things within the application.}
-\item{\textbf{Community support} - Teams and communities are a different thing. To begin with, they have a different structure and probably completely different needs. A team is a group of people usually working on a bigger cause or goal. A community often does not consist of equals working together on the same things. There are many different functions in a community that make the groupware application complex.}
+\item{\textbf{Awareness support} - This class is one of the core concepts in groupware. Groupware tries to connect people and allows to coordinate each other. Almost every groupware application has some sort of Awareness support \cite{CSCWGroupware}.}
+\item{\textbf{Communication support} - In order for people to be connecting with each other, we need some sort of communication in the groupware system. This sort of communication can be of a synchronous or asynchronous nature \cite{CSCWGroupware}. Asynchronous communication examples are email or forums. Synchronous communication examples are chat or video.}
+\item{\textbf{Coordination support} - There is already some contribution to coordination through awareness, but in a very general way. We might need explicit coordination support in the form of workflow solutions \cite{CSCWGroupware}.}
+\item{\textbf{Team support} - Not every person in a group of people will have the same needs and abilities within a groupware application. There is a need for special group types and their special needs. We might need to define roles that allow people to do different things within the application \cite{CSCWGroupware}.}
+\item{\textbf{Community support} - Teams and communities are a different thing. To begin with, they have a different structure and probably completely different needs. A team is a group of people usually working on a bigger cause or goal. A community often does not consist of equals working together on the same things. There are many different functions in a community that make the groupware application complex \cite{CSCWGroupware}.}
 \end{itemize}
 
 When we are faced with a particular situation, it is quite straightforward to identify one or two classes that cover the requirements in this situation. From there on, we can select the appropriate tools to start building the groupware application.
@@ -152,10 +150,10 @@ Computers have become an important artifact in formal education (e.g. high schoo
 CSCL proposes the development of new software that bring learners together and that can offer creative activities of intellectual exploration and social interaction. It is often conflated with e-learning, the organization of instruction across computer networks. E-learning is often associated with the creation and delivery of digital content such as slides, text or videos. There are a few problems with this view:
 
 \begin{itemize}
-\item{Digital content such as slides, text or videos does not necessarily make for compelling instruction. It may provide important resources for students, but there must exist a larger interactive context.}
-\item{Online teaching requires as much effort by human teachers as classroom teaching.}
-\item{CSCL stresses collaboration among the students, so that they are not simply reacting in isolation to posted materials.}
-\item{CSCL is concerned with Face-to-Face collaboration, either synchronously or asynchronously.}
+\item{Digital content such as slides, text or videos does not necessarily make for compelling instruction. It may provide important resources for students, but there must exist a larger interactive context \cite{CSCLHistory}.}
+\item{Online teaching requires as much effort by human teachers as classroom teaching \cite{CSCLHistory}.}
+\item{CSCL stresses collaboration among the students, so that they are not simply reacting in isolation to posted materials \cite{CSCLHistory}.}
+\item{CSCL is concerned with Face-to-Face collaboration, either synchronously or asynchronously \cite{DefinitionCSCL2}.}
 \end{itemize}
 
 \subsection{Definition}
