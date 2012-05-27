@@ -1,9 +1,34 @@
 \begin{thebibliography}{10}
 
+\bibitem{RearchitectingUML}
+C.~Atkinson and T.~K\"uhne, ``{Rearchitecting the UML infrastructure},'' 2002.
+
 \bibitem{MDDFound}
 C.~Atkinson and T.~K\"uhne, ``Model-driven development: A metamodeling
   foundation.''
   \url{http://homepages.mcs.vuw.ac.nz/~tk/publications/papers/mda-foundation.pdf}.
+
+\bibitem{AccidentalComplexity}
+C.~Atkinson and T.~K\"uhne, ``{Reducing accidental complexity in domain
+  models},'' 2007.
+
+\bibitem{MetaDepth}
+J.~de~Lara and E.~Guerra, ``{Deep Meta-Modeling with MetaDepth},'' 2010.
+
+\bibitem{WhatAndroid}
+{Android Development Team}, ``{What is Android?}.''
+  \url{http://developer.android.com/guide/basics/what-is-android.html}.
+
+\bibitem{AndroidActivity}
+{Android Development Team}, ``{Activity}.''
+  \url{http://developer.android.com/reference/android/app/Activity.html}.
+
+\bibitem{AppInventor}
+{MIT}, ``{MIT App Inventor}.'' \url{http://www.appinventor.mit.edu/}.
+
+\bibitem{CSCLHistory2}
+J.~Grudin, ``{Computer-supported Cooperative Work: History and Focus},'' {\em
+  University of California, Irvine}, 1994.
 
 \bibitem{ProcessModels}
 W.~Scacchi, ``{Process Models in Software Engineering},'' {\em Encyclopedia of
@@ -34,19 +59,9 @@ M.~Cohen, ``Domain-specific model checking: exhaustive testing in model-based
   development (position paper).''
   \url{http://www.foi.se/upload/projects/fusion/TAMSEC_2011_p62.pdf}.
 
-\bibitem{AccidentalComplexity}
-C.~Atkinson and T.~K\"uhne, ``{Reducing accidental complexity in domain
-  models},'' 2007.
-
 \bibitem{CAMPaM}
 P.~Mosterman and H.~Vangheluwe, ``{Computer Automated Multi-Paradigm Modeling:
   An Introduction},'' 2004.
-
-\bibitem{RearchitectingUML}
-C.~Atkinson and T.~K\"uhne, ``{Rearchitecting the UML infrastructure},'' 2002.
-
-\bibitem{MetaDepth}
-J.~de~Lara and E.~Guerra, ``{Deep Meta-Modeling with MetaDepth},'' 2010.
 
 \bibitem{ANTLR}
 T.~Parr, ``{ANTLR}.'' \url{http://www.antlr.org}, 2010.
@@ -75,10 +90,6 @@ T.~K\"uhne and D.~Schreiber, ``{Can Programming be Liberated from the Two-Level
 M.~G. C.~Atkinson and B.~Kennel, ``A flexible infrastructure for multilevel
   language engineering,'' {\em IEEE Trans. Soft. Eng.}, vol.~35 (6),
   pp.~742--755, 2009.
-
-\bibitem{WhatAndroid}
-{Android Development Team}, ``{What is Android?}.''
-  \url{http://developer.android.com/guide/basics/what-is-android.html}.
 
 \bibitem{ContentProviders}
 {Android Development Team}, ``{Content Providers}.''
@@ -120,10 +131,6 @@ M.~Koch and T.~Gross, ``{Computer-Supported Cooperative Work - Concepts and
 \bibitem{Skype}
 {Skype}, ``{Skype}.'' \url{http://www.skype.com}.
 
-\bibitem{CSCLHistory2}
-J.~Grudin, ``{Computer-supported Cooperative Work: History and Focus},'' {\em
-  University of California, Irvine}, 1994.
-
 \bibitem{StudyCSCW}
 J.~Bowers and S.~Benford, ``{Studies in Computer-Supported Cooperative Work:
   Theory, Practice and Design},'' {\em Elsevier Science; Amsterdam}, 1991.
@@ -150,15 +157,15 @@ T.~K. S.~Gerry and D.~Suthers, ``{Computer-supported collaborative learning: an
   historical perspective},'' {\em Cambridge handbook of the learning sciences},
   pp.~409--426, 2006.
 
-\bibitem{DefinitionCSCL}
-P.~Dillenbourg, ``{What do you mean by "collaborative learning"?},'' {\em
-  Collaborative learning: cognitive and computational approaches}, pp.~1--16,
-  1999a.
-
 \bibitem{DefinitionCSCL2}
 T.~Koschmann and T.~L. Ernbaum, ``{CSCL: Theory and Practice of an emerging
   paradigm},'' {\em Paradigm shift and instructional technology}, pp.~1--23,
   1996.
+
+\bibitem{DefinitionCSCL}
+P.~Dillenbourg, ``{What do you mean by "collaborative learning"?},'' {\em
+  Collaborative learning: cognitive and computational approaches}, pp.~1--16,
+  1999a.
 
 \bibitem{DesignPatternsColl}
 L.~Guerrero and D.~Fuller, ``Jigsaw method in the context of cscl,'' {\em
@@ -178,6 +185,10 @@ Joyent, ``Node.js.'' \url{http://nodejs.org/}, 2012.
 \bibitem{EGL}
 {Eclipse Development Team}, ``{Epsilon Generation Language}.''
   \url{http://www.eclipse.org/epsilon/doc/egl/}, 2012.
+
+\bibitem{Megamodeling}
+{Jean-Marie Favre}, ``{Megamodelling and Etymology}.''
+  \url{http://drops.dagstuhl.de/opus/volltexte/2006/427/pdf/05161.FavreJeanMarie.Paper.427.pdf}.
 
 \bibitem{AndroidPermissions}
 {Android Development Team}, ``{Manifest.permission}.''

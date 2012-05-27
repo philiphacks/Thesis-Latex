@@ -1,13 +1,21 @@
 \chapter{Designing a Collaborative Modeling Framework}
 
-In this chapter, the collaborative modeling framework will be explained in depth. The target platform for applications modeled through the framework is Android. Once a modeler has a basic understanding of how Android development works, the modeler can use this framework to rapidly develop Android collaborative prototype applications. In the first section, we will give an overview of the framework through a class diagram and discuss the meta-models that make up the core of an Android application. In the next section we describe the server component, written in Node.js \cite{NodeJS} and Javascript. The server component is used to persist data created by a user and to distributed this data to other users currently involved in a session. Finally, we end the chapter with a section on code generation and EGL \cite{EGL}.
+In this chapter, the collaborative modeling framework will be explained in depth. The target platform for applications modeled through the framework is Android. Once a modeler has a basic understanding of how Android development works, the modeler can use this framework to rapidly develop Android collaborative prototype applications. In the first section, we will give an overview of all the formalisms and technologies used in the form of a Megamodel. Next, we will describe the basic building blocks of the framework through a class diagram and discuss the meta-models that make up the core of an Android application. In the third section we describe the server component, written in Node.js \cite{NodeJS} and Javascript. The server component is used to persist data created by a user and to distributed this data to other users currently involved in a session. Finally, we end the chapter with a section on code generation and EGL \cite{EGL}.
 
-%\section{Framework requirements}
+\section{Megamodel}
 
-%In this section, we will briefly describe the requirements for the framework. Concretely, we need to be able to achieve the following:
-%\begin{itemize}
-%\texttt{Use the incorporated pattern system to build a collaborative Android application.}
-%\end{itemize}
+Modeling-in-the-large, or \textit{Megamodeling}, considers the global relationships between models, meta-models and all formalisms used in general, without considering their context \cite{Megamodeling}. In \cite{Megamodeling}, they describe the concept of Megamodeling as follows:
+\begin{quotation}
+For instance for a model to be useful, one needs a metamodel but also transformations that operates on it, and then transformation engines to interpret the transformation models, interpreters to interpret the language in which the transformation engines are written in, and so on. A megamodel is a model that represents this kind of complex arrangements without entering into the details of each artefact.
+\end{quotation}
+In this section, we will give an overview of all the artifacts used in the design and implementation of this work. This megamodel is depicted in figure ~\ref{fig:megamodel}.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.02\textwidth]{images/chap6_megamodel.png}
+\caption{Megamodel.}
+\label{fig:megamodel}
+\end{figure} \\
+On the lowest levels we see all the technologies used in this work, such as Javascript, Java and XML.  On the highest level, we see the Visual DSL (see Appendix A) that uses both Javascript (to generate the visual environment itself), Metadepth (to define the meta-models) and the collaborative DSL (to provide a target mapping for a model transformation). The lines between the formalisms describe associations. For instance, the collaborative modeling framework (which is the DSL and all the build tools) uses the Android SDK, Metadepth and Javascript to build its DSL.
 
 \section{Main component Meta-models}
 

@@ -85,24 +85,25 @@
 \contentsline {subsection}{\numberline {5.4.9}Pattern System for Collaborative Applications Design}{53}
 \contentsline {section}{\numberline {5.5}Conclusion}{54}
 \contentsline {chapter}{\numberline {6}Designing a Collaborative Modeling Framework}{56}
-\contentsline {section}{\numberline {6.1}Main component Meta-models}{56}
-\contentsline {subsection}{\numberline {6.1.1}High-level class diagram}{56}
-\contentsline {subsection}{\numberline {6.1.2}Application}{58}
-\contentsline {subsection}{\numberline {6.1.3}Manifest}{58}
-\contentsline {subsection}{\numberline {6.1.4}Activity}{59}
-\contentsline {subsection}{\numberline {6.1.5}Presentation}{60}
-\contentsline {subsection}{\numberline {6.1.6}Action}{61}
-\contentsline {section}{\numberline {6.2}Component Meta-Model}{63}
-\contentsline {subsection}{\numberline {6.2.1}Component class diagram}{63}
-\contentsline {subsection}{\numberline {6.2.2}Component}{63}
-\contentsline {subsection}{\numberline {6.2.3}AndroidComponent}{65}
-\contentsline {subsection}{\numberline {6.2.4}Example Component}{67}
-\contentsline {section}{\numberline {6.3}Server}{68}
-\contentsline {subsection}{\numberline {6.3.1}Meta-model}{68}
-\contentsline {subsection}{\numberline {6.3.2}Javascript and WebSockets}{68}
-\contentsline {section}{\numberline {6.4}Code Generation}{69}
-\contentsline {subsection}{\numberline {6.4.1}Epsilon Generation Language}{69}
-\contentsline {subsection}{\numberline {6.4.2}Example}{70}
+\contentsline {section}{\numberline {6.1}Megamodel}{56}
+\contentsline {section}{\numberline {6.2}Main component Meta-models}{57}
+\contentsline {subsection}{\numberline {6.2.1}High-level class diagram}{58}
+\contentsline {subsection}{\numberline {6.2.2}Application}{58}
+\contentsline {subsection}{\numberline {6.2.3}Manifest}{59}
+\contentsline {subsection}{\numberline {6.2.4}Activity}{60}
+\contentsline {subsection}{\numberline {6.2.5}Presentation}{61}
+\contentsline {subsection}{\numberline {6.2.6}Action}{62}
+\contentsline {section}{\numberline {6.3}Component Meta-Model}{64}
+\contentsline {subsection}{\numberline {6.3.1}Component class diagram}{64}
+\contentsline {subsection}{\numberline {6.3.2}Component}{64}
+\contentsline {subsection}{\numberline {6.3.3}AndroidComponent}{66}
+\contentsline {subsection}{\numberline {6.3.4}Example Component}{67}
+\contentsline {section}{\numberline {6.4}Server}{68}
+\contentsline {subsection}{\numberline {6.4.1}Meta-model}{69}
+\contentsline {subsection}{\numberline {6.4.2}Javascript and WebSockets}{69}
+\contentsline {section}{\numberline {6.5}Code Generation}{70}
+\contentsline {subsection}{\numberline {6.5.1}Epsilon Generation Language}{70}
+\contentsline {subsection}{\numberline {6.5.2}Example}{70}
 \contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{72}
 \contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{72}
 \contentsline {subsection}{\numberline {7.1.1}Problem}{72}
