@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  27 MAY 2012 11:57
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.28)  27 MAY 2012 12:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1623,7 +1623,7 @@ texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on thesis_example.pdf (101 pages, 3134158 bytes).
+Output written on thesis_example.pdf (101 pages, 3134053 bytes).
 PDF statistics:
  475 PDF objects out of 1000 (max. 8388607)
  273 compressed objects within 3 object streams

@@ -46,12 +46,12 @@ strict Model Android@1 {
 }
 \end{lstlisting}
 The \texttt{List} and \texttt{Item} Node are used to create a generic list of items specified by the modeler of the application. For example, if we model a list of questions, each item will contain a question in the \texttt{text} field. These items are then referred to in the \texttt{List} Node. The \texttt{List} on its own is contained in the \texttt{App} Node. The \texttt{List} Node in the domain model will be transformed into a \texttt{List} Node in the target model (the collaborative modeling framework). \\ \\
-The \texttt{Server} Node on its turn contains the fields required to a Node.js server instance. The user should specify the host and port, together with the users that should be able to authenticate to the running server. \\ \\
+The \texttt{Server} Node on its turn contains the fields required to generate a Node.js server instance. The user should specify the host and port, together with the users that should be able to authenticate to the running server. \\ \\
 Finally, the \texttt{User} Node represents a simplified model of the \texttt{User} model found in the collaborative modeling framework. For this model, we only require a username and password, together with a boolean that specifies whether this user is an admin user or not (i.e. has special privileges).
 
 \section{Creating the visual environment}
 
-For the creation of the visual environment, I extended the work of Leonardo Diez Dolinski \footnote{http://www.linkedin.com/in/leio10}. The environment exists in the form of a web application, that allows people to create their own visual models, backed by a Metadepth meta-model. The core HTML and Javascript was written already when I started extending this project. In order to create a visual environment that allows the creation of models in our newly created domain model, we need to create an instance of the \texttt{VModel} meta-model included in the existing visual environment. All names prepended with the character \texttt{V} model a visual node in the environment. 
+For the creation of the visual environment, I extended the work of Leonardo Diez Dolinski \footnote{http://www.linkedin.com/in/leio10}. The environment exists in the form of a web application, that allows people to create their own visual models, backed by a Metadepth meta-model. The core HTML and Javascript was already written when I started extending this project. In order to create a visual environment that allows the creation of models in our newly created domain model, we need to create an instance of the \texttt{VModel} meta-model included in the existing visual environment. All names prepended with the character \texttt{V} model a visual node in the environment. 
 \begin{lstlisting}[label=visual-mm,caption=Domain meta-model, captionpos=t]
 VModel VAndroid imports Android, VWidgets {
 	VNode VApp : Draggable, Connectable {
@@ -102,7 +102,7 @@ The model of the \texttt{VAndroid} meta-model is created in the same file. The m
 
 \section{Creating the target model using EGL}
 
-Now that we have created the visual editor, we can construct simple models in the domain model. After creating a model, a user can download this model, which produces a file containing Metadepth code. This Metadepth code follows the textual syntax of the domain model we created and is an instance of the \texttt{Android} model created before. The source model that contains a list component with items and a server component associated with a list of users now has to be transformed into a target model. \\ \\
+Now that we have created the visual editor, we can construct simple models in the domain. After creating a model, a user can download this model, which produces a file containing Metadepth code. This Metadepth code follows the textual syntax of the domain model we created and is an instance of the \texttt{Android} meta-model created before. The source model that contains a list component with items and a server component associated with a list of users now has to be transformed into a target model. \\ \\
 One approach to transforming the source model into the target model is to use an EGL template that interweaves static code sections with dynamic code sections. The static code sections contain the \texttt{Presentation}, \texttt{Activity} and \texttt{Actions} models. The dynamic code sections are filled in with the parts found in the generated source model. For example, we use the following EGL template to construct a list component in the target model:
 \begin{lstlisting}[label=target-model,caption=List component in the target model, captionpos=t]
 [% for (li in app.content) { %]
