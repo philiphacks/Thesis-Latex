@@ -4,7 +4,7 @@ In this chapter, the collaborative modeling framework will be explained in depth
 
 \section{Megamodel}
 
-Modeling-in-the-large, or \textit{Megamodeling}, considers the global relationships between models, meta-models and all formalisms used in general, without considering their context \cite{Megamodeling}. In \cite{Megamodeling}, they describe the concept of Megamodeling as follows:
+Modeling-in-the-large, or \textit{Megamodeling}, considers the global relationships between models, meta-models and all formalisms used in general. In \cite{Megamodeling}, Favre describes the concept of Megamodeling as follows:
 \begin{quotation}
 For instance for a model to be useful, one needs a metamodel but also transformations that operates on it, and then transformation engines to interpret the transformation models, interpreters to interpret the language in which the transformation engines are written in, and so on. A megamodel is a model that represents this kind of complex arrangements without entering into the details of each artefact.
 \end{quotation}
@@ -462,4 +462,157 @@ if (application.activities.isDefined() and application.activities.size() > 0) {
 	}
 }
 \end{lstlisting}
-This listing iterates all defined activities and generates the Java \texttt{Activity} files. Lines 11 through 16 populate the template with variables we need to generate the target (Java) code. The \texttt{populate} method passes variables in the source formalism and map these onto a name. For example, in line 11, we assigned the activity variable to 'activity' in the EGL template that will be called. Line 17 processes all this information and line 18 finally calls the template we initiated in line 2. The template is initiated by calling the \texttt{generate} method. This method expects one parameter, the location on the file system of the file that is to be generated.
+This listing iterates all defined activities and generates the Java \texttt{Activity} files. Lines 11 through 16 populate the template with variables we need to generate the target (Java) code. The \texttt{populate} method passes variables in the source formalism and map these onto a name. For example, in line 11, we assigned the activity variable to 'activity' in the EGL template that will be called. Line 17 processes all this information and line 18 finally calls the template we initiated in line 2. The template is initiated by calling the \texttt{generate} method. This method expects one parameter, the location on the file system of the file that is to be generated. As an example, listing ~\ref{codegen-list} lists the EGL template to generate the List component.
+\begin{lstlisting}[label=codegen-list,caption=Android List Component code-generation, captionpos=t]
+[% out.setContentType('Java'); %]
+package [%= package %];
+
+[% if (component.childActivity.isDefined()) { %]
+	[%
+		// generate new childActivity class
+		var t : Template := TemplateFactory.load(compPath+'listChild.egl');
+		t.populate('name', component.childActivity);
+		t.populate('package', package);
+		t.populate('basePath', basePath);
+		t.populate('compPath', compPath);
+		t.populate('codePath', codePath);
+		t.process();
+		t.generate(codePath+'src/' + path + component.childActivity + '.java');
+	%]
+
+	[%
+		for (p in Presentation.all) {
+			if (component.childActivity == p.activityname) {
+				t := TemplateFactory.load(basePath+'genLayout.egl');
+				t.populate('layout', p.layout);
+				t.populate('basePath',    basePath);
+				t.populate('compPath',    compPath);
+				t.process();
+				t.generate(codePath+'res/layout/' + p.layout.name + '.xml');
+			}
+		}
+	%]
+[% } %]
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import be.pds.thesis.AndroidComponent;
+import be.pds.thesis.GenericActivity;
+import be.pds.thesis.ServerConnection;
+
+public class ListComponent extends AndroidComponent {
+
+	private final String TAG = getClass().getName();
+	private HashMap<String, Object> properties;
+	private ArrayList<String> content;
+	private Button addNoteButton;
+	private EditText noteInput;
+	private ListView noteOutput;
+
+	public ListComponent(Activity a) {
+		super(a);
+
+		properties = new HashMap<String, Object>();
+		properties.put("type", ((GenericActivity)parent).getClassName());
+		properties.put("parent", "null");
+		content = new ArrayList<String>();
+		
+		addNoteButton = (Button) parent.findViewById(R.id.addNoteItemButton);
+		noteInput = (EditText) parent.findViewById(R.id.noteItemInput);
+		noteOutput = (ListView) parent.findViewById(R.id.noteContent);
+		noteOutput.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> a, View v, int pos, long id) {
+				String item = (String) noteOutput.getItemAtPosition(pos);
+				String parent_mod = item.substring(0, item.length()-1);
+				Log.i(TAG, "PARENT = " + parent_mod);
+				Log.i(TAG, "Item " + parent_mod + " was clicked.");
+				Intent i = new Intent(parent.getApplicationContext(), [%= component.childActivity %].class);
+				i.putExtra("parent", parent_mod);
+				i.putExtra("type", ((GenericActivity)parent).getClassName());
+				
+				parent.startActivityForResult(i, 0);
+			}
+			
+		});
+		
+		ServerConnection.getInstance().getGenericNotes(properties);
+		
+		addNoteButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				properties.put("parent", "null");
+				action(properties);
+			}
+		});
+	}
+	
+	@Override
+	public void action(HashMap<String, Object> properties) {
+		properties.put("text", noteInput.getText().toString());
+		ServerConnection.getInstance().addGenericNote(properties);
+	}
+
+	public void onMessage(final String message) {
+		parent.runOnUiThread(new Runnable() {
+			public void run() {
+				content.add(message);
+				String[] values = (String[])content.toArray(new String[content.size()]);
+				ArrayAdapter<String> adapter = new ArrayAdapter<String>(parent.getApplicationContext(),
+						android.R.layout.simple_list_item_1, values);
+				noteOutput.setAdapter(adapter);
+			}
+		});
+	}
+}
+\end{lstlisting}
+The above code listing generates the child Activity for the List component. This child activity is an Activity that gets launched when a user clicks on an item in the List component. Next, it also generates the code. The remainder of the code listing contains the relevant code for the component itself. The component has a button to add notes (i.e. list items) and overrides the \texttt{onMessage} method from the \texttt{AndroidComponent} class. The button adds the new note to the layout and sends the content of the note to the server class for broadcasting to other users. The \texttt{onMessage} method gets called by the server class and adds new messages as list items to the layout. All implemented components inherit from the \texttt{AndroidComponent} class, which is defined as follows:
+\begin{lstlisting}[label=androidcomponent-class,caption=AndroidComponent class, captionpos=t]
+package be.pds.thesis;
+
+import android.app.Activity;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public abstract class AndroidComponent {
+	
+	protected List<AndroidAction> actions;
+	protected Activity parent;
+	private HashMap<String, Object> result;
+
+	public AndroidComponent() {
+		actions = new ArrayList<AndroidAction>();
+	}
+
+	public AndroidComponent(Activity parent) {
+		actions = new ArrayList<AndroidAction>();
+		this.parent = parent;
+	}
+
+	public void addAction(AndroidAction a) {
+		actions.add(a);
+	}
+
+	public Activity getParent() {
+		return this.parent;
+	}
+
+	abstract public void action(HashMap<String, Object> properties);
+	
+	abstract public void onMessage(final String message);
+}
+\end{lstlisting}
+The abstract methods \texttt{action} and \texttt{onMessage} are implemented in every component that inherits from this one. The \texttt{actions} list is mainly used to execute additional actions on a component (such as manipulating UI elements). We also pass the parent Activity to the component, so that we can execute Android UI actions (such as showing a message when a user successfully sent a message or note to the server). The remainder of the source is included in the Github repository \footnote{https://github.com/philipdesmedt/Thesis-Android}.

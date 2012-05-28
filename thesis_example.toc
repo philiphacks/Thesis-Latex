@@ -104,22 +104,22 @@
 \contentsline {section}{\numberline {6.5}Code Generation}{70}
 \contentsline {subsection}{\numberline {6.5.1}Epsilon Generation Language}{70}
 \contentsline {subsection}{\numberline {6.5.2}Example}{70}
-\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{72}
-\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{72}
-\contentsline {subsection}{\numberline {7.1.1}Problem}{72}
-\contentsline {subsection}{\numberline {7.1.2}Solution}{73}
-\contentsline {section}{\numberline {7.2}Platform implementation}{73}
-\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{74}
-\contentsline {subsection}{\numberline {7.2.2}MainActivity}{74}
-\contentsline {subsection}{\numberline {7.2.3}ListActivity}{75}
-\contentsline {section}{\numberline {7.3}Demonstration}{76}
-\contentsline {chapter}{\numberline {8}Conclusion}{80}
-\contentsline {section}{\numberline {8.1}Summary}{80}
-\contentsline {section}{\numberline {8.2}Contribution}{81}
-\contentsline {section}{\numberline {8.3}Future Work}{82}
-\contentsline {chapter}{Appendices}{83}
-\contentsline {chapter}{Appendix \numberline {A}Visual Editor}{84}
-\contentsline {section}{\numberline {A.1}Domain model}{84}
-\contentsline {section}{\numberline {A.2}Creating the visual environment}{86}
-\contentsline {section}{\numberline {A.3}Creating the target model using EGL}{88}
-\contentsline {section}{\numberline {A.4}Conclusion}{88}
+\contentsline {chapter}{\numberline {7}Case Study: Collaborative Knowledge-Management Platform}{76}
+\contentsline {section}{\numberline {7.1}Collaborative Knowledge-Management Platform}{76}
+\contentsline {subsection}{\numberline {7.1.1}Problem}{76}
+\contentsline {subsection}{\numberline {7.1.2}Solution}{77}
+\contentsline {section}{\numberline {7.2}Platform implementation}{77}
+\contentsline {subsection}{\numberline {7.2.1}LoginActivity}{78}
+\contentsline {subsection}{\numberline {7.2.2}MainActivity}{78}
+\contentsline {subsection}{\numberline {7.2.3}ListActivity}{79}
+\contentsline {section}{\numberline {7.3}Demonstration}{80}
+\contentsline {chapter}{\numberline {8}Conclusion}{84}
+\contentsline {section}{\numberline {8.1}Summary}{84}
+\contentsline {section}{\numberline {8.2}Contribution}{85}
+\contentsline {section}{\numberline {8.3}Future Work}{86}
+\contentsline {chapter}{Appendices}{87}
+\contentsline {chapter}{Appendix \numberline {A}Visual Editor}{88}
+\contentsline {section}{\numberline {A.1}Domain model}{88}
+\contentsline {section}{\numberline {A.2}Creating the visual environment}{90}
+\contentsline {section}{\numberline {A.3}Creating the target model using EGL}{92}
+\contentsline {section}{\numberline {A.4}Conclusion}{92}
